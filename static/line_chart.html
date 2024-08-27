@@ -1,0 +1,28 @@
+<!-- line_chart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Chart</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="line-chart" style="width: 100%; height: 100%;"></div>
+    <script>
+        var trace1 = {
+            x: ['2023-01-01', '2023-01-02', '2023-01-03'],
+            y: [10, 15, 13],
+            mode: 'lines',
+            type: 'scatter'
+        };
+        var data = [trace1];
+        var layout = {
+            title: 'Sample Line Chart',
+            xaxis: { title: 'Date' },
+            yaxis: { title: 'Value' }
+        };
+        Plotly.newPlot('line-chart', data, layout);
+    </script>
+</body>
+</html>
