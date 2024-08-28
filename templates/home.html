@@ -13,7 +13,6 @@
                     <b-col>
                         <h1 class="companyname display-4">Continuum</h1>
                         <p class="lead mt-3">Empowering Businesses with Data-Driven Insights</p>
-                        <p>At Continuum, we turn complex data into actionable strategies that drive growth and innovation.</p>
                     </b-col>
                 </b-row>
             </section>
@@ -36,28 +35,63 @@
             <section class="services">
                 <b-row>
                     <b-col md="6">
-                        <b-list-group class="animation-container">
-                            <b-list-group-item class="animated-card">
-                                <h5>Data Analysis & Visualization</h5>
-                                <p>We harness the power of tools like Python, Tableau, and Power BI to create clear, compelling visuals that tell the story behind the data.</p>
-                            </b-list-group-item>
-                            <b-list-group-item class="animated-card">
-                                <h5>Data Management & Querying</h5>
-                                <p>Our expertise in SQL, MySQL, and BigQuery ensures that your data is organized, accessible, and ready for analysis.</p>
-                            </b-list-group-item>
-                        </b-list-group>
+                        <b-accordion>
+                            <b-card no-body>
+                                <b-card-header header-tag="header" role="tab">
+                                    <b-button block v-b-toggle.accordion-1 variant="link">
+                                        Data Analysis & Visualization
+                                    </b-button>
+                                </b-card-header>
+                                <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+                                    <b-card-body>
+                                        <p>We harness the power of tools like Python, Tableau, and Power BI to create clear, compelling visuals that tell the story behind the data.</p>
+                                    </b-card-body>
+                                </b-collapse>
+                            </b-card>
+
+                            <b-card no-body>
+                                <b-card-header header-tag="header" role="tab">
+                                    <b-button block v-b-toggle.accordion-2 variant="link">
+                                        Data Management & Querying
+                                    </b-button>
+                                </b-card-header>
+                                <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                                    <b-card-body>
+                                        <p>Our expertise in SQL, MySQL, and BigQuery ensures that your data is organized, accessible, and ready for analysis.</p>
+                                    </b-card-body>
+                                </b-collapse>
+                            </b-card>
+                        </b-accordion>
                     </b-col>
+
                     <b-col md="6">
-                        <b-list-group class="animation-container">
-                            <b-list-group-item class="animated-card">
-                                <h5>Programming & Development</h5>
-                                <p>From developing custom Python solutions to integrating data systems, we bring technical excellence to every project.</p>
-                            </b-list-group-item>
-                            <b-list-group-item class="animated-card">
-                                <h5>Business Intelligence & Strategy</h5>
-                                <p>We work closely with clients to develop strategies that maximize the impact of their data, driving business growth and efficiency.</p>
-                            </b-list-group-item>
-                        </b-list-group>
+                        <b-accordion>
+                            <b-card no-body>
+                                <b-card-header header-tag="header" role="tab">
+                                    <b-button block v-b-toggle.accordion-3 variant="link">
+                                        Programming & Development
+                                    </b-button>
+                                </b-card-header>
+                                <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                                    <b-card-body>
+                                        <p>From developing custom Python solutions to integrating data systems, we bring technical excellence to every project.</p>
+                                    </b-card-body>
+                                </b-collapse>
+                            </b-card>
+
+                            <b-card no-body>
+                                <b-card-header header-tag="header" role="tab">
+                                    <b-button block v-b-toggle.accordion-4 variant="link">
+                                        Business Intelligence & Strategy
+                                    </b-button>
+                                </b-card-header>
+                                <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+                                    <b-card-body>
+                                        <p>We work closely with clients to develop strategies that maximize the impact of their data, driving business growth and efficiency.</p>
+                                    </b-card-body>
+                                </b-collapse>
+                            </b-card>
+                        </b-accordion>
                     </b-col>
                 </b-row>
             </section>
