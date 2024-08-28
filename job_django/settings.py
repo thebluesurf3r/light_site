@@ -1,5 +1,8 @@
 from pathlib import Path
 import os
+import environ
+from dotenv import load_dotenv
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -8,12 +11,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xguehtl7au*xcj90soct!1=&jd+8-8_ma^s24x=liq)2@yb&hl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
+]
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/accounts/profile/'
+LOGIN_REDIRECT_URL = '/profile/'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
 
 # Application definition
 INSTALLED_APPS = [
@@ -27,6 +38,7 @@ INSTALLED_APPS = [
     'oauth2_provider',
     'django_filters',
     'api',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -37,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
 
 ROOT_URLCONF = 'job_django.urls'
@@ -63,15 +76,22 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 SESSION_COOKIE_NAME = 'sessionid'
 SESSION_COOKIE_AGE = 1209600  # 2 weeks, in seconds
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_SAVE_EVERY_REQUEST = False
+
+# Initialize environment variables
+env = environ.Env()
+environ.Env.read_env()  # Reads the .env file
+
+load_dotenv()
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'default_db_name'),
-        'USER': os.getenv('DB_USER', 'default_db_user'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'default_db_password'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'NAME': env('DB_NAME', default='default_db_name'),
+        'USER': env('DB_USER', default='default_db_user'),
+        'PASSWORD': env('DB_PASSWORD', default='default_db_password'),
+        'HOST': env('DB_HOST', default='localhost'),
+        'PORT': env('DB_PORT', default='5432'),
     }
 }
 

@@ -1,0 +1,507 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Behavior';
+    src: url('../fonts/Behavior.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Define CSS Variables */
+:root {
+    /* Constants */
+    --phi: 1.618034;
+    --pi: 3.14159265;
+    --e: 2.718282;
+    --sqrt-two: 1.414214;
+    --tau: 6.283185;
+
+    /* Font and Size Variables */
+    --font-main: 'Open Sans', sans-serif;
+    --font-heading: 'Behavior', sans-serif;
+    --font-heading-size: 12px;
+    --margin-size: 9px;
+    --font-content-size: 9px;
+
+    --font-heading-large: calc(var(--font-heading-size) * var(--phi));
+    --font-heading-huge: calc(var(--font-heading-size) * 2.618034);
+    --font-heading-xl: calc(var(--font-heading-size) * 3.236068);
+    --font-heading-md: calc(var(--font-heading-size) * var(--phi) * var(--phi));
+    --font-heading-small: calc(var(--font-heading-size) * 0.618034);
+
+    --margin-large: calc(var(--margin-size) * var(--phi));
+    --margin-medium: var(--margin-size);
+    --margin-small: calc(var(--margin-size) / var(--tau));
+
+    --font-size-large: calc(var(--font-content-size) * var(--phi));
+    --font-size-medium: var(--font-content-size);
+    --font-size-small: calc(var(--font-content-size) * 0.618034);
+
+    --primary-color: #ffffff;
+    --background-color: #000000;
+    --fade-color: rgba(0, 0, 0, 0.521);
+    --background-container-color: #272727; 
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--fade-color);
+    background-color: var(--fade-color);
+    padding-top: calc(var(--font-heading-size) * var(--phi) * 3); /* Adjust based on your navbar height */
+    padding-bottom: calc(var(--font-heading-small) / var(--phi)); /* Adjust based on your navbar height */
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px; /* Optional: adjust as needed */
+}
+
+/* Summary Section */
+.summary {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White font color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-dark-grey {
+    color: #b0b0b0; /* Light grey for dark text */
+}
+
+.b-list-group-item {
+    border: none;
+    padding: 1rem;
+}
+
+.b-list-group-item i {
+    margin-right: 0.5rem;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White font color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+}
+
+.b-tabs .b-tab {
+    padding: 1rem;
+}
+
+/* Work Experience Section */
+.work-experience {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White font color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+}
+
+.b-card {
+    border-radius: 0.5rem;
+}
+
+.b-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.b-card-text {
+    margin-top: 0.5rem;
+}
+
+.b-card-sub-title {
+    font-size: 1rem;
+}
+
+/* Education Section */
+.education {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White font color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+}
+
+.b-list-group-item ul {
+    padding-left: 2rem;
+}
+
+.b-list-group-item li {
+    margin-bottom: 0.5rem;
+}
+
+/* Certifications Section */
+.certifications {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White font color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+}
+
+.background-item {
+    background-color: #333333; /* Dark grey for better contrast */
+    border: 1px solid #444444; /* Slightly lighter border */
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White font color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+}
+
+.b-card-group .b-card {
+    margin-bottom: 1rem;
+}
+
+.b-card-text {
+    font-size: 1rem;
+}
+
+/* Additional Styles */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.my-4 {
+    margin: 1.5rem 0;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.b-card-group .b-card {
+    margin-bottom: 1rem;
+}
+
+.b-card-text {
+    font-size: 1rem;
+}
+
+/* Additional Styles */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.my-4 {
+    margin: 1.5rem 0;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* General Container Styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    padding-top: 60px; /* Adjust if navbar height changes */
+    padding-bottom: 60px;
+}
+
+.hero .companyname, .username {
+    font-family: var(--font-heading);
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.hero .lead {
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #272727; /* Dark background for contrast */
+    color: #ffffff; /* White text color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 2rem; /* Adjust as needed */
+    color: #007bff; /* Primary color */
+    margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services {
+    background-color: #333333; /* Dark grey background for contrast */
+    color: #ffffff; /* White text color */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation Container and Cards */
+.animation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.animated-card {
+    border-radius: 0.5rem;
+    background-color: #000000; /* Black background for items */
+    color: #ffffff; /* White text color */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly below */
+}
+
+/* Hover Effects */
+.animated-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation on Load */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animation-container .animated-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Delay animations for different cards */
+.animation-container .animated-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.animation-container .animated-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.animation-container .animated-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.animation-container .animated-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+
+/* Additional Styles */
+.text-primary {
+    color: #007bff; /* Primary color */
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.my-5 {
+    margin: 3rem 0;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Summary Section */
+.summary .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.summary .b-list-group-item {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #444444;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Skills Section */
+.skills .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.skills .b-tabs .b-list-group-item {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #444444;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Work Experience Section */
+.work-experience .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.work-experience .b-card {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Education Section */
+.education .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.education .b-list-group-item {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #444444;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Projects Section */
+.projects .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.projects .b-card {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Hover Effects */
+.b-list-group-item:hover, .b-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delayed Animations for Multiple Items */
+.summary .b-list-group-item:nth-child(1),
+.skills .b-tabs .b-list-group-item:nth-child(1),
+.work-experience .b-card:nth-child(1),
+.education .b-list-group-item:nth-child(1),
+.projects .b-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.summary .b-list-group-item:nth-child(2),
+.skills .b-tabs .b-list-group-item:nth-child(2),
+.work-experience .b-card:nth-child(2),
+.education .b-list-group-item:nth-child(2),
+.projects .b-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.summary .b-list-group-item:nth-child(3),
+.skills .b-tabs .b-list-group-item:nth-child(3),
+.work-experience .b-card:nth-child(3),
+.education .b-list-group-item:nth-child(3),
+.projects .b-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.summary .b-list-group-item:nth-child(4),
+.skills .b-tabs .b-list-group-item:nth-child(4),
+.work-experience .b-card:nth-child(4),
+.education .b-list-group-item:nth-child(4),
+.projects .b-card:nth-child(4) {
+    animation-delay: 0.8s;
+}

@@ -1,0 +1,30 @@
+{% load static %}
+
+<!-- Link to the custom CSS for the navbar -->
+<link href="{% static 'css/footer.css' %}" rel="stylesheet">
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../static/images/Logo_v3.svg" alt="Continuum Logo">
+            </div>
+            <div class="footer-text">
+                <span>© 2024 Continuum</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/continuum" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.twitter.com/continuum" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/continuum" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{% static 'js/app.js' %}" defer></script>
+

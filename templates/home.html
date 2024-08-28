@@ -1,8 +1,66 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h2>Home Page</h2>
-<p>This is the home page content.</p>
+    <div id="app" class="container">
+        <!-- Hero Section -->
+        <b-container fluid class="bg-dark text-white text-center py-5 hero">
+            <section class="hero mb-5">
+                <b-row>
+                    <b-col>
+                        <h1 class="companyname display-4">Continuum</h1>
+                        <p class="lead mt-3">Empowering Businesses with Data-Driven Insights</p>
+                        <p>At Continuum, we turn complex data into actionable strategies that drive growth and innovation.</p>
+                    </b-col>
+                </b-row>
+            </section>
+        </b-container>
+
+        <!-- About Us Section -->
+        <b-container class="my-5">
+            <section class="about-us">
+                <b-row>
+                    <b-col>
+                        <h2 class="section-title text-primary mb-4">About Us</h2>
+                        <p>We are a team of experienced data analysts and business strategists who are passionate about leveraging the power of data to help organizations make informed decisions. Our approach is grounded in precision, innovation, and a deep understanding of the business landscape.</p>
+                    </b-col>
+                </b-row>
+            </section>
+        </b-container>
+
+        <!-- Services Section -->
+        <b-container class="my-5">
+            <section class="services">
+                <b-row>
+                    <b-col md="6">
+                        <b-list-group class="animation-container">
+                            <b-list-group-item class="animated-card">
+                                <h5>Data Analysis & Visualization</h5>
+                                <p>We harness the power of tools like Python, Tableau, and Power BI to create clear, compelling visuals that tell the story behind the data.</p>
+                            </b-list-group-item>
+                            <b-list-group-item class="animated-card">
+                                <h5>Data Management & Querying</h5>
+                                <p>Our expertise in SQL, MySQL, and BigQuery ensures that your data is organized, accessible, and ready for analysis.</p>
+                            </b-list-group-item>
+                        </b-list-group>
+                    </b-col>
+                    <b-col md="6">
+                        <b-list-group class="animation-container">
+                            <b-list-group-item class="animated-card">
+                                <h5>Programming & Development</h5>
+                                <p>From developing custom Python solutions to integrating data systems, we bring technical excellence to every project.</p>
+                            </b-list-group-item>
+                            <b-list-group-item class="animated-card">
+                                <h5>Business Intelligence & Strategy</h5>
+                                <p>We work closely with clients to develop strategies that maximize the impact of their data, driving business growth and efficiency.</p>
+                            </b-list-group-item>
+                        </b-list-group>
+                    </b-col>
+                </b-row>
+            </section>
+        </b-container>
+    </div>
 {% endblock %}

@@ -9,6 +9,6 @@ class JobApplication(models.Model):
     designation = models.CharField(max_length=255)
 
     class Meta:
-        db_table = 'applications'  # Explicitly use the existing 'applications' table
+        db_table = 'applications'
         
 

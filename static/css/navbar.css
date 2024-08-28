@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Behavior';
+    src: url('../fonts/Behavior.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Define CSS Variables */
+:root {
+    /* Constants */
+    --phi: 1.618034;
+    --pi: 3.14159265;
+    --e: 2.718282;
+    --sqrt-two: 1.414214;
+    --tau: 6.283185;
+
+    /* Font and Size Variables */
+    --font-main: 'Open Sans', sans-serif;
+    --font-heading: 'Behavior', sans-serif;
+    --font-heading-size: 12px;
+    --margin-size: 9px;
+    --font-content-size: 9px;
+
+    --font-heading-large: calc(var(--font-heading-size) * var(--phi));
+    --font-heading-huge: calc(var(--font-heading-size) * 2.618034);
+    --font-heading-xl: calc(var(--font-heading-size) * 3.236068);
+    --font-heading-md: calc(var(--font-heading-size) * var(--phi) * var(--phi));
+    --font-heading-small: calc(var(--font-heading-size) * 0.618034);
+
+    --margin-large: calc(var(--margin-size) * var(--phi));
+    --margin-medium: var(--margin-size);
+    --margin-small: calc(var(--margin-size) / var(--tau));
+
+    --font-size-large: calc(var(--font-content-size) * var(--phi));
+    --font-size-medium: var(--font-content-size);
+    --font-size-small: calc(var(--font-content-size) * 0.618034);
+
+    --primary-color: #ffffff;
+    --background-color: #000000;
+    --fade-color: rgba(0, 0, 0, 0.521);
+    --background-container-color: #272727; 
+
+    /* Navbar Styles */
+    --navbar-height: calc(var(--font-heading-small) * var(--phi) * 6);
+    --logo-max-width: calc(var(--font-heading-small) * var(--phi) * 12);
+    --logo-max-height: calc(var(--font-heading-small) * var(--phi) * 12);
+    --nav-link-font-size: var(--font-heading-small);
+    --nav-link-margin: var(--margin-large);
+    --dropdown-bg-color: #f8f9fa;
+    --dropdown-hover-bg-color: #e9ecef;
+}
+
+/* Adjust the navbar styles */
+.navbar {
+    position: fixed; /* Ensure navbar stays at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+    background-color: var(--background-container-color); /* Navbar background color */
+    height: var(--navbar-height); /* Navbar height */
+}
+
+/* Dropdown menu styles */
+.navbar .dropdown-menu {
+    background-color: var(--dropdown-bg-color); /* Light background for dropdown */
+    border-radius: 0.25rem; /* Rounded corners */
+    position: absolute; /* Ensure dropdown is positioned correctly */
+    z-index: 1000; /* Ensure it appears above other elements */
+    top: 100%; /* Position dropdown below the parent item */
+    left: 0;
+}
+
+.navbar .dropdown-item {
+    font-size: var(--font-size-small); /* Slightly smaller font for dropdown items */
+    padding: 0.75rem 1.25rem; /* Adjust padding */
+}
+
+.navbar .dropdown-item:hover {
+    background-color: var(--dropdown-hover-bg-color); /* Light hover effect */
+}
+
+/* Logo Styles */
+.navbar-brand img {
+    max-width: var(--logo-max-width); /* Set the maximum width of the logo */
+    max-height: var(--logo-max-height); /* Set the maximum height of the logo */
+}
+
+/* Custom Navbar Styles */
+.navbar-nav-custom .nav-item-custom {
+    font-size: var(--nav-link-font-size); /* Font size for nav links */
+    margin-right: var(--nav-link-margin); /* Spacing between links */
+    position: relative;
+    padding: 10px; /* Add padding to ensure space for the border effect */
+    color: var(--primary-color); /* Text color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-item-custom:hover {
+    color: #ffeb3b; /* Change text color on hover */
+}
+
+/* Keyframe Animation for Border Effect */
+@keyframes borderAnimation {
+    0% {
+        border-width: 0;
+        border-color: transparent;
+    }
+    50% {
+        border-width: 2px;
+        border-color: #ffeb3b; /* Border color during animation */
+    }
+    100% {
+        border-width: 0;
+        border-color: transparent;
+    }
+}
+
+.nav-item-custom::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent; /* Initially transparent */
+    border-bottom: 2px solid transparent;
+    animation: borderAnimation 1s infinite; /* Apply the keyframe animation */
+}
+
+/* Ensure to maintain consistent alignment and spacing */
+.b-navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+}

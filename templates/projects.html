@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Projects{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock %}
+
+{% block content %}
+<body>
+
+    <!-- Container for the Projects Section -->
+    <div class="container my-4">
+        <section class="projects mb-4">
+            <div class="row">
+                <div class="col">
+                    <h2 class="section-title">Projects</h2>
+
+                    <!-- Container for Financial Transaction Explorer Project -->
+                    <div class="container mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Financial Transaction Explorer</strong></h4>
+                                <ul>
+                                    <li>Frameworks and Technologies: Streamlit, Python, Pandas, Numpy, Plotly, HTML, CSS</li>
+                                    <li>Developed an interactive tool using Streamlit to analyze and visualize financial transaction data.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container for Portfolio Website Project -->
+                    <div class="container mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Portfolio Website</strong></h4>
+                                <ul>
+                                    <li>Frameworks and Technologies: Django, Python, Pandas, Numpy, Plotly, spaCy, HTML, CSS, JavaScript</li>
+                                    <li>A dynamic portfolio website developed using Django, showcasing projects, skills, and professional achievements in a visually appealing and interactive format.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+        })
+    </script>
+
+</body>
+{% endblock %}
