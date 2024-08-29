@@ -6,25 +6,31 @@
 
 {% block content %}
     <div id="app" class="container">
+        
         <!-- Hero Section -->
         <b-container fluid class="bg-dark text-white text-center py-5 hero">
             <section class="hero mb-5">
                 <b-row>
                     <b-col>
-                        <h1 class="companyname display-4">Continuum</h1>
-                        <p class="lead mt-3">Empowering Businesses with Data-Driven Insights</p>
+                        <img src="{% static 'images/continuuum_logo_final.svg' %}" alt="continuum Icon" class="continuum-icon">
+                        <p class="lead mt-3 mb-4">Empowering Businesses with Data-Driven Insights</p>
                     </b-col>
                 </b-row>
             </section>
         </b-container>
-
+    
         <!-- About Us Section -->
-        <b-container class="my-5">
-            <section class="about-us">
+        <b-container class="my-4">
+            <section class="about-us mb-4">
                 <b-row>
                     <b-col>
-                        <h2 class="section-title text-primary mb-4">About Us</h2>
-                        <p>We are a team of experienced data analysts and business strategists who are passionate about leveraging the power of data to help organizations make informed decisions. Our approach is grounded in precision, innovation, and a deep understanding of the business landscape.</p>
+                        <h2 class="section-title">About Us</h2>
+                        <b-list-group class="animation-container">
+                            <b-list-group-item class="animated-card">
+                                    <b-list-group-item class="animated-card">
+                                        We are a team of experienced data analysts and business strategists who are passionate about leveraging the power of data to help organizations make informed decisions. Our approach is grounded in precision, innovation, and a deep understanding of the business landscape.</li>
+                                </b-list-group-item>
+                        </b-list-group>
                     </b-col>
                 </b-row>
             </section>

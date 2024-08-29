@@ -1,3 +1,4 @@
+/* Font-Face Definitions */
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -19,16 +20,14 @@
     font-style: normal;
 }
 
-/* Define CSS Variables */
+/* CSS Variables */
 :root {
-    /* Constants */
     --phi: 1.618034;
     --pi: 3.14159265;
     --e: 2.718282;
     --sqrt-two: 1.414214;
     --tau: 6.283185;
 
-    /* Font and Size Variables */
     --font-main: 'Open Sans', sans-serif;
     --font-heading: 'Behavior', sans-serif;
     --font-heading-size: 12px;
@@ -56,14 +55,15 @@
     --background-container-color: #272727; 
 }
 
+/* Global Box Sizing */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    display: absolute;
     font-family: var(--font-main);
     color: var(--primary-color);
     background-color: var(--secondary-background-color);
@@ -71,16 +71,20 @@ body {
     padding-bottom: calc(var(--font-heading-small) / var(--phi) / var(--pi));
 }
 
+/* Main Element */
 main {
-    display: absolute;
+    background-image: url(../images/);
+    display: block; /* Fixed from absolute */
 }
 
+/* Heading and Paragraphs */
 h5, p {
     font-family: var(--font-main);
     font-size: calc(var(--font-size-small) * 3);
     color: var(--primary-color);
 }
 
+/* Container */
 .container {
     display: grid;
     max-width: 99.9%;
@@ -90,11 +94,10 @@ h5, p {
 
 /* Hero Section */
 .hero {
-    background-color: var(--background-color);
     color: var(--primary-color);
-    padding-top: calc(var(--margin-medium) * 3);
-    padding-bottom: calc(var(--margin-medium) / 6);
-    border-radius: calc(var(--margin-medium) * 3);
+    padding-top: calc(var(--margin-medium) * 1);
+    padding-bottom: calc(var(--margin-medium) / 3);
+    border-radius: calc(var(--margin-medium) * 1.5);
 }
 
 .hero .companyname, .username {
@@ -104,7 +107,6 @@ h5, p {
 
 .hero .lead {
     margin-bottom: calc(var(--margin-medium) / 6);
-
 }
 
 /* About Us Section */
@@ -152,18 +154,13 @@ h5, p {
     border-radius: calc(var(--margin-medium) * 3);
 }
 
-/* Ensure border-box sizing */
-.container > * {
-    box-sizing: border-box;
-}
-
-/* Summary Section */
+/* Section Summaries */
 .summary, .skills, .work-experience, .education, .certifications, .projects {
     display: inline-block;
     background-color: rgb(14, 14, 14);
     color: var(--primary-color);
     border-radius: calc(var(--margin-medium) * 3);
-    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.25));
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 1.25));
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -174,27 +171,7 @@ h5, p {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-#app > b-container > section > b-row > b-col > b-tabs > b-tab > b-list-group > b-list-group-item > b-list-group-item {
-    background-color: #000000;
-    padding: var(--margin-medium);
-    color: white;
-}
-
-.b-list-group-item, .b-card, .background-item {
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    border: 1px solid #444444;
-    margin-bottom: 0.5rem;
-    border-radius: calc(var(--margin-medium) * 3);
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s ease-out forwards;
-}
-
-/* Card Styles */
+/* App Container */
 #app {
     display: block;
     flex-wrap: wrap;
@@ -202,6 +179,7 @@ h5, p {
     overflow: hidden;
 }
 
+/* Animated Card */
 .animated-card {
     position: static;
     margin: var(--margin-large);
@@ -298,21 +276,48 @@ h5, p {
     }
 }
 
+/* Specific Font and Color Adjustments */
+#app > b-container > section > b-row > b-col > h2,
+#app > b-container > section > b-row > b-col > b-list-group > b-list-group-item,
+#app > b-container:nth-child(3) > section > b-row > b-col > b-tabs > b-tab,
+#app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item,
+#app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item {
+    color: #eeeeee;
+    font-family: var(--font-size-small);
+}
+
+h5 {
+    font-size: calc(var(--font-content-size) * var(--phi));
+}
+
+@media (min-width: 1024px) {
+    #app > b-container:nth-child(2) > section > b-row > b-col > h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #app > b-container > section > b-row > b-col > h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+
 /* font size and color of various sections in the 'about' page */
 
 /* Section heading */
 #app > b-container > section > b-row > b-col > h2 {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.25));
+    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     color: #ffffff;
 }
 
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
+    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/3));
     color: #ffffff;
 }
 
 #app > b-container:nth-child(3) > section > b-row > b-col > b-tabs > b-tab {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
+    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/3));
     color: #ffffff;
 }
 
@@ -327,7 +332,7 @@ h5, p {
 /* "About Us" */
 
 #app > b-container:nth-child(2) > section > b-row > b-col > h2 {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
+    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     color: white;
 }
 
@@ -352,7 +357,7 @@ h5, p {
 }
 
 #app > b-container:nth-child(4) > section > b-row > b-col > b-tab > b-list-group > b-list-group-item {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
+    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     padding: var(--margin-small);
     background-color: rgb(14, 11, 56);
     display: grid;
@@ -360,17 +365,13 @@ h5, p {
     list-style-type: none;
 }
 
-#app > b-container:nth-child(4) > section > b-row > b-col > b-tab > b-list-group > b-list-group-item {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-}
-
 /* Summary (accordion like element configuration)*/
 
 /* Level1*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    align-items: left;
-    padding: var(--margin-large);
+    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
+    margin: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     background-color: rgb(0, 0, 0);
     display: grid;
     color: rgb(255, 255, 255);
@@ -380,9 +381,9 @@ h5, p {
 /* Level2*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    padding: var(--margin-large);
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     background-color: rgb(12, 12, 48);
-    display: grid;
+    display: inline-block;
     color: rgb(255, 255, 255);
     list-style-type: none;
 }
@@ -390,7 +391,7 @@ h5, p {
 /* Level3*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    padding: var(--margin-large);
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     background-color: rgb(0, 0, 0);
     display: grid;
     color: rgb(255, 255, 255);
@@ -400,48 +401,27 @@ h5, p {
 /* Level4*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    padding: var(--margin-large);
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     background-color: rgb(12, 12, 48);
-    display: grid;
+    display: inline-block;
     color: rgb(255, 255, 255);
     list-style-type: none;
 }
 
 /* Level5*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.75));
-    padding: var(--margin-large);
+    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     list-style-type: none;
-}
-
-
-/* "Education" */
-/* MRIU*/
-#app > b-container:nth-child(4) > section > b-row > b-col > b-tab > b-list-group > b-list-group-item {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.25));
-    padding: var(--margin-large);
-    background-color: rgb(14, 11, 56);
-    color: rgb(255, 255, 255);
-    list-style-type: none;
-}
-
-/* B.Tech*/
-#app > b-container:nth-child(4) > section > b-row > b-col > b-tab > b-list-group > b-list-group-item > b-list-group-item {
-    font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    padding: var(--margin-large);
-    background-color: var(--background-color);
-    color: rgb(255, 255, 255);
-    list-style-type: none;
-    margin: var(--margin-medium);
 }
 
 /* Progress Bar*/
 .custom-progress {
     height: 1.5rem; /* Increase the height of the progress bar */
     border-radius: 75%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.616); /* Add a subtle shadow */
 }
 
 .custom-progress-bar {
@@ -458,3 +438,168 @@ h5, p {
     height: auto;
     margin: var(--margin-large);
 }
+
+/* Width of 'Skills' */
+#app > b-container > section {
+    width: 99.9%;
+    height: auto;
+    margin: var(--margin-large);
+}
+
+.continuum-icon {
+    width: 100%;
+    height: 500px;
+    vertical-align: middle;
+    fill: #ffffff;
+}
+
+.company-icon {
+    width: 9%;
+    height: 9%;
+    vertical-align: middle;
+    fill: #ffffff; 
+}
+
+.summary-icon {
+    width: 9%;
+    height: 9%;
+    vertical-align: middle;
+    fill: #ffffff; 
+}
+
+.skills-icon {
+    width: 12%;
+    height: 12%;
+    vertical-align: middle;
+    fill: #ffffff;
+    margin-right: 15%;
+}
+
+.projects-icon {
+    width: 15%;
+    height: 15%;
+    vertical-align: middle;
+    fill: #ffffff;
+}
+
+.vyom-icon {
+    width: 25%;
+    height: 25%;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-left: 37.5%;
+    fill: #ffffff;
+}
+
+.data-analysis-icon {
+    width: 20%;
+    height: 20%;
+    vertical-align: middle;
+    margin-top: 0%;
+    margin-left: 9%;
+    fill: #ffffff;
+}
+
+.data-engineering-icon {
+    width: 20%;
+    height: 20%;
+    vertical-align: middle;
+    margin-top: 0%;
+    margin-left: 18%;
+    fill: #ffffff;
+}
+
+.web-development-icon {
+    width: 30%;
+    height: 30%;
+    vertical-align: middle;
+    margin-top: 0%;
+    margin-left: 12%;
+    fill: #ffffff;
+}
+
+.language-icon {
+    width: 6%;
+    height: 6%;
+    /*vertical-align: middle; */
+    /*margin-top: 5%; */
+    /*margin-left: 37.5%;*/
+    fill: #ffffff;
+}
+
+#skills-graph {
+    margin-top: 0;
+    display: none;
+}
+
+
+.tooltip-container {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-trigger {
+    cursor: pointer;
+}
+
+.tooltip-content {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: -1200%;
+    left: 150%;
+    transform: translateY(-15%) scale(0.75);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.5s ease;
+    z-index: 1;
+    border-radius: 0%;
+    overflow: hidden;
+}
+
+.tooltip-container:hover .tooltip-content {
+    visibility: visible;
+    transform: translateY(-15%) scale(1);
+    opacity: 1;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.5s ease;
+}
+
+.tooltip-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.tooltip-content::before {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+#chartFrame {
+    width: 200%;
+    height: 200%; 
+    transition: transform 0.8s cubic-bezier(0.25, 0.25, 0.25, 1); /* Smoother transition */
+    position: absolute; /* Ensure proper alignment within the container */
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.progress-animated .progress-bar {
+    transition: width 2s ease;
+  }

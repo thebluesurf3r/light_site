@@ -5,7 +5,7 @@ import debug_toolbar
 from django.conf.urls.static import static
 from django.conf import settings
 
-from .views import SignUpView, ThankYouView, CustomLoginView, UserProfileView, HomeView, AboutView, ProjectView
+from .views import SignUpView, ThankYouView, CustomLoginView, UserProfileView, HomeView, AboutView, ProjectView, ContactView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -17,6 +17,8 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('about/', AboutView.as_view(), name='about'),
     path('projects/', ProjectView.as_view(), name='projects'),
+    path('contact/', ContactView.as_view(), name='contact'),
+
 ]
 
 if settings.DEBUG:

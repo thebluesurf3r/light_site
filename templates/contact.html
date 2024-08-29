@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<body>
+    <div id="app" class="container">
+        
+        <!-- Projects Section -->
+        <b-container class="my-4">
+            <section class="contact mb-4">
+                <b-row>
+                    <b-col>
+                        <h2 class="section-title"></h2>
+                        <b-list-group class="animation-container">
+                            <b-list-group-item class="animated-card">
+                                    <b-list-group-item class="animated-card">
+                                        <img src="{% static 'images/Vy3.svg' %}" alt="Vyom Icon" class="vyom-icon">
+                                    <b-list-group-item class="animated-card">
+                                        <li>Name: Vyom Deepansh</li>
+                                        <li>Designation: Data Analyst</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>Organization: Cognizant Technology Solutions</li>
+                                        <li>City: Gurgaon</li>
+                                        <li>State: Haryana</li>
+                                        <li>Country: India</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>Pod: Measurement and Attribution</li>
+                                        <li>Tenure: 24 months</li>
+                                        <li>Location: On-Site</li>
+                                </b-list-group-item>
+                        </b-list-group>
+
+                        <b-list-group class="animation-container">
+                            <b-list-group-item class="animated-card">
+                                <img src="{% static 'icons/chart.png' %}" alt="Projects Icon" class="projects-icon">
+                                    <b-list-group-item class="animated-card">
+                                        <li>Personal Details:</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>Gender: Male</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>City: Gurgaon</li>
+                                        <li>State: Haryana</li>
+                                        <li>Country: India</li>
+                                </b-list-group-item>
+                        </b-list-group>
+
+                    </b-col>
+                </b-row>
+            </section>
+        </b-container>
+{% endblock %}

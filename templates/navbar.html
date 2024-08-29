@@ -3,33 +3,34 @@
 <!-- Link to the custom CSS for the navbar -->
 <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
 
+<body>
 <!-- Navbar -->
 <div id="app">
   <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top" class="navbar animated-navbar larger-navbar">
     <b-navbar-brand href="{% url 'home' %}" class="mx-auto">
-      <img src="{% static 'images/Logo_v4.svg' %}" alt="Logo">
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav class="mx-auto">
       <b-navbar-nav class="mx-auto">
         <b-nav-item href="{% url 'home' %}" class="nav-item-animate">Home</b-nav-item>
+        <b-nav-item href="{% url 'about' %}" class="nav-item-animate">About</b-nav-item>
 
-        <!-- About Dropdown -->
-        <b-nav-item-dropdown text="About" class="btn-dark">
-          <b-dropdown-item href="{% url 'about' %}">About the Founder</b-dropdown-item>
-          <b-dropdown-item href="https://example.com">About the Organization</b-dropdown-item>
+        <!-- Dropdown for Projects -->
+        <b-nav-item-dropdown text="Projects" right class="nav-item-animate">
+          <b-dropdown-item href="{% url 'login' %}">Login</b-dropdown-item>
+          <b-dropdown-item href="{% url 'signup' %}">Signup</b-dropdown-item>
         </b-nav-item-dropdown>
 
-        <!-- Projects Dropdown -->
-        <b-nav-item-dropdown text="Projects" class="btn-dark">
-          <b-dropdown-item href="{% url 'home' %}">Databases - Manage and interact with various databases.</b-dropdown-item>
-          <b-dropdown-item href="{% url 'home' %}">Notebooks - Work on interactive data notebooks.</b-dropdown-item>
-          <b-dropdown-item href="{% url 'home' %}">Applications - Explore various software applications.</b-dropdown-item>
-          <b-dropdown-item href="{% url 'home' %}">APIs - Access and utilize APIs for data and functionality.</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-        <b-nav-item href="{% url 'about' %}" class="nav-item-animate">Contact</b-nav-item>
+        <b-nav-item href="{% url 'contact' %}" class="nav-item-animate">Contact</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </div>
+
+
+<!-- Custom JS -->
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'js/animations.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>

@@ -1,3 +1,4 @@
+/* Import 'Behavior' font and use Google Fonts for 'Open Sans' */
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -19,134 +20,99 @@
 
 /* Define CSS Variables */
 :root {
-    /* Constants */
     --phi: 1.618034;
-    --pi: 3.14159265;
-    --e: 2.718282;
-    --sqrt-two: 1.414214;
-    --tau: 6.283185;
-
-    /* Font and Size Variables */
     --font-main: 'Open Sans', sans-serif;
     --font-heading: 'Behavior', sans-serif;
     --font-heading-size: 12px;
     --margin-size: 9px;
     --font-content-size: 9px;
-
-    --font-heading-large: calc(var(--font-heading-size) * var(--phi));
-    --font-heading-huge: calc(var(--font-heading-size) * 2.618034);
-    --font-heading-xl: calc(var(--font-heading-size) * 3.236068);
-    --font-heading-md: calc(var(--font-heading-size) * var(--phi) * var(--phi));
     --font-heading-small: calc(var(--font-heading-size) * 0.618034);
-
     --margin-large: calc(var(--margin-size) * var(--phi));
-    --margin-medium: var(--margin-size);
-    --margin-small: calc(var(--margin-size) / var(--tau));
-
-    --font-size-large: calc(var(--font-content-size) * var(--phi));
-    --font-size-medium: var(--font-content-size);
-    --font-size-small: calc(var(--font-content-size) * 0.618034);
-
+    --font-size-medium: var(--font-heading-small);
     --primary-color: #ffffff;
     --background-color: #000000;
-    --fade-color: rgba(0, 0, 0, 0.521);
-    --background-container-color: #272727; 
-
-    /* Navbar Styles */
-    --navbar-height: calc(var(--font-heading-small) * var(--phi) * 6);
-    --logo-max-width: calc(var(--font-heading-small) * var(--phi) * 12);
-    --logo-max-height: calc(var(--font-heading-small) * var(--phi) * 12);
-    --nav-link-font-size: var(--font-heading-small);
-    --nav-link-margin: var(--margin-large);
-    --dropdown-bg-color: #f8f9fa;
-    --dropdown-hover-bg-color: #e9ecef;
+    --nav-link-hover-color: #00f; /* Blue for hover effect */
+    --nav-link-bg-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for hover */
 }
 
-/* Adjust the navbar styles */
+/* General Navbar Styling */
 .navbar {
-    position: fixed; /* Ensure navbar stays at the top */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Ensure navbar is above other content */
-    background-color: var(--background-container-color); /* Navbar background color */
-    height: var(--navbar-height); /* Navbar height */
+    background-color: var(--background-color);
+    height: calc(var(--font-heading-small) * var(--phi) * 6);
 }
 
-/* Dropdown menu styles */
-.navbar .dropdown-menu {
-    background-color: var(--dropdown-bg-color); /* Light background for dropdown */
-    border-radius: 0.25rem; /* Rounded corners */
-    position: absolute; /* Ensure dropdown is positioned correctly */
-    z-index: 1000; /* Ensure it appears above other elements */
-    top: 100%; /* Position dropdown below the parent item */
-    left: 0;
+.navbar .navbar-brand img {
+    max-width: calc(var(--font-heading-small) * var(--phi) * 12);
+    max-height: calc(var(--font-heading-small) * var(--phi) * 12);
 }
 
-.navbar .dropdown-item {
-    font-size: var(--font-size-small); /* Slightly smaller font for dropdown items */
-    padding: 0.75rem 1.25rem; /* Adjust padding */
-}
-
-.navbar .dropdown-item:hover {
-    background-color: var(--dropdown-hover-bg-color); /* Light hover effect */
-}
-
-/* Logo Styles */
-.navbar-brand img {
-    max-width: var(--logo-max-width); /* Set the maximum width of the logo */
-    max-height: var(--logo-max-height); /* Set the maximum height of the logo */
-}
-
-/* Custom Navbar Styles */
-.navbar-nav-custom .nav-item-custom {
-    font-size: var(--nav-link-font-size); /* Font size for nav links */
-    margin-right: var(--nav-link-margin); /* Spacing between links */
+/* Navbar Links Styling */
+.nav-item-animate {
+    font-family: var(--font-heading);
+    font-size: calc(var(--font-heading-size) * var(--phi)); /* Adjusted to use correct variable */
+    font-weight: 700;
+    color: #ccc; /* Gray color for text */
     position: relative;
-    padding: 10px; /* Add padding to ensure space for the border effect */
-    color: var(--primary-color); /* Text color */
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.15s ease;
+    margin: 0;
+    padding: calc(var(--margin-size) * var(--phi));
+    display: inline-block;
+    overflow: hidden;
 }
 
-.nav-item-custom:hover {
-    color: #ffeb3b; /* Change text color on hover */
+.nav-item-animate:hover {
+    color: var(--primary-color); /* White text color on hover */
+    transform: translateY(0px); /* Lift effect on hover */
+    overflow: visible;
+
 }
 
-/* Keyframe Animation for Border Effect */
-@keyframes borderAnimation {
+/* Keyframe Animation for Hover Effect */
+@keyframes slide-glide {
     0% {
-        border-width: 0;
-        border-color: transparent;
-    }
-    50% {
-        border-width: 2px;
-        border-color: #ffeb3b; /* Border color during animation */
+        background-color: rgb(2, 2, 129);
+        transform: translateX(-25%);
     }
     100% {
-        border-width: 0;
-        border-color: transparent;
+        background-color: rgb(1, 1, 85);
+        transform: translateX(0%);
     }
 }
 
-.nav-item-custom::before {
+.nav-item-animate::before {
     content: '';
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
     width: 100%;
-    height: 2px;
-    background-color: transparent; /* Initially transparent */
-    border-bottom: 2px solid transparent;
-    animation: borderAnimation 1s infinite; /* Apply the keyframe animation */
+    height: 100%;
+    background-color: var(--nav-link-bg-color);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: -1;
 }
 
-/* Ensure to maintain consistent alignment and spacing */
-.b-navbar-nav {
-    display: flex;
-    align-items: center;
+.nav-item-animate:hover::before {
+    transform: translateX(0);
+    animation: slide-glide 0.5s forwards;
 }
 
-.navbar-brand {
-    padding: 0; /* Remove any default padding */
-    margin: 0; /* Remove any default margin */
+/* Navbar Toggle Button */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ccc; /* Light gray for toggle icon */
+}
+
+/* Collapsible Navbar Styling */
+.collapse {
+    background-color: var(--background-color);
+}
+
+
+.b-nav-item-dropdown:hover > .dropdown-menu {
+    display: absolute;
+    margin-top: 0;
 }

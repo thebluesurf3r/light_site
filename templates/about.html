@@ -18,7 +18,7 @@
                 </b-row>
             </section>
         </b-container>
-        
+
         <!-- Summary Section -->
         <b-container class="my-4">
             <section class="summary mb-4">
@@ -26,7 +26,20 @@
                     <b-col>
                         <h2 class="section-title">Summary</h2>
                         <b-list-group class="animation-container">
+                            <div class="tooltip-container">
+                                <b-container>
+                                    <b-tooltip target="skills-tooltip" placement="top" custom-class="custom-tooltip">
+                                        <div class="tooltip-content">
+                                            <iframe id="chartFrame" src="../static/html_plots/sunburst_plot_main.html" frameborder="0"></iframe>
+                                        </div>
+                                    </b-tooltip>
+                                    <span id="skills-tooltip" class="tooltip-trigger">
+                                        
+                                    </span>
+                                </b-container>
+                            </div>
                             <b-list-group-item class="animated-card">
+                                <img src="{% static 'icons/ai_icon.png' %}" alt="Summary Icon" class="summary-icon">
                                     <b-list-group-item class="animated-card">
                                         Results-driven data analyst with 5 years of experience, recognized for rapid career progression and multiple promotions.</li>
                                     <b-list-group-item class="animated-card">
@@ -43,95 +56,120 @@
         </b-container>
 
         <!-- Skills Section -->
+
         <b-container class="my-4">
             <section class="skills mb-4">
                 <b-row>
                     <b-col>
                         <h2 class="section-title">Skills</h2>
+
                         <b-list-group class="animation-container">
                             <b-list-group-item class="animated-card">
-                                    <b-list-group-item class="animated-card">
-                                        Data Analysis and Visualization</li>
-                                    <b-list-group-item class="animated-card">
-                                        Python Modules</li>
-                                    <b-list-group-item class="animated-card">
-                                        Pandas, Numpy, Plotly, Matplotlib, Seaborn</li>
-                                    <b-list-group-item class="animated-card">
-                                        <!-- Progress Bar -->
-                                        <b-progress :value="100" class="mb-3 custom-progress">
-                                            <b-progress-bar :value="70" variant="success" class="custom-progress-bar">
-                                                70%
-                                            </b-progress-bar>
-                                        </b-progress>
-                                </b-list-group-item>
+                                Parallel Categories Plot: You can go through this chart to understand more about my skill sets.
+                            </b-list-group-item>
+                            <b-list-group-item class="animated-card">
+                                <!-- Embed the iframe here -->
+                                <iframe src="{% static 'html_plots/parallel_categories_plot_skills.html' %}" 
+                                        width="1200" 
+                                        height="667" 
+                                        frameborder="0" 
+                                        allowfullscreen>
+                                </iframe>
+                            </b-list-group-item>
                         </b-list-group>
 
                         <b-list-group class="animation-container">
                             <b-list-group-item class="animated-card">
-                                    <b-list-group-item class="animated-card">
-                                        Data Analysis and Visualization</li>
-                                    <b-list-group-item class="animated-card">
-                                        Python Modules</li>
-                                    <b-list-group-item class="animated-card">
-                                        Pandas, Numpy, Plotly, Matplotlib, Seaborn</li>
-                                    <b-list-group-item class="animated-card">
-                                        <!-- Progress Bar -->
-                                        <b-progress :value="100" class="mb-3 custom-progress">
-                                            <b-progress-bar :value="60" variant="success" class="custom-progress-bar">
-                                                60%
-                                            </b-progress-bar>
-                                        </b-progress>
+                                <b-list-group-item class="animated-card">
+                                    <li>Data Management and Engineering</li>
+                                        <b-list-group-item class="animated-card">
+                                        <b-list-group-item class="animated-card">
+                                            <img src="{% static 'icons/postgresql.png' %}" alt="Tool Icon" class="data-engineering-icon">
+                                            <img src="{% static 'icons/mysql.png' %}" alt="Tool Icon" class="data-engineering-icon">
+                                        </b-list-group-item>
+                                        <b-list-group-item class="animated-card">
+                                            <img src="{% static 'icons/bigquery.png' %}" alt="Tool Icon" class="data-engineering-icon">
+                                            <img src="{% static 'icons/google.png' %}" alt="Tool Icon" class="data-engineering-icon">
+
+                                        </b-list-group-item>
+                                        </b-list-group-item>
                                 </b-list-group-item>
+
+                                <b-list-group-item class="animated-card">
+                                    <li>Data Analysis and Visualization</li>
+                                        <b-list-group-item class="animated-card">
+                                        <b-list-group-item class="animated-card">
+                                            <img src="{% static 'icons/plotly.png' %}" alt="Tool Icon" class="data-analysis-icon">
+                                            <img src="{% static 'icons/seaborn.png' %}" alt="Tool Icon" class="data-analysis-icon">
+                                            <img src="{% static 'icons/matplotlib.png' %}" alt="Tool Icon" class="data-analysis-icon">
+
+                                        </b-list-group-item>
+                                        <b-list-group-item class="animated-card">
+                                            <img src="{% static 'icons/numpy.png' %}" alt="Tool Icon" class="data-analysis-icon">
+                                            <img src="{% static 'icons/pandas.svg' %}" alt="Tool Icon" class="data-analysis-icon">
+                                            <img src="{% static 'icons/explosion_ai.png' %}" alt="Tool Icon" class="data-analysis-icon">
+
+                                        </b-list-group-item>
+                                        </b-list-group-item>
+                                </b-list-group-item>
+
+                                <b-list-group-item class="animated-card">
+                                    <li>Programming and Development</li>
+                                        <b-list-group-item class="animated-card">
+                                        <b-list-group-item class="animated-card">
+                                            <img src="{% static 'icons/django.png' %}" alt="Tool Icon" class="web-development-icon">
+                                            <img src="{% static 'icons/streamlit.svg' %}" alt="Tool Icon" class="web-development-icon">
+                                        </b-list-group-item>
+                                        <b-list-group-item class="animated-card">
+                                            <img src="{% static 'icons/vue.png' %}" alt="Tool Icon" class="web-development-icon">
+                                            <img src="{% static 'icons/bootstrap.png' %}" alt="Tool Icon" class="web-development-icon">
+
+                                        </b-list-group-item>
+                                        </b-list-group-item>
+                                </b-list-group-item>                                
                         </b-list-group>
 
                         <b-list-group class="animation-container">
+                            
                             <b-list-group-item class="animated-card">
-                                    <b-list-group-item class="animated-card">
-                                        Data Analysis and Visualization</li>
-                                    <b-list-group-item class="animated-card">
-                                        Python Modules</li>
-                                    <b-list-group-item class="animated-card">
-                                        Pandas, Numpy, Plotly, Matplotlib, Seaborn</li>
-                                    <b-list-group-item class="animated-card">
-                                        <!-- Progress Bar -->
-                                        <b-progress :value="100" class="mb-3 custom-progress">
-                                            <b-progress-bar :value="20" variant="success" class="custom-progress-bar">
-                                                25%
-                                            </b-progress-bar>
-                                        </b-progress>
-                                </b-list-group-item>
-                        </b-list-group>
+                                <img src="{% static 'icons/python.png' %}" alt="Language Icon" class="language-icon">
+                                <img src="{% static 'icons/c#1.png' %}" alt="Language Icon" class="language-icon">
+                                <img src="{% static 'icons/html.png' %}" alt="Language Icon" class="language-icon">
+                                <img src="{% static 'icons/css.png' %}" alt="Language Icon" class="language-icon">
+                                <img src="{% static 'icons/javascript.png' %}" alt="Language Icon" class="language-icon">
 
-                        <b-list-group class="animation-container">
-                            <b-list-group-item class="animated-card">
-                                    <b-list-group-item class="animated-card">
-                                        Data Analysis and Visualization</li>
-                                    <b-list-group-item class="animated-card">
-                                        Python Modules</li>
-                                    <b-list-group-item class="animated-card">
-                                        Pandas, Numpy, Plotly, Matplotlib, Seaborn</li>
-                                    <b-list-group-item class="animated-card">
-                                        <!-- Progress Bar -->
-                                        <b-progress :value="100" class="mb-3 custom-progress">
-                                            <b-progress-bar :value="50" variant="success" class="custom-progress-bar">
-                                                50%
-                                            </b-progress-bar>
-                                        </b-progress>
-                                </b-list-group-item>
-                        </b-list-group>
-                    </b-col>
+                            </b-list-group-item>
+                    </b-list-group>
+                </b-col>
                 </b-row>
             </section>
         </b-container>
 
-        <!-- Work Experience Section -->
+        <!-- Work Experience Timeline Graph -->
         <b-container class="my-4">
             <section class="work-experience mb-4">
                 <b-row>
                     <b-col>
                         <h2 class="section-title">Work Experience</h2>
+
                         <b-list-group class="animation-container">
                             <b-list-group-item class="animated-card">
+                                Work Timeline: My career has spanned for over 5 years by now.
+                            </b-list-group-item>
+                            <b-list-group-item class="animated-card">
+                                <!-- Embed the iframe here -->
+                                <iframe src="{% static 'html_plots/timeline_work_exp.html' %}" 
+                                        width="100%" 
+                                        height="300" 
+                                        frameborder="0" 
+                                        allowfullscreen>
+                                </iframe>
+                            </b-list-group-item>
+                        </b-list-group>
+                        
+                        <b-list-group class="animation-container">
+                            <b-list-group-item class="animated-card">
+                                <img src="{% static 'icons/cts.png' %}" alt="Cognizant Icon" class="company-icon">
                                     <b-list-group-item class="animated-card">
                                         Cognizant Technology Solutions</li>
                                     <b-list-group-item class="animated-card">
@@ -152,6 +190,7 @@
 
                         <b-list-group class="animation-container">
                             <b-list-group-item class="animated-card">
+                                <img src="{% static 'icons/aakarist.png' %}" alt="Cognizant Icon" class="company-icon">
                                     <b-list-group-item class="animated-card">
                                         Aakarist Pvt Ltd</li>
                                     <b-list-group-item class="animated-card">
@@ -172,6 +211,7 @@
 
                         <b-list-group class="animation-container">
                             <b-list-group-item class="animated-card">
+                                <img src="{% static 'icons/wns.png' %}" alt="Cognizant Icon" class="company-icon">
                                     <b-list-group-item class="animated-card">
                                         WNS Pvt Ltd</li>
                                     <b-list-group-item class="animated-card">

@@ -4,56 +4,77 @@
 
 {% block title %}Projects{% endblock %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/projects.css' %}">
-{% endblock %}
 
 {% block content %}
 <body>
+    <div id="app" class="container">
+        <!-- Header Section -->
+        <b-container fluid class="bg-dark text-white text-center py-5 hero">
+            <section class="hero mb-5">
+                <b-row>
+                    <b-col>
+                        <h1 class="headername display-4">Projects</h1>
+                        <p class="lead mt-3">Undertaken</p>
+                    </b-col>
+                </b-row>
+            </section>
+        </b-container>
+        
+        <!-- Projects Section -->
+        <b-container class="my-4">
+            <section class="projects mb-4">
+                <b-row>
+                    <b-col>
+                        <h2 class="section-title"></h2>
+                        <b-list-group class="animation-container">
 
-    <!-- Container for the Projects Section -->
-    <div class="container my-4">
-        <section class="projects mb-4">
-            <div class="row">
-                <div class="col">
-                    <h2 class="section-title">Projects</h2>
-
-                    <!-- Container for Financial Transaction Explorer Project -->
-                    <div class="container mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title"><strong>Financial Transaction Explorer</strong></h4>
-                                <ul>
-                                    <li>Frameworks and Technologies: Streamlit, Python, Pandas, Numpy, Plotly, HTML, CSS</li>
-                                    <li>Developed an interactive tool using Streamlit to analyze and visualize financial transaction data.</li>
-                                </ul>
+                            <div class="tooltip-container">
+                                <b-container>
+                                    <b-tooltip target="skills-tooltip" placement="top" custom-class="custom-tooltip">
+                                        <div class="tooltip-content">
+                                            <iframe id="chartFrame" src="../static/html_plots/sunburst_plot_main.html" frameborder="0"></iframe>
+                                        </div>
+                                    </b-tooltip>
+                                    <span id="skills-tooltip" class="tooltip-trigger">
+                                        
+                                    </span>
+                                </b-container>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Container for Portfolio Website Project -->
-                    <div class="container mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title"><strong>Portfolio Website</strong></h4>
-                                <ul>
-                                    <li>Frameworks and Technologies: Django, Python, Pandas, Numpy, Plotly, spaCy, HTML, CSS, JavaScript</li>
-                                    <li>A dynamic portfolio website developed using Django, showcasing projects, skills, and professional achievements in a visually appealing and interactive format.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-    </div>
+                            <b-list-group-item class="animated-card">
+                                <img src="{% static 'icons/chart.png' %}" alt="Projects Icon" class="projects-icon">
+                                    <b-list-group-item class="animated-card">
+                                        <li>Financial Transaction Explorer</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>Frameworks and Technologies: Streamlit, Python, Pandas, Numpy, Plotly, HTML, CSS</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>Developed an interactive tool using Streamlit to analyze and visualize financial transaction data.</li>
+                                    <b-list-group-item class="animated-card">
+                                        <iframe src="../static/html_plots/scatter_3d_plot.html" 
+                                                width="300" 
+                                                height="300" 
+                                                frameborder="0" 
+                                                >
+                                        </iframe>
+                                        </li>
+                                </b-list-group-item>
+                            </b-list-group>
 
-    <script>
-        new Vue({
-            el: '#app',
-        })
-    </script>
+                        <b-list-group class="animation-container">
+                            <b-list-group-item class="animated-card">
+                                <img src="{% static 'icons/plotly.png' %}" alt="Projects Icon" class="projects-icon">
+                                    <b-list-group-item class="animated-card">
+                                        <li>Portfolio Website</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>Frameworks and Technologies: Django, Python, Pandas, Numpy, Plotly, spaCy, HTML, CSS, JavaScript</li>
+                                    <b-list-group-item class="animated-card">
+                                        <li>A dynamic portfolio website developed using Django, showcasing projects, skills, and professional achievements in a visually appealing and interactive format.</li>                                    <b-list-group-item class="animated-card">
+                                        Brings a unique blend of creative problem-solving and technical expertise, drawing from diverse experiences in performance arts and design engineering.</li>
+                                </b-list-group-item>
+                        </b-list-group>
 
-</body>
+                    </b-col>
+                </b-row>
+            </section>
+        </b-container>
 {% endblock %}
