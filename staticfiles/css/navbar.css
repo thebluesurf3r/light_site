@@ -1,0 +1,118 @@
+/* Import 'Behavior' font and use Google Fonts for 'Open Sans' */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Behavior';
+    src: url('../fonts/Behavior.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Define CSS Variables */
+:root {
+    --phi: 1.618034;
+    --font-main: 'Open Sans', sans-serif;
+    --font-heading: 'Behavior', sans-serif;
+    --font-heading-size: 12px;
+    --margin-size: 9px;
+    --font-content-size: 9px;
+    --font-heading-small: calc(var(--font-heading-size) * 0.618034);
+    --margin-large: calc(var(--margin-size) * var(--phi));
+    --font-size-medium: var(--font-heading-small);
+    --primary-color: #ffffff;
+    --background-color: #000000;
+    --nav-link-hover-color: #00f; /* Blue for hover effect */
+    --nav-link-bg-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for hover */
+}
+
+/* General Navbar Styling */
+.navbar {
+    background-color: var(--background-color);
+    height: calc(var(--font-heading-small) * var(--phi) * 6);
+}
+
+.navbar .navbar-brand img {
+    max-width: calc(var(--font-heading-small) * var(--phi) * 12);
+    max-height: calc(var(--font-heading-small) * var(--phi) * 12);
+}
+
+/* Navbar Links Styling */
+.nav-item-animate {
+    font-family: var(--font-heading);
+    font-size: calc(var(--font-heading-size) * var(--phi)); /* Adjusted to use correct variable */
+    font-weight: 700;
+    color: #ccc; /* Gray color for text */
+    position: relative;
+    transition: color 0.15s ease;
+    margin: 0;
+    padding: calc(var(--margin-size) * var(--phi));
+    display: inline-block;
+    overflow: hidden;
+}
+
+.nav-item-animate:hover {
+    color: var(--primary-color); /* White text color on hover */
+    transform: translateY(0px); /* Lift effect on hover */
+    overflow: visible;
+
+}
+
+/* Keyframe Animation for Hover Effect */
+@keyframes slide-glide {
+    0% {
+        background-color: rgb(2, 2, 129);
+        transform: translateX(-25%);
+    }
+    100% {
+        background-color: rgb(1, 1, 85);
+        transform: translateX(0%);
+    }
+}
+
+.nav-item-animate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--nav-link-bg-color);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+.nav-item-animate:hover::before {
+    transform: translateX(0);
+    animation: slide-glide 0.5s forwards;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ccc; /* Light gray for toggle icon */
+}
+
+/* Collapsible Navbar Styling */
+.collapse {
+    background-color: var(--background-color);
+}
+
+
+.b-nav-item-dropdown:hover > .dropdown-menu {
+    display: absolute;
+    margin-top: 0;
+}

@@ -1,23 +1,17 @@
 from pathlib import Path
 import os
-import environ
-from dotenv import load_dotenv
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-xguehtl7au*xcj90soct!1=&jd+8-8_ma^s24x=liq)2@yb&hl'
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-xguehtl7au*xcj90soct!1=&jd+8-8_ma^s24x=liq)2@yb&hl')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '[::1]',
-]
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,[::1]').split(',')
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/profile/'
@@ -78,20 +72,15 @@ SESSION_COOKIE_AGE = 1209600  # 2 weeks, in seconds
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 SESSION_SAVE_EVERY_REQUEST = False
 
-# Initialize environment variables
-env = environ.Env()
-environ.Env.read_env()  # Reads the .env file
-
-load_dotenv()
-
+# Database configuration
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DB_NAME', default='default_db_name'),
-        'USER': env('DB_USER', default='default_db_user'),
-        'PASSWORD': env('DB_PASSWORD', default='default_db_password'),
-        'HOST': env('DB_HOST', default='localhost'),
-        'PORT': env('DB_PORT', default='5432'),
+        'NAME': os.getenv('DB_NAME', 'default_db_name'),
+        'USER': os.getenv('DB_USER', 'default_db_user'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'default_db_password'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
 
@@ -130,10 +119,11 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
+# Directory where Django will collect all static files for production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# Ensure this includes your project's static files directory
+# Additional locations of static files for development
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]

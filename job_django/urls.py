@@ -19,7 +19,7 @@ urlpatterns = [
     path('projects/', ProjectView.as_view(), name='projects'),
     path('contact/', ContactView.as_view(), name='contact'),
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
     urlpatterns = [

@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Behavior';
+    src: url('../fonts/Behavior.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Define CSS Variables */
+:root {
+    /* Constants */
+    --phi: 1.618034;
+    --pi: 3.14159265;
+    --e: 2.718282;
+    --sqrt-two: 1.414214;
+    --tau: 6.283185;
+
+    /* Font and Size Variables */
+    --font-main: 'Open Sans', sans-serif;
+    --font-heading: 'Behavior', sans-serif;
+    --font-heading-size: 12px;
+    --margin-size: 9px;
+    --font-content-size: 9px;
+
+    --font-heading-large: calc(var(--font-heading-size) * var(--phi));
+    --font-heading-huge: calc(var(--font-heading-size) * 2.618034);
+    --font-heading-xl: calc(var(--font-heading-size) * 3.236068);
+    --font-heading-md: calc(var(--font-heading-size) * var(--phi) * var(--phi));
+    --font-heading-small: calc(var(--font-heading-size) * 0.618034);
+
+    --margin-large: calc(var(--margin-size) * var(--phi));
+    --margin-medium: var(--margin-size);
+    --margin-small: calc(var(--margin-size) / var(--tau));
+
+    --font-size-large: calc(var(--font-content-size) * var(--phi));
+    --font-size-medium: var(--font-content-size);
+    --font-size-small: calc(var(--font-content-size) * 0.618034);
+
+    --primary-color: #ffffff;
+    --background-color: #000000;
+    --fade-color: rgba(0, 0, 0, 0.521);
+    --background-container-color: #272727; 
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--background-container-color);
+    padding: var(--margin-small);
+    color: var(--primary-color);
+    font-family: var(--font-main);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small); /* Changed to match variable */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 50%;
+    height: 50%;
+}
+
+.footer-text {
+    font-size: var(--font-size-medium);
+    /*text-align: center;*/
+    flex: 1;
+}
+
+.footer-social {
+    display: flex;
+    gap: var(--margin-medium);
+}
+
+.footer-social .social-link {
+    color: var(--primary-color); /* Applied primary color variable */
+}
