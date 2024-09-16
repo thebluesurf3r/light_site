@@ -10,48 +10,52 @@ import plotly.express as px
 import plotly.graph_objects as go
 import plotly.io as pio
 from django.conf import settings
-
+from light_site.log import log_imported_libraries
+from logging.handlers import RotatingFileHandler
+from queue import Queue
+from threading import Thread
 #=====================================================================================================================================================#
+
 
 # Global DataFrame to store log entries
 log_df = pd.DataFrame(columns=['Timestamp', 'Level', 'Message'])
 
 class DataFrameLoggingHandler(logging.Handler):
-    def __init__(self, dataframe):
+    def __init__(self, dataframe, queue):
         super().__init__()
         self.dataframe = dataframe
+        self.queue = queue
 
     def emit(self, record):
-        timestamp = pd.Timestamp.now()
-        level = record.levelname
-        # Use the actual log message from the record
-        message = record.getMessage()  
-        self.dataframe.loc[len(self.dataframe)] = [timestamp, level, message]
+        try:
+            timestamp = pd.Timestamp.now()
+            level = record.levelname
+            message = record.getMessage()
+            self.queue.put((timestamp, level, message))
+        except Exception:
+            self.handleError(record)
 
-#=====================================================================================================================================================#
+def process_log_queue(dataframe, queue):
+    while True:
+        while not queue.empty():
+            timestamp, level, message = queue.get()
+            dataframe.loc[len(dataframe)] = [timestamp, level, message]
 
 def setup_logging(log_file='app_log.log', log_level=logging.INFO):
     """
     Set up logging configuration to log to a file and console, and return a logger.
-    
-    Parameters:
-    log_file (str): The name of the log file where logs will be saved.
-    log_level (int): The log level (INFO, DEBUG, etc.).
-    
-    Returns:
-    logger (logging.Logger): Configured logger.
     """
-    # Remove any existing handlers attached to the root logger
     logging.root.handlers.clear()
 
     logger = logging.getLogger()
     logger.setLevel(log_level)
 
     # Define handlers
+    log_queue = Queue()
     handlers = [
-        logging.FileHandler(log_file),
+        RotatingFileHandler(log_file, maxBytes=10485760, backupCount=5),  # 10 MB per file
         logging.StreamHandler(),
-        DataFrameLoggingHandler(log_df)
+        DataFrameLoggingHandler(log_df, log_queue)  # Provide both arguments here
     ]
     
     for handler in handlers:
@@ -59,25 +63,14 @@ def setup_logging(log_file='app_log.log', log_level=logging.INFO):
         handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
         logger.addHandler(handler)
 
+    # Start a thread to process the log queue
+    log_thread = Thread(target=process_log_queue, args=(log_df, log_queue), daemon=True)
+    log_thread.start()
+
     return logger
 
-#=====================================================================================================================================================#
-
-def log_imported_libraries(libraries, logger):
-    """
-    Log the imported libraries with their aliases.
-    
-    Parameters:
-    libraries (dict): Dictionary of library names and their aliases.
-    logger (logging.Logger): Logger to log the messages.
-    """
-    for lib, alias in libraries.items():
-        logger.info(f"Importing '{lib}' as '{alias}'" if alias else f"Importing '{lib}' without alias")
-
-# Set up the logger
+# Usage
 logger = setup_logging(log_file='app_log.log', log_level=logging.INFO)
-
-# Libraries and their aliases (None for libraries without an alias)
 libraries_with_aliases = {
     'os': None,
     'time': None,
@@ -90,26 +83,17 @@ libraries_with_aliases = {
     'plotly.graph_objects': 'go',
     'plotly.io': 'pio'
 }
-
-# Log the library imports
 logger.info("Initializing logging configuration")
-log_imported_libraries(libraries_with_aliases, logger)
 
-print(log_df['Message'])
+base_dir = os.path.join(os.path.expanduser('~'), 'git', 'light_site')
 
-#=====================================================================================================================================================#
-
-# Parameters provided from outside the function
-file_name = 'project_structure.pkl'
-file_path = os.path.join(settings.BASE_DIR, 'media', 'project_structure', 'data', file_name)
-date_col = None  # Set to a date column name if you have one
-drop_na = True   # Whether to drop rows with NaN values
-date_col = None
-encoding = 'utf-8'  # Encoding format
+file_path = os.path.join(base_dir, 'data', 'project_structure.pkl')
+drop_na = False
+encoding = False
 
 #=====================================================================================================================================================#
 
-def load_data(file_path, drop_na=True, encoding='utf-8'):
+def load_data(file_path, drop_na=False, encoding='utf-8'):
     """
     Load a dataset from a pickle file, with optional date parsing and NaN removal.
 

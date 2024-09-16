@@ -3,13 +3,26 @@ import plotly.io as pio
 import pandas as pd
 import logging
 import os
+from queue import Queue
+import plotly.graph_objects as go
 
-from utils import load_data, DataFrameLoggingHandler, log_df
 
-# Set up logging
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-logger.addHandler(DataFrameLoggingHandler(log_df))
+from utils import (load_data,
+                    DataFrameLoggingHandler,
+                    categorize_by_extension,
+                    check_file_location,
+                    validate_app_structure,
+                    generate_custom_hover,
+                    create_color_map,
+                    export_dataframe,
+                    display_dataframe,
+                    display_log_df,
+                    log_df, df)
+# Create the logger with handlers
+logger = logging.getLogger()
+log_queue = Queue()
+handler = DataFrameLoggingHandler(log_df, log_queue)
+logger.addHandler(handler)
 
 #============#
 
@@ -90,34 +103,37 @@ def prepare_and_save_plot(fig, width=600, height=600, template='plotly_dark',
 #============#
 
 def create_level_count_graph(level_counts, x, y, color, title, template):
-    """
-    Create a bar graph showing file count by directory level.
+    try:
+        logging.info(f"Creating level count graph with parameters: x={x}, y={y}, color={color}, title={title}, template={template}")
 
-    Parameters:
-    level_counts (pd.DataFrame): DataFrame with 'level' and 'count' columns.
-    x (str): Column name for x-axis.
-    y (str): Column name for y-axis.
-    color (str): Column name for color coding.
-    title (str): Title of the graph.
-    template (str): Plotly template for styling.
+        fig = go.Figure()
+        fig.add_trace(go.Bar(
+            x=level_counts[x],
+            y=level_counts[y],
+            marker_color=level_counts[color],
+        ))
 
-    Returns:
-    go.Figure: Plotly figure object.
-    """
-    fig = px.bar(level_counts, x=x, y=y, color=color, title=title, template=template)
-    return fig
+        fig.update_layout(
+            title=title,
+            template=template,
+            xaxis_title=x,
+            yaxis_title=y
+        )
 
-logging.info("Creating level count graph with the following parameters:")
-logging.info(f"X-axis: {x}, Y-axis: {y}, Color: {color}, Title: {title}, Template: {template}")
+        return fig
+
+    except Exception as e:
+        logging.error(f"Error preparing and saving plot: {e}")
+        raise
 
 
 #============#
 
 try:
     level_count_fig = create_level_count_graph(
-        level_counts=df.groupby('level').size().reset_index(name='count'),
+        level_counts=df.groupby('level').size().reset_index(name='level_counts'),
         x='level',
-        y='count',
+        y='entity_name',
         color='level',
         title='File Count by Directory Level',
         template='plotly_dark'
@@ -148,57 +164,30 @@ except Exception as e:
 
 #============#
 
-def plot_file_extension_distribution(df, min_count_threshold=6, x='file_extension', y='count', color='file_extension', 
-                                      title='Distribution of File Extensions', labels=None):
-    """
-    Generate a bar chart for the distribution of file extensions.
+def plot_file_extension_distribution(df, min_count_threshold, x, y, color, title, labels):
+    try:
+        filtered_df = df[df[y] >= min_count_threshold]
+        logging.info(f"Creating file extension distribution graph with parameters: x={x}, y={y}, color={color}, title={title}, labels={labels}")
 
-    Parameters:
-    df (pd.DataFrame): The DataFrame containing the data.
-    min_count_threshold (int): Minimum count threshold to categorize extensions.
-    x (str): Column name for the x-axis.
-    y (str): Column name for the y-axis.
-    color (str): Column name for color coding.
-    title (str): Title of the plot.
-    labels (dict): Custom labels for the axes.
+        fig = go.Figure()
+        fig.add_trace(go.Bar(
+            x=filtered_df[x],
+            y=filtered_df[y],
+            marker_color=filtered_df[color],
+        ))
 
-    Returns:
-    plotly.graph_objects.Figure: The generated bar chart figure.
-    """
-    logging.info(f"Generating file extension distribution plot.")
+        fig.update_layout(
+            title=title,
+            xaxis_title=labels.get(x, x),
+            yaxis_title=labels.get(y, y),
+            template='plotly_dark'
+        )
 
-    # Replace 'No Extension' with 'folders'
-    df['file_extension'] = df['file_extension'].replace('No Extension', 'folders')
-    
-    # Count occurrences of each file_extension
-    extension_counts = df['file_extension'].value_counts().reset_index()
-    extension_counts.columns = [x, y]
+        return fig
 
-    # Separate the counts into two groups: those with counts > min_count_threshold and those with counts <= min_count_threshold
-    other_counts = extension_counts[extension_counts[y] <= min_count_threshold]
-    main_counts = extension_counts[extension_counts[y] > min_count_threshold]
-
-    # Aggregate lesser counts into 'Other'
-    if not other_counts.empty:
-        other_sum = other_counts[y].sum()
-        other_row = pd.DataFrame({x: ['Other'], y: [other_sum]})
-        final_counts = pd.concat([main_counts, other_row], ignore_index=True)
-    else:
-        final_counts = main_counts
-
-    # Sort the final DataFrame by 'count' in descending order
-    final_counts = final_counts.sort_values(by=y, ascending=False)
-
-    # Create a bar chart
-    extension_count_fig = px.bar(
-        final_counts,
-        x=x,
-        y=y,
-        color=color,
-        title=title,
-        labels=labels or {x: 'File Extension', y: 'Count'}
-    )
-    return extension_count_fig
+    except Exception as e:
+        logging.error(f"Error preparing and saving plot: {e}")
+        raise
 
 #============# 
 
@@ -207,10 +196,10 @@ extension_count_fig = plot_file_extension_distribution(
     df,
     min_count_threshold=6,
     x='file_extension',
-    y='count',
-    color='file_extension',
+    y='level',
+    color='level',
     title='Distribution of File Extensions',
-    labels={'file_extension': 'File Extension', 'count': 'Count'}
+    labels={'file_extension': 'File Extension', 'level': 'level'}
 )
 
 #============#

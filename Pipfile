@@ -35,6 +35,9 @@ celery = "*"
 jupyter = "*"
 lab = "*"
 django-celery-results = "*"
+setuptools = "*"
+setuptools-scm = "*"
+dash = "*"
 
 [dev-packages]
 ipykernel = "*"

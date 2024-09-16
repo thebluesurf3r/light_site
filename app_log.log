@@ -28142,3 +28142,2602 @@ Name: count, dtype: int64
 2024-09-16 03:51:31,885 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
 2024-09-16 03:51:31,903 - INFO - Removed 0 rows with NaN values.
 2024-09-16 03:51:31,910 - INFO - Index reset.
+2024-09-16 16:37:23,605 - INFO - Initializing logging configuration
+2024-09-16 16:37:23,609 - INFO - Importing 'os' without alias
+2024-09-16 16:37:23,616 - INFO - Importing 'time' without alias
+2024-09-16 16:37:23,621 - INFO - Importing 're' as 're'
+2024-09-16 16:37:23,626 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 16:37:23,632 - INFO - Importing 'numpy' as 'np'
+2024-09-16 16:37:23,637 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 16:37:23,644 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 16:37:23,653 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 16:37:23,659 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 16:37:23,666 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 16:37:23,700 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 16:37:23,718 - INFO - Removed 0 rows with NaN values.
+2024-09-16 16:37:23,725 - INFO - Index reset.
+2024-09-16 16:37:23,730 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 16:37:23,738 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 16:37:23,752 - INFO - Categorizing data by file extension.
+2024-09-16 16:37:23,779 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 16:37:23,785 - INFO - Validating app structure: <function validate_app_structure at 0x76c88cf2d750>
+2024-09-16 16:37:24,024 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 16:37:24,027 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 16:37:24,030 - INFO - Validating file location for all rows.
+2024-09-16 16:37:24,038 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 16:37:24,528 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 16:37:24,560 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 16:37:24,799 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 16:37:24,804 - INFO - Previewing the dataset: <function display_dataframe at 0x76c88cf2d480>
+2024-09-16 16:37:24,814 - INFO - Log size: (27, 3)
+2024-09-16 16:37:24,819 - INFO - Viewing the log: <function display_dataframe at 0x76c88cf2d480>
+2024-09-16 17:09:42,073 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 17:09:49,147 - INFO - Initializing logging configuration
+2024-09-16 17:09:49,149 - INFO - Importing 'os' without alias
+2024-09-16 17:09:49,153 - INFO - Importing 'time' without alias
+2024-09-16 17:09:49,156 - INFO - Importing 're' as 're'
+2024-09-16 17:09:49,160 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:09:49,163 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:09:49,166 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:09:49,170 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:09:49,173 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:09:49,177 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:09:49,180 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:09:49,201 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:09:49,212 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:09:49,217 - INFO - Index reset.
+2024-09-16 17:09:49,221 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:09:49,225 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:09:49,236 - INFO - Categorizing data by file extension.
+2024-09-16 17:09:49,251 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:09:49,255 - INFO - Validating app structure: <function validate_app_structure at 0x7a8c2b225750>
+2024-09-16 17:09:49,440 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:09:49,443 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:09:49,446 - INFO - Validating file location for all rows.
+2024-09-16 17:09:49,450 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:09:49,809 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:09:49,829 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:09:49,990 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:09:49,993 - INFO - Previewing the dataset: <function display_dataframe at 0x7a8c2b225480>
+2024-09-16 17:09:49,999 - INFO - Log size: (27, 3)
+2024-09-16 17:09:50,002 - INFO - Viewing the log: <function display_dataframe at 0x7a8c2b225480>
+2024-09-16 17:21:21,832 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 17:21:27,468 - INFO - Initializing logging configuration
+2024-09-16 17:21:27,471 - INFO - Importing 'os' without alias
+2024-09-16 17:21:27,475 - INFO - Importing 'time' without alias
+2024-09-16 17:21:27,478 - INFO - Importing 're' as 're'
+2024-09-16 17:21:27,482 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:21:27,485 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:21:27,489 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:21:27,493 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:21:27,496 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:21:27,500 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:21:27,503 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:21:27,521 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:21:27,531 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:21:27,535 - INFO - Index reset.
+2024-09-16 17:21:27,539 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:21:27,543 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:21:27,553 - INFO - Categorizing data by file extension.
+2024-09-16 17:21:27,569 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:21:27,573 - INFO - Validating app structure: <function validate_app_structure at 0x7f6650c335b0>
+2024-09-16 17:21:27,794 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:21:27,797 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:21:27,800 - INFO - Validating file location for all rows.
+2024-09-16 17:21:27,805 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:21:28,264 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:21:28,290 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:21:28,518 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:21:28,523 - INFO - Previewing the dataset: <function display_dataframe at 0x7f6650c332e0>
+2024-09-16 17:21:28,531 - INFO - Log size: (27, 3)
+2024-09-16 17:21:28,536 - INFO - Viewing the log: <function display_dataframe at 0x7f6650c332e0>
+2024-09-16 17:22:07,233 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 17:22:12,816 - INFO - Initializing logging configuration
+2024-09-16 17:22:12,822 - INFO - Importing 'os' without alias
+2024-09-16 17:22:12,828 - INFO - Importing 'time' without alias
+2024-09-16 17:22:12,832 - INFO - Importing 're' as 're'
+2024-09-16 17:22:12,837 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:22:12,841 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:22:12,845 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:22:12,849 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:22:12,854 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:22:12,858 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:22:12,862 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:22:12,879 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:22:12,890 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:22:12,895 - INFO - Index reset.
+2024-09-16 17:22:12,900 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:22:12,904 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:22:12,914 - INFO - Categorizing data by file extension.
+2024-09-16 17:22:12,930 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:22:12,934 - INFO - Validating app structure: <function validate_app_structure at 0x729464dffd00>
+2024-09-16 17:22:13,153 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:22:13,156 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:22:13,159 - INFO - Validating file location for all rows.
+2024-09-16 17:22:13,163 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:22:13,541 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:22:13,560 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:22:13,723 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:22:13,727 - INFO - Previewing the dataset: <function display_dataframe at 0x729464dffa30>
+2024-09-16 17:22:13,733 - INFO - Log size: (27, 3)
+2024-09-16 17:22:13,737 - INFO - Viewing the log: <function display_dataframe at 0x729464dffa30>
+2024-09-16 17:48:57,838 - INFO - Initializing logging configuration
+2024-09-16 17:48:57,840 - INFO - Importing 'os' without alias
+2024-09-16 17:48:57,843 - INFO - Importing 'time' without alias
+2024-09-16 17:48:57,846 - INFO - Importing 're' as 're'
+2024-09-16 17:48:57,849 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:48:57,852 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:48:57,855 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:48:57,859 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:48:57,864 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:48:57,868 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:48:57,871 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:48:57,892 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:48:57,907 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:48:57,914 - INFO - Index reset.
+2024-09-16 17:48:57,919 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:48:57,926 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:48:57,940 - INFO - Categorizing data by file extension.
+2024-09-16 17:48:57,965 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:48:57,970 - INFO - Validating app structure: <function validate_app_structure at 0x7f4da1ee1ea0>
+2024-09-16 17:48:58,269 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:48:58,271 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:48:58,274 - INFO - Validating file location for all rows.
+2024-09-16 17:48:58,278 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:48:58,630 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:48:58,655 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:48:58,812 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:48:58,816 - INFO - Previewing the dataset: <function display_dataframe at 0x7f4da1ee1bd0>
+2024-09-16 17:48:58,821 - INFO - Log size: (27, 3)
+2024-09-16 17:48:58,825 - INFO - Viewing the log: <function display_dataframe at 0x7f4da1ee1bd0>
+2024-09-16 17:49:12,396 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 17:52:45,029 - INFO - Initializing logging configuration
+2024-09-16 17:52:45,031 - INFO - Importing 'os' without alias
+2024-09-16 17:52:45,035 - INFO - Importing 'time' without alias
+2024-09-16 17:52:45,039 - INFO - Importing 're' as 're'
+2024-09-16 17:52:45,043 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:52:45,047 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:52:45,051 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:52:45,056 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:52:45,063 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:52:45,068 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:52:45,074 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:52:45,099 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:52:45,114 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:52:45,120 - INFO - Index reset.
+2024-09-16 17:52:45,125 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:52:45,131 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:52:45,144 - INFO - Categorizing data by file extension.
+2024-09-16 17:52:45,166 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:52:45,171 - INFO - Validating app structure: <function validate_app_structure at 0x7833ee2d85e0>
+2024-09-16 17:52:45,379 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:52:45,382 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:52:45,384 - INFO - Validating file location for all rows.
+2024-09-16 17:52:45,389 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:52:45,778 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:52:45,806 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:52:46,009 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:52:46,013 - INFO - Previewing the dataset: <function display_dataframe at 0x7833ee2d8310>
+2024-09-16 17:52:46,021 - INFO - Log size: (27, 3)
+2024-09-16 17:52:46,026 - INFO - Viewing the log: <function display_dataframe at 0x7833ee2d8310>
+2024-09-16 17:53:06,152 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 17:53:13,397 - INFO - Initializing logging configuration
+2024-09-16 17:53:13,402 - INFO - Importing 'os' without alias
+2024-09-16 17:53:13,407 - INFO - Importing 'time' without alias
+2024-09-16 17:53:13,412 - INFO - Importing 're' as 're'
+2024-09-16 17:53:13,417 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:53:13,422 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:53:13,428 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:53:13,435 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:53:13,441 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:53:13,447 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:53:13,454 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:53:13,481 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:53:13,497 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:53:13,503 - INFO - Index reset.
+2024-09-16 17:53:13,510 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:53:13,516 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:53:13,532 - INFO - Categorizing data by file extension.
+2024-09-16 17:53:13,558 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:53:13,565 - INFO - Validating app structure: <function validate_app_structure at 0x73d902acc5e0>
+2024-09-16 17:53:13,844 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:53:13,848 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:53:13,851 - INFO - Validating file location for all rows.
+2024-09-16 17:53:13,858 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:53:14,358 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:53:14,383 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:53:14,577 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:53:14,581 - INFO - Previewing the dataset: <function display_dataframe at 0x73d902acc310>
+2024-09-16 17:53:14,587 - INFO - Log size: (27, 3)
+2024-09-16 17:53:14,592 - INFO - Viewing the log: <function display_dataframe at 0x73d902acc310>
+2024-09-16 17:53:56,045 - INFO - Initializing logging configuration
+2024-09-16 17:53:56,047 - INFO - Importing 'os' without alias
+2024-09-16 17:53:56,050 - INFO - Importing 'time' without alias
+2024-09-16 17:53:56,053 - INFO - Importing 're' as 're'
+2024-09-16 17:53:56,056 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:53:56,058 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:53:56,061 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:53:56,065 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:53:56,069 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:53:56,074 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:53:56,078 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:53:56,101 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:53:56,116 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:53:56,121 - INFO - Index reset.
+2024-09-16 17:53:56,128 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:53:56,134 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:53:56,147 - INFO - Categorizing data by file extension.
+2024-09-16 17:53:56,168 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:53:56,173 - INFO - Validating app structure: <function validate_app_structure at 0x77cb85ad85e0>
+2024-09-16 17:53:56,378 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:53:56,381 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:53:56,383 - INFO - Validating file location for all rows.
+2024-09-16 17:53:56,387 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:53:56,734 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:53:56,760 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:53:56,926 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:53:56,929 - INFO - Previewing the dataset: <function display_dataframe at 0x77cb85ad8310>
+2024-09-16 17:53:56,935 - INFO - Log size: (27, 3)
+2024-09-16 17:53:56,939 - INFO - Viewing the log: <function display_dataframe at 0x77cb85ad8310>
+2024-09-16 17:54:55,498 - INFO - /home/tron/git/light_site/light_site/__init__.py changed, reloading.
+2024-09-16 17:55:05,433 - INFO - Initializing logging configuration
+2024-09-16 17:55:05,435 - INFO - Importing 'os' without alias
+2024-09-16 17:55:05,438 - INFO - Importing 'time' without alias
+2024-09-16 17:55:05,441 - INFO - Importing 're' as 're'
+2024-09-16 17:55:05,444 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:55:05,446 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:55:05,449 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:55:05,453 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:55:05,457 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:55:05,461 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:55:05,467 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:55:05,493 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:55:05,508 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:55:05,513 - INFO - Index reset.
+2024-09-16 17:55:05,518 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:55:05,525 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:55:05,538 - INFO - Categorizing data by file extension.
+2024-09-16 17:55:05,561 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:55:05,566 - INFO - Validating app structure: <function validate_app_structure at 0x78cb2057d1b0>
+2024-09-16 17:55:05,765 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:55:05,767 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:55:05,770 - INFO - Validating file location for all rows.
+2024-09-16 17:55:05,775 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:55:06,112 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:55:06,137 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:55:06,308 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:55:06,311 - INFO - Previewing the dataset: <function display_dataframe at 0x78cb2057cee0>
+2024-09-16 17:55:06,316 - INFO - Log size: (27, 3)
+2024-09-16 17:55:06,319 - INFO - Viewing the log: <function display_dataframe at 0x78cb2057cee0>
+2024-09-16 17:55:22,669 - INFO - /home/tron/git/light_site/light_site/__init__.py changed, reloading.
+2024-09-16 17:55:28,646 - INFO - Initializing logging configuration
+2024-09-16 17:55:28,650 - INFO - Importing 'os' without alias
+2024-09-16 17:55:28,655 - INFO - Importing 'time' without alias
+2024-09-16 17:55:28,659 - INFO - Importing 're' as 're'
+2024-09-16 17:55:28,663 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:55:28,667 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:55:28,671 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:55:28,676 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:55:28,680 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:55:28,686 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:55:28,692 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:55:28,720 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:55:28,737 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:55:28,744 - INFO - Index reset.
+2024-09-16 17:55:28,751 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:55:28,759 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:55:28,775 - INFO - Categorizing data by file extension.
+2024-09-16 17:55:28,801 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:55:28,808 - INFO - Validating app structure: <function validate_app_structure at 0x78a72de651b0>
+2024-09-16 17:55:29,069 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:55:29,073 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:55:29,077 - INFO - Validating file location for all rows.
+2024-09-16 17:55:29,086 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:55:29,624 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:55:29,660 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:55:29,893 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:55:29,898 - INFO - Previewing the dataset: <function display_dataframe at 0x78a72de64ee0>
+2024-09-16 17:55:29,905 - INFO - Log size: (27, 3)
+2024-09-16 17:55:29,913 - INFO - Viewing the log: <function display_dataframe at 0x78a72de64ee0>
+2024-09-16 17:55:53,439 - INFO - /home/tron/git/light_site/light_site/celery.py changed, reloading.
+2024-09-16 17:55:59,053 - INFO - Initializing logging configuration
+2024-09-16 17:55:59,055 - INFO - Importing 'os' without alias
+2024-09-16 17:55:59,058 - INFO - Importing 'time' without alias
+2024-09-16 17:55:59,061 - INFO - Importing 're' as 're'
+2024-09-16 17:55:59,063 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:55:59,066 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:55:59,070 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:55:59,073 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:55:59,078 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:55:59,083 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:55:59,088 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:55:59,113 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:55:59,129 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:55:59,135 - INFO - Index reset.
+2024-09-16 17:55:59,140 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:55:59,146 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:55:59,159 - INFO - Categorizing data by file extension.
+2024-09-16 17:55:59,181 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:55:59,186 - INFO - Validating app structure: <function validate_app_structure at 0x7b2c9cf71240>
+2024-09-16 17:55:59,388 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:55:59,391 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:55:59,394 - INFO - Validating file location for all rows.
+2024-09-16 17:55:59,399 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:55:59,769 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:55:59,794 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:55:59,967 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:55:59,970 - INFO - Previewing the dataset: <function display_dataframe at 0x7b2c9cf70f70>
+2024-09-16 17:55:59,976 - INFO - Log size: (27, 3)
+2024-09-16 17:55:59,979 - INFO - Viewing the log: <function display_dataframe at 0x7b2c9cf70f70>
+2024-09-16 17:56:44,441 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 17:56:50,960 - INFO - Initializing logging configuration
+2024-09-16 17:56:50,965 - INFO - Importing 'os' without alias
+2024-09-16 17:56:50,970 - INFO - Importing 'time' without alias
+2024-09-16 17:56:50,975 - INFO - Importing 're' as 're'
+2024-09-16 17:56:50,980 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:56:50,987 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:56:50,993 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:56:51,001 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:56:51,007 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:56:51,015 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:56:51,021 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:56:51,049 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:56:51,064 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:56:51,070 - INFO - Index reset.
+2024-09-16 17:56:51,077 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:56:51,084 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:56:51,100 - INFO - Categorizing data by file extension.
+2024-09-16 17:56:51,136 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:56:51,144 - INFO - Validating app structure: <function validate_app_structure at 0x77e50ac6d240>
+2024-09-16 17:56:51,390 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:56:51,393 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:56:51,396 - INFO - Validating file location for all rows.
+2024-09-16 17:56:51,401 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:56:51,840 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:56:51,871 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:56:52,097 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:56:52,103 - INFO - Previewing the dataset: <function display_dataframe at 0x77e50ac6cf70>
+2024-09-16 17:56:52,111 - INFO - Log size: (27, 3)
+2024-09-16 17:56:52,117 - INFO - Viewing the log: <function display_dataframe at 0x77e50ac6cf70>
+2024-09-16 17:56:54,469 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 17:57:03,185 - INFO - Initializing logging configuration
+2024-09-16 17:57:03,187 - INFO - Importing 'os' without alias
+2024-09-16 17:57:03,190 - INFO - Importing 'time' without alias
+2024-09-16 17:57:03,193 - INFO - Importing 're' as 're'
+2024-09-16 17:57:03,195 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:57:03,199 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:57:03,202 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:57:03,206 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:57:03,210 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:57:03,215 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:57:03,221 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:57:03,244 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:57:03,259 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:57:03,264 - INFO - Index reset.
+2024-09-16 17:57:03,270 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:57:03,276 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:57:03,290 - INFO - Categorizing data by file extension.
+2024-09-16 17:57:03,311 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:57:03,316 - INFO - Validating app structure: <function validate_app_structure at 0x763a16b8d240>
+2024-09-16 17:57:03,515 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:57:03,517 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:57:03,520 - INFO - Validating file location for all rows.
+2024-09-16 17:57:03,525 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:57:03,870 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:57:03,893 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:57:04,140 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:57:04,147 - INFO - Previewing the dataset: <function display_dataframe at 0x763a16b8cf70>
+2024-09-16 17:57:04,160 - INFO - Log size: (27, 3)
+2024-09-16 17:57:04,166 - INFO - Viewing the log: <function display_dataframe at 0x763a16b8cf70>
+2024-09-16 17:58:58,968 - INFO - /home/tron/git/light_site/light_site/forms.py changed, reloading.
+2024-09-16 17:59:05,228 - INFO - Initializing logging configuration
+2024-09-16 17:59:05,232 - INFO - Importing 'os' without alias
+2024-09-16 17:59:05,238 - INFO - Importing 'time' without alias
+2024-09-16 17:59:05,244 - INFO - Importing 're' as 're'
+2024-09-16 17:59:05,250 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 17:59:05,255 - INFO - Importing 'numpy' as 'np'
+2024-09-16 17:59:05,262 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 17:59:05,268 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 17:59:05,274 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 17:59:05,279 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 17:59:05,284 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 17:59:05,306 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 17:59:05,319 - INFO - Removed 0 rows with NaN values.
+2024-09-16 17:59:05,324 - INFO - Index reset.
+2024-09-16 17:59:05,328 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 17:59:05,332 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 17:59:05,341 - INFO - Categorizing data by file extension.
+2024-09-16 17:59:05,357 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 17:59:05,361 - INFO - Validating app structure: <function validate_app_structure at 0x7379e76753f0>
+2024-09-16 17:59:05,539 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 17:59:05,543 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 17:59:05,546 - INFO - Validating file location for all rows.
+2024-09-16 17:59:05,552 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 17:59:05,965 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 17:59:05,995 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 17:59:06,201 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 17:59:06,205 - INFO - Previewing the dataset: <function display_dataframe at 0x7379e7675120>
+2024-09-16 17:59:06,211 - INFO - Log size: (27, 3)
+2024-09-16 17:59:06,215 - INFO - Viewing the log: <function display_dataframe at 0x7379e7675120>
+2024-09-16 18:01:37,291 - INFO - /home/tron/git/light_site/light_site/urls.py changed, reloading.
+2024-09-16 18:01:43,004 - INFO - Initializing logging configuration
+2024-09-16 18:01:43,007 - INFO - Importing 'os' without alias
+2024-09-16 18:01:43,009 - INFO - Importing 'time' without alias
+2024-09-16 18:01:43,012 - INFO - Importing 're' as 're'
+2024-09-16 18:01:43,015 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:01:43,018 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:01:43,022 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:01:43,028 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:01:43,032 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:01:43,038 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:01:43,044 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:01:43,068 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:01:43,084 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:01:43,089 - INFO - Index reset.
+2024-09-16 18:01:43,094 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:01:43,099 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:01:43,112 - INFO - Categorizing data by file extension.
+2024-09-16 18:01:43,132 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:01:43,138 - INFO - Validating app structure: <function validate_app_structure at 0x7d4c67f853f0>
+2024-09-16 18:01:43,334 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:01:43,337 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:01:43,340 - INFO - Validating file location for all rows.
+2024-09-16 18:01:43,346 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:01:43,706 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:01:43,733 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:01:43,904 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:01:43,907 - INFO - Previewing the dataset: <function display_dataframe at 0x7d4c67f85120>
+2024-09-16 18:01:43,913 - INFO - Log size: (27, 3)
+2024-09-16 18:01:43,916 - INFO - Viewing the log: <function display_dataframe at 0x7d4c67f85120>
+2024-09-16 18:08:16,309 - INFO - Initializing logging configuration
+2024-09-16 18:08:16,311 - INFO - Importing 'os' without alias
+2024-09-16 18:08:16,314 - INFO - Importing 'time' without alias
+2024-09-16 18:08:16,317 - INFO - Importing 're' as 're'
+2024-09-16 18:08:16,320 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:08:16,324 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:08:16,327 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:08:16,330 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:08:16,334 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:08:16,339 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:08:16,344 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:08:16,366 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:08:16,382 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:08:16,387 - INFO - Index reset.
+2024-09-16 18:08:16,393 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:08:16,399 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:08:16,412 - INFO - Categorizing data by file extension.
+2024-09-16 18:08:16,433 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:08:16,437 - INFO - Validating app structure: <function validate_app_structure at 0x7e5b132696c0>
+2024-09-16 18:08:16,651 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:08:16,654 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:08:16,656 - INFO - Validating file location for all rows.
+2024-09-16 18:08:16,660 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:08:16,994 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:08:17,020 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:08:17,198 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:08:17,202 - INFO - Previewing the dataset: <function display_dataframe at 0x7e5b132693f0>
+2024-09-16 18:08:17,207 - INFO - Log size: (27, 3)
+2024-09-16 18:08:17,210 - INFO - Viewing the log: <function display_dataframe at 0x7e5b132693f0>
+2024-09-16 18:08:51,374 - INFO - HomeView accessed by AnonymousUser at /
+2024-09-16 18:08:51,381 - INFO - HomeView response status: 200
+2024-09-16 18:08:51,417 - INFO - "GET / HTTP/1.1" 200 10504
+2024-09-16 18:08:51,635 - INFO - "GET /static/svg/waiting_animation.html HTTP/1.1" 200 1808
+2024-09-16 18:08:54,760 - WARNING - "GET /static/images/ HTTP/1.1" 404 1949
+2024-09-16 18:09:24,204 - INFO - AboutView accessed by AnonymousUser at /about/
+2024-09-16 18:09:24,211 - INFO - AboutView response status: 200
+2024-09-16 18:09:24,244 - INFO - "GET /about/ HTTP/1.1" 200 22604
+2024-09-16 18:09:24,657 - WARNING - "GET /static/icons/ai_icon.png HTTP/1.1" 404 1978
+2024-09-16 18:09:24,670 - WARNING - "GET /static/icons/bigquery.png HTTP/1.1" 404 1981
+2024-09-16 18:09:24,688 - WARNING - "GET /static/icons/mysql.png HTTP/1.1" 404 1972
+2024-09-16 18:09:24,689 - WARNING - "GET /static/icons/postgresql.png HTTP/1.1" 404 1987
+2024-09-16 18:09:24,715 - WARNING - "GET /static/icons/google.png HTTP/1.1" 404 1975
+2024-09-16 18:09:24,791 - WARNING - "GET /static/icons/plotly.png HTTP/1.1" 404 1975
+2024-09-16 18:09:24,902 - WARNING - "GET /static/icons/seaborn.png HTTP/1.1" 404 1978
+2024-09-16 18:09:24,915 - WARNING - "GET /static/icons/matplotlib.png HTTP/1.1" 404 1987
+2024-09-16 18:09:24,943 - WARNING - "GET /static/icons/numpy.png HTTP/1.1" 404 1972
+2024-09-16 18:09:25,013 - WARNING - "GET /static/icons/pandas.svg HTTP/1.1" 404 1975
+2024-09-16 18:09:25,041 - WARNING - "GET /static/icons/explosion_ai.png HTTP/1.1" 404 1993
+2024-09-16 18:09:25,065 - WARNING - "GET /static/icons/django.png HTTP/1.1" 404 1975
+2024-09-16 18:09:25,104 - WARNING - "GET /static/icons/streamlit.svg HTTP/1.1" 404 1984
+2024-09-16 18:09:25,195 - WARNING - "GET /static/icons/vue.png HTTP/1.1" 404 1966
+2024-09-16 18:09:25,212 - WARNING - "GET /static/icons/c%231.png HTTP/1.1" 404 1968
+2024-09-16 18:09:25,238 - WARNING - "GET /static/icons/bootstrap.png HTTP/1.1" 404 1984
+2024-09-16 18:09:25,259 - WARNING - "GET /static/icons/python.png HTTP/1.1" 404 1975
+2024-09-16 18:09:25,295 - WARNING - "GET /static/icons/html.png HTTP/1.1" 404 1969
+2024-09-16 18:09:25,319 - WARNING - "GET /static/icons/css.png HTTP/1.1" 404 1966
+2024-09-16 18:09:25,335 - WARNING - "GET /static/icons/javascript.png HTTP/1.1" 404 1987
+2024-09-16 18:09:25,416 - WARNING - "GET /static/icons/cts.png HTTP/1.1" 404 1966
+2024-09-16 18:09:25,447 - WARNING - "GET /static/icons/wns.png HTTP/1.1" 404 1966
+2024-09-16 18:09:25,455 - WARNING - "GET /static/icons/aakarist.png HTTP/1.1" 404 1981
+2024-09-16 18:10:00,853 - WARNING - "GET /static/html_plots/sunburst_plot_main.html HTTP/1.1" 404 2029
+2024-09-16 18:10:00,881 - WARNING - "GET /static/html_plots/parallel_categories_plot_skills.html HTTP/1.1" 404 2068
+2024-09-16 18:10:00,881 - WARNING - "GET /static/html_plots/timeline_work_exp.html HTTP/1.1" 404 2026
+2024-09-16 18:10:00,946 - WARNING - "GET /static/icons/postgresql.png HTTP/1.1" 404 1987
+2024-09-16 18:10:00,957 - WARNING - "GET /static/icons/google.png HTTP/1.1" 404 1975
+2024-09-16 18:10:00,979 - WARNING - "GET /static/icons/plotly.png HTTP/1.1" 404 1975
+2024-09-16 18:10:00,987 - WARNING - "GET /static/icons/seaborn.png HTTP/1.1" 404 1978
+2024-09-16 18:10:01,081 - WARNING - "GET /static/icons/pandas.svg HTTP/1.1" 404 1975
+2024-09-16 18:10:01,091 - WARNING - "GET /static/icons/numpy.png HTTP/1.1" 404 1972
+2024-09-16 18:10:01,092 - WARNING - "GET /static/icons/matplotlib.png HTTP/1.1" 404 1987
+2024-09-16 18:10:01,151 - WARNING - "GET /static/icons/explosion_ai.png HTTP/1.1" 404 1993
+2024-09-16 18:10:01,176 - WARNING - "GET /static/icons/streamlit.svg HTTP/1.1" 404 1984
+2024-09-16 18:10:01,207 - WARNING - "GET /static/icons/ai_icon.png HTTP/1.1" 404 1978
+2024-09-16 18:10:01,208 - WARNING - "GET /static/icons/django.png HTTP/1.1" 404 1975
+2024-09-16 18:10:01,245 - WARNING - "GET /static/icons/bootstrap.png HTTP/1.1" 404 1984
+2024-09-16 18:10:01,269 - WARNING - "GET /static/icons/vue.png HTTP/1.1" 404 1966
+2024-09-16 18:10:01,386 - WARNING - "GET /static/icons/c%231.png HTTP/1.1" 404 1968
+2024-09-16 18:10:01,387 - WARNING - "GET /static/icons/mysql.png HTTP/1.1" 404 1972
+2024-09-16 18:10:01,388 - WARNING - "GET /static/icons/html.png HTTP/1.1" 404 1969
+2024-09-16 18:10:01,391 - WARNING - "GET /static/icons/python.png HTTP/1.1" 404 1975
+2024-09-16 18:10:01,391 - WARNING - "GET /static/icons/javascript.png HTTP/1.1" 404 1987
+2024-09-16 18:10:01,411 - WARNING - "GET /static/icons/css.png HTTP/1.1" 404 1966
+2024-09-16 18:10:01,477 - WARNING - "GET /static/icons/wns.png HTTP/1.1" 404 1966
+2024-09-16 18:10:01,483 - WARNING - "GET /static/icons/bigquery.png HTTP/1.1" 404 1981
+2024-09-16 18:10:01,495 - WARNING - "GET /static/icons/cts.png HTTP/1.1" 404 1966
+2024-09-16 18:10:01,495 - WARNING - "GET /static/icons/aakarist.png HTTP/1.1" 404 1981
+2024-09-16 18:10:01,567 - INFO - /home/tron/git/light_site/light_site/views.py changed, reloading.
+2024-09-16 18:10:06,531 - INFO - Initializing logging configuration
+2024-09-16 18:10:06,533 - INFO - Importing 'os' without alias
+2024-09-16 18:10:06,536 - INFO - Importing 'time' without alias
+2024-09-16 18:10:06,539 - INFO - Importing 're' as 're'
+2024-09-16 18:10:06,541 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:10:06,544 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:10:06,547 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:10:06,549 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:10:06,552 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:10:06,555 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:10:06,558 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:10:06,572 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:10:06,581 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:10:06,585 - INFO - Index reset.
+2024-09-16 18:10:06,588 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:10:06,592 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:10:06,600 - INFO - Categorizing data by file extension.
+2024-09-16 18:10:06,615 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:10:06,619 - INFO - Validating app structure: <function validate_app_structure at 0x776b9e6916c0>
+2024-09-16 18:10:06,783 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:10:06,786 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:10:06,788 - INFO - Validating file location for all rows.
+2024-09-16 18:10:06,792 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:10:07,148 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:10:07,171 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:10:07,322 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:10:07,326 - INFO - Previewing the dataset: <function display_dataframe at 0x776b9e6913f0>
+2024-09-16 18:10:07,331 - INFO - Log size: (27, 3)
+2024-09-16 18:10:07,334 - INFO - Viewing the log: <function display_dataframe at 0x776b9e6913f0>
+2024-09-16 18:10:27,933 - INFO - /home/tron/git/light_site/light_site/views.py changed, reloading.
+2024-09-16 18:10:34,433 - INFO - Initializing logging configuration
+2024-09-16 18:10:34,436 - INFO - Importing 'os' without alias
+2024-09-16 18:10:34,440 - INFO - Importing 'time' without alias
+2024-09-16 18:10:34,445 - INFO - Importing 're' as 're'
+2024-09-16 18:10:34,450 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:10:34,454 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:10:34,459 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:10:34,464 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:10:34,469 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:10:34,473 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:10:34,479 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:10:34,503 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:10:34,517 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:10:34,523 - INFO - Index reset.
+2024-09-16 18:10:34,529 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:10:34,536 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:10:34,549 - INFO - Categorizing data by file extension.
+2024-09-16 18:10:34,571 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:10:34,576 - INFO - Validating app structure: <function validate_app_structure at 0x7080ea2756c0>
+2024-09-16 18:10:34,874 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:10:34,878 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:10:34,882 - INFO - Validating file location for all rows.
+2024-09-16 18:10:34,891 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:10:35,301 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:10:35,321 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:10:35,482 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:10:35,485 - INFO - Previewing the dataset: <function display_dataframe at 0x7080ea2753f0>
+2024-09-16 18:10:35,492 - INFO - Log size: (27, 3)
+2024-09-16 18:10:35,497 - INFO - Viewing the log: <function display_dataframe at 0x7080ea2753f0>
+2024-09-16 18:10:52,811 - INFO - /home/tron/git/light_site/light_site/wsgi.py changed, reloading.
+2024-09-16 18:11:03,394 - INFO - Initializing logging configuration
+2024-09-16 18:11:03,396 - INFO - Importing 'os' without alias
+2024-09-16 18:11:03,399 - INFO - Importing 'time' without alias
+2024-09-16 18:11:03,401 - INFO - Importing 're' as 're'
+2024-09-16 18:11:03,404 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:11:03,407 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:11:03,410 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:11:03,414 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:11:03,419 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:11:03,425 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:11:03,431 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:11:03,455 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:11:03,472 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:11:03,477 - INFO - Index reset.
+2024-09-16 18:11:03,483 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:11:03,489 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:11:03,502 - INFO - Categorizing data by file extension.
+2024-09-16 18:11:03,522 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:11:03,530 - INFO - Validating app structure: <function validate_app_structure at 0x71979e66d6c0>
+2024-09-16 18:11:03,749 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:11:03,752 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:11:03,754 - INFO - Validating file location for all rows.
+2024-09-16 18:11:03,758 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:11:04,148 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:11:04,177 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:11:04,363 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:11:04,367 - INFO - Previewing the dataset: <function display_dataframe at 0x71979e66d3f0>
+2024-09-16 18:11:04,373 - INFO - Log size: (27, 3)
+2024-09-16 18:11:04,377 - INFO - Viewing the log: <function display_dataframe at 0x71979e66d3f0>
+2024-09-16 18:11:04,673 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:11:04,684 - INFO - WSGI application has been initialized.
+2024-09-16 18:12:09,530 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 18:12:15,734 - INFO - Initializing logging configuration
+2024-09-16 18:12:15,737 - INFO - Importing 'os' without alias
+2024-09-16 18:12:15,741 - INFO - Importing 'time' without alias
+2024-09-16 18:12:15,745 - INFO - Importing 're' as 're'
+2024-09-16 18:12:15,748 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:12:15,752 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:12:15,757 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:12:15,761 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:12:15,766 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:12:15,771 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:12:15,775 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:12:15,796 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:12:15,810 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:12:15,816 - INFO - Index reset.
+2024-09-16 18:12:15,820 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:12:15,825 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:12:15,836 - INFO - Categorizing data by file extension.
+2024-09-16 18:12:15,854 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:12:15,859 - INFO - Validating app structure: <function validate_app_structure at 0x707e65c656c0>
+2024-09-16 18:12:16,170 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:12:16,174 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:12:16,180 - INFO - Validating file location for all rows.
+2024-09-16 18:12:16,187 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:12:16,753 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:12:16,784 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:12:17,016 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:12:17,021 - INFO - Previewing the dataset: <function display_dataframe at 0x707e65c653f0>
+2024-09-16 18:12:17,030 - INFO - Log size: (27, 3)
+2024-09-16 18:12:17,034 - INFO - Viewing the log: <function display_dataframe at 0x707e65c653f0>
+2024-09-16 18:12:17,449 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:12:17,465 - INFO - WSGI application has been initialized.
+2024-09-16 18:12:20,782 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 18:12:29,299 - INFO - Initializing logging configuration
+2024-09-16 18:12:29,301 - INFO - Importing 'os' without alias
+2024-09-16 18:12:29,304 - INFO - Importing 'time' without alias
+2024-09-16 18:12:29,307 - INFO - Importing 're' as 're'
+2024-09-16 18:12:29,311 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:12:29,314 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:12:29,318 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:12:29,323 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:12:29,328 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:12:29,334 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:12:29,340 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:12:29,367 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:12:29,386 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:12:29,391 - INFO - Index reset.
+2024-09-16 18:12:29,399 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:12:29,406 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:12:29,421 - INFO - Categorizing data by file extension.
+2024-09-16 18:12:29,441 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:12:29,447 - INFO - Validating app structure: <function validate_app_structure at 0x7b2989a656c0>
+2024-09-16 18:12:29,648 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:12:29,651 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:12:29,653 - INFO - Validating file location for all rows.
+2024-09-16 18:12:29,657 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:12:30,013 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:12:30,036 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:12:30,211 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:12:30,214 - INFO - Previewing the dataset: <function display_dataframe at 0x7b2989a653f0>
+2024-09-16 18:12:30,219 - INFO - Log size: (27, 3)
+2024-09-16 18:12:30,223 - INFO - Viewing the log: <function display_dataframe at 0x7b2989a653f0>
+2024-09-16 18:12:31,172 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:12:31,188 - INFO - WSGI application has been initialized.
+2024-09-16 18:14:17,325 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 18:14:23,689 - INFO - Initializing logging configuration
+2024-09-16 18:14:23,692 - INFO - Importing 'os' without alias
+2024-09-16 18:14:23,699 - INFO - Importing 'time' without alias
+2024-09-16 18:14:23,703 - INFO - Importing 're' as 're'
+2024-09-16 18:14:23,708 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:14:23,713 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:14:23,718 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:14:23,723 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:14:23,729 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:14:23,735 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:14:23,739 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:14:23,759 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:14:23,773 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:14:23,779 - INFO - Index reset.
+2024-09-16 18:14:23,785 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:14:23,789 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:14:23,802 - INFO - Categorizing data by file extension.
+2024-09-16 18:14:23,821 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:14:23,826 - INFO - Validating app structure: <function validate_app_structure at 0x7121fc16d6c0>
+2024-09-16 18:14:24,094 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:14:24,098 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:14:24,101 - INFO - Validating file location for all rows.
+2024-09-16 18:14:24,107 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:14:24,479 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:14:24,500 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:14:24,659 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:14:24,663 - INFO - Previewing the dataset: <function display_dataframe at 0x7121fc16d3f0>
+2024-09-16 18:14:24,669 - INFO - Log size: (27, 3)
+2024-09-16 18:14:24,672 - INFO - Viewing the log: <function display_dataframe at 0x7121fc16d3f0>
+2024-09-16 18:14:24,908 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:14:24,918 - INFO - WSGI application has been initialized.
+2024-09-16 18:14:38,018 - INFO - /home/tron/git/light_site/light_site/wsgi.py changed, reloading.
+2024-09-16 18:14:43,831 - INFO - Initializing logging configuration
+2024-09-16 18:14:43,834 - INFO - Importing 'os' without alias
+2024-09-16 18:14:43,838 - INFO - Importing 'time' without alias
+2024-09-16 18:14:43,842 - INFO - Importing 're' as 're'
+2024-09-16 18:14:43,846 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:14:43,850 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:14:43,854 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:14:43,858 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:14:43,863 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:14:43,867 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:14:43,871 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:14:43,888 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:14:43,899 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:14:43,904 - INFO - Index reset.
+2024-09-16 18:14:43,908 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:14:43,915 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:14:43,929 - INFO - Categorizing data by file extension.
+2024-09-16 18:14:43,947 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:14:43,952 - INFO - Validating app structure: <function validate_app_structure at 0x7fd5e886d6c0>
+2024-09-16 18:14:44,191 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:14:44,194 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:14:44,197 - INFO - Validating file location for all rows.
+2024-09-16 18:14:44,202 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:14:44,631 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:14:44,654 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:14:44,848 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:14:44,852 - INFO - Previewing the dataset: <function display_dataframe at 0x7fd5e886d3f0>
+2024-09-16 18:14:44,858 - INFO - Log size: (27, 3)
+2024-09-16 18:14:44,862 - INFO - Viewing the log: <function display_dataframe at 0x7fd5e886d3f0>
+2024-09-16 18:14:45,113 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:14:45,124 - INFO - WSGI application has been initialized.
+2024-09-16 18:15:40,966 - INFO - Initializing logging configuration
+2024-09-16 18:15:40,968 - INFO - Importing 'os' without alias
+2024-09-16 18:15:40,971 - INFO - Importing 'time' without alias
+2024-09-16 18:15:40,974 - INFO - Importing 're' as 're'
+2024-09-16 18:15:40,977 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:15:40,980 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:15:40,983 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:15:40,987 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:15:40,993 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:15:40,998 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:15:41,002 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:15:41,023 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:15:41,038 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:15:41,044 - INFO - Index reset.
+2024-09-16 18:15:41,051 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:15:41,057 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:15:41,072 - INFO - Categorizing data by file extension.
+2024-09-16 18:15:41,095 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:15:41,103 - INFO - Validating app structure: <function validate_app_structure at 0x79141b9716c0>
+2024-09-16 18:15:41,337 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:15:41,340 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:15:41,343 - INFO - Validating file location for all rows.
+2024-09-16 18:15:41,348 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:15:41,740 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:15:41,766 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:15:41,952 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:15:41,956 - INFO - Previewing the dataset: <function display_dataframe at 0x79141b9713f0>
+2024-09-16 18:15:41,962 - INFO - Log size: (27, 3)
+2024-09-16 18:15:41,965 - INFO - Viewing the log: <function display_dataframe at 0x79141b9713f0>
+2024-09-16 18:15:42,239 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:15:42,249 - INFO - WSGI application has been initialized.
+2024-09-16 18:33:01,373 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 18:33:07,327 - INFO - Initializing logging configuration
+2024-09-16 18:33:07,330 - INFO - Importing 'os' without alias
+2024-09-16 18:33:07,337 - INFO - Importing 'time' without alias
+2024-09-16 18:33:07,341 - INFO - Importing 're' as 're'
+2024-09-16 18:33:07,346 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:33:07,350 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:33:07,354 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:33:07,360 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:33:07,365 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:33:07,370 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:33:07,375 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:33:07,398 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:33:07,416 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:33:07,424 - INFO - Index reset.
+2024-09-16 18:33:07,429 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:33:07,436 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:33:07,450 - INFO - Categorizing data by file extension.
+2024-09-16 18:33:07,476 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:33:07,484 - INFO - Validating app structure: <function validate_app_structure at 0x779879d796c0>
+2024-09-16 18:33:07,765 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:33:07,770 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:33:07,775 - INFO - Validating file location for all rows.
+2024-09-16 18:33:07,783 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:33:08,183 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:33:08,210 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:33:08,411 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:33:08,415 - INFO - Previewing the dataset: <function display_dataframe at 0x779879d793f0>
+2024-09-16 18:33:08,422 - INFO - Log size: (27, 3)
+2024-09-16 18:33:08,426 - INFO - Viewing the log: <function display_dataframe at 0x779879d793f0>
+2024-09-16 18:33:08,821 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:33:46,726 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 18:33:54,384 - INFO - Initializing logging configuration
+2024-09-16 18:33:54,388 - INFO - Importing 'os' without alias
+2024-09-16 18:33:54,394 - INFO - Importing 'time' without alias
+2024-09-16 18:33:54,399 - INFO - Importing 're' as 're'
+2024-09-16 18:33:54,406 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:33:54,413 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:33:54,420 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:33:54,428 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:33:54,435 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:33:54,441 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:33:54,450 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:33:54,483 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:33:54,507 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:33:54,517 - INFO - Index reset.
+2024-09-16 18:33:54,525 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:33:54,533 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:33:54,555 - INFO - Categorizing data by file extension.
+2024-09-16 18:33:54,590 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:33:54,598 - INFO - Validating app structure: <function validate_app_structure at 0x7234754756c0>
+2024-09-16 18:33:54,877 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:33:54,882 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:33:54,887 - INFO - Validating file location for all rows.
+2024-09-16 18:33:54,896 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:33:55,429 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:33:55,468 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:33:55,706 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:33:55,711 - INFO - Previewing the dataset: <function display_dataframe at 0x7234754753f0>
+2024-09-16 18:33:55,721 - INFO - Log size: (27, 3)
+2024-09-16 18:33:55,728 - INFO - Viewing the log: <function display_dataframe at 0x7234754753f0>
+2024-09-16 18:33:56,274 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:33:56,291 - INFO - WSGI application has been initialized.
+2024-09-16 18:35:59,962 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 18:36:06,189 - INFO - Initializing logging configuration
+2024-09-16 18:36:06,191 - INFO - Importing 'os' without alias
+2024-09-16 18:36:06,194 - INFO - Importing 'time' without alias
+2024-09-16 18:36:06,197 - INFO - Importing 're' as 're'
+2024-09-16 18:36:06,200 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:36:06,203 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:36:06,208 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:36:06,213 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:36:06,219 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:36:06,225 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:36:06,230 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:36:06,253 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:36:06,275 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:36:06,284 - INFO - Index reset.
+2024-09-16 18:36:06,292 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:36:06,300 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:36:06,320 - INFO - Categorizing data by file extension.
+2024-09-16 18:36:06,351 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:36:06,359 - INFO - Validating app structure: <function validate_app_structure at 0x7990969656c0>
+2024-09-16 18:36:06,635 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:36:06,638 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:36:06,641 - INFO - Validating file location for all rows.
+2024-09-16 18:36:06,646 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:36:07,042 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:36:07,072 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:36:07,260 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:36:07,264 - INFO - Previewing the dataset: <function display_dataframe at 0x7990969653f0>
+2024-09-16 18:36:07,270 - INFO - Log size: (27, 3)
+2024-09-16 18:36:07,274 - INFO - Viewing the log: <function display_dataframe at 0x7990969653f0>
+2024-09-16 18:36:07,599 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:39:34,084 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 18:39:39,343 - INFO - Initializing logging configuration
+2024-09-16 18:39:39,345 - INFO - Importing 'os' without alias
+2024-09-16 18:39:39,348 - INFO - Importing 'time' without alias
+2024-09-16 18:39:39,351 - INFO - Importing 're' as 're'
+2024-09-16 18:39:39,354 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:39:39,357 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:39:39,363 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:39:39,367 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:39:39,373 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:39:39,378 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:39:39,382 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:39:39,405 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:39:39,419 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:39:39,425 - INFO - Index reset.
+2024-09-16 18:39:39,432 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:39:39,436 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:39:39,449 - INFO - Categorizing data by file extension.
+2024-09-16 18:39:39,468 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:39:39,473 - INFO - Validating app structure: <function validate_app_structure at 0x79eef095d7e0>
+2024-09-16 18:39:39,661 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:39:39,663 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:39:39,666 - INFO - Validating file location for all rows.
+2024-09-16 18:39:39,670 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:39:40,012 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:39:40,035 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:39:40,226 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:39:40,230 - INFO - Previewing the dataset: <function display_dataframe at 0x79eef095d510>
+2024-09-16 18:39:40,235 - INFO - Log size: (27, 3)
+2024-09-16 18:39:40,239 - INFO - Viewing the log: <function display_dataframe at 0x79eef095d510>
+2024-09-16 18:39:40,585 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:39:40,594 - INFO - WSGI application has been initialized.
+2024-09-16 18:40:51,354 - INFO - /home/tron/git/light_site/light_site/settings.py changed, reloading.
+2024-09-16 18:40:57,582 - INFO - Initializing logging configuration
+2024-09-16 18:40:57,585 - INFO - Importing 'os' without alias
+2024-09-16 18:40:57,589 - INFO - Importing 'time' without alias
+2024-09-16 18:40:57,592 - INFO - Importing 're' as 're'
+2024-09-16 18:40:57,595 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:40:57,598 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:40:57,602 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:40:57,605 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:40:57,609 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:40:57,613 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:40:57,616 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:40:57,631 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:40:57,640 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:40:57,644 - INFO - Index reset.
+2024-09-16 18:40:57,648 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:40:57,651 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:40:57,659 - INFO - Categorizing data by file extension.
+2024-09-16 18:40:57,673 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:40:57,676 - INFO - Validating app structure: <function validate_app_structure at 0x71c669a597e0>
+2024-09-16 18:40:57,868 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:40:57,871 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:40:57,875 - INFO - Validating file location for all rows.
+2024-09-16 18:40:57,881 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:40:58,261 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:40:58,285 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:40:58,442 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:40:58,446 - INFO - Previewing the dataset: <function display_dataframe at 0x71c669a59510>
+2024-09-16 18:40:58,453 - INFO - Log size: (27, 3)
+2024-09-16 18:40:58,457 - INFO - Viewing the log: <function display_dataframe at 0x71c669a59510>
+2024-09-16 18:40:58,772 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:40:58,788 - INFO - WSGI application has been initialized.
+2024-09-16 18:41:57,202 - INFO - Initializing logging configuration
+2024-09-16 18:41:57,204 - INFO - Importing 'os' without alias
+2024-09-16 18:41:57,207 - INFO - Importing 'time' without alias
+2024-09-16 18:41:57,210 - INFO - Importing 're' as 're'
+2024-09-16 18:41:57,213 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:41:57,215 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:41:57,218 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:41:57,222 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:41:57,227 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:41:57,232 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:41:57,237 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:41:57,259 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:41:57,272 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:41:57,277 - INFO - Index reset.
+2024-09-16 18:41:57,282 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:41:57,287 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:41:57,300 - INFO - Categorizing data by file extension.
+2024-09-16 18:41:57,321 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:41:57,327 - INFO - Validating app structure: <function validate_app_structure at 0x7e05680697e0>
+2024-09-16 18:41:57,564 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:41:57,567 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:41:57,570 - INFO - Validating file location for all rows.
+2024-09-16 18:41:57,574 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:41:57,958 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:41:57,981 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:41:58,178 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:41:58,182 - INFO - Previewing the dataset: <function display_dataframe at 0x7e0568069510>
+2024-09-16 18:41:58,189 - INFO - Log size: (27, 3)
+2024-09-16 18:41:58,193 - INFO - Viewing the log: <function display_dataframe at 0x7e0568069510>
+2024-09-16 18:41:58,528 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:41:58,538 - INFO - WSGI application has been initialized.
+2024-09-16 18:44:55,127 - INFO - /home/tron/git/light_site/project_structure/urls.py changed, reloading.
+2024-09-16 18:45:00,235 - INFO - Initializing logging configuration
+2024-09-16 18:45:00,237 - INFO - Importing 'os' without alias
+2024-09-16 18:45:00,241 - INFO - Importing 'time' without alias
+2024-09-16 18:45:00,243 - INFO - Importing 're' as 're'
+2024-09-16 18:45:00,247 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:45:00,250 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:45:00,254 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:45:00,260 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:45:00,264 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:45:00,270 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:45:00,275 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:45:00,296 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:45:00,312 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:45:00,318 - INFO - Index reset.
+2024-09-16 18:45:00,322 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:45:00,327 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:45:00,340 - INFO - Categorizing data by file extension.
+2024-09-16 18:45:00,361 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:45:00,369 - INFO - Validating app structure: <function validate_app_structure at 0x733a40c5d870>
+2024-09-16 18:45:00,565 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:45:00,568 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:45:00,570 - INFO - Validating file location for all rows.
+2024-09-16 18:45:00,576 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:45:00,913 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:45:00,938 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:45:01,100 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:45:01,103 - INFO - Previewing the dataset: <function display_dataframe at 0x733a40c5d5a0>
+2024-09-16 18:45:01,108 - INFO - Log size: (27, 3)
+2024-09-16 18:45:01,111 - INFO - Viewing the log: <function display_dataframe at 0x733a40c5d5a0>
+2024-09-16 18:45:01,116 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 18:45:01,557 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:45:01,567 - INFO - WSGI application has been initialized.
+2024-09-16 18:45:36,248 - INFO - /home/tron/git/light_site/project_structure/urls.py changed, reloading.
+2024-09-16 18:45:43,630 - INFO - Initializing logging configuration
+2024-09-16 18:45:43,633 - INFO - Importing 'os' without alias
+2024-09-16 18:45:43,636 - INFO - Importing 'time' without alias
+2024-09-16 18:45:43,639 - INFO - Importing 're' as 're'
+2024-09-16 18:45:43,643 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:45:43,647 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:45:43,650 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:45:43,654 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:45:43,657 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:45:43,660 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:45:43,664 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:45:43,678 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:45:43,689 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:45:43,693 - INFO - Index reset.
+2024-09-16 18:45:43,698 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:45:43,702 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:45:43,714 - INFO - Categorizing data by file extension.
+2024-09-16 18:45:43,733 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:45:43,738 - INFO - Validating app structure: <function validate_app_structure at 0x737e36c65870>
+2024-09-16 18:45:43,957 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:45:43,961 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:45:43,964 - INFO - Validating file location for all rows.
+2024-09-16 18:45:43,969 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:45:44,382 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:45:44,409 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:45:44,613 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:45:44,617 - INFO - Previewing the dataset: <function display_dataframe at 0x737e36c655a0>
+2024-09-16 18:45:44,624 - INFO - Log size: (27, 3)
+2024-09-16 18:45:44,627 - INFO - Viewing the log: <function display_dataframe at 0x737e36c655a0>
+2024-09-16 18:45:44,631 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 18:45:44,933 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:45:44,946 - INFO - WSGI application has been initialized.
+2024-09-16 18:46:58,727 - INFO - /home/tron/git/light_site/project_structure/views.py changed, reloading.
+2024-09-16 18:47:03,925 - INFO - Initializing logging configuration
+2024-09-16 18:47:03,927 - INFO - Importing 'os' without alias
+2024-09-16 18:47:03,931 - INFO - Importing 'time' without alias
+2024-09-16 18:47:03,934 - INFO - Importing 're' as 're'
+2024-09-16 18:47:03,937 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:47:03,942 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:47:03,947 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:47:03,952 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:47:03,957 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:47:03,961 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:47:03,965 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:47:03,983 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:47:03,994 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:47:03,999 - INFO - Index reset.
+2024-09-16 18:47:04,004 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:47:04,009 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:47:04,019 - INFO - Categorizing data by file extension.
+2024-09-16 18:47:04,035 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:47:04,040 - INFO - Validating app structure: <function validate_app_structure at 0x789b15c71900>
+2024-09-16 18:47:04,243 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:47:04,246 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:47:04,249 - INFO - Validating file location for all rows.
+2024-09-16 18:47:04,255 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:47:04,641 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:47:04,662 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:47:04,846 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:47:04,850 - INFO - Previewing the dataset: <function display_dataframe at 0x789b15c71630>
+2024-09-16 18:47:04,856 - INFO - Log size: (27, 3)
+2024-09-16 18:47:04,860 - INFO - Viewing the log: <function display_dataframe at 0x789b15c71630>
+2024-09-16 18:47:04,864 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 18:47:05,224 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:47:05,274 - INFO - WSGI application has been initialized.
+2024-09-16 18:47:34,130 - INFO - /home/tron/git/light_site/project_structure/views.py changed, reloading.
+2024-09-16 18:47:40,158 - INFO - Initializing logging configuration
+2024-09-16 18:47:40,161 - INFO - Importing 'os' without alias
+2024-09-16 18:47:40,164 - INFO - Importing 'time' without alias
+2024-09-16 18:47:40,168 - INFO - Importing 're' as 're'
+2024-09-16 18:47:40,171 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:47:40,175 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:47:40,179 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:47:40,182 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:47:40,186 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:47:40,191 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:47:40,195 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:47:40,212 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:47:40,223 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:47:40,228 - INFO - Index reset.
+2024-09-16 18:47:40,234 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:47:40,239 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:47:40,252 - INFO - Categorizing data by file extension.
+2024-09-16 18:47:40,272 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:47:40,277 - INFO - Validating app structure: <function validate_app_structure at 0x7b4abd665900>
+2024-09-16 18:47:40,512 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:47:40,515 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:47:40,519 - INFO - Validating file location for all rows.
+2024-09-16 18:47:40,526 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:47:40,894 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:47:40,913 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:47:41,065 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:47:41,068 - INFO - Previewing the dataset: <function display_dataframe at 0x7b4abd665630>
+2024-09-16 18:47:41,074 - INFO - Log size: (27, 3)
+2024-09-16 18:47:41,078 - INFO - Viewing the log: <function display_dataframe at 0x7b4abd665630>
+2024-09-16 18:47:41,084 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 18:47:41,401 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:47:41,411 - INFO - WSGI application has been initialized.
+2024-09-16 18:51:33,231 - INFO - Request received: GET /project_structure/tree
+2024-09-16 18:51:33,565 - INFO - Rendering index page
+2024-09-16 18:51:33,648 - INFO - Response status: 200
+2024-09-16 18:51:33,673 - INFO - "GET /project_structure/tree HTTP/1.1" 200 469
+2024-09-16 18:51:33,804 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 18:53:32,195 - INFO - /home/tron/git/light_site/project_structure/views.py changed, reloading.
+2024-09-16 18:53:38,026 - INFO - Initializing logging configuration
+2024-09-16 18:53:38,029 - INFO - Importing 'os' without alias
+2024-09-16 18:53:38,032 - INFO - Importing 'time' without alias
+2024-09-16 18:53:38,036 - INFO - Importing 're' as 're'
+2024-09-16 18:53:38,040 - INFO - Importing 'pandas' as 'pd'
+2024-09-16 18:53:38,044 - INFO - Importing 'numpy' as 'np'
+2024-09-16 18:53:38,049 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-16 18:53:38,052 - INFO - Importing 'seaborn' as 'sns'
+2024-09-16 18:53:38,056 - INFO - Importing 'plotly.express' as 'px'
+2024-09-16 18:53:38,061 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-16 18:53:38,066 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-16 18:53:38,086 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 18:53:38,100 - INFO - Removed 0 rows with NaN values.
+2024-09-16 18:53:38,107 - INFO - Index reset.
+2024-09-16 18:53:38,115 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 18:53:38,121 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 18:53:38,140 - INFO - Categorizing data by file extension.
+2024-09-16 18:53:38,162 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 18:53:38,167 - INFO - Validating app structure: <function validate_app_structure at 0x76db1a551900>
+2024-09-16 18:53:38,411 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 18:53:38,414 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 18:53:38,417 - INFO - Validating file location for all rows.
+2024-09-16 18:53:38,421 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 18:53:38,781 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 18:53:38,806 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 18:53:39,015 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 18:53:39,020 - INFO - Previewing the dataset: <function display_dataframe at 0x76db1a551630>
+2024-09-16 18:53:39,029 - INFO - Log size: (27, 3)
+2024-09-16 18:53:39,035 - INFO - Viewing the log: <function display_dataframe at 0x76db1a551630>
+2024-09-16 18:53:39,041 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 18:53:39,444 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 18:53:39,454 - INFO - WSGI application has been initialized.
+2024-09-16 19:11:42,917 - INFO - Initializing logging configuration
+2024-09-16 19:11:43,051 - INFO - Initializing logging configuration
+2024-09-16 19:17:12,346 - INFO - Initializing logging configuration
+2024-09-16 19:17:12,580 - INFO - Initializing logging configuration
+2024-09-16 19:18:09,347 - INFO - Initializing logging configuration
+2024-09-16 19:18:09,524 - INFO - Initializing logging configuration
+2024-09-16 19:19:39,836 - INFO - Initializing logging configuration
+2024-09-16 19:20:12,239 - INFO - Initializing logging configuration
+2024-09-16 19:20:59,947 - INFO - Initializing logging configuration
+2024-09-16 19:21:31,349 - INFO - Initializing logging configuration
+2024-09-16 19:22:37,883 - INFO - Initializing logging configuration
+2024-09-16 19:22:41,491 - INFO - Initializing logging configuration
+2024-09-16 19:26:07,103 - INFO - Initializing logging configuration
+2024-09-16 19:26:09,968 - INFO - Initializing logging configuration
+2024-09-16 19:28:39,063 - INFO - Initializing logging configuration
+2024-09-16 19:28:41,650 - INFO - Initializing logging configuration
+2024-09-16 19:29:59,401 - INFO - Initializing logging configuration
+2024-09-16 19:30:32,577 - INFO - Initializing logging configuration
+2024-09-16 19:32:46,016 - INFO - Initializing logging configuration
+2024-09-16 19:32:46,155 - INFO - Initializing logging configuration
+2024-09-16 19:33:15,823 - INFO - Initializing logging configuration
+2024-09-16 19:33:15,980 - INFO - Initializing logging configuration
+2024-09-16 19:33:44,659 - INFO - Initializing logging configuration
+2024-09-16 19:33:45,250 - INFO - Initializing logging configuration
+2024-09-16 19:34:13,071 - INFO - Initializing logging configuration
+2024-09-16 19:34:13,270 - INFO - Initializing logging configuration
+2024-09-16 19:34:23,327 - INFO - Initializing logging configuration
+2024-09-16 19:34:59,972 - INFO - Initializing logging configuration
+2024-09-16 19:38:04,508 - INFO - Initializing logging configuration
+2024-09-16 19:38:44,606 - INFO - Initializing logging configuration
+2024-09-16 19:41:12,053 - INFO - Initializing logging configuration
+2024-09-16 19:41:49,153 - INFO - Initializing logging configuration
+2024-09-16 19:44:25,517 - INFO - Initializing logging configuration
+2024-09-16 19:45:01,940 - INFO - Initializing logging configuration
+2024-09-16 19:46:08,663 - ERROR - File not found: 
+2024-09-16 19:46:08,745 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:46:37,894 - INFO - Initializing logging configuration
+2024-09-16 19:46:37,901 - ERROR - File not found: 
+2024-09-16 19:46:37,912 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:46:38,195 - INFO - Initializing logging configuration
+2024-09-16 19:46:38,196 - ERROR - File not found: 
+2024-09-16 19:46:38,216 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:47:29,359 - INFO - Initializing logging configuration
+2024-09-16 19:47:29,518 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 19:47:29,528 - INFO - Index reset.
+2024-09-16 19:47:29,545 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 19:47:29,556 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:47:29,622 - INFO - Categorizing data by file extension.
+2024-09-16 19:47:29,656 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 19:47:29,667 - INFO - Validating app structure: <function validate_app_structure at 0x7a35cac91d80>
+2024-09-16 19:47:30,111 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 19:47:30,117 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 19:47:30,123 - INFO - Validating file location for all rows.
+2024-09-16 19:47:30,136 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 19:47:31,101 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 19:47:31,347 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 19:47:31,671 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 19:47:31,676 - INFO - Previewing the dataset: <function display_dataframe at 0x7a35cac91ab0>
+2024-09-16 19:47:31,701 - INFO - Log size: (16, 3)
+2024-09-16 19:47:31,713 - INFO - Viewing the log: <function display_dataframe at 0x7a35cac91ab0>
+2024-09-16 19:47:31,725 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 19:47:35,033 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 19:47:35,066 - INFO - WSGI application has been initialized.
+2024-09-16 19:48:02,815 - INFO - Request received: GET /project_structure/tree
+2024-09-16 19:48:03,573 - INFO - Rendering index page
+2024-09-16 19:48:03,748 - INFO - Response status: 200
+2024-09-16 19:48:03,788 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 19:48:03,919 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 19:48:48,709 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 19:48:55,215 - INFO - Initializing logging configuration
+2024-09-16 19:48:55,403 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 19:48:55,409 - INFO - Index reset.
+2024-09-16 19:48:55,430 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 19:48:55,436 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:48:55,476 - INFO - Categorizing data by file extension.
+2024-09-16 19:48:55,509 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 19:48:55,519 - INFO - Validating app structure: <function validate_app_structure at 0x7f301fc8dd80>
+2024-09-16 19:48:55,943 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 19:48:55,949 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 19:48:55,955 - INFO - Validating file location for all rows.
+2024-09-16 19:48:55,969 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 19:48:56,941 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 19:48:57,178 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 19:48:57,649 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 19:48:57,655 - INFO - Previewing the dataset: <function display_dataframe at 0x7f301fc8dab0>
+2024-09-16 19:48:57,686 - INFO - Log size: (16, 3)
+2024-09-16 19:48:57,687 - INFO - Viewing the log: <function display_dataframe at 0x7f301fc8dab0>
+2024-09-16 19:48:57,688 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 19:49:00,749 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 19:49:00,786 - INFO - WSGI application has been initialized.
+2024-09-16 19:49:13,503 - INFO - Initializing logging configuration
+2024-09-16 19:49:13,693 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 19:49:13,704 - INFO - Index reset.
+2024-09-16 19:49:13,721 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 19:49:13,737 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:49:13,787 - INFO - Categorizing data by file extension.
+2024-09-16 19:49:13,818 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 19:49:13,834 - INFO - Validating app structure: <function validate_app_structure at 0x7cf28a895d80>
+2024-09-16 19:49:14,255 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 19:49:14,256 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 19:49:14,266 - INFO - Validating file location for all rows.
+2024-09-16 19:49:14,296 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 19:49:15,149 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 19:49:15,392 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 19:49:15,805 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 19:49:15,810 - INFO - Previewing the dataset: <function display_dataframe at 0x7cf28a895ab0>
+2024-09-16 19:49:15,830 - INFO - Log size: (16, 3)
+2024-09-16 19:49:15,841 - INFO - Viewing the log: <function display_dataframe at 0x7cf28a895ab0>
+2024-09-16 19:49:15,858 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 19:49:19,521 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 19:49:19,565 - INFO - WSGI application has been initialized.
+2024-09-16 19:50:29,732 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 19:50:35,948 - INFO - Initializing logging configuration
+2024-09-16 19:50:36,020 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 19:50:36,026 - INFO - Index reset.
+2024-09-16 19:50:36,042 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 19:50:36,053 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:50:36,086 - INFO - Categorizing data by file extension.
+2024-09-16 19:50:36,112 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 19:50:36,123 - INFO - Validating app structure: <function validate_app_structure at 0x7425f9795d80>
+2024-09-16 19:50:36,527 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 19:50:36,532 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 19:50:36,549 - INFO - Validating file location for all rows.
+2024-09-16 19:50:36,557 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 19:50:37,415 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 19:50:37,648 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 19:50:38,000 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 19:50:38,011 - INFO - Previewing the dataset: <function display_dataframe at 0x7425f9795ab0>
+2024-09-16 19:50:38,043 - INFO - Log size: (16, 3)
+2024-09-16 19:50:38,048 - INFO - Viewing the log: <function display_dataframe at 0x7425f9795ab0>
+2024-09-16 19:50:38,055 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 19:50:41,218 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 19:50:41,236 - INFO - WSGI application has been initialized.
+2024-09-16 19:53:02,315 - INFO - Initializing logging configuration
+2024-09-16 19:53:02,439 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 19:53:02,450 - INFO - Index reset.
+2024-09-16 19:53:02,456 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 19:53:02,462 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:53:02,520 - INFO - Categorizing data by file extension.
+2024-09-16 19:53:02,547 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 19:53:02,553 - INFO - Validating app structure: <function validate_app_structure at 0x75cf3bc99e10>
+2024-09-16 19:53:02,979 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 19:53:02,979 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 19:53:02,985 - INFO - Validating file location for all rows.
+2024-09-16 19:53:03,001 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 19:53:03,850 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 19:53:04,090 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 19:53:04,483 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 19:53:04,489 - INFO - Previewing the dataset: <function display_dataframe at 0x75cf3bc99b40>
+2024-09-16 19:53:04,518 - INFO - Log size: (16, 3)
+2024-09-16 19:53:04,528 - INFO - Viewing the log: <function display_dataframe at 0x75cf3bc99b40>
+2024-09-16 19:53:04,534 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 19:53:07,436 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 19:53:07,469 - INFO - WSGI application has been initialized.
+2024-09-16 19:55:18,824 - INFO - /home/tron/git/light_site/project_structure/views.py changed, reloading.
+2024-09-16 19:55:24,837 - INFO - Initializing logging configuration
+2024-09-16 19:55:25,022 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 19:55:25,029 - INFO - Index reset.
+2024-09-16 19:55:25,035 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 19:55:25,059 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:55:25,104 - INFO - Categorizing data by file extension.
+2024-09-16 19:55:25,145 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 19:55:25,161 - INFO - Validating app structure: <function validate_app_structure at 0x7a578ed95e10>
+2024-09-16 19:55:25,660 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 19:55:25,666 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 19:55:25,677 - INFO - Validating file location for all rows.
+2024-09-16 19:55:25,692 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 19:55:26,702 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 19:55:26,940 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 19:55:27,374 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 19:55:27,380 - INFO - Previewing the dataset: <function display_dataframe at 0x7a578ed95b40>
+2024-09-16 19:55:27,405 - INFO - Log size: (16, 3)
+2024-09-16 19:55:27,411 - INFO - Viewing the log: <function display_dataframe at 0x7a578ed95b40>
+2024-09-16 19:55:27,423 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 19:55:30,843 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 19:55:30,870 - INFO - WSGI application has been initialized.
+2024-09-16 19:56:00,687 - INFO - Request received: GET /about/
+2024-09-16 19:56:01,148 - INFO - AboutView accessed by AnonymousUser at /about/
+2024-09-16 19:56:01,160 - INFO - AboutView response status: 200
+2024-09-16 19:56:01,336 - INFO - Response status: 200
+2024-09-16 19:56:01,378 - INFO - "GET /about/ HTTP/1.1" 200 22604
+2024-09-16 19:56:01,636 - WARNING - "GET /static/icons/postgresql.png HTTP/1.1" 404 1987
+2024-09-16 19:56:01,661 - WARNING - "GET /static/icons/ai_icon.png HTTP/1.1" 404 1978
+2024-09-16 19:56:01,743 - WARNING - "GET /static/icons/bigquery.png HTTP/1.1" 404 1981
+2024-09-16 19:56:01,749 - WARNING - "GET /static/icons/mysql.png HTTP/1.1" 404 1972
+2024-09-16 19:56:01,750 - WARNING - "GET /static/icons/plotly.png HTTP/1.1" 404 1975
+2024-09-16 19:56:01,798 - WARNING - "GET /static/icons/google.png HTTP/1.1" 404 1975
+2024-09-16 19:56:02,113 - WARNING - "GET /static/icons/streamlit.svg HTTP/1.1" 404 1984
+2024-09-16 19:56:02,140 - WARNING - "GET /static/icons/vue.png HTTP/1.1" 404 1966
+2024-09-16 19:56:02,266 - WARNING - "GET /static/icons/aakarist.png HTTP/1.1" 404 1981
+2024-09-16 19:56:02,283 - WARNING - "GET /static/icons/bootstrap.png HTTP/1.1" 404 1984
+2024-09-16 19:56:02,289 - WARNING - "GET /static/icons/python.png HTTP/1.1" 404 1975
+2024-09-16 19:56:02,290 - WARNING - "GET /static/icons/wns.png HTTP/1.1" 404 1966
+2024-09-16 19:56:02,413 - WARNING - "GET /static/icons/postgresql.png HTTP/1.1" 404 1987
+2024-09-16 19:56:02,414 - WARNING - "GET /static/icons/cts.png HTTP/1.1" 404 1966
+2024-09-16 19:56:02,422 - WARNING - "GET /static/icons/ai_icon.png HTTP/1.1" 404 1978
+2024-09-16 19:56:02,474 - WARNING - "GET /static/icons/mysql.png HTTP/1.1" 404 1972
+2024-09-16 19:56:02,504 - WARNING - "GET /static/icons/bigquery.png HTTP/1.1" 404 1981
+2024-09-16 19:56:02,592 - WARNING - "GET /static/html_plots/timeline_work_exp.html HTTP/1.1" 404 2026
+2024-09-16 19:56:02,647 - WARNING - "GET /static/html_plots/sunburst_plot_main.html HTTP/1.1" 404 2029
+2024-09-16 19:56:02,655 - WARNING - "GET /static/icons/google.png HTTP/1.1" 404 1975
+2024-09-16 19:56:02,742 - WARNING - "GET /static/icons/matplotlib.png HTTP/1.1" 404 1987
+2024-09-16 19:56:02,773 - WARNING - "GET /static/html_plots/parallel_categories_plot_skills.html HTTP/1.1" 404 2068
+2024-09-16 19:56:02,800 - WARNING - "GET /static/icons/plotly.png HTTP/1.1" 404 1975
+2024-09-16 19:56:02,801 - WARNING - "GET /static/icons/seaborn.png HTTP/1.1" 404 1978
+2024-09-16 19:56:02,844 - WARNING - "GET /static/icons/numpy.png HTTP/1.1" 404 1972
+2024-09-16 19:56:02,859 - WARNING - "GET /static/icons/pandas.svg HTTP/1.1" 404 1975
+2024-09-16 19:56:03,033 - WARNING - "GET /static/icons/explosion_ai.png HTTP/1.1" 404 1993
+2024-09-16 19:56:03,193 - WARNING - "GET /static/icons/c%231.png HTTP/1.1" 404 1968
+2024-09-16 19:56:03,213 - WARNING - "GET /static/icons/django.png HTTP/1.1" 404 1975
+2024-09-16 19:56:03,253 - WARNING - "GET /static/icons/html.png HTTP/1.1" 404 1969
+2024-09-16 19:56:03,386 - WARNING - "GET /static/icons/css.png HTTP/1.1" 404 1966
+2024-09-16 19:56:03,428 - WARNING - "GET /static/icons/javascript.png HTTP/1.1" 404 1987
+2024-09-16 19:56:06,657 - INFO - Request received: GET /project_structure/tree
+2024-09-16 19:56:06,916 - INFO - Rendering index page
+2024-09-16 19:56:06,966 - INFO - Response status: 200
+2024-09-16 19:56:06,990 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 19:56:07,161 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 19:56:10,807 - INFO - Request received: GET /project_structure/graphs
+2024-09-16 19:56:10,958 - INFO - Response status: 301
+2024-09-16 19:56:10,996 - INFO - "GET /project_structure/graphs HTTP/1.1" 301 0
+2024-09-16 19:56:11,032 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 19:56:11,180 - INFO - Received request for graphs page
+2024-09-16 19:56:11,202 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:56:11,291 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:56:11,315 - INFO - Removed 0 rows with NaN values.
+2024-09-16 19:56:11,316 - INFO - Index reset.
+2024-09-16 19:56:11,321 - INFO - Data loaded successfully
+2024-09-16 19:56:11,350 - INFO - Rendering graphs page with data
+2024-09-16 19:56:12,431 - ERROR - Internal Server Error: /project_structure/graphs/
+Traceback (most recent call last):
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+KeyError: 'df_html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tron/git/light_site/project_structure/views.py", line 70, in graphs
+    return render(request, 'project_structure/graphs.html')  # Passing DataFrame as dictionary
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/template/base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 10: 'df_html'. Did you forget to register or load this tag?
+2024-09-16 19:56:12,623 - INFO - Response status: 500
+2024-09-16 19:56:12,661 - ERROR - "GET /project_structure/graphs/ HTTP/1.1" 500 151921
+2024-09-16 19:56:38,949 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 19:56:39,186 - INFO - Received request for graphs page
+2024-09-16 19:56:39,232 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:56:39,331 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:56:39,355 - INFO - Removed 0 rows with NaN values.
+2024-09-16 19:56:39,367 - INFO - Index reset.
+2024-09-16 19:56:39,379 - INFO - Data loaded successfully
+2024-09-16 19:56:39,409 - INFO - Rendering graphs page with data
+2024-09-16 19:56:39,463 - INFO - Response status: 200
+2024-09-16 19:56:39,504 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 123
+2024-09-16 19:56:55,643 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 19:56:55,773 - INFO - Received request for graphs page
+2024-09-16 19:56:55,774 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:56:55,865 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:56:55,881 - INFO - Removed 0 rows with NaN values.
+2024-09-16 19:56:55,888 - INFO - Index reset.
+2024-09-16 19:56:55,904 - INFO - Data loaded successfully
+2024-09-16 19:56:55,927 - INFO - Rendering graphs page with data
+2024-09-16 19:56:55,942 - INFO - Response status: 200
+2024-09-16 19:56:55,977 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 123
+2024-09-16 19:58:55,152 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 19:58:55,289 - INFO - Received request for graphs page
+2024-09-16 19:58:55,311 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:58:55,435 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:58:55,473 - INFO - Removed 0 rows with NaN values.
+2024-09-16 19:58:55,480 - INFO - Index reset.
+2024-09-16 19:58:55,486 - INFO - Data loaded successfully
+2024-09-16 19:58:55,511 - INFO - Rendering graphs page with data
+2024-09-16 19:58:55,532 - INFO - Response status: 200
+2024-09-16 19:58:55,580 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 123
+2024-09-16 19:58:56,083 - INFO - /home/tron/git/light_site/project_structure/views.py changed, reloading.
+2024-09-16 19:59:01,140 - INFO - Initializing logging configuration
+2024-09-16 19:59:01,284 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 19:59:01,295 - INFO - Index reset.
+2024-09-16 19:59:01,311 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 19:59:01,317 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 19:59:01,371 - INFO - Categorizing data by file extension.
+2024-09-16 19:59:01,400 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 19:59:01,406 - INFO - Validating app structure: <function validate_app_structure at 0x75f5ac88dd80>
+2024-09-16 19:59:01,760 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 19:59:01,766 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 19:59:01,772 - INFO - Validating file location for all rows.
+2024-09-16 19:59:01,780 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 19:59:02,483 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 19:59:02,717 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 19:59:03,009 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 19:59:03,014 - INFO - Previewing the dataset: <function display_dataframe at 0x75f5ac88dab0>
+2024-09-16 19:59:03,034 - INFO - Log size: (16, 3)
+2024-09-16 19:59:03,045 - INFO - Viewing the log: <function display_dataframe at 0x75f5ac88dab0>
+2024-09-16 19:59:03,062 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 19:59:05,982 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 19:59:06,024 - INFO - WSGI application has been initialized.
+2024-09-16 19:59:06,086 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 19:59:06,527 - INFO - Received request for graphs page
+2024-09-16 19:59:06,533 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:59:06,662 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 19:59:06,689 - INFO - Removed 0 rows with NaN values.
+2024-09-16 19:59:06,706 - INFO - Index reset.
+2024-09-16 19:59:06,714 - INFO - Data loaded successfully
+2024-09-16 19:59:06,736 - INFO - Rendering graphs page
+2024-09-16 19:59:06,887 - INFO - Response status: 200
+2024-09-16 19:59:06,926 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2060
+2024-09-16 19:59:26,062 - INFO - Request received: GET /project_structure/tree
+2024-09-16 19:59:26,253 - INFO - Rendering index page
+2024-09-16 19:59:26,294 - INFO - Response status: 200
+2024-09-16 19:59:26,339 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 19:59:26,531 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:00:33,649 - INFO - Initializing logging configuration
+2024-09-16 20:00:33,746 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:00:33,762 - INFO - Index reset.
+2024-09-16 20:00:33,773 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:00:33,789 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:00:33,849 - INFO - Categorizing data by file extension.
+2024-09-16 20:00:33,883 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:00:33,889 - INFO - Validating app structure: <function validate_app_structure at 0x70ad7c7b9d80>
+2024-09-16 20:00:34,246 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:00:34,252 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:00:34,258 - INFO - Validating file location for all rows.
+2024-09-16 20:00:34,271 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:00:35,026 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:00:35,265 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:00:35,636 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:00:35,642 - INFO - Previewing the dataset: <function display_dataframe at 0x70ad7c7b9ab0>
+2024-09-16 20:00:35,668 - INFO - Log size: (16, 3)
+2024-09-16 20:00:35,674 - INFO - Viewing the log: <function display_dataframe at 0x70ad7c7b9ab0>
+2024-09-16 20:00:35,681 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:00:38,410 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:00:38,434 - INFO - WSGI application has been initialized.
+2024-09-16 20:00:39,440 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:00:44,917 - INFO - Received request for graphs page
+2024-09-16 20:00:44,927 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:00:44,997 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:00:45,026 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:00:45,048 - INFO - Index reset.
+2024-09-16 20:00:45,049 - INFO - Data loaded successfully
+2024-09-16 20:00:45,082 - INFO - Rendering graphs page
+2024-09-16 20:00:45,162 - INFO - Response status: 200
+2024-09-16 20:00:45,227 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2060
+2024-09-16 20:01:04,715 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:01:05,420 - ERROR - Internal Server Error: /project_structure/tree
+Traceback (most recent call last):
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/tron/.local/share/virtualenvs/light_site-krEzwZwG/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tron/git/light_site/project_structure/views.py", line 29, in index
+    logger.info(f"Rendering home page: {__main__}")
+NameError: name '__main__' is not defined. Did you mean: '__name__'?
+2024-09-16 20:01:05,478 - INFO - Response status: 500
+2024-09-16 20:01:05,532 - ERROR - "GET /project_structure/tree HTTP/1.1" 500 70635
+2024-09-16 20:01:43,740 - INFO - Initializing logging configuration
+2024-09-16 20:01:43,935 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:01:43,946 - INFO - Index reset.
+2024-09-16 20:01:43,957 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:01:43,968 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:01:44,024 - INFO - Categorizing data by file extension.
+2024-09-16 20:01:44,056 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:01:44,068 - INFO - Validating app structure: <function validate_app_structure at 0x793c08099d80>
+2024-09-16 20:01:44,556 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:01:44,556 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:01:44,567 - INFO - Validating file location for all rows.
+2024-09-16 20:01:44,592 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:01:45,531 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:01:45,785 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:01:46,165 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:01:46,170 - INFO - Previewing the dataset: <function display_dataframe at 0x793c08099ab0>
+2024-09-16 20:01:46,202 - INFO - Log size: (16, 3)
+2024-09-16 20:01:46,213 - INFO - Viewing the log: <function display_dataframe at 0x793c08099ab0>
+2024-09-16 20:01:46,230 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:01:49,396 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:01:49,423 - INFO - WSGI application has been initialized.
+2024-09-16 20:01:51,063 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:01:51,291 - INFO - Rendering home page of this app
+2024-09-16 20:01:51,408 - INFO - Response status: 200
+2024-09-16 20:01:51,447 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 20:01:51,631 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:02:59,566 - INFO - /home/tron/git/light_site/project_structure/views.py changed, reloading.
+2024-09-16 20:03:05,380 - INFO - Initializing logging configuration
+2024-09-16 20:03:05,565 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:03:05,571 - INFO - Index reset.
+2024-09-16 20:03:05,597 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:03:05,603 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:03:05,646 - INFO - Categorizing data by file extension.
+2024-09-16 20:03:05,667 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:03:05,678 - INFO - Validating app structure: <function validate_app_structure at 0x7de840ba9d80>
+2024-09-16 20:03:06,038 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:03:06,054 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:03:06,070 - INFO - Validating file location for all rows.
+2024-09-16 20:03:06,082 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:03:06,809 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:03:07,046 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:03:07,408 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:03:07,414 - INFO - Previewing the dataset: <function display_dataframe at 0x7de840ba9ab0>
+2024-09-16 20:03:07,437 - INFO - Log size: (15, 3)
+2024-09-16 20:03:07,443 - INFO - Viewing the log: <function display_dataframe at 0x7de840ba9ab0>
+2024-09-16 20:03:07,449 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:03:11,086 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:03:11,122 - INFO - WSGI application has been initialized.
+2024-09-16 20:07:35,619 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:07:35,960 - INFO - Rendering home page of this app
+2024-09-16 20:07:36,096 - INFO - Response status: 200
+2024-09-16 20:07:36,125 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 20:07:36,282 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:07:58,804 - INFO - Initializing logging configuration
+2024-09-16 20:07:58,937 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:07:58,943 - INFO - Index reset.
+2024-09-16 20:07:58,959 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:07:58,976 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:07:59,022 - INFO - Categorizing data by file extension.
+2024-09-16 20:07:59,051 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:07:59,067 - INFO - Validating app structure: <function validate_app_structure at 0x760d3eda1d80>
+2024-09-16 20:07:59,426 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:07:59,437 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:07:59,453 - INFO - Validating file location for all rows.
+2024-09-16 20:07:59,477 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:08:00,150 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:08:00,391 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:08:00,644 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:08:00,650 - INFO - Previewing the dataset: <function display_dataframe at 0x760d3eda1ab0>
+2024-09-16 20:08:00,686 - INFO - Log size: (16, 3)
+2024-09-16 20:08:00,692 - INFO - Viewing the log: <function display_dataframe at 0x760d3eda1ab0>
+2024-09-16 20:08:00,704 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:08:03,738 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:08:03,788 - INFO - WSGI application has been initialized.
+2024-09-16 20:08:04,838 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:08:05,149 - INFO - Rendering home page of this app
+2024-09-16 20:08:05,264 - INFO - Response status: 200
+2024-09-16 20:08:05,297 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 20:08:05,474 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:14:52,699 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:14:57,536 - INFO - Initializing logging configuration
+2024-09-16 20:14:57,694 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:14:57,700 - INFO - Index reset.
+2024-09-16 20:14:57,706 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:14:57,732 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:14:57,782 - INFO - Categorizing data by file extension.
+2024-09-16 20:14:57,815 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:14:57,826 - INFO - Validating app structure: <function validate_app_structure at 0x7ad216b9dd80>
+2024-09-16 20:14:58,245 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:14:58,255 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:14:58,271 - INFO - Validating file location for all rows.
+2024-09-16 20:14:58,301 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:14:59,163 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:14:59,411 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:14:59,843 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:14:59,854 - INFO - Previewing the dataset: <function display_dataframe at 0x7ad216b9dab0>
+2024-09-16 20:14:59,891 - INFO - Log size: (16, 3)
+2024-09-16 20:14:59,902 - INFO - Viewing the log: <function display_dataframe at 0x7ad216b9dab0>
+2024-09-16 20:14:59,909 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:15:02,792 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:15:02,854 - INFO - WSGI application has been initialized.
+2024-09-16 20:15:03,314 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:15:03,925 - INFO - Rendering home page of this app
+2024-09-16 20:15:04,018 - INFO - Response status: 200
+2024-09-16 20:15:04,047 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 20:15:04,207 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:15:58,125 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:15:58,316 - INFO - Rendering home page of this app
+2024-09-16 20:15:58,323 - INFO - Response status: 200
+2024-09-16 20:15:58,352 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 20:15:58,497 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:17:13,442 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:17:18,478 - INFO - Initializing logging configuration
+2024-09-16 20:17:18,658 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:17:18,664 - INFO - Index reset.
+2024-09-16 20:17:18,681 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:17:18,692 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:17:18,727 - INFO - Categorizing data by file extension.
+2024-09-16 20:17:18,761 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:17:18,767 - INFO - Validating app structure: <function validate_app_structure at 0x7d90ad799d80>
+2024-09-16 20:17:19,144 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:17:19,145 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:17:19,145 - INFO - Validating file location for all rows.
+2024-09-16 20:17:19,161 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:17:19,890 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:17:20,132 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:17:20,495 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:17:20,506 - INFO - Previewing the dataset: <function display_dataframe at 0x7d90ad799ab0>
+2024-09-16 20:17:20,542 - INFO - Log size: (16, 3)
+2024-09-16 20:17:20,549 - INFO - Viewing the log: <function display_dataframe at 0x7d90ad799ab0>
+2024-09-16 20:17:20,566 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:17:23,981 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:17:24,023 - INFO - WSGI application has been initialized.
+2024-09-16 20:18:40,758 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:20:25,298 - INFO - Initializing logging configuration
+2024-09-16 20:20:25,441 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:20:25,446 - INFO - Index reset.
+2024-09-16 20:20:25,452 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:20:25,463 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:20:25,508 - INFO - Categorizing data by file extension.
+2024-09-16 20:20:25,539 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:20:25,545 - INFO - Validating app structure: <function validate_app_structure at 0x76d9b21a9d80>
+2024-09-16 20:20:25,944 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:20:25,950 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:20:25,950 - INFO - Validating file location for all rows.
+2024-09-16 20:20:25,967 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:20:26,719 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:20:26,958 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:20:27,303 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:20:27,314 - INFO - Previewing the dataset: <function display_dataframe at 0x76d9b21a9ab0>
+2024-09-16 20:20:27,340 - INFO - Log size: (16, 3)
+2024-09-16 20:20:27,351 - INFO - Viewing the log: <function display_dataframe at 0x76d9b21a9ab0>
+2024-09-16 20:20:27,359 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:20:30,060 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:20:30,095 - INFO - WSGI application has been initialized.
+2024-09-16 20:23:24,332 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:23:29,972 - INFO - Initializing logging configuration
+2024-09-16 20:23:29,994 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:23:29,994 - INFO - Index reset.
+2024-09-16 20:23:29,995 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:23:29,996 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:23:30,004 - INFO - Categorizing data by file extension.
+2024-09-16 20:23:30,018 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:23:30,019 - INFO - Validating app structure: <function validate_app_structure at 0x7df660c85c60>
+2024-09-16 20:23:30,230 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:23:30,231 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:23:30,231 - INFO - Validating file location for all rows.
+2024-09-16 20:23:30,233 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:23:30,977 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:23:31,016 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:23:31,379 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:23:31,380 - INFO - Previewing the dataset: <function display_dataframe at 0x7df660c85750>
+2024-09-16 20:23:31,385 - INFO - Log size: (0, 3)
+2024-09-16 20:23:31,386 - INFO - Viewing the log: <function display_dataframe at 0x7df660c85750>
+2024-09-16 20:23:31,387 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:23:31,849 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:23:31,861 - INFO - WSGI application has been initialized.
+2024-09-16 20:24:04,194 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:24:11,384 - INFO - Initializing logging configuration
+2024-09-16 20:24:11,537 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:24:11,553 - INFO - Index reset.
+2024-09-16 20:24:11,570 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:24:11,572 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:24:11,597 - INFO - Categorizing data by file extension.
+2024-09-16 20:24:11,652 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:24:11,668 - INFO - Validating app structure: <function validate_app_structure at 0x7547f0fadd80>
+2024-09-16 20:24:12,406 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:24:12,422 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:24:12,444 - INFO - Validating file location for all rows.
+2024-09-16 20:24:12,464 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:24:14,188 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:24:14,432 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:24:16,016 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:24:16,027 - INFO - Previewing the dataset: <function display_dataframe at 0x7547f0fadab0>
+2024-09-16 20:24:16,062 - INFO - Log size: (16, 3)
+2024-09-16 20:24:16,063 - INFO - Viewing the log: <function display_dataframe at 0x7547f0fadab0>
+2024-09-16 20:24:16,089 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:24:19,246 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:24:19,277 - INFO - WSGI application has been initialized.
+2024-09-16 20:25:29,691 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:25:35,921 - INFO - Initializing logging configuration
+2024-09-16 20:25:36,115 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:25:36,126 - INFO - Index reset.
+2024-09-16 20:25:36,138 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:25:36,154 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:25:36,200 - INFO - Categorizing data by file extension.
+2024-09-16 20:25:36,231 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:25:36,247 - INFO - Validating app structure: <function validate_app_structure at 0x7711d8695d80>
+2024-09-16 20:25:36,653 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:25:36,659 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:25:36,665 - INFO - Validating file location for all rows.
+2024-09-16 20:25:36,684 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:25:37,938 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:25:38,194 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:25:38,556 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:25:38,562 - INFO - Previewing the dataset: <function display_dataframe at 0x7711d8695ab0>
+2024-09-16 20:25:38,597 - INFO - Log size: (16, 3)
+2024-09-16 20:25:38,603 - INFO - Viewing the log: <function display_dataframe at 0x7711d8695ab0>
+2024-09-16 20:25:38,619 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:25:41,477 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:25:41,497 - INFO - WSGI application has been initialized.
+2024-09-16 20:25:42,592 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:25:42,962 - INFO - Rendering home page of this app
+2024-09-16 20:25:43,071 - INFO - Response status: 200
+2024-09-16 20:25:43,104 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 20:25:43,299 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:27:13,836 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:27:18,982 - INFO - Initializing logging configuration
+2024-09-16 20:27:19,114 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:27:19,120 - INFO - Index reset.
+2024-09-16 20:27:19,142 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:27:19,153 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:27:19,191 - INFO - Categorizing data by file extension.
+2024-09-16 20:27:19,230 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:27:19,240 - INFO - Validating app structure: <function validate_app_structure at 0x709ff8b99d80>
+2024-09-16 20:27:19,650 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:27:19,656 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:27:19,662 - INFO - Validating file location for all rows.
+2024-09-16 20:27:19,691 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:27:20,804 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:27:21,044 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:27:21,317 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:27:21,328 - INFO - Previewing the dataset: <function display_dataframe at 0x709ff8b99ab0>
+2024-09-16 20:27:21,354 - INFO - Log size: (16, 3)
+2024-09-16 20:27:21,361 - INFO - Viewing the log: <function display_dataframe at 0x709ff8b99ab0>
+2024-09-16 20:27:21,368 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:27:23,863 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:27:23,935 - INFO - WSGI application has been initialized.
+2024-09-16 20:28:45,823 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:29:01,298 - INFO - Initializing logging configuration
+2024-09-16 20:29:01,440 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:29:01,446 - INFO - Index reset.
+2024-09-16 20:29:01,462 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:29:01,473 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:29:01,537 - INFO - Categorizing data by file extension.
+2024-09-16 20:29:01,568 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:29:01,584 - INFO - Validating app structure: <function validate_app_structure at 0x7e9a92e95d80>
+2024-09-16 20:29:02,001 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:29:02,006 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:29:02,017 - INFO - Validating file location for all rows.
+2024-09-16 20:29:02,036 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:29:02,791 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:29:03,033 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:29:03,457 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:29:03,462 - INFO - Previewing the dataset: <function display_dataframe at 0x7e9a92e95ab0>
+2024-09-16 20:29:03,482 - INFO - Log size: (16, 3)
+2024-09-16 20:29:03,493 - INFO - Viewing the log: <function display_dataframe at 0x7e9a92e95ab0>
+2024-09-16 20:29:03,512 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:29:06,756 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:29:06,773 - INFO - WSGI application has been initialized.
+2024-09-16 20:29:50,557 - INFO - Request received: GET /project_structure/tree
+2024-09-16 20:29:50,928 - INFO - Rendering home page of this app
+2024-09-16 20:29:51,044 - INFO - Response status: 200
+2024-09-16 20:29:51,075 - INFO - "GET /project_structure/tree HTTP/1.1" 200 180
+2024-09-16 20:29:51,220 - WARNING - "GET /static/ HTTP/1.1" 404 1935
+2024-09-16 20:29:54,163 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:29:54,430 - INFO - Received request for graphs page
+2024-09-16 20:29:54,447 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:29:54,563 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:29:54,582 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:29:54,588 - INFO - Index reset.
+2024-09-16 20:29:54,605 - INFO - Data loaded successfully
+2024-09-16 20:29:54,628 - INFO - Rendering graphs page
+2024-09-16 20:29:54,649 - INFO - Response status: 200
+2024-09-16 20:29:54,672 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2289
+2024-09-16 20:29:54,774 - WARNING - "GET /static/dash_app HTTP/1.1" 404 1951
+2024-09-16 20:30:08,753 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:30:14,187 - INFO - Initializing logging configuration
+2024-09-16 20:30:14,393 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:30:14,408 - INFO - Index reset.
+2024-09-16 20:30:14,420 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:30:14,441 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:30:14,483 - INFO - Categorizing data by file extension.
+2024-09-16 20:30:14,514 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:30:14,520 - INFO - Validating app structure: <function validate_app_structure at 0x76a058d99d80>
+2024-09-16 20:30:14,934 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:30:14,945 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:30:14,950 - INFO - Validating file location for all rows.
+2024-09-16 20:30:14,979 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:30:16,005 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:30:16,259 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:30:16,947 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:30:16,953 - INFO - Previewing the dataset: <function display_dataframe at 0x76a058d99ab0>
+2024-09-16 20:30:16,985 - INFO - Log size: (16, 3)
+2024-09-16 20:30:16,991 - INFO - Viewing the log: <function display_dataframe at 0x76a058d99ab0>
+2024-09-16 20:30:17,003 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:30:19,873 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:30:19,903 - INFO - WSGI application has been initialized.
+2024-09-16 20:32:16,027 - INFO - /home/tron/git/light_site/project_structure/utils.py changed, reloading.
+2024-09-16 20:32:21,297 - INFO - Initializing logging configuration
+2024-09-16 20:32:21,510 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:32:21,516 - INFO - Index reset.
+2024-09-16 20:32:21,537 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:32:21,558 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:32:21,598 - INFO - Categorizing data by file extension.
+2024-09-16 20:32:21,617 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:32:21,627 - INFO - Validating app structure: <function validate_app_structure at 0x74afddda5d80>
+2024-09-16 20:32:22,070 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:32:22,076 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:32:22,082 - INFO - Validating file location for all rows.
+2024-09-16 20:32:22,113 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:32:23,075 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:32:23,329 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:32:23,562 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:32:23,567 - INFO - Previewing the dataset: <function display_dataframe at 0x74afddda5ab0>
+2024-09-16 20:32:23,586 - INFO - Log size: (16, 3)
+2024-09-16 20:32:23,592 - INFO - Viewing the log: <function display_dataframe at 0x74afddda5ab0>
+2024-09-16 20:32:23,598 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:32:26,565 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:32:26,618 - INFO - WSGI application has been initialized.
+2024-09-16 20:33:11,434 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:33:11,639 - INFO - Received request for graphs page
+2024-09-16 20:33:11,657 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:33:11,775 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:33:11,808 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:33:11,820 - INFO - Index reset.
+2024-09-16 20:33:11,826 - INFO - Data loaded successfully
+2024-09-16 20:33:11,858 - INFO - Rendering graphs page
+2024-09-16 20:33:11,984 - INFO - Response status: 200
+2024-09-16 20:33:12,033 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2289
+2024-09-16 20:34:58,456 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:34:58,553 - INFO - Received request for graphs page
+2024-09-16 20:34:58,586 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:34:58,642 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:34:58,660 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:34:58,682 - INFO - Index reset.
+2024-09-16 20:34:58,687 - INFO - Data loaded successfully
+2024-09-16 20:34:58,716 - INFO - Rendering graphs page
+2024-09-16 20:34:58,731 - INFO - Response status: 200
+2024-09-16 20:34:58,759 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2289
+2024-09-16 20:34:58,908 - WARNING - "GET /static/dash_app HTTP/1.1" 404 1951
+2024-09-16 20:38:03,439 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:38:03,552 - INFO - Received request for graphs page
+2024-09-16 20:38:03,563 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:38:03,613 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:38:03,649 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:38:03,661 - INFO - Index reset.
+2024-09-16 20:38:03,678 - INFO - Data loaded successfully
+2024-09-16 20:38:03,697 - INFO - Rendering graphs page
+2024-09-16 20:38:03,701 - INFO - Response status: 200
+2024-09-16 20:38:03,741 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2289
+2024-09-16 20:38:03,864 - WARNING - "GET /static/dash_app HTTP/1.1" 404 1951
+2024-09-16 20:40:35,507 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:40:35,730 - INFO - Received request for graphs page
+2024-09-16 20:40:35,767 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:40:35,901 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:40:35,961 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:40:35,983 - INFO - Index reset.
+2024-09-16 20:40:35,994 - INFO - Data loaded successfully
+2024-09-16 20:40:36,012 - INFO - Rendering graphs page
+2024-09-16 20:40:36,026 - INFO - Response status: 200
+2024-09-16 20:40:36,049 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2289
+2024-09-16 20:40:36,173 - WARNING - "GET /static/dash_app HTTP/1.1" 404 1951
+2024-09-16 20:44:34,732 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:44:35,061 - INFO - Received request for graphs page
+2024-09-16 20:44:35,072 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:44:35,161 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:44:35,201 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:44:35,212 - INFO - Index reset.
+2024-09-16 20:44:35,223 - INFO - Data loaded successfully
+2024-09-16 20:44:35,258 - INFO - Rendering graphs page
+2024-09-16 20:44:35,293 - INFO - Response status: 200
+2024-09-16 20:44:35,332 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2289
+2024-09-16 20:44:35,484 - WARNING - "GET /static/dash_app HTTP/1.1" 404 1951
+2024-09-16 20:46:47,292 - INFO - Request received: GET /project_structure/graphs/
+2024-09-16 20:46:47,421 - INFO - Received request for graphs page
+2024-09-16 20:46:47,443 - INFO - Attempting to load data from file: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:46:47,484 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/media/project_structure/data/project_structure.pkl
+2024-09-16 20:46:47,519 - INFO - Removed 0 rows with NaN values.
+2024-09-16 20:46:47,525 - INFO - Index reset.
+2024-09-16 20:46:47,532 - INFO - Data loaded successfully
+2024-09-16 20:46:47,548 - INFO - Rendering graphs page
+2024-09-16 20:46:47,579 - INFO - Response status: 200
+2024-09-16 20:46:47,627 - INFO - "GET /project_structure/graphs/ HTTP/1.1" 200 2289
+2024-09-16 20:46:47,761 - WARNING - "GET /static/dash_app HTTP/1.1" 404 1951
+2024-09-16 20:50:59,151 - INFO - Initializing logging configuration
+2024-09-16 20:50:59,340 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 20:50:59,351 - INFO - Index reset.
+2024-09-16 20:50:59,358 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 20:50:59,369 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 20:50:59,406 - INFO - Categorizing data by file extension.
+2024-09-16 20:50:59,440 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 20:50:59,456 - INFO - Validating app structure: <function validate_app_structure at 0x78540c1a5d80>
+2024-09-16 20:51:00,135 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 20:51:00,141 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 20:51:00,147 - INFO - Validating file location for all rows.
+2024-09-16 20:51:00,155 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 20:51:01,273 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 20:51:01,520 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 20:51:01,947 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 20:51:01,953 - INFO - Previewing the dataset: <function display_dataframe at 0x78540c1a5ab0>
+2024-09-16 20:51:01,984 - INFO - Log size: (16, 3)
+2024-09-16 20:51:02,001 - INFO - Viewing the log: <function display_dataframe at 0x78540c1a5ab0>
+2024-09-16 20:51:02,019 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 20:51:05,328 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 20:51:05,359 - INFO - WSGI application has been initialized.
+2024-09-16 21:02:08,287 - INFO - Initializing logging configuration
+2024-09-16 21:02:08,435 - INFO - Dataset loaded successfully from: /home/tron/git/light_site/data/project_structure.pkl
+2024-09-16 21:02:08,441 - INFO - Index reset.
+2024-09-16 21:02:08,452 - INFO - Dataset loaded with 8632 rows and 5 columns.
+2024-09-16 21:02:08,463 - INFO - Rendering an HTML preview of the DataFrame, showing the first 5 rows.
+2024-09-16 21:02:08,498 - INFO - Categorizing data by file extension.
+2024-09-16 21:02:08,537 - INFO - Found 78 unique file extensions: ['No Extension' 'enc' 'log' 'ipynb_checkpoints' 'py' 'ipynb' 'html' 'pkl'
+ 'csv' 'sqlite3' 'env' 'swp' 'git' 'sample' 'gitignore' 'pyc' 'md' 'mts'
+ 'ts' 'js' 'mjs' 'json' 'map' 'jst' 'def' 'yml' 'cjs' 'flow' 'tsbuildinfo'
+ 'github' 'bin' 'css' 'scss' 'markdown' 'txt' '1' 'closure-compiler'
+ 'esprima' 'cts' 'babelrc' 'jshintrc' 'BSD' 'php' 'realpath' 'npmignore'
+ 'lock' 'nix' 'merge' 'eslintrc' 'nycrc' 'history' 'scandir' 'stat' 'walk'
+ 'node' 'bnf' 'vite' 'applescript' '6' 'otf' 'ttf' 'png' 'svg' 'jpg' 'pdf'
+ 'webmanifest' 'csh' 'fish' 'ps1' '10' 'pth' 'typed' 'pem' 'dist-info'
+ 'exe' 'xml' 'tmpl' 'cfg']
+2024-09-16 21:02:08,543 - INFO - Validating app structure: <function validate_app_structure at 0x7a78985a1d80>
+2024-09-16 21:02:08,964 - ERROR - Missing required file 'models.py' in app 'light_site'.
+2024-09-16 21:02:08,969 - INFO - App 'light_site' has a valid structure: False
+2024-09-16 21:02:08,985 - INFO - Validating file location for all rows.
+2024-09-16 21:02:08,999 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-16 21:02:09,823 - INFO - Hover template created and applied to DataFrame.
+2024-09-16 21:02:10,057 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-16 21:02:10,321 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-16 21:02:10,332 - INFO - Previewing the dataset: <function display_dataframe at 0x7a78985a1ab0>
+2024-09-16 21:02:10,357 - INFO - Log size: (16, 3)
+2024-09-16 21:02:10,368 - INFO - Viewing the log: <function display_dataframe at 0x7a78985a1ab0>
+2024-09-16 21:02:10,375 - INFO - URL patterns have been registered: [<URLPattern 'tree' [name='index']>, <URLPattern 'graphs/' [name='graphs']>]
+2024-09-16 21:02:13,290 - INFO - Starting WSGI application with settings module: light_site.settings
+2024-09-16 21:02:13,357 - INFO - WSGI application has been initialized.

@@ -7,6 +7,12 @@
 </head>
 <body>
     <h1>Graphs Page</h1>
-    <iframe src="{% static plot_filename %}" width="1200" height="600"></iframe>
+    
+    <!-- Embed the Dash app in an iframe -->
+    <iframe src="{% static 'dash_app' %}" width="1200" height="600" style="border:none;"></iframe>
+    
+    <!-- Display the DataFrame as an HTML table -->
+    <h2>DataFrame Table</h2>
+    {{ df_html|safe }}
 </body>
 </html>
