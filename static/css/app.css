@@ -1,0 +1,16 @@
+#bar-chart,
+#bar-chart-2 {
+  border: 5px solid #ccc;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  background-color: black;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: black;
+}

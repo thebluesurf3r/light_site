@@ -64,7 +64,6 @@
     color: var(--primary-color); /* White text color on hover */
     transform: translateY(0px); /* Lift effect on hover */
     overflow: visible;
-
 }
 
 /* Keyframe Animation for Hover Effect */
@@ -111,8 +110,15 @@
     background-color: var(--background-color);
 }
 
+.b-nav-item-dropdown .dropdown-menu {
+    display: block; /* Ensure dropdown menu is displayed */
+    background-color: var(--background-color); /* Match the navbar background */
+}
 
-.b-nav-item-dropdown:hover > .dropdown-menu {
-    display: absolute;
-    margin-top: 0;
+.b-nav-item-dropdown .dropdown-item {
+    color: #ccc; /* Gray color for dropdown items */
+}
+
+.b-nav-item-dropdown .dropdown-item:hover {
+    background-color: var(--nav-link-hover-color); /* Hover color for dropdown items */
 }

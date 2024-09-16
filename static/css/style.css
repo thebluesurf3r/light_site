@@ -95,9 +95,6 @@ h5, p {
 /* Hero Section */
 .hero {
     color: var(--primary-color);
-    padding-top: calc(var(--margin-medium) * 1);
-    padding-bottom: calc(var(--margin-medium) / 3);
-    border-radius: calc(var(--margin-medium) * 1.5);
 }
 
 .hero .companyname, .username {
@@ -105,15 +102,11 @@ h5, p {
     font-size: calc(var(--font-heading-large) * 3);
 }
 
-.hero .lead {
-    margin-bottom: calc(var(--margin-medium) / 6);
-}
-
 /* About Us Section */
 .about-us {
     padding: 20px;
     background-color: #080624;
-    border-radius: calc(var(--margin-medium) * 3);
+    border-radius: calc(var(--margin-medium) * 1);
     margin-bottom: var(--margin-medium);
 }
 
@@ -124,7 +117,7 @@ h5, p {
 
 /* Services Section */
 .services {
-    padding: 20px;
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 3));
     background-color: #000000;
     border-radius: calc(var(--margin-medium) * 3);
 }
@@ -149,7 +142,7 @@ h5, p {
 
 .services .b-card-body {
     background-color: #ffffff;
-    padding: 20px;
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 1.25));
     border: 1px solid #e0e0e0;
     border-radius: calc(var(--margin-medium) * 3);
 }
@@ -159,9 +152,10 @@ h5, p {
     display: inline-block;
     background-color: rgb(14, 14, 14);
     color: var(--primary-color);
-    border-radius: calc(var(--margin-medium) * 3);
+    border-radius: calc(var(--margin-medium) * 1.5);
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 1.25));
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    list-style-type: none;
 }
 
 .summary .section-title, .skills .section-title, .work-experience .section-title, .education .section-title, .projects .section-title {
@@ -169,6 +163,8 @@ h5, p {
     font-size: var(--font-size-medium);
     margin-bottom: var(--margin-small);
     animation: fadeInUp 0.6s ease-out forwards;
+    list-style-type: none;
+
 }
 
 /* App Container */
@@ -186,7 +182,7 @@ h5, p {
     transition: transform 0.6s ease, box-shadow 0.6s ease;
     background-color: #f5f5f5;
     border: var(--font-heading-small);
-    border-radius: calc(var(--margin-medium) * 3);
+    border-radius: calc(var(--margin-medium) * 1.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,7 +215,7 @@ h5, p {
 .b-card-header {
     background-color: #007bff;
     color: #ffffff;
-    padding: 15px;
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 3));
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
@@ -255,7 +251,7 @@ h5, p {
 
 .b-collapse .b-card-body {
     background-color: #ffffff;
-    padding: 15px;
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 3));
     font-size: 1.1rem;
     color: #000000;
     border: 1px solid #e9ecef;
@@ -365,6 +361,7 @@ h5 {
     list-style-type: none;
 }
 
+/*----------------------------------------------------------------------*/
 /* Summary (accordion like element configuration)*/
 
 /* Level1*/
@@ -372,40 +369,49 @@ h5 {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     margin: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.75);
     display: grid;
     color: rgb(255, 255, 255);
     list-style-type: none;
+    width: 650px;
+    height: auto;
 }
 
 /* Level2*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    background-color: rgb(12, 12, 48);
+    background-color: rgba(0, 0, 58, 0.5);
     display: inline-block;
     color: rgb(255, 255, 255);
     list-style-type: none;
+    width: auto;
+    height: auto;
 }
 
 /* Level3*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.25);
     display: grid;
     color: rgb(255, 255, 255);
     list-style-type: none;
+    width: auto;
+    height: auto;
 }
 
 /* Level4*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
-    background-color: rgb(12, 12, 48);
+    background-color: rgb(11, 7, 48);
     display: inline-block;
     color: rgb(255, 255, 255);
     list-style-type: none;
+    width: auto;
+    height: auto;
+
 }
 
 /* Level5*/
@@ -415,22 +421,10 @@ h5 {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     list-style-type: none;
+    width: auto;
+    height: auto;
 }
-
-/* Progress Bar*/
-.custom-progress {
-    height: 1.5rem; /* Increase the height of the progress bar */
-    border-radius: 75%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.616); /* Add a subtle shadow */
-}
-
-.custom-progress-bar {
-    font-weight: bold; /* Bold text inside the progress bar */
-    color: rgb(255, 255, 255); /* White text color */
-    font-size: 0.9rem; /* Slightly smaller text size */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add text shadow for better readability */
-    border-radius: 75%;
-}
+/*----------------------------------------------------------------------*/
 
 /* Width of 'Work Experience' */
 #app > b-container > section {
@@ -446,16 +440,9 @@ h5 {
     margin: var(--margin-large);
 }
 
-.continuum-icon {
-    width: 100%;
-    height: 500px;
-    vertical-align: middle;
-    fill: #ffffff;
-}
-
 .company-icon {
-    width: 9%;
-    height: 9%;
+    width: 12%;
+    height: 12%;
     vertical-align: middle;
     fill: #ffffff; 
 }
@@ -475,6 +462,13 @@ h5 {
     margin-right: 15%;
 }
 
+.mriu-icon {
+    width: 15%;
+    height: 15%;
+    vertical-align: middle;
+    fill: #ffffff;
+}
+
 .projects-icon {
     width: 15%;
     height: 15%;
@@ -483,8 +477,8 @@ h5 {
 }
 
 .vyom-icon {
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 50%;
     vertical-align: middle;
     margin-top: 5%;
     margin-left: 37.5%;
@@ -553,7 +547,6 @@ h5 {
     opacity: 0;
     transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.5s ease;
     z-index: 1;
-    border-radius: 0%;
     overflow: hidden;
 }
 
@@ -591,6 +584,11 @@ h5 {
     position: absolute; /* Ensure proper alignment within the container */
 }
 
+#projectGraphFrame {
+    width: 100%;
+    height: 100%; 
+}
+
 .fade-in {
     opacity: 0;
     transition: opacity 1.5s ease-in;
@@ -603,3 +601,210 @@ h5 {
 .progress-animated .progress-bar {
     transition: width 2s ease;
   }
+
+/* Ensure the list group item background color is as specified */
+b-list-group.animation-container .animated-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative; /* Required for the glitter effect */
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 0.75));
+}
+
+/* Smooth animation for the text */
+@keyframes runningOutline {
+    0% {
+        text-shadow: 0 0 3px rgba(0, 17, 255, 0.7), 0 0 5px  rgba(0, 17, 255, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 3px  rgba(0, 17, 255, 0.9), 0 0 5px  rgba(0, 17, 255, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 3px  rgba(0, 17, 255, 0.7), 0 0 5px  rgba(0, 17, 255, 0.6);
+    }
+}
+
+.username {
+    position: relative; /* For the glitter effect */
+    display: inline-block;
+    animation: runningOutline 3s ease-in-out infinite; /* Apply running outline animation */
+    color: #fff; /* Ensure text color is visible */
+    font-size: 2.5rem; /* Adjust as needed */
+}
+
+/* Animation 'Data Analytics and Research' */
+#app > div > b-container > section > b-row > b-col > b-list-group:nth-child(2) > b-list-group-item {
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+/* Ensure the list group item background color is as specified */
+#app > div > b-container > section > b-row > b-col > b-list-group:nth-child(2) > b-list-group-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative; /* Required for the glitter effect */
+    padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 6));
+}
+
+/* Smooth animation for the text */
+@keyframes runningOutline {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+}
+
+#app > div > b-container > section > b-row > b-col > b-list-group:nth-child(2) > b-list-group-item {
+    position: relative; /* For the glitter effect */
+    animation: runningOutline 0.03s ease-in-out infinite; /* Apply running outline animation */
+    color: #fff; /* Ensure text color is visible */
+}
+
+/*----------------------------------------------------------------------*/
+
+/* Skills Section 1 */
+#app > b-container:nth-child(3) > section > b-row > b-list-group-item > b-col {
+    width: 1250px;
+}
+
+/* Skills Section 2 */
+
+#app > b-container:nth-child(3) > section > b-row > b-list-group-item > b-col > b-list-group:nth-child(3) {
+    width: 1250px;
+}
+
+/* Skills Section 3 */
+#app > b-container > section > b-row > b-list-group-item > b-col > b-list-group > b-list-group-item > b-list-group-item {
+    width: 300px;
+}
+
+/* Skills Sub Section 1 */
+#app > b-container > section > b-row > b-list-group-item > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item {
+    width: 100px;
+}
+
+/*----------------------------------------------------------------------*/
+
+/* Section Headers font size and family */
+
+#app > b-container > section > b-row > b-col > h2 {
+    font-size: calc(var(--font-heading-xl) / 1.5);
+    font-family: var(--font-heading);
+}
+
+#app > b-container:nth-child(2) > section > b-row > b-col > h2 {
+    font-size: calc(var(--font-heading-xl) / 1.5);
+    font-family: var(--font-heading);
+}
+
+#app > b-container:nth-child(5) > section > b-row > h2 {
+    font-size: calc(var(--font-heading-xl) / 1.5);
+    font-family: var(--font-heading);
+}
+/*----------------------------------------------------------------------*/
+
+/* Education Background */
+#app > b-container > section > b-row > b-list-group-item {
+    width: auto;
+    background-color: #000000;
+
+}
+/*----------------------------------------------------------------------*/
+
+/* Education Font and Size */
+#app > b-container > section > b-row > b-col > li > ul > li > ul > li  {
+    list-style-type: none;
+}
+
+/* Carousel Styling */
+#carousel-1 {
+    /* Ensure the carousel takes up full width within its parent */
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Carousel slide images */
+#carousel-1 .carousel-inner img {
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel controls (next/prev) */
+#carousel-1 .carousel-control-prev-icon,
+#carousel-1 .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Make the controls semi-transparent */
+    border-radius: 50%; /* Round the controls */
+    padding: 10px; /* Increase control size */
+}
+
+#carousel-1 .carousel-control-prev-icon:hover,
+#carousel-1 .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken on hover */
+}
+
+/* Caption Styling */
+#carousel-1 .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for captions */
+    padding: 15px;
+    border-radius: 5px;
+    bottom: 20px; /* Adjust the position */
+    text-align: left;
+}
+
+#carousel-1 .carousel-caption h5 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+#carousel-1 .carousel-caption p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Indicators (the dots) */
+#carousel-1 .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 10px;
+    height: 10px;
+}
+
+#carousel-1 .carousel-indicators .active {
+    background-color: #fff;
+}
+
+
+/* Loader CSS */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure it's above all other content */
+
+}
+
+/* Projects header */
+
+
+/*Graph in the 'Projects' page */
+#app > b-container.my-4 > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item > li:nth-child(2) {
+    width: 616px;
+    height: 616px;
+    margin-left: 100px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+

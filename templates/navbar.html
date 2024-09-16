@@ -8,6 +8,7 @@
 <div id="app">
   <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top" class="navbar animated-navbar larger-navbar">
     <b-navbar-brand href="{% url 'home' %}" class="mx-auto">
+      <!-- Optionally, you can include a brand logo or text here -->
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav class="mx-auto">
@@ -15,11 +16,8 @@
         <b-nav-item href="{% url 'home' %}" class="nav-item-animate">Home</b-nav-item>
         <b-nav-item href="{% url 'about' %}" class="nav-item-animate">About</b-nav-item>
 
-        <!-- Dropdown for Projects -->
-        <b-nav-item-dropdown text="Projects" right class="nav-item-animate">
-          <b-dropdown-item href="{% url 'login' %}">Login</b-dropdown-item>
-          <b-dropdown-item href="{% url 'signup' %}">Signup</b-dropdown-item>
-        </b-nav-item-dropdown>
+        <!-- Projects Link -->
+        <b-nav-item href="{% url 'projects' %}" class="nav-item-animate">Projects</b-nav-item>
 
         <b-nav-item href="{% url 'contact' %}" class="nav-item-animate">Contact</b-nav-item>
       </b-navbar-nav>
@@ -27,10 +25,8 @@
   </b-navbar>
 </div>
 
-
 <!-- Custom JS -->
 <script src="{% static 'js/app.js' %}"></script>
 <script src="{% static 'js/animations.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
-
 </body>

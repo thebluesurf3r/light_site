@@ -7,17 +7,34 @@
 {% block content %}
 <body>
     <div id="app" class="container">
-        <!-- Username Section -->
-        <b-container fluid class="bg-dark text-white text-center py-5 hero">
-            <section class="hero mb-5">
-                <b-row>
-                    <b-col>
-                        <h1 class="username display-4">Vyom Deepansh</h1>
-                        <p class="lead mt-3">Data Analytics and Research</p>
-                    </b-col>
-                </b-row>
-            </section>
-        </b-container>
+        <div class="text-center my-3">            
+            <!-- Username Section -->
+            <b-container fluid class="bg-dark text-white text-center py-5 hero">
+                <section class="hero mb-5">
+                    <b-row>
+                        <b-col>
+                            <b-list-group class="animation-container">
+                                <b-list-group-item class="animated-card">
+                                    <b-button v-b-tooltip.hover title="This is my name">
+                                        <h1 class="username display-4">Vyom Deepansh</h1>
+                                    </b-button>
+                                </b-list-group-item>
+                            </b-list-group>
+                        
+                            <b-list-group class="animation-container">
+                                <b-list-group-item class="animated-card">
+                                    <b-button v-b-tooltip.hover title="This is my job">
+                                        <p class="lead mt-3">Data Analytics and Research</p>
+                                    </b-button>
+                                </b-list-group-item>
+                            </b-list-group>
+                        </b-col>
+                    </b-row>
+                </section>
+            </b-container>
+        
+        </div>
+        
 
         <!-- Summary Section -->
         <b-container class="my-4">
@@ -40,14 +57,19 @@
                             </div>
                             <b-list-group-item class="animated-card">
                                 <img src="{% static 'icons/ai_icon.png' %}" alt="Summary Icon" class="summary-icon">
+
                                     <b-list-group-item class="animated-card">
+                                        
+                                        <b-button v-b-tooltip.hover title="This is my work experience">
                                         Results-driven data analyst with 5 years of experience, recognized for rapid career progression and multiple promotions.</li>
-                                    <b-list-group-item class="animated-card">
+                                        </b-button>
+
+                                        <b-list-group-item class="animated-card">
+                                            <b-button v-b-tooltip.hover title="This is my work experience">
                                         Expert in optimizing processes and developing streamlined solutions that enhance operational efficiency.</li>
-                                    <b-list-group-item class="animated-card">
+                                        </b-button>
+                                        <b-list-group-item class="animated-card">
                                         Skilled in utilizing advanced analytical tools to deliver impactful insights and create innovative frameworks.</li>
-                                    <b-list-group-item class="animated-card">
-                                        Brings a unique blend of creative problem-solving and technical expertise, drawing from diverse experiences in performance arts and design engineering.</li>
                                 </b-list-group-item>
                         </b-list-group>
                     </b-col>
@@ -60,9 +82,8 @@
         <b-container class="my-4">
             <section class="skills mb-4">
                 <b-row>
-                    <b-col>
+                        <b-col>
                         <h2 class="section-title">Skills</h2>
-
                         <b-list-group class="animation-container">
                             <b-list-group-item class="animated-card">
                                 Parallel Categories Plot: You can go through this chart to understand more about my skill sets.
@@ -82,6 +103,7 @@
                             <b-list-group-item class="animated-card">
                                 <b-list-group-item class="animated-card">
                                     <li>Data Management and Engineering</li>
+
                                         <b-list-group-item class="animated-card">
                                         <b-list-group-item class="animated-card">
                                             <img src="{% static 'icons/postgresql.png' %}" alt="Tool Icon" class="data-engineering-icon">
@@ -142,6 +164,7 @@
                     </b-list-group>
                 </b-col>
                 </b-row>
+
             </section>
         </b-container>
 
@@ -171,18 +194,18 @@
                             <b-list-group-item class="animated-card">
                                 <img src="{% static 'icons/cts.png' %}" alt="Cognizant Icon" class="company-icon">
                                     <b-list-group-item class="animated-card">
-                                        Cognizant Technology Solutions</li>
+                                        <li>Cognizant Technology Solutions</li>
                                     <b-list-group-item class="animated-card">
-                                        Senior Analyst</li>
+                                        <li>Senior Analyst</li>
                                     <b-list-group-item class="animated-card">
-                                        Apr 2022 to Aug 2024</li>
+                                        <li>Apr 2022 to Aug 2024</li>
                                     <b-list-group-item class="animated-card">
                                         <ul>
-                                            <li>Advanced from Marketing Analyst to specialized roles in MIS Reporting and Analytics through successive promotions.</li>
-                                            <li>Cleaned, extracted, and manipulated data while creating and managing robust data pipelines.</li>
-                                            <li>Utilized cohort analysis to track and compare user behavior and performance over time.</li>
-                                            <li>Streamlined data processes, performed feature engineering, and developed comprehensive reports and dashboards.</li>
-                                            <li>Designed and implemented data analysis and collection systems to enhance decision-making.</li>
+                                            <li>Advanced from Marketing Analyst to specialized roles in MIS Reporting and Analytics.</li>
+                                            <li>Cleaned, extracted and manipulated data while managing robust data pipelines.</li>
+                                            <li>Tracked and compared user behavior and performance over time.</li>
+                                            <li>Streamlined data processes, feature engineering, and developed comprehensive reports.</li>
+                                            <li>Designed and implemented data analysis and collection systems.</li>
                                             <li>Diagnosed and resolved data discrepancies and debugged web analytics tracking and reporting implementations.</li>
                                         </ul>
                                     </b-list-group-item>
@@ -192,19 +215,19 @@
                             <b-list-group-item class="animated-card">
                                 <img src="{% static 'icons/aakarist.png' %}" alt="Cognizant Icon" class="company-icon">
                                     <b-list-group-item class="animated-card">
-                                        Aakarist Pvt Ltd</li>
+                                        <li>Aakarist Pvt Ltd</li>
                                     <b-list-group-item class="animated-card">
-                                        Data Analyst</li>
+                                        <li>Data Analyst</li>
                                     <b-list-group-item class="animated-card">
-                                        Apr 2020 to Aug 2022</li>
+                                        <li>Apr 2020 to Aug 2022</li>
                                     <b-list-group-item class="animated-card">
                                         <ul>
-                                            <li>Advanced from Marketing Analyst to specialized roles in MIS Reporting and Analytics through successive promotions.</li>
-                                            <li>Cleaned, extracted, and manipulated data while creating and managing robust data pipelines.</li>
-                                            <li>Utilized cohort analysis to track and compare user behavior and performance over time.</li>
-                                            <li>Streamlined data processes, performed feature engineering, and developed comprehensive reports and dashboards.</li>
-                                            <li>Designed and implemented data analysis and collection systems to enhance decision-making.</li>
-                                            <li>Diagnosed and resolved data discrepancies and debugged web analytics tracking and reporting implementations.</li>
+                                            <li>Collected, analyzed, and interpreted customer and marketing data.</li>
+                                            <li>Evaluated key metrics to optimize campaign performance.</li>
+                                            <li>Developed and delivered actionable insights and recommendations.</li>
+                                            <li>Tested and refined campaign and web measurement strategies.</li>
+                                            <li>Monitored digital media and marketing trends to stay ahead of industry shifts.</li>
+                                            <li>Communicated findings effectively to colleagues, senior managers, and clients.</li>
                                         </ul>
                                     </b-list-group-item>
                         </b-list-group>
@@ -213,28 +236,57 @@
                             <b-list-group-item class="animated-card">
                                 <img src="{% static 'icons/wns.png' %}" alt="Cognizant Icon" class="company-icon">
                                     <b-list-group-item class="animated-card">
-                                        WNS Pvt Ltd</li>
+                                        <li>WNS Pvt Ltd</li>
                                     <b-list-group-item class="animated-card">
-                                        Analyst</li>
+                                        <li>Analyst</li>
                                     <b-list-group-item class="animated-card">
-                                        Apr 2018 to Aug 2020</li>
+                                        <li>Apr 2018 to Aug 2020</li>
                                     <b-list-group-item class="animated-card">
                                         <ul>
-                                            <li>Advanced from Marketing Analyst to specialized roles in MIS Reporting and Analytics through successive promotions.</li>
-                                            <li>Cleaned, extracted, and manipulated data while creating and managing robust data pipelines.</li>
-                                            <li>Utilized cohort analysis to track and compare user behavior and performance over time.</li>
-                                            <li>Streamlined data processes, performed feature engineering, and developed comprehensive reports and dashboards.</li>
-                                            <li>Designed and implemented data analysis and collection systems to enhance decision-making.</li>
-                                            <li>Diagnosed and resolved data discrepancies and debugged web analytics tracking and reporting implementations.</li>
+                                            <li>Performed data analysis in Excel, utilizing statistical techniques.</li>
+                                            <li>Developed dashboards, visualizations, and performance reports using Excel and Google Sheets.</li>
+                                            <li>Delivered data-driven insights and recommendations to clients.</li>
                                         </ul>
                                     </b-list-group-item>
                         </b-list-group>
-
                     </b-col>
                 </b-row>
             </section>
         </b-container>
 
+        <!-- Education Section -->
+        <b-container class="my-4">
+            <section class="education mb-4">
+                <b-row>
+                    <h2 class="section-title">Education</h2>
+                    <b-list-group class="animation-container">
+                    <b-list-group-item class="animated-card">
+
+                    <b-col>
+                            <li>Manav Rachna International University
+                                <b-row>
+                                <ul>
+                                    <li>Bachelor of Technology [Aeronautical Engineering]
+                                        <ul>
+                                            <li>From Aug 2014 to Aug 2018</li>
+                                            <li>Areas of Study:
+                                                <ul>
+                                                    <li>Computational Fluid Dynamics</li>
+                                                    <li>Rocket Propulsion</li>
+                                                    <li>Aerodynamics</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </b-row>
+                                </ul>
+                            </li>
+                    </b-col>
+                    </b-list-group-item>
+                    </b-list-group>
+                </b-row>
+            </section>
+        </b-container>
     </div>
 </body>
 
