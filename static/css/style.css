@@ -1,4 +1,6 @@
-/* Font-Face Definitions */
+/*=======================================================================================================================*/
+/*======== Font-Face Definitions */
+
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -20,7 +22,8 @@
     font-style: normal;
 }
 
-/* CSS Variables */
+/*=======================================================================================================================*/
+/*======== CSS Variables */
 :root {
     --phi: 1.618034;
     --pi: 3.14159265;
@@ -55,14 +58,16 @@
     --background-container-color: #272727; 
 }
 
-/* Global Box Sizing */
+/*=======================================================================================================================*/
+/*======== Global Box Sizing */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/*=======================================================================================================================*/
+/*======== Body Styling */
 body {
     font-family: var(--font-main);
     color: var(--primary-color);
@@ -71,20 +76,23 @@ body {
     padding-bottom: calc(var(--font-heading-small) / var(--phi) / var(--pi));
 }
 
-/* Main Element */
+/*=======================================================================================================================*/
+/*======== Main Element */
 main {
     background-image: url(../images/);
-    display: block; /* Fixed from absolute */
+    display: block;/* Fixed from absolute */
 }
 
-/* Heading and Paragraphs */
+/*=======================================================================================================================*/
+/*======== Heading and Paragraphs */
 h5, p {
     font-family: var(--font-main);
     font-size: calc(var(--font-size-small) * 3);
     color: var(--primary-color);
 }
 
-/* Container */
+/*=======================================================================================================================*/
+/*======== Container */
 .container {
     display: grid;
     max-width: 99.9%;
@@ -92,7 +100,8 @@ h5, p {
     padding: 0 var(--margin-small);
 }
 
-/* Hero Section */
+/*=======================================================================================================================*/
+/*======== Hero Section */
 .hero {
     color: var(--primary-color);
 }
@@ -102,7 +111,8 @@ h5, p {
     font-size: calc(var(--font-heading-large) * 3);
 }
 
-/* About Us Section */
+/*=======================================================================================================================*/
+/*======== About Us Section */
 .about-us {
     padding: 20px;
     background-color: #080624;
@@ -115,7 +125,8 @@ h5, p {
     color: #ffffff;
 }
 
-/* Services Section */
+/*=======================================================================================================================*/
+/*======== Services Section */
 .services {
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 3));
     background-color: #000000;
@@ -147,7 +158,8 @@ h5, p {
     border-radius: calc(var(--margin-medium) * 3);
 }
 
-/* Section Summaries */
+/*=======================================================================================================================*/
+/*======== Section Summaries */
 .summary, .skills, .work-experience, .education, .certifications, .projects {
     display: inline-block;
     background-color: rgb(14, 14, 14);
@@ -167,7 +179,8 @@ h5, p {
 
 }
 
-/* App Container */
+/*=======================================================================================================================*/
+/*======== App Container */
 #app {
     display: block;
     flex-wrap: wrap;
@@ -175,7 +188,8 @@ h5, p {
     overflow: hidden;
 }
 
-/* Animated Card */
+/*=======================================================================================================================*/
+/*======== Animated Card */
 .animated-card {
     position: static;
     margin: var(--margin-large);
@@ -199,7 +213,8 @@ h5, p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Animations */
+/*=======================================================================================================================*/
+/*======== Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -211,7 +226,8 @@ h5, p {
     }
 }
 
-/* Accordion Styles */
+/*=======================================================================================================================*/
+/*======== Accordion Styles */
 .b-card-header {
     background-color: #007bff;
     color: #ffffff;
@@ -245,7 +261,7 @@ h5, p {
 }
 
 .b-collapse.show {
-    max-height: 500px; /* Adjust as necessary */
+    max-height: 500px;/* Adjust as necessary */
     transition: max-height 0.3s ease-in;
 }
 
@@ -257,7 +273,8 @@ h5, p {
     border: 1px solid #e9ecef;
 }
 
-/* Responsive Design */
+/*=======================================================================================================================*/
+/*======== Responsive Design */
 @media (max-width: 768px) {
     .companyname {
         font-size: 2.5rem;
@@ -272,7 +289,8 @@ h5, p {
     }
 }
 
-/* Specific Font and Color Adjustments */
+/*=======================================================================================================================*/
+/*======== Specific Font and Color Adjustments */
 #app > b-container > section > b-row > b-col > h2,
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item,
 #app > b-container:nth-child(3) > section > b-row > b-col > b-tabs > b-tab,
@@ -299,9 +317,11 @@ h5 {
 }
 
 
-/* font size and color of various sections in the 'about' page */
+/*=======================================================================================================================*/
+/*======== FONT SIZE AND COLOR */
 
-/* Section heading */
+/*=======================================================================================================================*/
+/*======== Section heading */
 #app > b-container > section > b-row > b-col > h2 {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     color: #ffffff;
@@ -317,7 +337,8 @@ h5 {
     color: #ffffff;
 }
 
-/* "Empowering Businesses with Data-Driven Insights" */
+/*=======================================================================================================================*/
+/*======== "Empowering Businesses with Data-Driven Insights" */
 
 #app > b-container.bg-dark.text-white.text-center.py-5.hero > section > b-row > b-col > p.lead.mt-3 {
     font-family: 'Behavior', sans-serif;
@@ -325,7 +346,8 @@ h5 {
     color: var(--primary-color)
 }
 
-/* "About Us" */
+/*=======================================================================================================================*/
+/*======== "About Us" */
 
 #app > b-container:nth-child(2) > section > b-row > b-col > h2 {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
@@ -334,7 +356,7 @@ h5 {
 
 #app > b-container.bg-dark.text-white.text-center.py-5.hero {
     font-size: calc(var(--font-content-size) * var(--phi));
-    color: #f8f9fa; /* Adjust text color */
+    color: #f8f9fa;/* Adjust text color */
 }
 
 #app > b-container.bg-dark.text-white.text-center.py-5.hero {
@@ -362,9 +384,11 @@ h5 {
 }
 
 /*----------------------------------------------------------------------*/
-/* Summary (accordion like element configuration)*/
+/*=======================================================================================================================*/
+/*======== Summary (accordion like element configuration)*/
 
-/* Level1*/
+/*=======================================================================================================================*/
+/*======== Level1*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/2));
@@ -377,7 +401,8 @@ h5 {
     height: auto;
 }
 
-/* Level2*/
+/*=======================================================================================================================*/
+/*======== Level2*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
@@ -389,7 +414,8 @@ h5 {
     height: auto;
 }
 
-/* Level3*/
+/*=======================================================================================================================*/
+/*======== Level3*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
@@ -401,7 +427,8 @@ h5 {
     height: auto;
 }
 
-/* Level4*/
+/*=======================================================================================================================*/
+/*======== Level4*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
@@ -414,7 +441,8 @@ h5 {
 
 }
 
-/* Level5*/
+/*=======================================================================================================================*/
+/*======== Level5*/
 #app > b-container > section > b-row > b-col > b-list-group > b-list-group-item {
     font-size: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi)/1.5));
@@ -426,14 +454,16 @@ h5 {
 }
 /*----------------------------------------------------------------------*/
 
-/* Width of 'Work Experience' */
+/*=======================================================================================================================*/
+/*======== Width of 'Work Experience' */
 #app > b-container > section {
     width: 99.9%;
     height: auto;
     margin: var(--margin-large);
 }
 
-/* Width of 'Skills' */
+/*=======================================================================================================================*/
+/*======== Width of 'Skills' */
 #app > b-container > section {
     width: 99.9%;
     height: auto;
@@ -580,8 +610,8 @@ h5 {
 #chartFrame {
     width: 200%;
     height: 200%; 
-    transition: transform 0.8s cubic-bezier(0.25, 0.25, 0.25, 1); /* Smoother transition */
-    position: absolute; /* Ensure proper alignment within the container */
+    transition: transform 0.8s cubic-bezier(0.25, 0.25, 0.25, 1);/* Smoother transition */
+    position: absolute;/* Ensure proper alignment within the container */
 }
 
 #projectGraphFrame {
@@ -602,14 +632,16 @@ h5 {
     transition: width 2s ease;
   }
 
-/* Ensure the list group item background color is as specified */
+/*=======================================================================================================================*/
+/*======== Ensure the list group item background color is as specified */
 b-list-group.animation-container .animated-card {
     background-color: rgba(0, 0, 0, 0.5);
-    position: relative; /* Required for the glitter effect */
+    position: relative;/* Required for the glitter effect */
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 0.75));
 }
 
-/* Smooth animation for the text */
+/*=======================================================================================================================*/
+/*======== Smooth animation for the text */
 @keyframes runningOutline {
     0% {
         text-shadow: 0 0 3px rgba(0, 17, 255, 0.7), 0 0 5px  rgba(0, 17, 255, 0.6);
@@ -623,26 +655,29 @@ b-list-group.animation-container .animated-card {
 }
 
 .username {
-    position: relative; /* For the glitter effect */
+    position: relative;/* For the glitter effect */
     display: inline-block;
-    animation: runningOutline 3s ease-in-out infinite; /* Apply running outline animation */
-    color: #fff; /* Ensure text color is visible */
-    font-size: 2.5rem; /* Adjust as needed */
+    animation: runningOutline 3s ease-in-out infinite;/* Apply running outline animation */
+    color: #fff;/* Ensure text color is visible */
+    font-size: 2.5rem;/* Adjust as needed */
 }
 
-/* Animation 'Data Analytics and Research' */
+/*=======================================================================================================================*/
+/*======== Animation 'Data Analytics and Research' */
 #app > div > b-container > section > b-row > b-col > b-list-group:nth-child(2) > b-list-group-item {
     background-color: rgba(0, 0, 0, 0.514);
 }
 
-/* Ensure the list group item background color is as specified */
+/*=======================================================================================================================*/
+/*======== Ensure the list group item background color is as specified */
 #app > div > b-container > section > b-row > b-col > b-list-group:nth-child(2) > b-list-group-item {
     background-color: rgba(0, 0, 0, 0.5);
-    position: relative; /* Required for the glitter effect */
+    position: relative;/* Required for the glitter effect */
     padding: calc(var(--font-size-small) * var(--phi) * (var(--pi) / 6));
 }
 
-/* Smooth animation for the text */
+/*=======================================================================================================================*/
+/*======== Smooth animation for the text */
 @keyframes runningOutline {
     0% {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.6);
@@ -656,37 +691,38 @@ b-list-group.animation-container .animated-card {
 }
 
 #app > div > b-container > section > b-row > b-col > b-list-group:nth-child(2) > b-list-group-item {
-    position: relative; /* For the glitter effect */
-    animation: runningOutline 0.03s ease-in-out infinite; /* Apply running outline animation */
-    color: #fff; /* Ensure text color is visible */
+    position: relative;/* For the glitter effect */
+    animation: runningOutline 0.03s ease-in-out infinite;/* Apply running outline animation */
+    color: #fff;/* Ensure text color is visible */
 }
 
-/*----------------------------------------------------------------------*/
-
-/* Skills Section 1 */
+/*=======================================================================================================================*/
+/*======== Skills Section 1 */
 #app > b-container:nth-child(3) > section > b-row > b-list-group-item > b-col {
     width: 1250px;
 }
 
-/* Skills Section 2 */
+/*=======================================================================================================================*/
+/*======== Skills Section 2 */
 
 #app > b-container:nth-child(3) > section > b-row > b-list-group-item > b-col > b-list-group:nth-child(3) {
     width: 1250px;
 }
 
-/* Skills Section 3 */
+/*=======================================================================================================================*/
+/*======== Skills Section 3 */
 #app > b-container > section > b-row > b-list-group-item > b-col > b-list-group > b-list-group-item > b-list-group-item {
     width: 300px;
 }
 
-/* Skills Sub Section 1 */
+/*=======================================================================================================================*/
+/*======== Skills Sub Section 1 */
 #app > b-container > section > b-row > b-list-group-item > b-col > b-list-group > b-list-group-item > b-list-group-item > b-list-group-item {
     width: 100px;
 }
 
-/*----------------------------------------------------------------------*/
-
-/* Section Headers font size and family */
+/*=======================================================================================================================*/
+/*======== Section Headers font size and family */
 
 #app > b-container > section > b-row > b-col > h2 {
     font-size: calc(var(--font-heading-xl) / 1.5);
@@ -702,99 +738,39 @@ b-list-group.animation-container .animated-card {
     font-size: calc(var(--font-heading-xl) / 1.5);
     font-family: var(--font-heading);
 }
-/*----------------------------------------------------------------------*/
 
-/* Education Background */
+/*=======================================================================================================================*/
+/*======== Education Background */
 #app > b-container > section > b-row > b-list-group-item {
     width: auto;
     background-color: #000000;
 
 }
-/*----------------------------------------------------------------------*/
 
-/* Education Font and Size */
+/*=======================================================================================================================*/
+/*======== Education Font and Size */
 #app > b-container > section > b-row > b-col > li > ul > li > ul > li  {
     list-style-type: none;
 }
 
-/* Carousel Styling */
-#carousel-1 {
-    /* Ensure the carousel takes up full width within its parent */
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Carousel slide images */
-#carousel-1 .carousel-inner img {
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Carousel controls (next/prev) */
-#carousel-1 .carousel-control-prev-icon,
-#carousel-1 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Make the controls semi-transparent */
-    border-radius: 50%; /* Round the controls */
-    padding: 10px; /* Increase control size */
-}
-
-#carousel-1 .carousel-control-prev-icon:hover,
-#carousel-1 .carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Darken on hover */
-}
-
-/* Caption Styling */
-#carousel-1 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for captions */
-    padding: 15px;
-    border-radius: 5px;
-    bottom: 20px; /* Adjust the position */
-    text-align: left;
-}
-
-#carousel-1 .carousel-caption h5 {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0;
-}
-
-#carousel-1 .carousel-caption p {
-    font-size: 1rem;
-    color: #ccc;
-}
-
-/* Indicators (the dots) */
-#carousel-1 .carousel-indicators li {
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 10px;
-    height: 10px;
-}
-
-#carousel-1 .carousel-indicators .active {
-    background-color: #fff;
-}
-
-
-/* Loader CSS */
+/*=======================================================================================================================*/
+/*======== Loader CSS */
 #loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);/* Optional: semi-transparent background */
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999; /* Ensure it's above all other content */
+    z-index: 9999;/* Ensure it's above all other content */
 
 }
 
-/* Projects header */
+/*=======================================================================================================================*/
+/*======== Projects header */
 
 
 /*Graph in the 'Projects' page */

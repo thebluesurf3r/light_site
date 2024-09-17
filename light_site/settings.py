@@ -26,7 +26,7 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
-        'myapp': {  # Custom logger for your application
+        'project_structure': {  # Custom logger for your application
             'handlers': ['console'],
             'level': 'INFO',
             'propagate': True,
@@ -76,7 +76,7 @@ ROOT_URLCONF = 'light_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,7 +114,7 @@ CELERY_TRACK_STARTED = True
 CELERY_BEAT_SCHEDULE = {
     'task-name': {
         'task': 'your_app.tasks.task_function',
-        'schedule': 3600,  # run every hour
+        'schedule': 3600,  # Seconds
     },
 }
 
@@ -129,7 +129,7 @@ LOGOUT_REDIRECT_URL = '/'
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5000",  # Example URL for Flask app
+    "http://127.0.0.1:5000",  # Flask App URL
 ]
 
 # Static files (CSS, JavaScript, Images)
@@ -153,7 +153,7 @@ SESSION_COOKIE_SECURE = False  # Requires HTTPS
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 SESSION_COOKIE_NAME = 'sessionid'
-SESSION_COOKIE_AGE = 1209600  # 2 weeks, in seconds
+SESSION_COOKIE_AGE = 1209600  # Seconds
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 SESSION_SAVE_EVERY_REQUEST = False
 

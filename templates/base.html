@@ -39,8 +39,13 @@
     <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Project Level CSS -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- App Level CSS -->
+    {% block extra_css %}
+    <link href="{% static 'project_structure/css/style.css' %}" rel="stylesheet">
+    {% endblock %}
 </head>
 
 <body class="fade-in">

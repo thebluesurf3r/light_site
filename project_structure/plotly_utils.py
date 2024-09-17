@@ -5,8 +5,6 @@ import logging
 import os
 from queue import Queue
 import plotly.graph_objects as go
-
-
 from utils import (load_data,
                     DataFrameLoggingHandler,
                     categorize_by_extension,
@@ -18,6 +16,7 @@ from utils import (load_data,
                     display_dataframe,
                     display_log_df,
                     log_df, df)
+
 # Create the logger with handlers
 logger = logging.getLogger()
 log_queue = Queue()
@@ -27,6 +26,17 @@ logger.addHandler(handler)
 #============#
 
 def get_unique_filename(base_filename, counter):
+    """
+    Generates a unique filename by appending a counter to the base filename
+    and checking if the file already exists.
+    
+    Parameters:
+    base_filename (str): The base name for the file.
+    counter (int): The starting counter value.
+    
+    Returns:
+    str: A unique filename.
+    """
     while os.path.isfile(f'{base_filename}_{counter}.html'):
         counter += 1
     return f'{base_filename}_{counter}.html'

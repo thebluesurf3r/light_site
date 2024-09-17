@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # Define URL patterns
 urlpatterns = [
-    path('tree', views.index, name='index'),
+    path('index/', views.index, name='index'),
     path('graphs/', views.graphs, name='graphs')
 ]
 

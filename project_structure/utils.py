@@ -14,8 +14,8 @@ from light_site.log import log_imported_libraries
 from logging.handlers import RotatingFileHandler
 from queue import Queue
 from threading import Thread
-#=====================================================================================================================================================#
 
+#=====================================================================================================================================================#
 
 # Global DataFrame to store log entries
 log_df = pd.DataFrame(columns=['Timestamp', 'Level', 'Message'])

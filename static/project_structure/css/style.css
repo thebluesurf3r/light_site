@@ -1,0 +1,173 @@
+/*=======================================================================================================================*/
+/*======== Font-Face Definitions */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Behavior';
+    src: url('../fonts/Behavior.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*=======================================================================================================================*/
+/*======== CSS Variables */
+:root {
+    --phi: 1.618034;
+    --pi: 3.14159265;
+    --e: 2.718282;
+    --sqrt-two: 1.414214;
+    --tau: 6.283185;
+
+    --font-main: 'Open Sans', sans-serif;
+    --font-heading: 'Behavior', sans-serif;
+    --font-heading-size: 12px;
+    --margin-size: 9px;
+    --font-content-size: 9px;
+
+    --font-heading-large: calc(var(--font-heading-size) * var(--phi));
+    --font-heading-huge: calc(var(--font-heading-size) * 2.618034);
+    --font-heading-xl: calc(var(--font-heading-size) * 3.236068);
+    --font-heading-md: calc(var(--font-heading-size) * var(--phi) * var(--phi));
+    --font-heading-small: calc(var(--font-heading-size) * 0.618034);
+
+    --margin-large: calc(var(--margin-size) * var(--phi));
+    --margin-medium: var(--margin-size);
+    --margin-small: calc(var(--margin-size) / var(--tau));
+
+    --font-size-large: calc(var(--font-content-size) * var(--phi));
+    --font-size-medium: var(--font-content-size);
+    --font-size-small: calc(var(--font-content-size) * 0.618034);
+
+    --primary-color: #ffffff;
+    --background-color: #000000;
+    --secondary-background-color: #2b2b2b;
+    --fade-color: rgba(0, 0, 0, 0.521);
+    --background-container-color: #272727; 
+    --border-color: #ffffff;
+    --header-background-color: #222222;
+    --pagination-background-color: #000000;
+    --pagination-border-color: #000000;
+    --pagination-active-background-color: #333333;
+    --pagination-hover-background-color: #555555;
+}
+
+/*=======================================================================================================================*/
+/*======== Global Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*=======================================================================================================================*/
+/*======== Body Styling */
+body {
+    font-family: var(--font-main);
+    color: var(--primary-color);
+    background-color: var(--secondary-background-color);
+    padding-top: calc(var(--font-heading-size) * var(--phi) * 6);
+    padding-bottom: calc(var(--font-heading-small) / var(--phi) / var(--pi));
+}
+
+/*=======================================================================================================================*/
+/*======== Main Element */
+main {
+    background-image: url(../images/);
+    display: block; /* Fixed from absolute */
+}
+
+/*=======================================================================================================================*/
+/*======== Heading and Paragraphs */
+h5, p {
+    font-family: var(--font-main);
+    font-size: calc(var(--font-size-small) * 3);
+    color: var(--primary-color);
+}
+
+/*=======================================================================================================================*/
+/*======== Container */
+.container {
+    display: grid;
+    max-width: 99.9%;
+    margin: var(--margin-small);
+    padding: 0 var(--margin-small);
+}
+
+/*=======================================================================================================================*/
+/*======== Hero Section */
+.hero {
+    color: var(--primary-color);
+}
+
+/*=======================================================================================================================*/
+/*======== Data Table Section */
+.project-structure {
+    margin-top: var(--margin-large);
+}
+
+/*=======================================================================================================================*/
+/*======== Table styling */
+.data.table.table-bordered.table-hover {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data.table.table-bordered.table-hover th,
+.data.table.table-bordered.table-hover td {
+    border: 1px solid var(--border-color); /* Border color */
+    background-color: var(--background-color); /* Cell background color */
+    color: var(--primary-color); /* Text color */
+    padding: 8px;
+    text-align: left;
+}
+
+.data.table.table-bordered.table-hover th {
+    background-color: var(--header-background-color); /* Header background color */
+}
+
+/*=======================================================================================================================*/
+/*======== Pagination styling */
+.pagination {
+    margin-top: var(--margin-large);
+}
+
+.page-item {
+    margin: 0 2px;
+}
+
+.page-link {
+    color: var(--primary-color);
+    background-color: var(--pagination-background-color);
+    border: 1px solid var(--pagination-border-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.page-item.active .page-link {
+    background-color: var(--pagination-active-background-color);
+    border-color: var(--pagination-active-background-color);
+}
+
+.page-link:hover {
+    background-color: var(--pagination-hover-background-color);
+    border-color: var(--pagination-hover-background-color);
+}
+
+/* Utility classes for spacing */
+.my-4 {
+    margin-top: var(--margin-large) !important;
+    margin-bottom: var(--margin-large) !important;
+}

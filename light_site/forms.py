@@ -5,6 +5,24 @@ import logging
 # Set up logging
 logger = logging.getLogger('myapp')  # Use your custom logger
 
+class BaseForm(forms.Form):
+    class Media:
+        css = {
+            "screen": ["pretty.css"],
+            "tv,projector": ["lo_res.css"],
+            "print": ["newspaper.css"],
+        }
+        js = ['/home/tron/git/light_site/static/js/script.js']
+
+class CalendarDateInput(forms.DateInput):
+    """
+    A custom widget for date input with calendar popup.
+    """
+    input_type = 'date'
+    def __init__(self, *args, **kwargs):
+        kwargs.setdefault('attrs', {}).update({'placeholder': 'YYYY-MM-DD'})
+        super().__init__(*args, **kwargs)
+
 class CustomAuthenticationForm(AuthenticationForm):
     username = forms.CharField(
         max_length=254,
@@ -12,6 +30,10 @@ class CustomAuthenticationForm(AuthenticationForm):
     )
     password = forms.CharField(
         widget=forms.PasswordInput(attrs={'placeholder': 'Password'})
+    )
+    date_of_birth = forms.DateField(
+        widget=forms.DateInput(attrs={'type': 'date', 'placeholder': 'YYYY-MM-DD'}),
+        required=False  # Example to make it optional; adjust as needed
     )
 
     def __init__(self, *args, **kwargs):
