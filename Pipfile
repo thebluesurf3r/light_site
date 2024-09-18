@@ -38,6 +38,7 @@ django-celery-results = "*"
 setuptools = "*"
 setuptools-scm = "*"
 dash = "*"
+jinja2 = "*"
 
 [dev-packages]
 ipykernel = "*"

@@ -103,7 +103,6 @@ h5, p {
     display: grid;
     max-width: 99.9%;
     margin: var(--margin-small);
-    padding: 0 var(--margin-small);
 }
 
 /*=======================================================================================================================*/
@@ -115,14 +114,24 @@ h5, p {
 /*=======================================================================================================================*/
 /*======== Data Table Section */
 .project-structure {
-    margin-top: var(--margin-large);
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
 }
 
 /*=======================================================================================================================*/
 /*======== Table styling */
+/* Table styling */
+#app > b-container.my-4 > section > b-row > b-col > b-list-group > b-list-group-item > table {
+    width: 100%; /* Ensure table takes full width of its container */
+    margin-top: auto;
+    margin-bottom: auto;
+    table-layout: auto; /* Allow the table to adjust column widths automatically */
+}
+
+/* Apply overflow handling and text wrapping */
 .data.table.table-bordered.table-hover {
-    width: 100%;
     border-collapse: collapse;
+    width: 100%; /* Ensure table fits within the container */
 }
 
 .data.table.table-bordered.table-hover th,
@@ -130,18 +139,32 @@ h5, p {
     border: 1px solid var(--border-color); /* Border color */
     background-color: var(--background-color); /* Cell background color */
     color: var(--primary-color); /* Text color */
-    padding: 8px;
+    padding: 8px; /* Increased padding for readability */
     text-align: left;
+    word-wrap: break-word; /* Ensure long words are wrapped */
+    overflow-wrap: break-word; /* Ensure long words are wrapped */
 }
 
 .data.table.table-bordered.table-hover th {
     background-color: var(--header-background-color); /* Header background color */
+    border: 1px solid var(--border-color); /* Border color */
+    color: var(--primary-color); /* Text color */
+    padding: 8px; /* Increased padding for readability */
+    text-align: left;
 }
 
-/*=======================================================================================================================*/
-/*======== Pagination styling */
+/* Ensure container is centered */
+.b-list-group-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ensure pagination fits and is centered */
 .pagination {
-    margin-top: var(--margin-large);
+    display: flex;
+    justify-content: center;
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
 }
 
 .page-item {

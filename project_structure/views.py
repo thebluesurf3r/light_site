@@ -38,11 +38,31 @@ def index(request):
     
     # Load the data
     data = load_data(file_path, drop_na=True, encoding='utf-8')
-
+    
+    # Validate the structure of the 'light_site' app
+    app_name = 'project_structure'
+    root_dir = base_dir  # Assuming root_dir is base_dir
+    is_valid_structure = validate_app_structure(app_name, root_dir)
+    
+    if is_valid_structure:
+        logger.info(f"App '{app_name}' has a valid structure.")
+    else:
+        logger.error(f"App '{app_name}' does not have a valid structure.")
+    
+    # Preview the data
+    preview_data = None
     if data is not None:
-        search_query = request.GET.get('search', '')
+        # Categorize the files by extension
+        data = categorize_by_extension(data)
         
+        # Apply check_file_location to each row in the DataFrame
+        data['is_location_correct'] = data.apply(check_file_location, axis=1)
+        
+        # Display a preview of the DataFrame (first 10 rows)
+        preview_data = display_dataframe(data, rows=10)
+
         # Filter data based on the search query
+        search_query = request.GET.get('search', '')
         if search_query:
             pattern = re.compile(search_query, re.IGNORECASE)
             # Apply regex filter on 'directory_name' or 'entity_name'
@@ -75,11 +95,11 @@ def index(request):
         'table_html': table_html,
         'pagination_html': pagination_html,
         'search_query': search_query,  # Pass the search query to the template
+        'is_valid_structure': is_valid_structure,  # Pass app structure validity to template
+        'preview_data': preview_data.to_html(classes='preview table table-bordered table-hover') if preview_data is not None else None  # Pass preview data
     }
     
     return render(request, 'project_structure/index.html', context)
-
-
 
 def graphs(request):
     """

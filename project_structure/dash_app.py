@@ -18,7 +18,6 @@ from utils import (load_data,
                     log_df, df)
 import plotly.graph_objects as go
 
-
 # Parameters
 file_name = 'project_structure.pkl'
 file_path = os.path.join(settings.BASE_DIR, 'media', 'project_structure', 'data', file_name)
@@ -31,7 +30,6 @@ df = load_data(file_path=file_path, drop_na=drop_na, encoding=encoding)
 df = categorize_by_extension(df)
 
 df['expected_location'] = df.apply(check_file_location, axis=1)
-
 
 # Create figures
 level_count_fig = create_level_count_graph(
