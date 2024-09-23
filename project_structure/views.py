@@ -12,6 +12,7 @@ from .utils import (setup_logging,
                     load_data,
                     display_dataframe_html,
                     categorize_by_extension,
+                    categorize_file_extensions,
                     check_file_location,
                     validate_app_structure,
                     generate_custom_hover,
@@ -65,8 +66,8 @@ def index(request):
         search_query = request.GET.get('search', '')
         if search_query:
             pattern = re.compile(search_query, re.IGNORECASE)
-            # Apply regex filter on 'directory_name' or 'entity_name'
-            data = data[data.apply(lambda row: pattern.search(row['directory_name']) or pattern.search(row['entity_name']), axis=1)]
+            # Apply regex filter on '' or 'entity_name'
+            data = data[data.apply(lambda row: pattern.search(row['directory_name']), axis=1)]
         
         # Set up pagination
         paginator = Paginator(data, 10)  # Show 10 rows per page

@@ -17,6 +17,8 @@ urlpatterns = [
     path('about/', AboutView.as_view(), name='about'),
     path('projects/', ProjectView.as_view(), name='projects'),
     path('contact/', ContactView.as_view(), name='contact'),
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('project_structure/', include('project_structure.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

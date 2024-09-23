@@ -23,6 +23,25 @@
         </section>
     </b-container>
 
+    <!-- Search Form -->
+    <b-container class="my-4">
+        <section class="search-section mb-4">
+            <b-row>
+                <b-col>
+                    <!-- Search form: Sends search query as a GET parameter -->
+                    <form method="get" action="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name="search" value="{{ search_query }}" placeholder="Search by directory or entity name...">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </b-col>
+            </b-row>
+        </section>
+    </b-container>
+
     <!-- Data Table Section -->
     <b-container class="my-4">
         <section class="project-structure mb-4">
@@ -42,31 +61,31 @@
                             <ul class="pagination justify-content-center">
                                 {% if pagination_html.has_previous %}
                                     <li class="page-item">
-                                        <a class="page-link" href="?page=1" aria-label="First">
+                                        <a class="page-link" href="?search={{ search_query }}&page=1" aria-label="First">
                                             <span aria-hidden="true">&laquo;&laquo;</span>
                                         </a>
                                     </li>
                                     <li class="page-item">
-                                        <a class="page-link" href="?page={{ pagination_html.previous_page_number }}" aria-label="Previous">
+                                        <a class="page-link" href="?search={{ search_query }}&page={{ pagination_html.previous_page_number }}" aria-label="Previous">
                                             <span aria-hidden="true">&laquo;</span>
                                         </a>
                                     </li>
                                 {% endif %}
 
-                                {% for page_num in page_numbers %}
-                                    <li class="page-item {% if page_num == pagination_html.number %}active{% endif %}">
-                                        <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+                                {% for page_num in pagination_html.page_numbers %}
+                                    <li class="page-item {% if page_num == pagination_html.current_page %}active{% endif %}">
+                                        <a class="page-link" href="?search={{ search_query }}&page={{ page_num }}">{{ page_num }}</a>
                                     </li>
                                 {% endfor %}
 
                                 {% if pagination_html.has_next %}
                                     <li class="page-item">
-                                        <a class="page-link" href="?page={{ pagination_html.next_page_number }}" aria-label="Next">
+                                        <a class="page-link" href="?search={{ search_query }}&page={{ pagination_html.next_page_number }}" aria-label="Next">
                                             <span aria-hidden="true">&raquo;</span>
                                         </a>
                                     </li>
                                     <li class="page-item">
-                                        <a class="page-link" href="?page={{ pagination_html.paginator.num_pages }}" aria-label="Last">
+                                        <a class="page-link" href="?search={{ search_query }}&page={{ pagination_html.total_pages }}" aria-label="Last">
                                             <span aria-hidden="true">&raquo;&raquo;</span>
                                         </a>
                                     </li>

@@ -8,6 +8,7 @@ import plotly.graph_objects as go
 from utils import (load_data,
                     DataFrameLoggingHandler,
                     categorize_by_extension,
+                    categorize_file_extensions,
                     check_file_location,
                     validate_app_structure,
                     generate_custom_hover,

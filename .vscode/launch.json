@@ -1,15 +1,44 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "name": "Launch Chrome (Development)",
+            "url": "http://localhost:8080",           // Local development server
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,                       // Use source maps in development for easier debugging
+            "trace": true,                            // Enable detailed trace logging for deeper insights
+            "smartStep": true,                        // Automatically step through unmapped code if source map is missing
+            "skipFiles": [
+                "node_modules/**",                    // Skip unnecessary files like node_modules
+                "minified/**/*.js",                   // Skip minified files (if applicable)
+                "<node_internals>/**"                 // Skip node internals
+            ],
+            "internalConsoleOptions": "openOnSessionStart",  // Opens debugging console on start
+            "runtimeArgs": [
+                "--remote-debugging-port=9222",       // Chrome remote debugging protocol
+                "--disable-web-security"              // Optionally, if you're dealing with CORS issues during development
+            ]
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome (Production)",
+            "url": "https://your-production-domain.com",   // Replace with actual production domain
+            "webRoot": "${workspaceFolder}/dist",     // Production build folder
+            "sourceMaps": false,                      // Turn off source maps in production for security reasons
+            "trace": false,                           // Disable detailed trace logging to avoid performance overhead
+            "skipFiles": [
+                "node_modules/**",                    // Skip unnecessary files
+                "<node_internals>/**"
+            ],
+            "smartStep": true,                        // Continue stepping through unmapped code
+            "runtimeArgs": [
+                "--headless",                         // Headless mode for faster, efficient debugging in production
+                "--disable-gpu",                      // Disable GPU for headless environments
+                "--no-sandbox"                        // Useful for Dockerized environments
+            ]
         }
     ]
 }

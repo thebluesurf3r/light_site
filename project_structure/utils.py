@@ -2,22 +2,23 @@ import re
 import os
 import time
 import logging
-import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
-import plotly.express as px
-import plotly.graph_objects as go
 import plotly.io as pio
-from django.conf import settings
-from light_site.log import log_imported_libraries
-from logging.handlers import RotatingFileHandler
+import plotly.express as px
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+
 from queue import Queue
 from threading import Thread
+from django.conf import settings
+from logging.handlers import RotatingFileHandler
+from light_site.log import log_imported_libraries
 
 #=====================================================================================================================================================#
+#== Global DataFrame to store log entries ==#
 
-# Global DataFrame to store log entries
 log_df = pd.DataFrame(columns=['Timestamp', 'Level', 'Message'])
 
 class DataFrameLoggingHandler(logging.Handler):
@@ -92,6 +93,7 @@ drop_na = False
 encoding = False
 
 #=====================================================================================================================================================#
+#== Data Loading Function ==#
 
 def load_data(file_path, drop_na=False, encoding='utf-8'):
     """
@@ -127,16 +129,17 @@ def load_data(file_path, drop_na=False, encoding='utf-8'):
     except Exception as e:
         logging.error(f"An error occurred: {e}")
 
-#=====================================================================================================================================================#
+#== Load Data ==#
 
-# Load the dataset using load_data
 df = load_data(file_path=file_path, drop_na=drop_na, encoding=encoding)
 
-#=====================================================================================================================================================#
+#== Data Load Verification ==#
 
-# Check if the DataFrame was successfully loaded
 if df is not None:
     logging.info(f"Dataset loaded with {df.shape[0]} rows and {df.shape[1]} columns.")
+
+#=====================================================================================================================================================#
+#== Display DataFrame in HTML Function ==#
 
 def display_dataframe_html(df, rows=5, exclude_column='hover_template'):
     """
@@ -167,6 +170,7 @@ def display_dataframe_html(df, rows=5, exclude_column='hover_template'):
 html_table = display_dataframe_html(df, rows=5)
 
 #=====================================================================================================================================================#
+#== Categorize Data by Extension ==#
 
 def categorize_by_extension(df):
     """
@@ -186,7 +190,7 @@ def categorize_by_extension(df):
 
         # Log the unique file extensions found
         unique_extensions = df['file_extension'].unique()
-        logging.info(f"Found {len(unique_extensions)} unique file extensions: {unique_extensions}")
+        logging.info(f"Found {len(unique_extensions)} unique extensions.")
 
         return df
 
@@ -198,6 +202,36 @@ def categorize_by_extension(df):
 df = categorize_by_extension(df)
 
 #=====================================================================================================================================================#
+#== Categorize the Extracted Extensions ==#
+
+def categorize_file_extensions(file_extension):
+    # Define file extension categories
+    buckets = {
+        "Code Files": ['py', 'ipynb', 'js', 'ts', 'mjs', 'mts', 'cjs', 'php', 'cts'],
+        "Data Files": ['csv', 'pkl', 'sqlite3', 'xml', 'json'],
+        "Configuration Files": ['env', 'gitignore', 'yml', 'lock', 'cfg', 'eslintrc', 'nycrc', 'babelrc', 'jshintrc', 'npmignore'],
+        "Text Files": ['txt', 'md', 'markdown', '1', '10'],
+        "Log Files": ['log', 'history'],
+        "Web Files": ['html', 'css', 'scss', 'svg', 'webmanifest'],
+        "Font Files": ['otf', 'ttf'],
+        "Image Files": ['png', 'jpg'],
+        "Executable Files": ['exe'],
+        "Other": ['No Extension', 'enc', 'git', 'closure-compiler', 'esprima', 'BSD', 'bin', 'def', 'tmpl', 'dist-info', 'pth', 'pem'],
+        "Miscellaneous": ['sample', 'realpath', 'merge', 'walk', 'scandir', 'stat', 'vite', 'applescript', 'ps1', 'csh', 'fish'],
+    }
+    
+    # Loop through buckets and categorize file extension
+    for category, extensions in buckets.items():
+        if file_extension in extensions:
+            return category
+    return "Unknown"  # For any uncategorized file extensions
+
+# Example usage:
+file_extensions = ['py', 'csv', 'log', 'otf', 'unknown_extension']
+categorized = [categorize_file_extensions(ext) for ext in file_extensions]
+
+#=====================================================================================================================================================#
+#== Function to Check File Location ==#
 
 def check_file_location(row):
     """
@@ -243,6 +277,7 @@ def check_file_location(row):
     return False
 
 #=====================================================================================================================================================#
+#== Function to Validate App Structure ==#
 
 def validate_app_structure(app_name, root_dir):
     """
@@ -306,9 +341,10 @@ logging.info(f"Validating file location for all rows.")
 
 # To check counts of valid/invalid locations
 counts = df['expected_location'].value_counts()
-logging.info(f"Counts of expected locations: {counts}")
+logging.info(f"Checking expected locations for static content")
 
 #=====================================================================================================================================================#
+#== Function to Generate Custom Hover ==#
 
 def generate_custom_hover(row):
     """
@@ -334,6 +370,7 @@ logging.info(f"Hover template created and applied to DataFrame.")
 
 
 #=====================================================================================================================================================#
+#== Function to Create Color Map ==#
 
 def create_color_map(df, category_column):
     """
@@ -359,6 +396,7 @@ def create_color_map(df, category_column):
 # GRAPHS MOVED FROM HERE to plotly_utils.py #
 
 #=====================================================================================================================================================#
+#== Function to Export DataFrame ==#
 
 def export_dataframe(df, pickle_file_path, csv_file_path):
     """
@@ -385,6 +423,7 @@ csv_path = 'structure_processed.csv'
 export_dataframe(df, pickle_path, csv_path)
 
 #=====================================================================================================================================================#
+#== Function to Display DataFrame ==#
 
 def display_dataframe(df, rows=5, exclude_column='hover_template'):
     logging.info(f"Previewing the dataset: {display_dataframe}")
@@ -396,11 +435,12 @@ preview_data = display_dataframe(df, rows=10)
 preview_data
 
 #=====================================================================================================================================================#
+#== Function to Display Website Log ==#
 
 logging.info(f"Log size: {log_df.shape}")
 
 def display_log_df(log_df, rows=5, exclude_column=None):
-    logging.info(f"Viewing the log: {display_dataframe}")
+    logging.info(f"Viewing the log: {display_log_df}")
     if exclude_column in df.columns:
         log_df = log_df.drop(columns=exclude_column)
     return log_df.head(rows)

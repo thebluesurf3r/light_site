@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'corsheaders',
     'django_celery_results',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -123,15 +124,15 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = 'accounts/login'
+LOGIN_REDIRECT_URL = 'accounts/login'
+LOGOUT_REDIRECT_URL = 'accounts'
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5000",  # Flask App URL
 ]
-
+SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -142,7 +143,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # Security settings
-SECRET_KEY = env('DJANGO_SECRET_KEY', default='django-insecure-xguehtl7au*xcj90soct!1=&jd+8-8_ma^s24x=liq)2@yb&hl')
+SECRET_KEY = env('DJANGO_SECRET_KEY', default='django-secret-key')
 DEBUG = env('DJANGO_DEBUG', default='True') == 'True'
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=[])
 

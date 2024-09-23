@@ -14,4 +14,4 @@ urlpatterns = [
 ]
 
 # Log URL pattern registration
-logger.info('URL patterns have been registered: %s', urlpatterns)
+logger.info(f"URL patterns have been registered for project_structure")

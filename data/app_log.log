@@ -18516,3 +18516,1869 @@ relative_path     object
 level              int64
 type              object
 dtype: object
+2024-09-20 00:38:06,110 - INFO - Initializing logging configuration
+2024-09-20 00:38:06,116 - INFO - Importing 'os' without alias
+2024-09-20 00:38:06,125 - INFO - Importing 'time' without alias
+2024-09-20 00:38:06,131 - INFO - Importing 're' as 're'
+2024-09-20 00:38:06,138 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 00:38:06,147 - INFO - Importing 'numpy' as 'np'
+2024-09-20 00:38:06,155 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 00:38:06,162 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 00:38:06,169 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 00:38:06,176 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 00:38:06,185 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 00:38:10,628 - INFO - Dataset loaded successfully: <function load_data at 0x7b22bc9784c0>
+2024-09-20 00:38:10,647 - INFO - Removed 0 rows with NaN values.
+2024-09-20 00:38:10,654 - INFO - Index reset.
+2024-09-20 00:38:10,661 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 00:38:10,670 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 00:38:11,123 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x7b227d4855a0>
+2024-09-20 00:38:11,705 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x7b227d4864d0>
+2024-09-20 00:38:12,256 - INFO - Validating app structure: <function validate_app_structure at 0x7b227d485510>
+2024-09-20 00:38:12,658 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 00:38:12,667 - INFO - Validating file location: <function check_file_location at 0x7b227d485360>
+2024-09-20 00:38:12,678 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 00:38:14,158 - INFO - Hover template created: <function generate_custom_hover at 0x7b227d486950>
+2024-09-20 00:38:14,481 - INFO - Color discrete map created: <function create_color_map at 0x7b227d487130>.
+2024-09-20 00:38:15,469 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x7b227d4868c0>.
+2024-09-20 00:38:16,097 - INFO - Creating a level count graph: <function create_level_count_graph at 0x7b227d4876d0>.
+2024-09-20 00:38:19,978 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 00:38:22,095 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 00:38:23,015 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 00:38:23,295 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 00:38:23,320 - INFO - Previewing the dataset: <function display_dataframe at 0x7b227c2c2ef0>
+2024-09-20 00:38:23,401 - INFO - Log size: (31, 3)
+2024-09-20 00:38:23,414 - INFO - Viewing the log: <function display_dataframe at 0x7b227c2c2ef0>
+2024-09-20 00:41:22,044 - INFO - Initializing logging configuration
+2024-09-20 00:41:22,050 - INFO - Importing 'os' without alias
+2024-09-20 00:41:22,061 - INFO - Importing 'time' without alias
+2024-09-20 00:41:22,070 - INFO - Importing 're' as 're'
+2024-09-20 00:41:22,078 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 00:41:22,086 - INFO - Importing 'numpy' as 'np'
+2024-09-20 00:41:22,097 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 00:41:22,104 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 00:41:22,112 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 00:41:22,119 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 00:41:22,127 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 00:41:22,514 - INFO - Dataset loaded successfully: <function load_data at 0x7b227d902cb0>
+2024-09-20 00:41:22,535 - INFO - Removed 0 rows with NaN values.
+2024-09-20 00:41:22,544 - INFO - Index reset.
+2024-09-20 00:41:22,554 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 00:41:22,564 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 00:41:22,651 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x7b227820a3b0>
+2024-09-20 00:41:22,797 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x7b227802c550>
+2024-09-20 00:41:22,984 - INFO - Validating app structure: <function validate_app_structure at 0x7b227d485360>
+2024-09-20 00:41:23,354 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 00:41:23,363 - INFO - Validating file location: <function check_file_location at 0x7b227d486b90>
+2024-09-20 00:41:23,376 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 00:41:23,406 - INFO - Hover template created: <function generate_custom_hover at 0x7b227d4855a0>
+2024-09-20 00:41:23,626 - INFO - Color discrete map created: <function create_color_map at 0x7b227d486950>.
+2024-09-20 00:41:24,338 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x7b227d487370>.
+2024-09-20 00:41:24,874 - INFO - Creating a level count graph: <function create_level_count_graph at 0x7b227d486c20>.
+2024-09-20 00:41:25,457 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 00:41:25,690 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 00:41:26,351 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 00:41:26,472 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 00:41:26,496 - INFO - Previewing the dataset: <function display_dataframe at 0x7b227802c700>
+2024-09-20 00:41:26,964 - INFO - Log size: (31, 3)
+2024-09-20 00:41:26,977 - INFO - Viewing the log: <function display_dataframe at 0x7b227802c700>
+2024-09-20 00:46:44,429 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 00:47:03,533 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 00:47:12,137 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 00:48:48,475 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 00:48:58,294 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 00:51:46,824 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:01:43,519 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:06:03,029 - INFO - Initializing logging configuration
+2024-09-20 01:06:03,038 - INFO - Importing 'os' without alias
+2024-09-20 01:06:03,047 - INFO - Importing 'time' without alias
+2024-09-20 01:06:03,056 - INFO - Importing 're' as 're'
+2024-09-20 01:06:03,067 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 01:06:03,074 - INFO - Importing 'numpy' as 'np'
+2024-09-20 01:06:03,083 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 01:06:03,095 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 01:06:03,104 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 01:06:03,114 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 01:06:03,125 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 01:06:05,072 - INFO - Dataset loaded successfully: <function load_data at 0x7b2278209990>
+2024-09-20 01:06:05,093 - INFO - Removed 0 rows with NaN values.
+2024-09-20 01:06:05,104 - INFO - Index reset.
+2024-09-20 01:06:05,114 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 01:06:05,125 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 01:06:05,252 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x7b2278466b00>
+2024-09-20 01:06:05,372 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x7b22735a6200>
+2024-09-20 01:06:05,549 - INFO - Validating app structure: <function validate_app_structure at 0x7b227d486b90>
+2024-09-20 01:06:05,895 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 01:06:05,905 - INFO - Validating file location: <function check_file_location at 0x7b227802c9d0>
+2024-09-20 01:06:05,917 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 01:06:05,944 - INFO - Hover template created: <function generate_custom_hover at 0x7b227802c940>
+2024-09-20 01:06:06,332 - INFO - Color discrete map created: <function create_color_map at 0x7b227802ca60>.
+2024-09-20 01:06:06,712 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x7b227d902b90>.
+2024-09-20 01:06:07,068 - INFO - Creating a level count graph: <function create_level_count_graph at 0x7b227d4855a0>.
+2024-09-20 01:06:07,585 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 01:06:07,826 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 01:06:08,534 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 01:06:08,620 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 01:06:08,815 - INFO - Previewing the dataset: <function display_dataframe at 0x7b22735a7130>
+2024-09-20 01:06:09,062 - INFO - Log size: (31, 3)
+2024-09-20 01:06:09,070 - INFO - Viewing the log: <function display_dataframe at 0x7b22735a7130>
+2024-09-20 01:06:13,642 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:24:34,401 - INFO - File size category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:24:34,444 - INFO - Aggregated 1 categories into 'Other' with a total count of 0.
+2024-09-20 01:24:34,851 - INFO - File size category distribution plot generated successfully.
+2024-09-20 01:24:34,970 - INFO - Plot saved as file_size_category_distribution.html.
+2024-09-20 01:25:33,594 - INFO - File size category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:25:33,627 - INFO - Aggregated 1 categories into 'Other' with a total count of 0.
+2024-09-20 01:25:33,982 - INFO - File size category distribution plot generated successfully.
+2024-09-20 01:25:34,114 - INFO - Plot saved as file_size_category_distribution.html.
+2024-09-20 01:25:38,216 - INFO - File size category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:25:38,253 - INFO - Aggregated 1 categories into 'Other' with a total count of 0.
+2024-09-20 01:25:38,568 - INFO - File size category distribution plot generated successfully.
+2024-09-20 01:25:38,705 - INFO - Plot saved as file_size_category_distribution.html.
+2024-09-20 01:25:42,775 - INFO - File size category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:25:42,826 - INFO - Aggregated 1 categories into 'Other' with a total count of 0.
+2024-09-20 01:25:43,181 - INFO - File size category distribution plot generated successfully.
+2024-09-20 01:25:43,302 - INFO - Plot saved as file_size_category_distribution.html.
+2024-09-20 01:25:49,088 - INFO - File size category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:25:49,124 - INFO - Aggregated 1 categories into 'Other' with a total count of 0.
+2024-09-20 01:25:49,449 - INFO - File size category distribution plot generated successfully.
+2024-09-20 01:25:49,580 - INFO - Plot saved as file_size_category_distribution.html.
+2024-09-20 01:32:58,325 - INFO - Initializing logging configuration
+2024-09-20 01:32:58,332 - INFO - Importing 'os' without alias
+2024-09-20 01:32:58,339 - INFO - Importing 'time' without alias
+2024-09-20 01:32:58,348 - INFO - Importing 're' as 're'
+2024-09-20 01:32:58,358 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 01:32:58,366 - INFO - Importing 'numpy' as 'np'
+2024-09-20 01:32:58,376 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 01:32:58,383 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 01:32:58,391 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 01:32:58,401 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 01:32:58,413 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 01:32:59,176 - INFO - Dataset loaded successfully: <function load_data at 0x7b2278466320>
+2024-09-20 01:32:59,192 - INFO - Removed 0 rows with NaN values.
+2024-09-20 01:32:59,199 - INFO - Index reset.
+2024-09-20 01:32:59,207 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 01:32:59,215 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 01:32:59,571 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x7b2278466cb0>
+2024-09-20 01:32:59,869 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x7b227d902b90>
+2024-09-20 01:33:00,112 - INFO - Validating app structure: <function validate_app_structure at 0x7b227802c9d0>
+2024-09-20 01:33:00,462 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 01:33:00,472 - INFO - Validating file location: <function check_file_location at 0x7b22735a65f0>
+2024-09-20 01:33:00,484 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 01:33:00,510 - INFO - Hover template created: <function generate_custom_hover at 0x7b22735a69e0>
+2024-09-20 01:33:01,091 - INFO - Color discrete map created: <function create_color_map at 0x7b22735a6680>.
+2024-09-20 01:33:01,603 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x7b22bc978dc0>.
+2024-09-20 01:33:02,427 - INFO - Creating a level count graph: <function create_level_count_graph at 0x7b227d486b90>.
+2024-09-20 01:33:03,427 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 01:33:03,921 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 01:33:05,339 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 01:33:05,440 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 01:33:05,761 - INFO - Previewing the dataset: <function display_dataframe at 0x7b22735a7a30>
+2024-09-20 01:33:06,320 - INFO - Log size: (31, 3)
+2024-09-20 01:33:06,331 - INFO - Viewing the log: <function display_dataframe at 0x7b22735a7a30>
+2024-09-20 01:33:09,070 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:33:14,363 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:48:34,877 - INFO - Initializing logging configuration
+2024-09-20 01:48:34,882 - INFO - Importing 'os' without alias
+2024-09-20 01:48:34,894 - INFO - Importing 'time' without alias
+2024-09-20 01:48:34,904 - INFO - Importing 're' as 're'
+2024-09-20 01:48:34,913 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 01:48:34,921 - INFO - Importing 'numpy' as 'np'
+2024-09-20 01:48:34,931 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 01:48:34,938 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 01:48:34,946 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 01:48:34,955 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 01:48:34,963 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 01:48:35,230 - INFO - Dataset loaded successfully: <function load_data at 0x7b227300d3f0>
+2024-09-20 01:48:35,249 - INFO - Removed 0 rows with NaN values.
+2024-09-20 01:48:35,260 - INFO - Index reset.
+2024-09-20 01:48:35,270 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 01:48:35,282 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 01:48:35,383 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x7b227265a290>
+2024-09-20 01:48:35,860 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x7b2278466cb0>
+2024-09-20 01:48:36,002 - INFO - Validating app structure: <function validate_app_structure at 0x7b22735a65f0>
+2024-09-20 01:48:36,338 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 01:48:36,346 - INFO - Validating file location: <function check_file_location at 0x7b227300da20>
+2024-09-20 01:48:36,360 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 01:48:36,389 - INFO - Hover template created: <function generate_custom_hover at 0x7b2272c26b90>
+2024-09-20 01:48:36,425 - INFO - Color discrete map created: <function create_color_map at 0x7b22735a69e0>.
+2024-09-20 01:48:36,591 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x7b227802cdc0>.
+2024-09-20 01:48:36,839 - INFO - Creating a level count graph: <function create_level_count_graph at 0x7b22735a6290>.
+2024-09-20 01:48:37,226 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 01:48:37,476 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 01:48:38,192 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 01:48:38,310 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 01:48:38,342 - INFO - Previewing the dataset: <function display_dataframe at 0x7b227247ba30>
+2024-09-20 01:48:38,402 - INFO - Log size: (31, 3)
+2024-09-20 01:48:38,417 - INFO - Viewing the log: <function display_dataframe at 0x7b227247ba30>
+2024-09-20 01:48:38,823 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:48:41,548 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:48:42,123 - INFO - File size category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:49:33,072 - INFO - Initializing logging configuration
+2024-09-20 01:49:33,078 - INFO - Importing 'os' without alias
+2024-09-20 01:49:33,088 - INFO - Importing 'time' without alias
+2024-09-20 01:49:33,096 - INFO - Importing 're' as 're'
+2024-09-20 01:49:33,104 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 01:49:33,112 - INFO - Importing 'numpy' as 'np'
+2024-09-20 01:49:33,121 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 01:49:33,128 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 01:49:33,137 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 01:49:33,145 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 01:49:33,154 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 01:49:33,440 - INFO - Dataset loaded successfully: <function load_data at 0x7b227265beb0>
+2024-09-20 01:49:33,459 - INFO - Removed 0 rows with NaN values.
+2024-09-20 01:49:33,467 - INFO - Index reset.
+2024-09-20 01:49:33,477 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 01:49:33,487 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 01:49:33,573 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x7b2278465120>
+2024-09-20 01:49:33,716 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x7b2278465a20>
+2024-09-20 01:49:33,857 - INFO - Validating app structure: <function validate_app_structure at 0x7b227300da20>
+2024-09-20 01:49:34,184 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 01:49:34,193 - INFO - Validating file location: <function check_file_location at 0x7b227247a290>
+2024-09-20 01:49:34,205 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 01:49:34,230 - INFO - Hover template created: <function generate_custom_hover at 0x7b227247a5f0>
+2024-09-20 01:49:34,769 - INFO - Color discrete map created: <function create_color_map at 0x7b22722cff40>.
+2024-09-20 01:49:34,894 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x7b2272c26dd0>.
+2024-09-20 01:49:35,638 - INFO - Creating a level count graph: <function create_level_count_graph at 0x7b2272c26cb0>.
+2024-09-20 01:49:36,194 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 01:49:36,434 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 01:49:37,174 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 01:49:37,275 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 01:49:37,297 - INFO - Previewing the dataset: <function display_dataframe at 0x7b22721e1a20>
+2024-09-20 01:49:37,604 - INFO - Log size: (31, 3)
+2024-09-20 01:49:37,612 - INFO - Viewing the log: <function display_dataframe at 0x7b22721e1a20>
+2024-09-20 01:49:39,787 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 01:51:38,069 - INFO - Log size: (34, 3)
+2024-09-20 01:51:38,081 - INFO - Viewing the log: <function display_dataframe at 0x7b22721e1a20>
+2024-09-20 01:51:40,832 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:17:18,170 - INFO - Initializing logging configuration
+2024-09-20 09:17:18,178 - INFO - Importing 'os' without alias
+2024-09-20 09:17:18,190 - INFO - Importing 'time' without alias
+2024-09-20 09:17:18,199 - INFO - Importing 're' as 're'
+2024-09-20 09:17:18,207 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 09:17:18,214 - INFO - Importing 'numpy' as 'np'
+2024-09-20 09:17:18,225 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 09:17:18,238 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 09:17:18,249 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 09:17:18,258 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 09:17:18,266 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 09:17:18,353 - INFO - Dataset loaded successfully: <function load_data at 0x751245702ef0>
+2024-09-20 09:17:18,374 - INFO - Removed 0 rows with NaN values.
+2024-09-20 09:17:18,381 - INFO - Index reset.
+2024-09-20 09:17:18,390 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 09:17:18,400 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 09:17:18,427 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x751245585a20>
+2024-09-20 09:17:18,475 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x7512455855a0>
+2024-09-20 09:17:18,546 - INFO - Validating app structure: <function validate_app_structure at 0x751245586b90>
+2024-09-20 09:17:18,833 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 09:17:18,839 - INFO - Validating file location: <function check_file_location at 0x751245586b00>
+2024-09-20 09:17:18,851 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 09:17:18,880 - INFO - Hover template created: <function generate_custom_hover at 0x751245585750>
+2024-09-20 09:17:19,734 - INFO - Color discrete map created: <function create_color_map at 0x751245702e60>.
+2024-09-20 09:17:20,911 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x751245586e60>.
+2024-09-20 09:17:39,164 - INFO - Creating a level count graph: <function create_level_count_graph at 0x7512455876d0>.
+2024-09-20 09:17:41,149 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 09:17:42,214 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 09:17:42,869 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 09:17:42,961 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 09:17:42,984 - INFO - Previewing the dataset: <function display_dataframe at 0x75127867cb80>
+2024-09-20 09:17:43,661 - INFO - Log size: (31, 3)
+2024-09-20 09:17:43,672 - INFO - Viewing the log: <function display_dataframe at 0x75127867cb80>
+2024-09-20 09:17:44,910 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:18:06,847 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:20:23,708 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:20:40,305 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:23:13,898 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:25:52,667 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:26:18,379 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:26:31,473 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:26:46,348 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:28:15,049 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:28:36,436 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:29:03,871 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:29:25,007 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 09:29:54,264 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 22:36:42,359 - INFO - Initializing logging configuration
+2024-09-20 22:36:42,365 - INFO - Importing 'os' without alias
+2024-09-20 22:36:42,376 - INFO - Importing 'time' without alias
+2024-09-20 22:36:42,383 - INFO - Importing 're' as 're'
+2024-09-20 22:36:42,390 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 22:36:42,398 - INFO - Importing 'numpy' as 'np'
+2024-09-20 22:36:42,406 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 22:36:42,413 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 22:36:42,423 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 22:36:42,431 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 22:36:42,438 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 22:36:42,510 - INFO - Dataset loaded successfully: <function load_data at 0x74dc8c0fef80>
+2024-09-20 22:36:42,528 - INFO - Removed 0 rows with NaN values.
+2024-09-20 22:36:42,537 - INFO - Index reset.
+2024-09-20 22:36:42,546 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 22:36:42,558 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 22:36:42,597 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x74dc79a7d990>
+2024-09-20 22:36:42,644 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x74dc79a7e9e0>
+2024-09-20 22:36:43,296 - INFO - Validating app structure: <function validate_app_structure at 0x74dcb9785120>
+2024-09-20 22:36:43,635 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 22:36:43,647 - INFO - Validating file location: <function check_file_location at 0x74dcb9784f70>
+2024-09-20 22:36:43,671 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 22:36:44,776 - INFO - Hover template created: <function generate_custom_hover at 0x74dc79a7dab0>
+2024-09-20 22:36:46,137 - INFO - Color discrete map created: <function create_color_map at 0x74dc79a7d6c0>.
+2024-09-20 22:36:47,163 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x74dc79a7f250>.
+2024-09-20 22:36:48,366 - INFO - Creating a level count graph: <function create_level_count_graph at 0x74dc8c0fed40>.
+2024-09-20 22:36:50,704 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 22:36:51,768 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 22:36:54,606 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 22:36:54,742 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 22:36:55,490 - INFO - Previewing the dataset: <function display_dataframe at 0x74dc8c0feef0>
+2024-09-20 22:36:56,816 - INFO - Log size: (31, 3)
+2024-09-20 22:36:56,825 - INFO - Viewing the log: <function display_dataframe at 0x74dc8c0feef0>
+2024-09-20 22:36:59,790 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 22:37:22,110 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 22:37:22,512 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 23:11:21,357 - INFO - Initializing logging configuration
+2024-09-20 23:11:21,363 - INFO - Importing 'os' without alias
+2024-09-20 23:11:21,374 - INFO - Importing 'time' without alias
+2024-09-20 23:11:21,380 - INFO - Importing 're' as 're'
+2024-09-20 23:11:21,388 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 23:11:21,399 - INFO - Importing 'numpy' as 'np'
+2024-09-20 23:11:21,408 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 23:11:21,415 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 23:11:21,423 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 23:11:21,430 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 23:11:21,438 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 23:11:23,954 - INFO - Dataset loaded successfully: <function load_data at 0x74dc8c0ff0a0>
+2024-09-20 23:11:23,973 - INFO - Removed 0 rows with NaN values.
+2024-09-20 23:11:23,981 - INFO - Index reset.
+2024-09-20 23:11:23,989 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 23:11:24,000 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 23:11:25,125 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x74dcb9784c10>
+2024-09-20 23:11:31,218 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x74dc77cc1ea0>
+2024-09-20 23:11:31,749 - INFO - Validating app structure: <function validate_app_structure at 0x74dcb9784f70>
+2024-09-20 23:11:32,079 - INFO - App 'project_structure' has a valid structure: True
+2024-09-20 23:11:32,088 - INFO - Validating file location: <function check_file_location at 0x74dc77b73d00>
+2024-09-20 23:11:32,100 - INFO - Counts of expected locations: expected_location
+False    8543
+True       89
+Name: count, dtype: int64
+2024-09-20 23:11:33,122 - INFO - Hover template created: <function generate_custom_hover at 0x74dc77b73d90>
+2024-09-20 23:11:33,492 - INFO - Color discrete map created: <function create_color_map at 0x74dc77b73eb0>.
+2024-09-20 23:11:33,849 - INFO - Graph layout has been processed: <function prepare_and_save_plot at 0x74dc79a7f370>.
+2024-09-20 23:11:34,197 - INFO - Creating a level count graph: <function create_level_count_graph at 0x74dc787dc790>.
+2024-09-20 23:11:34,784 - INFO - Level count graph generated: (level_count_fig | prepare_and_save_plot)
+2024-09-20 23:11:35,024 - INFO - File extension distribution generated: (extension_count_fig | prepare_and_save_plot)
+2024-09-20 23:11:35,716 - INFO - DataFrame exported successfully: structure_processed.pkl
+2024-09-20 23:11:35,828 - INFO - DataFrame exported successfully: structure_processed.csv
+2024-09-20 23:11:44,567 - INFO - Previewing the dataset: <function display_dataframe at 0x74dc77bdb7f0>
+2024-09-20 23:11:45,406 - INFO - Log size: (31, 3)
+2024-09-20 23:11:45,417 - INFO - Viewing the log: <function display_dataframe at 0x74dc77bdb7f0>
+2024-09-20 23:11:46,588 - INFO - File category distribution generated: (category_count_fig | prepare_and_save_plot)
+2024-09-20 23:18:55,635 - INFO - Initializing logging configuration
+2024-09-20 23:18:55,639 - INFO - Importing 'os' without alias
+2024-09-20 23:18:55,644 - INFO - Importing 'time' without alias
+2024-09-20 23:18:55,649 - INFO - Importing 're' as 're'
+2024-09-20 23:18:55,655 - INFO - Importing 'pandas' as 'pd'
+2024-09-20 23:18:55,661 - INFO - Importing 'numpy' as 'np'
+2024-09-20 23:18:55,667 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-20 23:18:55,673 - INFO - Importing 'seaborn' as 'sns'
+2024-09-20 23:18:55,679 - INFO - Importing 'plotly.express' as 'px'
+2024-09-20 23:18:55,687 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-20 23:18:55,693 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-20 23:18:55,751 - INFO - Dataset loaded successfully: <function load_data at 0x751b4d37ca60>
+2024-09-20 23:18:55,767 - INFO - Removed 0 rows with NaN values.
+2024-09-20 23:18:55,774 - INFO - Index reset.
+2024-09-20 23:18:55,781 - INFO - Number of rows and columns = (8632, 5)
+2024-09-20 23:18:55,793 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-20 23:18:55,818 - INFO - Rendering an HTML preview: <function display_dataframe_html at 0x751b0de89990>
+2024-09-20 23:18:55,859 - INFO - Categorizing data by file extension: <function categorize_by_extension at 0x751b4d37cb80>
+2024-09-21 18:32:43,456 - INFO - Initializing logging configuration
+2024-09-21 18:32:43,463 - INFO - Importing 'os' without alias
+2024-09-21 18:32:43,476 - INFO - Importing 'time' without alias
+2024-09-21 18:32:43,484 - INFO - Importing 're' as 're'
+2024-09-21 18:32:43,492 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 18:32:43,501 - INFO - Importing 'numpy' as 'np'
+2024-09-21 18:32:43,509 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 18:32:43,517 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 18:32:43,530 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 18:32:43,539 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 18:32:43,547 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 18:39:07,382 - INFO - Initializing logging configuration
+2024-09-21 18:39:07,390 - INFO - Importing 'os' without alias
+2024-09-21 18:39:07,401 - INFO - Importing 'time' without alias
+2024-09-21 18:39:07,408 - INFO - Importing 're' as 're'
+2024-09-21 18:39:07,419 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 18:39:07,428 - INFO - Importing 'numpy' as 'np'
+2024-09-21 18:39:07,438 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 18:39:07,447 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 18:39:07,457 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 18:39:07,469 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 18:39:07,482 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 18:39:11,274 - INFO - Dataset loaded successfully: <function load_data at 0x72a9811b30a0>
+2024-09-21 18:39:11,290 - INFO - Removed 0 rows with NaN values.
+2024-09-21 18:39:11,296 - INFO - Index reset.
+2024-09-21 18:39:11,304 - INFO - Number of rows and columns = (8632, 5)
+2024-09-21 18:39:11,313 - INFO - Number of rows and columns = directory_name    object
+entity_name       object
+relative_path     object
+level              int64
+type              object
+dtype: object
+2024-09-21 18:59:27,850 - INFO - Initializing logging configuration
+2024-09-21 18:59:27,858 - INFO - Importing 'os' without alias
+2024-09-21 18:59:27,869 - INFO - Importing 'time' without alias
+2024-09-21 18:59:27,878 - INFO - Importing 're' as 're'
+2024-09-21 18:59:27,892 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 18:59:27,902 - INFO - Importing 'numpy' as 'np'
+2024-09-21 18:59:27,914 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 18:59:27,923 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 18:59:27,934 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 18:59:27,944 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 18:59:27,954 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:00:58,532 - INFO - Initializing logging configuration
+2024-09-21 19:00:58,539 - INFO - Importing 'os' without alias
+2024-09-21 19:00:58,548 - INFO - Importing 'time' without alias
+2024-09-21 19:00:58,557 - INFO - Importing 're' as 're'
+2024-09-21 19:00:58,566 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:00:58,576 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:00:58,583 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:00:58,591 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:00:58,598 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:00:58,606 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:00:58,619 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:02:02,680 - INFO - Initializing logging configuration
+2024-09-21 19:02:02,688 - INFO - Importing 'os' without alias
+2024-09-21 19:02:02,698 - INFO - Importing 'time' without alias
+2024-09-21 19:02:02,708 - INFO - Importing 're' as 're'
+2024-09-21 19:02:02,717 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:02:02,726 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:02:02,734 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:02:02,743 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:02:02,751 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:02:02,758 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:02:02,769 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:08:31,669 - INFO - Initializing logging configuration
+2024-09-21 19:08:31,681 - INFO - Importing 'os' without alias
+2024-09-21 19:08:31,688 - INFO - Importing 'time' without alias
+2024-09-21 19:08:31,696 - INFO - Importing 're' as 're'
+2024-09-21 19:08:31,703 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:08:31,713 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:08:31,721 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:08:31,728 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:08:31,736 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:08:31,748 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:08:31,756 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:16:34,906 - INFO - Initializing logging configuration
+2024-09-21 19:16:34,912 - INFO - Importing 'os' without alias
+2024-09-21 19:16:34,924 - INFO - Importing 'time' without alias
+2024-09-21 19:16:34,934 - INFO - Importing 're' as 're'
+2024-09-21 19:16:34,943 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:16:34,950 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:16:34,959 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:16:34,969 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:16:34,984 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:16:34,995 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:16:35,002 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:23:21,918 - INFO - Initializing logging configuration
+2024-09-21 19:23:21,924 - INFO - Importing 'os' without alias
+2024-09-21 19:23:21,935 - INFO - Importing 'time' without alias
+2024-09-21 19:23:21,944 - INFO - Importing 're' as 're'
+2024-09-21 19:23:21,953 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:23:21,961 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:23:21,971 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:23:21,981 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:23:21,991 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:23:22,002 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:23:22,012 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:25:58,538 - INFO - Initializing logging configuration
+2024-09-21 19:25:58,548 - INFO - Importing 'os' without alias
+2024-09-21 19:25:58,558 - INFO - Importing 'time' without alias
+2024-09-21 19:25:58,566 - INFO - Importing 're' as 're'
+2024-09-21 19:25:58,574 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:25:58,583 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:25:58,590 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:25:58,603 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:25:58,611 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:25:58,621 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:25:58,629 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:29:02,293 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:29:02,304 - INFO - Scanning directory: /home/tron/git/light_site
+2024-09-21 19:29:02,316 - INFO - Scanning directory: /home/tron/git/light_site/data
+2024-09-21 19:29:02,325 - INFO - Scanning directory: /home/tron/git/light_site/data/.ipynb_checkpoints
+2024-09-21 19:29:02,336 - INFO - Scanning directory: /home/tron/git/light_site/templates
+2024-09-21 19:29:02,345 - INFO - Scanning directory: /home/tron/git/light_site/templates/project_structure
+2024-09-21 19:29:02,356 - INFO - Scanning directory: /home/tron/git/light_site/venv
+2024-09-21 19:29:02,364 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib
+2024-09-21 19:29:02,375 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10
+2024-09-21 19:29:02,387 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages
+2024-09-21 19:29:02,398 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools
+2024-09-21 19:29:02,410 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_distutils
+2024-09-21 19:29:02,423 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_distutils/command
+2024-09-21 19:29:02,435 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_distutils/command/__pycache__
+2024-09-21 19:29:02,448 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_distutils/__pycache__
+2024-09-21 19:29:02,461 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_vendor
+2024-09-21 19:29:02,472 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_vendor/packaging
+2024-09-21 19:29:02,482 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_vendor/packaging/__pycache__
+2024-09-21 19:29:02,496 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_vendor/more_itertools
+2024-09-21 19:29:02,507 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_vendor/more_itertools/__pycache__
+2024-09-21 19:29:02,519 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/_vendor/__pycache__
+2024-09-21 19:29:02,529 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/extern
+2024-09-21 19:29:02,538 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/extern/__pycache__
+2024-09-21 19:29:02,547 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/command
+2024-09-21 19:29:02,557 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/command/__pycache__
+2024-09-21 19:29:02,568 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools/__pycache__
+2024-09-21 19:29:02,578 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/setuptools-59.6.0.dist-info
+2024-09-21 19:29:02,588 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/_distutils_hack
+2024-09-21 19:29:02,599 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/_distutils_hack/__pycache__
+2024-09-21 19:29:02,612 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip
+2024-09-21 19:29:02,624 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal
+2024-09-21 19:29:02,636 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/network
+2024-09-21 19:29:02,647 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/network/__pycache__
+2024-09-21 19:29:02,660 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/operations
+2024-09-21 19:29:02,671 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/operations/build
+2024-09-21 19:29:02,682 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/operations/build/__pycache__
+2024-09-21 19:29:02,694 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/operations/install
+2024-09-21 19:29:02,706 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/operations/install/__pycache__
+2024-09-21 19:29:02,717 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/operations/__pycache__
+2024-09-21 19:29:02,728 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/index
+2024-09-21 19:29:02,741 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/index/__pycache__
+2024-09-21 19:29:02,752 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/cli
+2024-09-21 19:29:02,764 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/cli/__pycache__
+2024-09-21 19:29:02,774 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/models
+2024-09-21 19:29:02,785 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/models/__pycache__
+2024-09-21 19:29:02,797 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/vcs
+2024-09-21 19:29:02,807 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/vcs/__pycache__
+2024-09-21 19:29:02,818 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/commands
+2024-09-21 19:29:02,829 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/commands/__pycache__
+2024-09-21 19:29:02,840 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/locations
+2024-09-21 19:29:02,850 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/locations/__pycache__
+2024-09-21 19:29:02,860 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/utils
+2024-09-21 19:29:02,870 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/utils/__pycache__
+2024-09-21 19:29:02,881 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/resolution
+2024-09-21 19:29:02,891 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/resolution/resolvelib
+2024-09-21 19:29:02,901 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/resolution/resolvelib/__pycache__
+2024-09-21 19:29:02,911 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/resolution/legacy
+2024-09-21 19:29:02,922 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/resolution/legacy/__pycache__
+2024-09-21 19:29:02,933 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/resolution/__pycache__
+2024-09-21 19:29:02,944 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/distributions
+2024-09-21 19:29:02,954 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/distributions/__pycache__
+2024-09-21 19:29:02,965 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/req
+2024-09-21 19:29:02,977 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/req/__pycache__
+2024-09-21 19:29:02,987 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/__pycache__
+2024-09-21 19:29:02,998 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/metadata
+2024-09-21 19:29:03,008 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_internal/metadata/__pycache__
+2024-09-21 19:29:03,017 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor
+2024-09-21 19:29:03,028 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/progress
+2024-09-21 19:29:03,037 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/progress/__pycache__
+2024-09-21 19:29:03,048 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/packaging
+2024-09-21 19:29:03,057 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/packaging/__pycache__
+2024-09-21 19:29:03,067 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/distlib
+2024-09-21 19:29:03,078 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/distlib/__pycache__
+2024-09-21 19:29:03,089 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pep517
+2024-09-21 19:29:03,099 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pep517/in_process
+2024-09-21 19:29:03,109 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pep517/in_process/__pycache__
+2024-09-21 19:29:03,118 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pep517/__pycache__
+2024-09-21 19:29:03,130 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib
+2024-09-21 19:29:03,139 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/filters
+2024-09-21 19:29:03,150 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/filters/__pycache__
+2024-09-21 19:29:03,161 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/treewalkers
+2024-09-21 19:29:03,172 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/treewalkers/__pycache__
+2024-09-21 19:29:03,186 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/treeadapters
+2024-09-21 19:29:03,199 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/treeadapters/__pycache__
+2024-09-21 19:29:03,212 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/treebuilders
+2024-09-21 19:29:03,224 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/treebuilders/__pycache__
+2024-09-21 19:29:03,237 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/_trie
+2024-09-21 19:29:03,248 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/_trie/__pycache__
+2024-09-21 19:29:03,261 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/html5lib/__pycache__
+2024-09-21 19:29:03,271 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pyparsing
+2024-09-21 19:29:03,283 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pyparsing/diagram
+2024-09-21 19:29:03,295 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pyparsing/diagram/__pycache__
+2024-09-21 19:29:03,307 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pyparsing/__pycache__
+2024-09-21 19:29:03,316 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/msgpack
+2024-09-21 19:29:03,328 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/msgpack/__pycache__
+2024-09-21 19:29:03,340 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/resolvelib
+2024-09-21 19:29:03,349 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/resolvelib/compat
+2024-09-21 19:29:03,361 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/resolvelib/compat/__pycache__
+2024-09-21 19:29:03,371 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/resolvelib/__pycache__
+2024-09-21 19:29:03,381 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/idna
+2024-09-21 19:29:03,392 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/idna/__pycache__
+2024-09-21 19:29:03,406 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/platformdirs
+2024-09-21 19:29:03,418 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/platformdirs/__pycache__
+2024-09-21 19:29:03,432 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/tenacity
+2024-09-21 19:29:03,445 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/tenacity/__pycache__
+2024-09-21 19:29:03,457 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3
+2024-09-21 19:29:03,470 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages
+2024-09-21 19:29:03,482 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages/backports
+2024-09-21 19:29:03,495 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__
+2024-09-21 19:29:03,508 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages/__pycache__
+2024-09-21 19:29:03,523 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/contrib
+2024-09-21 19:29:03,538 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/contrib/_securetransport
+2024-09-21 19:29:03,551 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__pycache__
+2024-09-21 19:29:03,564 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/contrib/__pycache__
+2024-09-21 19:29:03,578 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/util
+2024-09-21 19:29:03,591 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/util/__pycache__
+2024-09-21 19:29:03,605 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/__pycache__
+2024-09-21 19:29:03,619 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments
+2024-09-21 19:29:03,632 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/filters
+2024-09-21 19:29:03,644 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/filters/__pycache__
+2024-09-21 19:29:03,671 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/lexers
+2024-09-21 19:29:03,691 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/lexers/__pycache__
+2024-09-21 19:29:03,704 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/formatters
+2024-09-21 19:29:03,718 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/formatters/__pycache__
+2024-09-21 19:29:03,732 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/styles
+2024-09-21 19:29:03,746 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/styles/__pycache__
+2024-09-21 19:29:03,759 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pygments/__pycache__
+2024-09-21 19:29:03,773 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/tomli
+2024-09-21 19:29:03,787 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/tomli/__pycache__
+2024-09-21 19:29:03,805 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/certifi
+2024-09-21 19:29:03,817 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/certifi/__pycache__
+2024-09-21 19:29:03,828 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/rich
+2024-09-21 19:29:03,843 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/rich/__pycache__
+2024-09-21 19:29:03,895 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/colorama
+2024-09-21 19:29:03,913 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/colorama/__pycache__
+2024-09-21 19:29:03,925 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/requests
+2024-09-21 19:29:03,939 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/requests/__pycache__
+2024-09-21 19:29:03,952 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/chardet
+2024-09-21 19:29:03,971 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/chardet/cli
+2024-09-21 19:29:03,984 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/chardet/cli/__pycache__
+2024-09-21 19:29:03,997 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/chardet/__pycache__
+2024-09-21 19:29:04,012 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/chardet/metadata
+2024-09-21 19:29:04,025 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/chardet/metadata/__pycache__
+2024-09-21 19:29:04,039 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pkg_resources
+2024-09-21 19:29:04,052 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/pkg_resources/__pycache__
+2024-09-21 19:29:04,066 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/webencodings
+2024-09-21 19:29:04,083 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/webencodings/__pycache__
+2024-09-21 19:29:04,107 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/__pycache__
+2024-09-21 19:29:04,120 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol
+2024-09-21 19:29:04,129 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol/caches
+2024-09-21 19:29:04,141 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol/caches/__pycache__
+2024-09-21 19:29:04,154 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol/__pycache__
+2024-09-21 19:29:04,167 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip/__pycache__
+2024-09-21 19:29:04,179 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pip-22.0.2.dist-info
+2024-09-21 19:29:04,189 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources
+2024-09-21 19:29:04,203 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/_vendor
+2024-09-21 19:29:04,215 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/_vendor/packaging
+2024-09-21 19:29:04,228 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/_vendor/packaging/__pycache__
+2024-09-21 19:29:04,240 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/_vendor/__pycache__
+2024-09-21 19:29:04,252 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/extern
+2024-09-21 19:29:04,265 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/extern/__pycache__
+2024-09-21 19:29:04,277 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/tests
+2024-09-21 19:29:04,288 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/tests/data
+2024-09-21 19:29:04,299 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source
+2024-09-21 19:29:04,312 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source/__pycache__
+2024-09-21 19:29:04,323 - INFO - Scanning directory: /home/tron/git/light_site/venv/lib/python3.10/site-packages/pkg_resources/__pycache__
+2024-09-21 19:29:04,335 - INFO - Scanning directory: /home/tron/git/light_site/venv/bin
+2024-09-21 19:29:04,347 - INFO - Scanning directory: /home/tron/git/light_site/venv/include
+2024-09-21 19:29:04,358 - INFO - Scanning directory: /home/tron/git/light_site/.git
+2024-09-21 19:29:04,372 - INFO - Scanning directory: /home/tron/git/light_site/.git/info
+2024-09-21 19:29:04,385 - INFO - Scanning directory: /home/tron/git/light_site/.git/hooks
+2024-09-21 19:29:04,398 - INFO - Scanning directory: /home/tron/git/light_site/.git/branches
+2024-09-21 19:29:04,411 - INFO - Scanning directory: /home/tron/git/light_site/.git/logs
+2024-09-21 19:29:04,422 - INFO - Scanning directory: /home/tron/git/light_site/.git/logs/refs
+2024-09-21 19:29:04,434 - INFO - Scanning directory: /home/tron/git/light_site/.git/logs/refs/remotes
+2024-09-21 19:29:04,446 - INFO - Scanning directory: /home/tron/git/light_site/.git/logs/refs/heads
+2024-09-21 19:29:04,458 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects
+2024-09-21 19:29:04,471 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/c5
+2024-09-21 19:29:04,483 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/86
+2024-09-21 19:29:04,494 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/fd
+2024-09-21 19:29:04,506 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/0a
+2024-09-21 19:29:04,518 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/93
+2024-09-21 19:29:04,529 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/50
+2024-09-21 19:29:04,541 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/62
+2024-09-21 19:29:04,554 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/a0
+2024-09-21 19:29:04,565 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/info
+2024-09-21 19:29:04,578 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/8e
+2024-09-21 19:29:04,590 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/d3
+2024-09-21 19:29:04,604 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/37
+2024-09-21 19:29:04,620 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/bb
+2024-09-21 19:29:04,635 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/59
+2024-09-21 19:29:04,651 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/24
+2024-09-21 19:29:04,664 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/1c
+2024-09-21 19:29:04,675 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/ea
+2024-09-21 19:29:04,687 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/71
+2024-09-21 19:29:04,695 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/1f
+2024-09-21 19:29:04,707 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/44
+2024-09-21 19:29:04,719 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/a3
+2024-09-21 19:29:04,733 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/05
+2024-09-21 19:29:04,747 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/26
+2024-09-21 19:29:04,759 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/b7
+2024-09-21 19:29:04,770 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/75
+2024-09-21 19:29:04,782 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/a4
+2024-09-21 19:29:04,791 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/7b
+2024-09-21 19:29:04,805 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/73
+2024-09-21 19:29:04,818 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/f0
+2024-09-21 19:29:04,832 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/04
+2024-09-21 19:29:04,844 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/89
+2024-09-21 19:29:04,855 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/46
+2024-09-21 19:29:04,867 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/77
+2024-09-21 19:29:04,880 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/6e
+2024-09-21 19:29:04,893 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/1a
+2024-09-21 19:29:04,906 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/fe
+2024-09-21 19:29:04,920 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/da
+2024-09-21 19:29:04,933 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/c1
+2024-09-21 19:29:04,947 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/de
+2024-09-21 19:29:04,963 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/aa
+2024-09-21 19:29:04,991 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/92
+2024-09-21 19:29:05,005 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/cd
+2024-09-21 19:29:05,019 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/a2
+2024-09-21 19:29:05,032 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/ec
+2024-09-21 19:29:05,043 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/pack
+2024-09-21 19:29:05,056 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/c8
+2024-09-21 19:29:05,069 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/4a
+2024-09-21 19:29:05,084 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/5c
+2024-09-21 19:29:05,096 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/61
+2024-09-21 19:29:05,108 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/65
+2024-09-21 19:29:05,119 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/76
+2024-09-21 19:29:05,130 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/af
+2024-09-21 19:29:05,143 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/51
+2024-09-21 19:29:05,156 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/bd
+2024-09-21 19:29:05,170 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/6b
+2024-09-21 19:29:05,182 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/ff
+2024-09-21 19:29:05,194 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/58
+2024-09-21 19:29:05,207 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/00
+2024-09-21 19:29:05,218 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/8f
+2024-09-21 19:29:05,230 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/43
+2024-09-21 19:29:05,241 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/3d
+2024-09-21 19:29:05,253 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/e2
+2024-09-21 19:29:05,265 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/82
+2024-09-21 19:29:05,276 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/94
+2024-09-21 19:29:05,288 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/ca
+2024-09-21 19:29:05,299 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/27
+2024-09-21 19:29:05,310 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/5e
+2024-09-21 19:29:05,322 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/47
+2024-09-21 19:29:05,333 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/2d
+2024-09-21 19:29:05,346 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/98
+2024-09-21 19:29:05,359 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/35
+2024-09-21 19:29:05,373 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/16
+2024-09-21 19:29:05,385 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/1d
+2024-09-21 19:29:05,398 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/7a
+2024-09-21 19:29:05,410 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/36
+2024-09-21 19:29:05,420 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/07
+2024-09-21 19:29:05,430 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/78
+2024-09-21 19:29:05,443 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/b8
+2024-09-21 19:29:05,457 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/3a
+2024-09-21 19:29:05,470 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/5f
+2024-09-21 19:29:05,484 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/d4
+2024-09-21 19:29:05,498 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/d6
+2024-09-21 19:29:05,511 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/d2
+2024-09-21 19:29:05,524 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/4b
+2024-09-21 19:29:05,534 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/fc
+2024-09-21 19:29:05,546 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/e8
+2024-09-21 19:29:05,560 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/ef
+2024-09-21 19:29:05,572 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/4e
+2024-09-21 19:29:05,584 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/ee
+2024-09-21 19:29:05,596 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/30
+2024-09-21 19:29:05,607 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/a5
+2024-09-21 19:29:05,618 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/91
+2024-09-21 19:29:05,633 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/95
+2024-09-21 19:29:05,645 - INFO - Scanning directory: /home/tron/git/light_site/.git/objects/2b
+2024-09-21 19:29:05,658 - INFO - Scanning directory: /home/tron/git/light_site/.git/refs
+2024-09-21 19:29:05,666 - INFO - Scanning directory: /home/tron/git/light_site/.git/refs/remotes
+2024-09-21 19:29:05,679 - INFO - Scanning directory: /home/tron/git/light_site/.git/refs/tags
+2024-09-21 19:29:05,691 - INFO - Scanning directory: /home/tron/git/light_site/.git/refs/heads
+2024-09-21 19:29:05,703 - INFO - Scanning directory: /home/tron/git/light_site/project_structure
+2024-09-21 19:29:05,715 - INFO - Scanning directory: /home/tron/git/light_site/project_structure/migrations
+2024-09-21 19:29:05,726 - INFO - Scanning directory: /home/tron/git/light_site/project_structure/__pycache__
+2024-09-21 19:29:05,738 - INFO - Scanning directory: /home/tron/git/light_site/.vscode
+2024-09-21 19:29:05,750 - INFO - Scanning directory: /home/tron/git/light_site/media
+2024-09-21 19:29:05,762 - INFO - Scanning directory: /home/tron/git/light_site/media/project_structure
+2024-09-21 19:29:05,775 - INFO - Scanning directory: /home/tron/git/light_site/media/project_structure/data
+2024-09-21 19:29:05,787 - INFO - Scanning directory: /home/tron/git/light_site/.ipynb_checkpoints
+2024-09-21 19:29:05,797 - INFO - Scanning directory: /home/tron/git/light_site/static
+2024-09-21 19:29:05,807 - INFO - Scanning directory: /home/tron/git/light_site/static/images
+2024-09-21 19:29:05,818 - INFO - Scanning directory: /home/tron/git/light_site/static/data
+2024-09-21 19:29:05,828 - INFO - Scanning directory: /home/tron/git/light_site/static/js
+2024-09-21 19:29:05,841 - INFO - Scanning directory: /home/tron/git/light_site/static/html
+2024-09-21 19:29:05,853 - INFO - Scanning directory: /home/tron/git/light_site/static/project_structure
+2024-09-21 19:29:05,864 - INFO - Scanning directory: /home/tron/git/light_site/static/project_structure/css
+2024-09-21 19:29:05,875 - INFO - Scanning directory: /home/tron/git/light_site/static/icons
+2024-09-21 19:29:05,887 - INFO - Scanning directory: /home/tron/git/light_site/static/icons/icon_150x150
+2024-09-21 19:29:05,900 - INFO - Scanning directory: /home/tron/git/light_site/static/icons/tool_300
+2024-09-21 19:29:05,912 - INFO - Scanning directory: /home/tron/git/light_site/static/fonts
+2024-09-21 19:29:05,924 - INFO - Scanning directory: /home/tron/git/light_site/static/css
+2024-09-21 19:29:05,934 - INFO - Scanning directory: /home/tron/git/light_site/static/svg
+2024-09-21 19:29:05,947 - INFO - Scanning directory: /home/tron/git/light_site/light_site
+2024-09-21 19:29:05,958 - INFO - Scanning directory: /home/tron/git/light_site/light_site/__pycache__
+2024-09-21 19:29:05,969 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles
+2024-09-21 19:29:05,981 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/images
+2024-09-21 19:29:05,993 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/js
+2024-09-21 19:29:06,004 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/html
+2024-09-21 19:29:06,016 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/project_structure
+2024-09-21 19:29:06,028 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/project_structure/data
+2024-09-21 19:29:06,040 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin
+2024-09-21 19:29:06,054 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/js
+2024-09-21 19:29:06,067 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/js/admin
+2024-09-21 19:29:06,079 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/js/vendor
+2024-09-21 19:29:06,092 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/js/vendor/xregexp
+2024-09-21 19:29:06,106 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/js/vendor/select2
+2024-09-21 19:29:06,119 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/js/vendor/select2/i18n
+2024-09-21 19:29:06,135 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/js/vendor/jquery
+2024-09-21 19:29:06,146 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/img
+2024-09-21 19:29:06,159 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/img/gis
+2024-09-21 19:29:06,171 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/css
+2024-09-21 19:29:06,183 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/css/vendor
+2024-09-21 19:29:06,195 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/admin/css/vendor/select2
+2024-09-21 19:29:06,223 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/icons
+2024-09-21 19:29:06,245 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/icons/icon_150x150
+2024-09-21 19:29:06,257 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/icons/tool_300
+2024-09-21 19:29:06,267 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/fonts
+2024-09-21 19:29:06,279 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/debug_toolbar
+2024-09-21 19:29:06,293 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/debug_toolbar/js
+2024-09-21 19:29:06,306 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/debug_toolbar/css
+2024-09-21 19:29:06,316 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/css
+2024-09-21 19:29:06,327 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/svg
+2024-09-21 19:29:06,338 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework
+2024-09-21 19:29:06,349 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/js
+2024-09-21 19:29:06,359 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/img
+2024-09-21 19:29:06,370 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/fonts
+2024-09-21 19:29:06,382 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/docs
+2024-09-21 19:29:06,393 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/docs/js
+2024-09-21 19:29:06,406 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/docs/img
+2024-09-21 19:29:06,418 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/docs/css
+2024-09-21 19:29:06,429 - INFO - Scanning directory: /home/tron/git/light_site/staticfiles/rest_framework/css
+2024-09-21 19:29:06,469 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:29:50,511 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:29:50,639 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:29:58,511 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:29:58,649 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:30:01,130 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:30:01,283 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:30:06,118 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:30:06,210 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:30:22,321 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:30:22,423 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:39:57,673 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:39:57,694 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:39:57,709 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:39:57,723 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:39:57,739 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:39:57,756 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:39:57,783 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:39:57,798 - INFO - Feature engineering completed successfully
+2024-09-21 19:42:27,285 - INFO - Initializing logging configuration
+2024-09-21 19:42:27,293 - INFO - Importing 'os' without alias
+2024-09-21 19:42:27,304 - INFO - Importing 'time' without alias
+2024-09-21 19:42:27,314 - INFO - Importing 're' as 're'
+2024-09-21 19:42:27,322 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:42:27,330 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:42:27,338 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:42:27,346 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:42:27,357 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:42:27,364 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:42:27,376 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:42:31,302 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:42:31,402 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:46:45,402 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:46:45,413 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:46:45,427 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:46:45,439 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:46:45,453 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:46:45,467 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:46:45,478 - WARNING - File has no extension, converting to lowercase: .env
+2024-09-21 19:46:45,489 - WARNING - File has no extension, converting to lowercase: pipfile
+2024-09-21 19:46:45,499 - WARNING - File has no extension, converting to lowercase: .gitignore
+2024-09-21 19:46:45,511 - WARNING - File has no extension, converting to lowercase: license
+2024-09-21 19:46:45,525 - WARNING - File has no extension, converting to lowercase: record
+2024-09-21 19:46:45,533 - WARNING - File has no extension, converting to lowercase: wheel
+2024-09-21 19:46:45,546 - WARNING - File has no extension, converting to lowercase: metadata
+2024-09-21 19:46:45,555 - WARNING - File has no extension, converting to lowercase: requested
+2024-09-21 19:46:45,568 - WARNING - File has no extension, converting to lowercase: installer
+2024-09-21 19:46:45,584 - WARNING - File has no extension, converting to lowercase: record
+2024-09-21 19:46:45,594 - WARNING - File has no extension, converting to lowercase: wheel
+2024-09-21 19:46:45,602 - WARNING - File has no extension, converting to lowercase: metadata
+2024-09-21 19:46:45,611 - WARNING - File has no extension, converting to lowercase: requested
+2024-09-21 19:46:45,618 - WARNING - File has no extension, converting to lowercase: installer
+2024-09-21 19:46:45,629 - WARNING - File has no extension, converting to lowercase: pip3
+2024-09-21 19:46:45,642 - WARNING - File has no extension, converting to lowercase: activate
+2024-09-21 19:46:45,653 - WARNING - File has no extension, converting to lowercase: python3
+2024-09-21 19:46:45,662 - WARNING - File has no extension, converting to lowercase: pip
+2024-09-21 19:46:45,672 - WARNING - File has no extension, converting to lowercase: python
+2024-09-21 19:46:45,682 - WARNING - File has no extension, converting to lowercase: commit_editmsg
+2024-09-21 19:46:45,694 - WARNING - File has no extension, converting to lowercase: orig_head
+2024-09-21 19:46:45,707 - WARNING - File has no extension, converting to lowercase: index
+2024-09-21 19:46:45,715 - WARNING - File has no extension, converting to lowercase: packed-refs
+2024-09-21 19:46:45,727 - WARNING - File has no extension, converting to lowercase: config
+2024-09-21 19:46:45,743 - WARNING - File has no extension, converting to lowercase: head
+2024-09-21 19:46:45,755 - WARNING - File has no extension, converting to lowercase: description
+2024-09-21 19:46:45,767 - WARNING - File has no extension, converting to lowercase: fetch_head
+2024-09-21 19:46:45,783 - WARNING - File has no extension, converting to lowercase: exclude
+2024-09-21 19:46:45,796 - WARNING - File has no extension, converting to lowercase: refs
+2024-09-21 19:46:45,809 - WARNING - File has no extension, converting to lowercase: head
+2024-09-21 19:46:45,819 - WARNING - File has no extension, converting to lowercase: main
+2024-09-21 19:46:45,834 - WARNING - File has no extension, converting to lowercase: test
+2024-09-21 19:46:45,848 - WARNING - File has no extension, converting to lowercase: 43afc7d54e628444df29f1534653d4294ae22b
+2024-09-21 19:46:45,860 - WARNING - File has no extension, converting to lowercase: f6971e0ee8904c653a04f7a7c7384b09aa7a76
+2024-09-21 19:46:45,873 - WARNING - File has no extension, converting to lowercase: e4cd9f76fe8e7ecd6dd08c10ef022a1c231835
+2024-09-21 19:46:45,884 - WARNING - File has no extension, converting to lowercase: a860b6206179915a92e78cab1d3422775e2e99
+2024-09-21 19:46:45,898 - WARNING - File has no extension, converting to lowercase: d0b84401edc6d861de30d338d61a4699089194
+2024-09-21 19:46:45,910 - WARNING - File has no extension, converting to lowercase: 058c289ae2c285e3bac85083f4edde5e42193d
+2024-09-21 19:46:45,922 - WARNING - File has no extension, converting to lowercase: a86f673143037bd9fba8ddf4d25eb3b613232b
+2024-09-21 19:46:45,935 - WARNING - File has no extension, converting to lowercase: bd7b28c953a74f0f4190745ec39aa8a193b5a1
+2024-09-21 19:46:45,945 - WARNING - File has no extension, converting to lowercase: 50b1516381a642f4adc6db4fec412d0f6fb0bc
+2024-09-21 19:46:45,960 - WARNING - File has no extension, converting to lowercase: 50ca80d0a19293b0c0bb7887f361e9f4fa8753
+2024-09-21 19:46:45,974 - WARNING - File has no extension, converting to lowercase: 4d9f3557e8b6853915ddec5f177bd7c2eeebc0
+2024-09-21 19:46:45,986 - WARNING - File has no extension, converting to lowercase: commit-graph
+2024-09-21 19:46:45,998 - WARNING - File has no extension, converting to lowercase: packs
+2024-09-21 19:46:46,012 - WARNING - File has no extension, converting to lowercase: 58492c8ee7a71afd047fe32de2045ed3902088
+2024-09-21 19:46:46,025 - WARNING - File has no extension, converting to lowercase: 30e5c85b54595db94684c18eb9c85276b85e41
+2024-09-21 19:46:46,035 - WARNING - File has no extension, converting to lowercase: c7046fb2b73f1a72533fb2b891d82b0a955cda
+2024-09-21 19:46:46,049 - WARNING - File has no extension, converting to lowercase: d00a37d60e686d4cead247e3e18f5d4cf5fc27
+2024-09-21 19:46:46,065 - WARNING - File has no extension, converting to lowercase: b08df9d4b62985f8e909e0bb59369cba756f74
+2024-09-21 19:46:46,079 - WARNING - File has no extension, converting to lowercase: f10bb4144ac684b1d579c408eccd917e0f6b78
+2024-09-21 19:46:46,094 - WARNING - File has no extension, converting to lowercase: f8d7d3d59374bbd77d75f1fdf23c4c3d4e283a
+2024-09-21 19:46:46,107 - WARNING - File has no extension, converting to lowercase: e5b3a3fe3348afa1d5b6fbaedf42cde0848d60
+2024-09-21 19:46:46,120 - WARNING - File has no extension, converting to lowercase: 9f721f3912999d409f5436d0dbace07e44bb7a
+2024-09-21 19:46:46,133 - WARNING - File has no extension, converting to lowercase: e53c0dd04800fadb4975c94cdcefcfe22ea213
+2024-09-21 19:46:46,143 - WARNING - File has no extension, converting to lowercase: d7f4ebd098dff1a9e7d60ef14169021a84f9d9
+2024-09-21 19:46:46,158 - WARNING - File has no extension, converting to lowercase: 2819697190d314d215ac7c5369673591706157
+2024-09-21 19:46:46,172 - WARNING - File has no extension, converting to lowercase: f872a83a4af241972dbb012557475b99350bb8
+2024-09-21 19:46:46,182 - WARNING - File has no extension, converting to lowercase: 05ef2fbf443138db485103527fef1cae89ec76
+2024-09-21 19:46:46,198 - WARNING - File has no extension, converting to lowercase: 813053956c59863df08796edf8282bcaaebd94
+2024-09-21 19:46:46,212 - WARNING - File has no extension, converting to lowercase: a8f151dcf003318077cc3a821234a68c0daaab
+2024-09-21 19:46:46,224 - WARNING - File has no extension, converting to lowercase: a6df1a4ebbb59954ff2efb62b6f63d4a907973
+2024-09-21 19:46:46,237 - WARNING - File has no extension, converting to lowercase: 9837e84a82b6c82ba946913d67bc089465a330
+2024-09-21 19:46:46,248 - WARNING - File has no extension, converting to lowercase: 62d53776f0d8fc3b318afdd2726d9b5b1c36e0
+2024-09-21 19:46:46,264 - WARNING - File has no extension, converting to lowercase: fa7f080c870febe4b80468cb04306d71269fa8
+2024-09-21 19:46:46,277 - WARNING - File has no extension, converting to lowercase: f8e204b9cadc5235878d448167a6a055e91822
+2024-09-21 19:46:46,288 - WARNING - File has no extension, converting to lowercase: 1e52d1232a0d0699d2906eb6c5189d886384a5
+2024-09-21 19:46:46,301 - WARNING - File has no extension, converting to lowercase: b8b79547ed55f1e2ad9ce618fa525e07641e6c
+2024-09-21 19:46:46,316 - WARNING - File has no extension, converting to lowercase: 78100a1bdabaf305bcc1dcf6e099cc0949dc98
+2024-09-21 19:46:46,328 - WARNING - File has no extension, converting to lowercase: 746ff5814abdd3fa7270717fcb71aa57e1141b
+2024-09-21 19:46:46,342 - WARNING - File has no extension, converting to lowercase: 54f82ab9144bb8eb2daffc1cf5d372c71df2d5
+2024-09-21 19:46:46,356 - WARNING - File has no extension, converting to lowercase: 1f847b6ebfbb671720155c37a8877d58724794
+2024-09-21 19:46:46,373 - WARNING - File has no extension, converting to lowercase: 37d645d4022cc7d4472aa65727b9ff0f51b6c4
+2024-09-21 19:46:46,387 - WARNING - File has no extension, converting to lowercase: 30f611af286d267ab216c2032c41f6e53a0872
+2024-09-21 19:46:46,400 - WARNING - File has no extension, converting to lowercase: 4d0f73b1dfa737f9560a2a35b650a7c574fdd8
+2024-09-21 19:46:46,414 - WARNING - File has no extension, converting to lowercase: c6b63f1ed19126e12c4db178dd548419a33c8e
+2024-09-21 19:46:46,429 - WARNING - File has no extension, converting to lowercase: e6b56c2d41075a9c9dd3b14d11ad5f3ad5cdd1
+2024-09-21 19:46:46,443 - WARNING - File has no extension, converting to lowercase: 49b5f9b2598c79c32a682b32f14b15642c076f
+2024-09-21 19:46:46,457 - WARNING - File has no extension, converting to lowercase: 400e64d7c0219aea05762d1dd6a08cf3cd069f
+2024-09-21 19:46:46,471 - WARNING - File has no extension, converting to lowercase: 2248c3ba75393357da34011eeb24bf6a0835ea
+2024-09-21 19:46:46,486 - WARNING - File has no extension, converting to lowercase: aa0f71533ebf4d01f703f87f34bfbaa16411f3
+2024-09-21 19:46:46,498 - WARNING - File has no extension, converting to lowercase: 653fd93610cd1d70b6f5a6f605483e02ae38c9
+2024-09-21 19:46:46,512 - WARNING - File has no extension, converting to lowercase: c1b50adac757d00582e1671456823a3fe59221
+2024-09-21 19:46:46,526 - WARNING - File has no extension, converting to lowercase: 5dd588afa88bb284aa84f84f3d364bd0415a67
+2024-09-21 19:46:46,540 - WARNING - File has no extension, converting to lowercase: 90a47f1c9ad72c1b173c4dc895e8a36ba41ffd
+2024-09-21 19:46:46,553 - WARNING - File has no extension, converting to lowercase: a095a6608adef0cddaba870a398279337276d4
+2024-09-21 19:46:46,565 - WARNING - File has no extension, converting to lowercase: ac8a27ffcc7cf0bb0b8cc4b74743845342bf32
+2024-09-21 19:46:46,578 - WARNING - File has no extension, converting to lowercase: 8e1126b9ae0b8470d5b26ff621038f11ba2da5
+2024-09-21 19:46:46,594 - WARNING - File has no extension, converting to lowercase: 9eba4102e5c6595bbaa4d0197da73198bc1ad8
+2024-09-21 19:46:46,606 - WARNING - File has no extension, converting to lowercase: dc629815a8db6e11133474b5d82480bf576cb3
+2024-09-21 19:46:46,619 - WARNING - File has no extension, converting to lowercase: 752f75667f17291178008d120441b5c05aaf5c
+2024-09-21 19:46:46,632 - WARNING - File has no extension, converting to lowercase: b0622e3951d9deb369964566ca62d2c76d4466
+2024-09-21 19:46:46,645 - WARNING - File has no extension, converting to lowercase: b0976bcb808b191fa056dacbfb8287704af191
+2024-09-21 19:46:46,662 - WARNING - File has no extension, converting to lowercase: a2869bfc1e85b6981389c9c64f785d61c1747f
+2024-09-21 19:46:46,677 - WARNING - File has no extension, converting to lowercase: 212a515941522f6adbe926bac5e9d739538d74
+2024-09-21 19:46:46,699 - WARNING - File has no extension, converting to lowercase: ce43bb4ca2c32d44cca11d89be8e4c787978e9
+2024-09-21 19:46:46,712 - WARNING - File has no extension, converting to lowercase: 64f5c2b564cc1e08a3a53a96d3f6f6c171a8ff
+2024-09-21 19:46:46,727 - WARNING - File has no extension, converting to lowercase: bba31d43de15d6192ad86ca7216701485ab614
+2024-09-21 19:46:46,743 - WARNING - File has no extension, converting to lowercase: 4a4de81db81112e160f7c4c96c3d89cd3339aa
+2024-09-21 19:46:46,754 - WARNING - File has no extension, converting to lowercase: 00ec696d1cba4e22d25c2bb7dcc6fb39858f99
+2024-09-21 19:46:46,771 - WARNING - File has no extension, converting to lowercase: cb14981ba54c337b019622beabdc2990d52b1f
+2024-09-21 19:46:46,784 - WARNING - File has no extension, converting to lowercase: 7cd092ee65a23f12bf6302b4bebd29fb0b23f5
+2024-09-21 19:46:46,803 - WARNING - File has no extension, converting to lowercase: 3a3298834100e1fd9dae56f3d46ff90d0d4523
+2024-09-21 19:46:46,816 - WARNING - File has no extension, converting to lowercase: 63588bf8b1245d61ea4471ce210aa8e0081d33
+2024-09-21 19:46:46,831 - WARNING - File has no extension, converting to lowercase: a47bd44adf47846bc5b4d32d739bcca205625f
+2024-09-21 19:46:46,844 - WARNING - File has no extension, converting to lowercase: 7191b190054f9f8355ea40007dc9a25bc3452d
+2024-09-21 19:46:46,857 - WARNING - File has no extension, converting to lowercase: a5aa07b4c3d7b06ed2e1f7ad07d64653a61ea1
+2024-09-21 19:46:46,869 - WARNING - File has no extension, converting to lowercase: 57103a0749062a40c775cfc44784e722255308
+2024-09-21 19:46:46,880 - WARNING - File has no extension, converting to lowercase: 5d24b859a78369074d12d194491b5525741be9
+2024-09-21 19:46:46,894 - WARNING - File has no extension, converting to lowercase: 81fbb0cb90997ff25401699d5fe2e8ec28b13a
+2024-09-21 19:46:46,908 - WARNING - File has no extension, converting to lowercase: fff33b2608f3c7a08ecbb6d6e8209fbe57b3a1
+2024-09-21 19:46:46,922 - WARNING - File has no extension, converting to lowercase: b6fcf92340df1470a00e75f397fb8b4bd7fb4e
+2024-09-21 19:46:46,934 - WARNING - File has no extension, converting to lowercase: ea7af270ff3818932f9b397471ceac156fa090
+2024-09-21 19:46:46,947 - WARNING - File has no extension, converting to lowercase: 966f7985963c7063eb1a16a49e093ff891499d
+2024-09-21 19:46:46,961 - WARNING - File has no extension, converting to lowercase: 9f7f435e8fe9a3b80a3df121fc3397b155a4b0
+2024-09-21 19:46:46,974 - WARNING - File has no extension, converting to lowercase: 7307e12bda8364a466dd3060397ff878d6fc62
+2024-09-21 19:46:46,985 - WARNING - File has no extension, converting to lowercase: 6a19cbb56d33a3fdc6d407702a793835065daa
+2024-09-21 19:46:46,997 - WARNING - File has no extension, converting to lowercase: 36d7dce7862c9a8eb79495f7f5310670dae7e6
+2024-09-21 19:46:47,010 - WARNING - File has no extension, converting to lowercase: 502bc8205dfcabf2140c2c3d7e4ee582eeea5a
+2024-09-21 19:46:47,019 - WARNING - File has no extension, converting to lowercase: 043e566a0ae32c3a2fad5c004954b04f2dc115
+2024-09-21 19:46:47,034 - WARNING - File has no extension, converting to lowercase: 8264dd2128054a96da774a97e7a5de00542f46
+2024-09-21 19:46:47,048 - WARNING - File has no extension, converting to lowercase: 9f434617490cd870b69d7b0756548aa503893b
+2024-09-21 19:46:47,063 - WARNING - File has no extension, converting to lowercase: 5419df7054851520210eba0becd7fab9b1dc32
+2024-09-21 19:46:47,078 - WARNING - File has no extension, converting to lowercase: a8dd0dfe15165d1e63ce05064506ccea5cfa42
+2024-09-21 19:46:47,091 - WARNING - File has no extension, converting to lowercase: 7687f444a95d2033be5926e6b92ae9bc8e6ec3
+2024-09-21 19:46:47,106 - WARNING - File has no extension, converting to lowercase: 070ca758f0b16c7b5feb02b4b887347fc173e3
+2024-09-21 19:46:47,118 - WARNING - File has no extension, converting to lowercase: 52206809a7e37bc225902d52bc6b671e51116c
+2024-09-21 19:46:47,132 - WARNING - File has no extension, converting to lowercase: dffc16c9febbda6cf8915e88165d2231c29287
+2024-09-21 19:46:47,145 - WARNING - File has no extension, converting to lowercase: 4b4e88208f739315c2c48ea329ed1b10ede61a
+2024-09-21 19:46:47,156 - WARNING - File has no extension, converting to lowercase: dd0cb2f8fbc3e1555d2ea20694124fd121a090
+2024-09-21 19:46:47,168 - WARNING - File has no extension, converting to lowercase: 0724821f438c49bbdd212e329e2b739ed61b5f
+2024-09-21 19:46:47,184 - WARNING - File has no extension, converting to lowercase: 641ceef3981ee5bc2cf67ba958f306e2b0c0fc
+2024-09-21 19:46:47,197 - WARNING - File has no extension, converting to lowercase: ee47d2755f7a8a173a64554d2d5d6d86b25e81
+2024-09-21 19:46:47,223 - WARNING - File has no extension, converting to lowercase: 8b8f2c23998fd3378f2db97b8a9db671c16894
+2024-09-21 19:46:47,257 - WARNING - File has no extension, converting to lowercase: 5db6656191d4e9c177106db27be999f9ebb95c
+2024-09-21 19:46:47,293 - WARNING - File has no extension, converting to lowercase: 31621534d861582203e61a5a2d8bfd8229fbb8
+2024-09-21 19:46:47,320 - WARNING - File has no extension, converting to lowercase: 86e870ebd6842df745eeb55cf494df3393c4e0
+2024-09-21 19:46:47,334 - WARNING - File has no extension, converting to lowercase: 540217df78972d134dcc238b0144c62132728a
+2024-09-21 19:46:47,351 - WARNING - File has no extension, converting to lowercase: 05e0d3bcf57228c3e30521b926be1281b306b2
+2024-09-21 19:46:47,365 - WARNING - File has no extension, converting to lowercase: 9a55e6dcc5fd468474e5ecf1e697c9b0c604b5
+2024-09-21 19:46:47,379 - WARNING - File has no extension, converting to lowercase: 5fab9673ce6b226560917686714c9c92386afe
+2024-09-21 19:46:47,393 - WARNING - File has no extension, converting to lowercase: 97658a57fc9725bf5e8e662a002f69a30c4f7e
+2024-09-21 19:46:47,408 - WARNING - File has no extension, converting to lowercase: 5622fc75e3c97892a514b32e97acc08184247c
+2024-09-21 19:46:47,422 - WARNING - File has no extension, converting to lowercase: a986f6f136f061ad7c345c47245788068e9218
+2024-09-21 19:46:47,437 - WARNING - File has no extension, converting to lowercase: 55d746ac3f9284c63ca0060d7ba811cfe867de
+2024-09-21 19:46:47,451 - WARNING - File has no extension, converting to lowercase: main
+2024-09-21 19:46:47,466 - WARNING - File has no extension, converting to lowercase: test
+2024-09-21 19:46:47,483 - WARNING - File has no extension, converting to lowercase: license
+2024-09-21 19:46:47,502 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:46:47,521 - INFO - Feature engineering completed successfully
+2024-09-21 19:47:22,509 - INFO - Initializing logging configuration
+2024-09-21 19:47:22,517 - INFO - Importing 'os' without alias
+2024-09-21 19:47:22,527 - INFO - Importing 'time' without alias
+2024-09-21 19:47:22,536 - INFO - Importing 're' as 're'
+2024-09-21 19:47:22,547 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:47:22,553 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:47:22,561 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:47:22,569 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:47:22,578 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:47:22,585 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:47:22,595 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:47:22,827 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:47:22,950 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:47:23,048 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:47:23,058 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:47:23,070 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:47:23,082 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:47:23,094 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:47:23,107 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:47:23,120 - WARNING - File has no extension, converting to lowercase: .env
+2024-09-21 19:47:23,128 - WARNING - File has no extension, converting to lowercase: pipfile
+2024-09-21 19:47:23,137 - WARNING - File has no extension, converting to lowercase: .gitignore
+2024-09-21 19:47:23,149 - WARNING - File has no extension, converting to lowercase: license
+2024-09-21 19:47:23,158 - WARNING - File has no extension, converting to lowercase: record
+2024-09-21 19:47:23,166 - WARNING - File has no extension, converting to lowercase: wheel
+2024-09-21 19:47:23,173 - WARNING - File has no extension, converting to lowercase: metadata
+2024-09-21 19:47:23,181 - WARNING - File has no extension, converting to lowercase: requested
+2024-09-21 19:47:23,193 - WARNING - File has no extension, converting to lowercase: installer
+2024-09-21 19:47:23,209 - WARNING - File has no extension, converting to lowercase: record
+2024-09-21 19:47:23,220 - WARNING - File has no extension, converting to lowercase: wheel
+2024-09-21 19:47:23,228 - WARNING - File has no extension, converting to lowercase: metadata
+2024-09-21 19:47:23,239 - WARNING - File has no extension, converting to lowercase: requested
+2024-09-21 19:47:23,249 - WARNING - File has no extension, converting to lowercase: installer
+2024-09-21 19:47:23,262 - WARNING - File has no extension, converting to lowercase: pip3
+2024-09-21 19:47:23,270 - WARNING - File has no extension, converting to lowercase: activate
+2024-09-21 19:47:23,278 - WARNING - File has no extension, converting to lowercase: python3
+2024-09-21 19:47:23,287 - WARNING - File has no extension, converting to lowercase: pip
+2024-09-21 19:47:23,296 - WARNING - File has no extension, converting to lowercase: python
+2024-09-21 19:47:23,304 - WARNING - File has no extension, converting to lowercase: commit_editmsg
+2024-09-21 19:47:23,313 - WARNING - File has no extension, converting to lowercase: orig_head
+2024-09-21 19:47:23,321 - WARNING - File has no extension, converting to lowercase: index
+2024-09-21 19:47:23,330 - WARNING - File has no extension, converting to lowercase: packed-refs
+2024-09-21 19:47:23,341 - WARNING - File has no extension, converting to lowercase: config
+2024-09-21 19:47:23,350 - WARNING - File has no extension, converting to lowercase: head
+2024-09-21 19:47:23,357 - WARNING - File has no extension, converting to lowercase: description
+2024-09-21 19:47:23,365 - WARNING - File has no extension, converting to lowercase: fetch_head
+2024-09-21 19:47:23,372 - WARNING - File has no extension, converting to lowercase: exclude
+2024-09-21 19:47:23,381 - WARNING - File has no extension, converting to lowercase: refs
+2024-09-21 19:47:23,392 - WARNING - File has no extension, converting to lowercase: head
+2024-09-21 19:47:23,406 - WARNING - File has no extension, converting to lowercase: main
+2024-09-21 19:47:23,417 - WARNING - File has no extension, converting to lowercase: test
+2024-09-21 19:47:23,428 - WARNING - File has no extension, converting to lowercase: 43afc7d54e628444df29f1534653d4294ae22b
+2024-09-21 19:47:23,444 - WARNING - File has no extension, converting to lowercase: f6971e0ee8904c653a04f7a7c7384b09aa7a76
+2024-09-21 19:47:23,452 - WARNING - File has no extension, converting to lowercase: e4cd9f76fe8e7ecd6dd08c10ef022a1c231835
+2024-09-21 19:47:23,461 - WARNING - File has no extension, converting to lowercase: a860b6206179915a92e78cab1d3422775e2e99
+2024-09-21 19:47:23,473 - WARNING - File has no extension, converting to lowercase: d0b84401edc6d861de30d338d61a4699089194
+2024-09-21 19:47:23,485 - WARNING - File has no extension, converting to lowercase: 058c289ae2c285e3bac85083f4edde5e42193d
+2024-09-21 19:47:23,498 - WARNING - File has no extension, converting to lowercase: a86f673143037bd9fba8ddf4d25eb3b613232b
+2024-09-21 19:47:23,510 - WARNING - File has no extension, converting to lowercase: bd7b28c953a74f0f4190745ec39aa8a193b5a1
+2024-09-21 19:47:23,526 - WARNING - File has no extension, converting to lowercase: 50b1516381a642f4adc6db4fec412d0f6fb0bc
+2024-09-21 19:47:23,539 - WARNING - File has no extension, converting to lowercase: 50ca80d0a19293b0c0bb7887f361e9f4fa8753
+2024-09-21 19:47:23,551 - WARNING - File has no extension, converting to lowercase: 4d9f3557e8b6853915ddec5f177bd7c2eeebc0
+2024-09-21 19:47:23,563 - WARNING - File has no extension, converting to lowercase: commit-graph
+2024-09-21 19:47:23,581 - WARNING - File has no extension, converting to lowercase: packs
+2024-09-21 19:47:23,593 - WARNING - File has no extension, converting to lowercase: 58492c8ee7a71afd047fe32de2045ed3902088
+2024-09-21 19:47:23,603 - WARNING - File has no extension, converting to lowercase: 30e5c85b54595db94684c18eb9c85276b85e41
+2024-09-21 19:47:23,611 - WARNING - File has no extension, converting to lowercase: c7046fb2b73f1a72533fb2b891d82b0a955cda
+2024-09-21 19:47:23,621 - WARNING - File has no extension, converting to lowercase: d00a37d60e686d4cead247e3e18f5d4cf5fc27
+2024-09-21 19:47:23,634 - WARNING - File has no extension, converting to lowercase: b08df9d4b62985f8e909e0bb59369cba756f74
+2024-09-21 19:47:23,644 - WARNING - File has no extension, converting to lowercase: f10bb4144ac684b1d579c408eccd917e0f6b78
+2024-09-21 19:47:23,656 - WARNING - File has no extension, converting to lowercase: f8d7d3d59374bbd77d75f1fdf23c4c3d4e283a
+2024-09-21 19:47:23,669 - WARNING - File has no extension, converting to lowercase: e5b3a3fe3348afa1d5b6fbaedf42cde0848d60
+2024-09-21 19:47:23,682 - WARNING - File has no extension, converting to lowercase: 9f721f3912999d409f5436d0dbace07e44bb7a
+2024-09-21 19:47:23,692 - WARNING - File has no extension, converting to lowercase: e53c0dd04800fadb4975c94cdcefcfe22ea213
+2024-09-21 19:47:23,702 - WARNING - File has no extension, converting to lowercase: d7f4ebd098dff1a9e7d60ef14169021a84f9d9
+2024-09-21 19:47:23,716 - WARNING - File has no extension, converting to lowercase: 2819697190d314d215ac7c5369673591706157
+2024-09-21 19:47:23,728 - WARNING - File has no extension, converting to lowercase: f872a83a4af241972dbb012557475b99350bb8
+2024-09-21 19:47:23,740 - WARNING - File has no extension, converting to lowercase: 05ef2fbf443138db485103527fef1cae89ec76
+2024-09-21 19:47:23,750 - WARNING - File has no extension, converting to lowercase: 813053956c59863df08796edf8282bcaaebd94
+2024-09-21 19:47:23,764 - WARNING - File has no extension, converting to lowercase: a8f151dcf003318077cc3a821234a68c0daaab
+2024-09-21 19:47:23,773 - WARNING - File has no extension, converting to lowercase: a6df1a4ebbb59954ff2efb62b6f63d4a907973
+2024-09-21 19:47:23,786 - WARNING - File has no extension, converting to lowercase: 9837e84a82b6c82ba946913d67bc089465a330
+2024-09-21 19:47:23,796 - WARNING - File has no extension, converting to lowercase: 62d53776f0d8fc3b318afdd2726d9b5b1c36e0
+2024-09-21 19:47:23,809 - WARNING - File has no extension, converting to lowercase: fa7f080c870febe4b80468cb04306d71269fa8
+2024-09-21 19:47:23,821 - WARNING - File has no extension, converting to lowercase: f8e204b9cadc5235878d448167a6a055e91822
+2024-09-21 19:47:23,832 - WARNING - File has no extension, converting to lowercase: 1e52d1232a0d0699d2906eb6c5189d886384a5
+2024-09-21 19:47:23,840 - WARNING - File has no extension, converting to lowercase: b8b79547ed55f1e2ad9ce618fa525e07641e6c
+2024-09-21 19:47:23,854 - WARNING - File has no extension, converting to lowercase: 78100a1bdabaf305bcc1dcf6e099cc0949dc98
+2024-09-21 19:47:23,865 - WARNING - File has no extension, converting to lowercase: 746ff5814abdd3fa7270717fcb71aa57e1141b
+2024-09-21 19:47:23,877 - WARNING - File has no extension, converting to lowercase: 54f82ab9144bb8eb2daffc1cf5d372c71df2d5
+2024-09-21 19:47:23,888 - WARNING - File has no extension, converting to lowercase: 1f847b6ebfbb671720155c37a8877d58724794
+2024-09-21 19:47:23,898 - WARNING - File has no extension, converting to lowercase: 37d645d4022cc7d4472aa65727b9ff0f51b6c4
+2024-09-21 19:47:23,907 - WARNING - File has no extension, converting to lowercase: 30f611af286d267ab216c2032c41f6e53a0872
+2024-09-21 19:47:23,921 - WARNING - File has no extension, converting to lowercase: 4d0f73b1dfa737f9560a2a35b650a7c574fdd8
+2024-09-21 19:47:23,932 - WARNING - File has no extension, converting to lowercase: c6b63f1ed19126e12c4db178dd548419a33c8e
+2024-09-21 19:47:23,944 - WARNING - File has no extension, converting to lowercase: e6b56c2d41075a9c9dd3b14d11ad5f3ad5cdd1
+2024-09-21 19:47:23,954 - WARNING - File has no extension, converting to lowercase: 49b5f9b2598c79c32a682b32f14b15642c076f
+2024-09-21 19:47:23,964 - WARNING - File has no extension, converting to lowercase: 400e64d7c0219aea05762d1dd6a08cf3cd069f
+2024-09-21 19:47:23,976 - WARNING - File has no extension, converting to lowercase: 2248c3ba75393357da34011eeb24bf6a0835ea
+2024-09-21 19:47:23,986 - WARNING - File has no extension, converting to lowercase: aa0f71533ebf4d01f703f87f34bfbaa16411f3
+2024-09-21 19:47:24,001 - WARNING - File has no extension, converting to lowercase: 653fd93610cd1d70b6f5a6f605483e02ae38c9
+2024-09-21 19:47:24,018 - WARNING - File has no extension, converting to lowercase: c1b50adac757d00582e1671456823a3fe59221
+2024-09-21 19:47:24,030 - WARNING - File has no extension, converting to lowercase: 5dd588afa88bb284aa84f84f3d364bd0415a67
+2024-09-21 19:47:24,048 - WARNING - File has no extension, converting to lowercase: 90a47f1c9ad72c1b173c4dc895e8a36ba41ffd
+2024-09-21 19:47:24,060 - WARNING - File has no extension, converting to lowercase: a095a6608adef0cddaba870a398279337276d4
+2024-09-21 19:47:24,072 - WARNING - File has no extension, converting to lowercase: ac8a27ffcc7cf0bb0b8cc4b74743845342bf32
+2024-09-21 19:47:24,085 - WARNING - File has no extension, converting to lowercase: 8e1126b9ae0b8470d5b26ff621038f11ba2da5
+2024-09-21 19:47:24,100 - WARNING - File has no extension, converting to lowercase: 9eba4102e5c6595bbaa4d0197da73198bc1ad8
+2024-09-21 19:47:24,112 - WARNING - File has no extension, converting to lowercase: dc629815a8db6e11133474b5d82480bf576cb3
+2024-09-21 19:47:24,122 - WARNING - File has no extension, converting to lowercase: 752f75667f17291178008d120441b5c05aaf5c
+2024-09-21 19:47:24,134 - WARNING - File has no extension, converting to lowercase: b0622e3951d9deb369964566ca62d2c76d4466
+2024-09-21 19:47:24,145 - WARNING - File has no extension, converting to lowercase: b0976bcb808b191fa056dacbfb8287704af191
+2024-09-21 19:47:24,157 - WARNING - File has no extension, converting to lowercase: a2869bfc1e85b6981389c9c64f785d61c1747f
+2024-09-21 19:47:24,170 - WARNING - File has no extension, converting to lowercase: 212a515941522f6adbe926bac5e9d739538d74
+2024-09-21 19:47:24,185 - WARNING - File has no extension, converting to lowercase: ce43bb4ca2c32d44cca11d89be8e4c787978e9
+2024-09-21 19:47:24,198 - WARNING - File has no extension, converting to lowercase: 64f5c2b564cc1e08a3a53a96d3f6f6c171a8ff
+2024-09-21 19:47:24,207 - WARNING - File has no extension, converting to lowercase: bba31d43de15d6192ad86ca7216701485ab614
+2024-09-21 19:47:24,219 - WARNING - File has no extension, converting to lowercase: 4a4de81db81112e160f7c4c96c3d89cd3339aa
+2024-09-21 19:47:24,229 - WARNING - File has no extension, converting to lowercase: 00ec696d1cba4e22d25c2bb7dcc6fb39858f99
+2024-09-21 19:47:24,240 - WARNING - File has no extension, converting to lowercase: cb14981ba54c337b019622beabdc2990d52b1f
+2024-09-21 19:47:24,253 - WARNING - File has no extension, converting to lowercase: 7cd092ee65a23f12bf6302b4bebd29fb0b23f5
+2024-09-21 19:47:24,265 - WARNING - File has no extension, converting to lowercase: 3a3298834100e1fd9dae56f3d46ff90d0d4523
+2024-09-21 19:47:24,278 - WARNING - File has no extension, converting to lowercase: 63588bf8b1245d61ea4471ce210aa8e0081d33
+2024-09-21 19:47:24,290 - WARNING - File has no extension, converting to lowercase: a47bd44adf47846bc5b4d32d739bcca205625f
+2024-09-21 19:47:24,302 - WARNING - File has no extension, converting to lowercase: 7191b190054f9f8355ea40007dc9a25bc3452d
+2024-09-21 19:47:24,314 - WARNING - File has no extension, converting to lowercase: a5aa07b4c3d7b06ed2e1f7ad07d64653a61ea1
+2024-09-21 19:47:24,325 - WARNING - File has no extension, converting to lowercase: 57103a0749062a40c775cfc44784e722255308
+2024-09-21 19:47:24,340 - WARNING - File has no extension, converting to lowercase: 5d24b859a78369074d12d194491b5525741be9
+2024-09-21 19:47:24,354 - WARNING - File has no extension, converting to lowercase: 81fbb0cb90997ff25401699d5fe2e8ec28b13a
+2024-09-21 19:47:24,366 - WARNING - File has no extension, converting to lowercase: fff33b2608f3c7a08ecbb6d6e8209fbe57b3a1
+2024-09-21 19:47:24,378 - WARNING - File has no extension, converting to lowercase: b6fcf92340df1470a00e75f397fb8b4bd7fb4e
+2024-09-21 19:47:24,389 - WARNING - File has no extension, converting to lowercase: ea7af270ff3818932f9b397471ceac156fa090
+2024-09-21 19:47:24,398 - WARNING - File has no extension, converting to lowercase: 966f7985963c7063eb1a16a49e093ff891499d
+2024-09-21 19:47:24,407 - WARNING - File has no extension, converting to lowercase: 9f7f435e8fe9a3b80a3df121fc3397b155a4b0
+2024-09-21 19:47:24,422 - WARNING - File has no extension, converting to lowercase: 7307e12bda8364a466dd3060397ff878d6fc62
+2024-09-21 19:47:24,434 - WARNING - File has no extension, converting to lowercase: 6a19cbb56d33a3fdc6d407702a793835065daa
+2024-09-21 19:47:24,449 - WARNING - File has no extension, converting to lowercase: 36d7dce7862c9a8eb79495f7f5310670dae7e6
+2024-09-21 19:47:24,464 - WARNING - File has no extension, converting to lowercase: 502bc8205dfcabf2140c2c3d7e4ee582eeea5a
+2024-09-21 19:47:24,478 - WARNING - File has no extension, converting to lowercase: 043e566a0ae32c3a2fad5c004954b04f2dc115
+2024-09-21 19:47:24,487 - WARNING - File has no extension, converting to lowercase: 8264dd2128054a96da774a97e7a5de00542f46
+2024-09-21 19:47:24,500 - WARNING - File has no extension, converting to lowercase: 9f434617490cd870b69d7b0756548aa503893b
+2024-09-21 19:47:24,514 - WARNING - File has no extension, converting to lowercase: 5419df7054851520210eba0becd7fab9b1dc32
+2024-09-21 19:47:24,528 - WARNING - File has no extension, converting to lowercase: a8dd0dfe15165d1e63ce05064506ccea5cfa42
+2024-09-21 19:47:24,539 - WARNING - File has no extension, converting to lowercase: 7687f444a95d2033be5926e6b92ae9bc8e6ec3
+2024-09-21 19:47:24,549 - WARNING - File has no extension, converting to lowercase: 070ca758f0b16c7b5feb02b4b887347fc173e3
+2024-09-21 19:47:24,561 - WARNING - File has no extension, converting to lowercase: 52206809a7e37bc225902d52bc6b671e51116c
+2024-09-21 19:47:24,573 - WARNING - File has no extension, converting to lowercase: dffc16c9febbda6cf8915e88165d2231c29287
+2024-09-21 19:47:24,586 - WARNING - File has no extension, converting to lowercase: 4b4e88208f739315c2c48ea329ed1b10ede61a
+2024-09-21 19:47:24,598 - WARNING - File has no extension, converting to lowercase: dd0cb2f8fbc3e1555d2ea20694124fd121a090
+2024-09-21 19:47:24,609 - WARNING - File has no extension, converting to lowercase: 0724821f438c49bbdd212e329e2b739ed61b5f
+2024-09-21 19:47:24,618 - WARNING - File has no extension, converting to lowercase: 641ceef3981ee5bc2cf67ba958f306e2b0c0fc
+2024-09-21 19:47:24,635 - WARNING - File has no extension, converting to lowercase: ee47d2755f7a8a173a64554d2d5d6d86b25e81
+2024-09-21 19:47:24,648 - WARNING - File has no extension, converting to lowercase: 8b8f2c23998fd3378f2db97b8a9db671c16894
+2024-09-21 19:47:24,661 - WARNING - File has no extension, converting to lowercase: 5db6656191d4e9c177106db27be999f9ebb95c
+2024-09-21 19:47:24,672 - WARNING - File has no extension, converting to lowercase: 31621534d861582203e61a5a2d8bfd8229fbb8
+2024-09-21 19:47:24,685 - WARNING - File has no extension, converting to lowercase: 86e870ebd6842df745eeb55cf494df3393c4e0
+2024-09-21 19:47:24,696 - WARNING - File has no extension, converting to lowercase: 540217df78972d134dcc238b0144c62132728a
+2024-09-21 19:47:24,708 - WARNING - File has no extension, converting to lowercase: 05e0d3bcf57228c3e30521b926be1281b306b2
+2024-09-21 19:47:24,719 - WARNING - File has no extension, converting to lowercase: 9a55e6dcc5fd468474e5ecf1e697c9b0c604b5
+2024-09-21 19:47:24,730 - WARNING - File has no extension, converting to lowercase: 5fab9673ce6b226560917686714c9c92386afe
+2024-09-21 19:47:24,742 - WARNING - File has no extension, converting to lowercase: 97658a57fc9725bf5e8e662a002f69a30c4f7e
+2024-09-21 19:47:24,754 - WARNING - File has no extension, converting to lowercase: 5622fc75e3c97892a514b32e97acc08184247c
+2024-09-21 19:47:24,768 - WARNING - File has no extension, converting to lowercase: a986f6f136f061ad7c345c47245788068e9218
+2024-09-21 19:47:24,780 - WARNING - File has no extension, converting to lowercase: 55d746ac3f9284c63ca0060d7ba811cfe867de
+2024-09-21 19:47:24,792 - WARNING - File has no extension, converting to lowercase: main
+2024-09-21 19:47:24,806 - WARNING - File has no extension, converting to lowercase: test
+2024-09-21 19:47:24,823 - WARNING - File has no extension, converting to lowercase: license
+2024-09-21 19:47:24,857 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:47:24,877 - INFO - Feature engineering completed successfully
+2024-09-21 19:47:50,222 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:47:50,232 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:47:50,241 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:47:50,254 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:47:50,265 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:47:50,277 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:47:50,285 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,294 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,303 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,314 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,325 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,335 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,347 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,359 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,372 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,394 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,404 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,416 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,426 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,435 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,443 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,451 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,459 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,471 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,483 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,495 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,503 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,511 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,525 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,536 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,549 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,559 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,569 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,580 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,591 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,605 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,616 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,630 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,640 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,653 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,664 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,672 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,684 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,694 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,703 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,712 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,721 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,733 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,741 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,754 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,764 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,773 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,784 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,795 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,804 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,817 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,847 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,868 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,892 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,906 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,918 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,932 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,943 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,958 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,971 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,984 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:50,998 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,011 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,023 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,036 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,048 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,060 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,073 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,086 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,099 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,114 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,127 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,144 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,157 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,168 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,180 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,190 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,209 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,238 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,255 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,266 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,280 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,294 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,307 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,317 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,326 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,338 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,351 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,362 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,376 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,388 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,397 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,410 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,425 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,437 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,450 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,463 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,476 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,484 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,498 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,509 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,521 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,535 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,547 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,559 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,570 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,580 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,590 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,602 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,616 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,629 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,638 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,650 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,664 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,674 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,683 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,697 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,708 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,722 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,732 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,742 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,756 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,767 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,777 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,791 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,801 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,811 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,823 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,836 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,849 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,860 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,872 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,884 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,896 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,905 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,917 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,929 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,940 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,950 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,961 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,970 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,984 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:51,995 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:52,007 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:52,019 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:52,029 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:52,040 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:52,053 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:52,080 - WARNING - File has no extension, converting to lowercase
+2024-09-21 19:47:52,098 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:47:52,118 - INFO - Feature engineering completed successfully
+2024-09-21 19:48:03,148 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:48:03,158 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:48:03,170 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:48:03,180 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:48:03,194 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:48:03,209 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:48:03,220 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,230 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,242 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,251 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,263 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,274 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,284 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,295 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,309 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,330 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,340 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,351 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,363 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,371 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,380 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,389 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,400 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,414 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,423 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,433 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,445 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,454 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,466 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,481 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,491 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,501 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,513 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,526 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,536 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,548 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,558 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,569 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,580 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,597 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,608 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,620 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,633 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,647 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,659 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,675 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,688 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,701 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,715 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,729 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,744 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,756 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,769 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,783 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,800 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,811 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,828 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,840 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,852 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,868 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,882 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,895 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,909 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,926 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,943 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,961 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,974 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:03,988 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,001 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,012 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,022 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,034 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,046 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,055 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,066 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,076 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,088 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,100 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,110 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,119 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,129 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,148 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,162 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,176 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,187 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,198 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,218 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,229 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,240 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,253 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,268 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,283 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,296 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,309 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,320 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,335 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,348 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,361 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,373 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,383 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,397 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,411 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,423 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,437 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,450 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,461 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,472 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,486 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,500 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,513 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,529 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,541 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,550 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,563 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,575 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,590 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,602 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,616 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,628 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,639 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,653 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,666 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,680 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,693 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,705 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,722 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,734 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,747 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,759 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,771 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,784 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,796 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,811 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,825 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,838 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,850 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,864 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,880 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,894 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,906 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,921 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,935 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,949 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,961 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,973 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:04,988 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,001 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,013 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,027 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,040 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,052 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,065 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,078 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,091 - INFO - File has no extension, converting to lowercase
+2024-09-21 19:48:05,103 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:48:05,124 - INFO - Feature engineering completed successfully
+2024-09-21 19:48:30,828 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:48:30,837 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:48:30,848 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:48:30,860 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:48:30,878 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:48:30,895 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:48:30,920 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:48:30,934 - INFO - Feature engineering completed successfully
+2024-09-21 19:48:55,677 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:48:55,690 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:48:55,704 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:48:55,718 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:48:55,732 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:48:55,745 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:48:55,768 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:48:55,778 - INFO - Feature engineering completed successfully
+2024-09-21 19:49:05,371 - INFO - Initializing logging configuration
+2024-09-21 19:49:05,378 - INFO - Importing 'os' without alias
+2024-09-21 19:49:05,391 - INFO - Importing 'time' without alias
+2024-09-21 19:49:05,403 - INFO - Importing 're' as 're'
+2024-09-21 19:49:05,413 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 19:49:05,422 - INFO - Importing 'numpy' as 'np'
+2024-09-21 19:49:05,432 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 19:49:05,443 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 19:49:05,451 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 19:49:05,464 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 19:49:05,472 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 19:49:05,532 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 19:49:05,646 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 19:49:05,746 - INFO - Starting feature engineering on the dataset
+2024-09-21 19:49:05,757 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 19:49:05,768 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 19:49:05,783 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 19:49:05,795 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 19:49:05,810 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 19:49:05,834 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 19:49:05,846 - INFO - Feature engineering completed successfully
+2024-09-21 23:45:32,385 - INFO - Initializing logging configuration
+2024-09-21 23:45:32,395 - INFO - Importing 'os' without alias
+2024-09-21 23:45:32,406 - INFO - Importing 'time' without alias
+2024-09-21 23:45:32,415 - INFO - Importing 're' as 're'
+2024-09-21 23:45:32,423 - INFO - Importing 'pandas' as 'pd'
+2024-09-21 23:45:32,431 - INFO - Importing 'numpy' as 'np'
+2024-09-21 23:45:32,439 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-21 23:45:32,451 - INFO - Importing 'seaborn' as 'sns'
+2024-09-21 23:45:32,460 - INFO - Importing 'plotly.express' as 'px'
+2024-09-21 23:45:32,469 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-21 23:45:32,480 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-21 23:45:32,700 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-21 23:45:32,806 - INFO - Scanning completed. Total files processed: 1890
+2024-09-21 23:45:32,988 - INFO - Starting feature engineering on the dataset
+2024-09-21 23:45:32,999 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 23:45:33,011 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 23:45:33,023 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 23:45:33,035 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 23:45:33,045 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 23:45:33,067 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 23:45:33,083 - INFO - Feature engineering completed successfully
+2024-09-21 23:57:13,767 - INFO - Starting feature engineering on the dataset
+2024-09-21 23:57:13,775 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-21 23:57:13,789 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-21 23:57:13,800 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-21 23:57:13,812 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-21 23:57:13,821 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-21 23:57:13,844 - INFO - Applying Feature 6: Identifying Python files
+2024-09-21 23:57:13,854 - INFO - Feature engineering completed successfully
+2024-09-22 00:08:47,267 - INFO - Starting feature engineering on the dataset
+2024-09-22 00:08:47,278 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 00:08:47,290 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 00:08:47,301 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 00:08:47,312 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 00:08:47,322 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 00:08:47,341 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 00:08:47,351 - INFO - Feature engineering completed successfully
+2024-09-22 00:11:11,999 - INFO - Starting feature engineering on the dataset
+2024-09-22 00:11:12,010 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 00:11:12,023 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 00:11:12,034 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 00:11:12,048 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 00:11:12,061 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 00:11:12,092 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 00:11:12,107 - INFO - Feature engineering completed successfully
+2024-09-22 00:15:07,159 - INFO - Starting feature engineering on the dataset
+2024-09-22 00:15:07,173 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 00:15:07,189 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 00:15:07,200 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 00:15:07,210 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 00:15:07,220 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 00:15:07,229 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 00:15:07,241 - INFO - Feature engineering completed successfully
+2024-09-22 00:25:31,113 - INFO - Initializing logging configuration
+2024-09-22 00:25:31,119 - INFO - Importing 'os' without alias
+2024-09-22 00:25:31,131 - INFO - Importing 'time' without alias
+2024-09-22 00:25:31,143 - INFO - Importing 're' as 're'
+2024-09-22 00:25:31,153 - INFO - Importing 'pandas' as 'pd'
+2024-09-22 00:25:31,160 - INFO - Importing 'numpy' as 'np'
+2024-09-22 00:25:31,168 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-22 00:25:31,175 - INFO - Importing 'seaborn' as 'sns'
+2024-09-22 00:25:31,183 - INFO - Importing 'plotly.express' as 'px'
+2024-09-22 00:25:31,194 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-22 00:25:31,207 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-22 00:25:31,270 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-22 00:25:31,368 - INFO - Scanning completed. Total files processed: 1890
+2024-09-22 00:25:31,470 - INFO - Starting feature engineering on the dataset
+2024-09-22 00:25:31,482 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 00:25:31,498 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 00:25:31,513 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 00:25:31,529 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 00:25:31,544 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 00:25:31,552 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 00:25:31,564 - ERROR - Error while identifying Python files: 'file_extension'
+2024-09-22 00:25:31,575 - INFO - Feature engineering completed successfully
+2024-09-22 00:33:03,987 - INFO - Starting feature engineering on the dataset
+2024-09-22 00:33:03,996 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 00:33:04,010 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 00:33:04,021 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 00:33:04,034 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 00:33:04,044 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 00:33:04,063 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 00:33:04,075 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-22 00:33:04,092 - INFO - Feature engineering completed successfully
+2024-09-22 00:34:13,618 - INFO - Starting feature engineering on the dataset
+2024-09-22 00:34:13,629 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 00:34:13,643 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 00:34:13,654 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 00:34:13,665 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 00:34:13,675 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 00:34:13,694 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 00:34:13,705 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-22 00:34:13,719 - INFO - Feature engineering completed successfully
+2024-09-22 11:57:39,868 - INFO - Initializing logging configuration
+2024-09-22 11:57:39,875 - INFO - Importing 'os' without alias
+2024-09-22 11:57:39,883 - INFO - Importing 'time' without alias
+2024-09-22 11:57:39,889 - INFO - Importing 're' as 're'
+2024-09-22 11:57:39,897 - INFO - Importing 'pandas' as 'pd'
+2024-09-22 11:57:39,906 - INFO - Importing 'numpy' as 'np'
+2024-09-22 11:57:39,916 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-22 11:57:39,924 - INFO - Importing 'seaborn' as 'sns'
+2024-09-22 11:57:39,934 - INFO - Importing 'plotly.express' as 'px'
+2024-09-22 11:57:39,942 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-22 11:57:39,951 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-22 11:57:42,776 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-22 11:57:43,007 - INFO - Scanning completed. Total files processed: 1890
+2024-09-22 11:57:43,141 - INFO - Starting feature engineering on the dataset
+2024-09-22 11:57:43,149 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 11:57:43,166 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 11:57:43,181 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 11:57:43,196 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 11:57:43,210 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 11:57:43,233 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 11:57:43,246 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-22 11:57:43,262 - INFO - Feature engineering completed successfully
+2024-09-22 12:24:26,131 - INFO - Initializing logging configuration
+2024-09-22 12:24:26,141 - INFO - Importing 'os' without alias
+2024-09-22 12:24:26,154 - INFO - Importing 'time' without alias
+2024-09-22 12:24:26,162 - INFO - Importing 're' as 're'
+2024-09-22 12:24:26,171 - INFO - Importing 'pandas' as 'pd'
+2024-09-22 12:24:26,180 - INFO - Importing 'numpy' as 'np'
+2024-09-22 12:24:26,189 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-22 12:24:26,200 - INFO - Importing 'seaborn' as 'sns'
+2024-09-22 12:24:26,214 - INFO - Importing 'plotly.express' as 'px'
+2024-09-22 12:24:26,223 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-22 12:24:26,236 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-22 12:24:26,293 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-22 12:24:26,420 - INFO - Scanning completed. Total files processed: 1890
+2024-09-22 12:24:26,593 - INFO - Starting feature engineering on the dataset
+2024-09-22 12:24:26,604 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-22 12:24:26,617 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-22 12:24:26,631 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-22 12:24:26,644 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-22 12:24:26,658 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-22 12:24:26,681 - INFO - Applying Feature 6: Identifying Python files
+2024-09-22 12:24:26,694 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-22 12:24:26,709 - INFO - Feature engineering completed successfully
+2024-09-23 18:58:20,470 - INFO - Initializing logging configuration
+2024-09-23 18:58:20,604 - INFO - Importing 'os' without alias
+2024-09-23 18:58:20,675 - INFO - Importing 'time' without alias
+2024-09-23 18:58:20,688 - INFO - Importing 're' as 're'
+2024-09-23 18:58:20,702 - INFO - Importing 'pandas' as 'pd'
+2024-09-23 18:58:20,713 - INFO - Importing 'numpy' as 'np'
+2024-09-23 18:58:20,736 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-23 18:58:20,755 - INFO - Importing 'seaborn' as 'sns'
+2024-09-23 18:58:20,769 - INFO - Importing 'plotly.express' as 'px'
+2024-09-23 18:58:20,781 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-23 18:58:20,793 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-23 18:58:20,868 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-23 18:58:21,079 - INFO - Scanning completed. Total files processed: 1891
+2024-09-23 18:58:21,263 - INFO - Starting feature engineering on the dataset
+2024-09-23 18:58:21,277 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-23 18:58:21,327 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-23 18:58:21,343 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-23 18:58:21,364 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-23 18:58:21,383 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-23 18:58:21,408 - INFO - Applying Feature 6: Identifying Python files
+2024-09-23 18:58:21,424 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-23 18:58:21,441 - INFO - Feature engineering completed successfully
+2024-09-23 21:34:17,645 - INFO - Initializing logging configuration
+2024-09-23 21:34:17,653 - INFO - Importing 'os' without alias
+2024-09-23 21:34:17,661 - INFO - Importing 'time' without alias
+2024-09-23 21:34:17,670 - INFO - Importing 're' as 're'
+2024-09-23 21:34:17,681 - INFO - Importing 'pandas' as 'pd'
+2024-09-23 21:34:17,688 - INFO - Importing 'numpy' as 'np'
+2024-09-23 21:34:17,695 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-23 21:34:17,703 - INFO - Importing 'seaborn' as 'sns'
+2024-09-23 21:34:17,711 - INFO - Importing 'plotly.express' as 'px'
+2024-09-23 21:34:17,722 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-23 21:34:17,733 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-23 21:34:17,878 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-23 21:34:18,003 - INFO - Scanning completed. Total files processed: 1891
+2024-09-23 21:34:18,449 - INFO - Starting feature engineering on the dataset
+2024-09-23 21:34:18,462 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-23 21:34:18,475 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-23 21:34:18,490 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-23 21:34:18,503 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-23 21:34:18,515 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-23 21:34:18,538 - INFO - Applying Feature 6: Identifying Python files
+2024-09-23 21:34:18,548 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-23 21:34:18,566 - INFO - Feature engineering completed successfully
+2024-09-23 21:40:39,170 - INFO - Initializing logging configuration
+2024-09-23 21:40:39,177 - INFO - Importing 'os' without alias
+2024-09-23 21:40:39,185 - INFO - Importing 'time' without alias
+2024-09-23 21:40:39,198 - INFO - Importing 're' as 're'
+2024-09-23 21:40:39,205 - INFO - Importing 'pandas' as 'pd'
+2024-09-23 21:40:39,216 - INFO - Importing 'numpy' as 'np'
+2024-09-23 21:40:39,223 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-23 21:40:39,231 - INFO - Importing 'seaborn' as 'sns'
+2024-09-23 21:40:39,239 - INFO - Importing 'plotly.express' as 'px'
+2024-09-23 21:40:39,247 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-23 21:40:39,258 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-23 21:40:39,379 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-23 21:40:39,521 - INFO - Scanning completed. Total files processed: 1891
+2024-09-23 21:40:39,643 - INFO - Starting feature engineering on the dataset
+2024-09-23 21:40:40,125 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-23 21:40:40,150 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-23 21:40:40,165 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-23 21:40:40,183 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-23 21:40:40,198 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-23 21:40:40,231 - INFO - Applying Feature 6: Identifying Python files
+2024-09-23 21:40:40,246 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-23 21:40:40,268 - INFO - Feature engineering completed successfully
+2024-09-23 21:40:56,708 - INFO - Initializing logging configuration
+2024-09-23 21:40:56,715 - INFO - Importing 'os' without alias
+2024-09-23 21:40:56,726 - INFO - Importing 'time' without alias
+2024-09-23 21:40:56,734 - INFO - Importing 're' as 're'
+2024-09-23 21:40:56,741 - INFO - Importing 'pandas' as 'pd'
+2024-09-23 21:40:56,749 - INFO - Importing 'numpy' as 'np'
+2024-09-23 21:40:56,758 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-23 21:40:56,767 - INFO - Importing 'seaborn' as 'sns'
+2024-09-23 21:40:56,775 - INFO - Importing 'plotly.express' as 'px'
+2024-09-23 21:40:56,787 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-23 21:40:56,798 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-23 21:40:56,952 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-23 21:40:57,067 - INFO - Scanning completed. Total files processed: 1891
+2024-09-23 21:40:57,188 - INFO - Starting feature engineering on the dataset
+2024-09-23 21:40:57,200 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-23 21:40:57,215 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-23 21:40:57,232 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-23 21:40:57,249 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-23 21:40:57,265 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-23 21:40:57,294 - INFO - Applying Feature 6: Identifying Python files
+2024-09-23 21:40:57,309 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-23 21:40:57,327 - INFO - Feature engineering completed successfully
+2024-09-23 21:42:24,205 - INFO - Initializing logging configuration
+2024-09-23 21:42:24,215 - INFO - Importing 'os' without alias
+2024-09-23 21:42:24,227 - INFO - Importing 'time' without alias
+2024-09-23 21:42:24,237 - INFO - Importing 're' as 're'
+2024-09-23 21:42:24,250 - INFO - Importing 'pandas' as 'pd'
+2024-09-23 21:42:24,263 - INFO - Importing 'numpy' as 'np'
+2024-09-23 21:42:24,275 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-23 21:42:24,283 - INFO - Importing 'seaborn' as 'sns'
+2024-09-23 21:42:24,292 - INFO - Importing 'plotly.express' as 'px'
+2024-09-23 21:42:24,300 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-23 21:42:24,311 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-23 21:42:24,387 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-23 21:42:24,516 - INFO - Scanning completed. Total files processed: 1891
+2024-09-23 21:42:24,666 - INFO - Starting feature engineering on the dataset
+2024-09-23 21:42:24,680 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-23 21:42:24,697 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-23 21:42:24,715 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-23 21:42:24,733 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-23 21:42:24,750 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-23 21:42:24,773 - INFO - Applying Feature 6: Identifying Python files
+2024-09-23 21:42:24,787 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-23 21:42:24,806 - INFO - Feature engineering completed successfully
+2024-09-23 21:44:09,395 - INFO - Initializing logging configuration
+2024-09-23 21:44:09,403 - INFO - Importing 'os' without alias
+2024-09-23 21:44:09,415 - INFO - Importing 'time' without alias
+2024-09-23 21:44:09,423 - INFO - Importing 're' as 're'
+2024-09-23 21:44:09,435 - INFO - Importing 'pandas' as 'pd'
+2024-09-23 21:44:09,446 - INFO - Importing 'numpy' as 'np'
+2024-09-23 21:44:09,456 - INFO - Importing 'matplotlib.pyplot' as 'plt'
+2024-09-23 21:44:09,465 - INFO - Importing 'seaborn' as 'sns'
+2024-09-23 21:44:09,477 - INFO - Importing 'plotly.express' as 'px'
+2024-09-23 21:44:09,496 - INFO - Importing 'plotly.graph_objects' as 'go'
+2024-09-23 21:44:09,507 - INFO - Importing 'plotly.io' as 'pio'
+2024-09-23 21:44:09,629 - INFO - Starting directory scan of /home/tron/git/light_site
+2024-09-23 21:44:09,801 - INFO - Scanning completed. Total files processed: 1891
+2024-09-23 21:44:09,905 - INFO - Starting feature engineering on the dataset
+2024-09-23 21:44:09,918 - INFO - Applying Feature 1: File age in days based on modification time
+2024-09-23 21:44:09,932 - INFO - Applying Feature 2: Metadata change age in days
+2024-09-23 21:44:09,944 - INFO - Applying Feature 3: Recently accessed files (less than 3 days)
+2024-09-23 21:44:09,957 - INFO - Applying Feature 4: Categorizing file sizes
+2024-09-23 21:44:09,972 - INFO - Applying Feature 5: Extracting file extensions
+2024-09-23 21:44:09,993 - INFO - Applying Feature 6: Identifying Python files
+2024-09-23 21:44:10,004 - INFO - Applying Feature 7: Calculating file depth level based on 'full_path'
+2024-09-23 21:44:10,019 - INFO - Feature engineering completed successfully

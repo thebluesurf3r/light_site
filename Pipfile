@@ -38,7 +38,8 @@ django-celery-results = "*"
 setuptools = "*"
 setuptools-scm = "*"
 dash = "*"
-jinja2 = "*"
+sentry-sdk = "*"
+networkx = "*"
 
 [dev-packages]
 ipykernel = "*"
