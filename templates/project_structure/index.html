@@ -42,6 +42,25 @@
         </section>
     </b-container>
 
+    <!-- Search Result Count -->
+    <b-container class="my-4">
+        <section class="result-count-section mb-4">
+            <b-row>
+                <b-col>
+                    {% if search_query %}
+                        {% if result_count == 0 %}
+                            <p>No results found for '{{ search_query }}'</p>
+                        {% else %}
+                            <p><strong>{{ result_count }}</strong> results found for '{{ search_query }}'</p>
+                        {% endif %}
+                    {% else %}
+                        <p>Please enter a search query.</p>
+                    {% endif %}
+                </b-col>
+            </b-row>
+        </section>
+    </b-container>
+
     <!-- Data Table Section -->
     <b-container class="my-4">
         <section class="project-structure mb-4">

@@ -1,9 +1,7 @@
-# project_structure/models.py
 import logging
 from django.db import models
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class ProjectEntity(models.Model):
@@ -12,13 +10,26 @@ class ProjectEntity(models.Model):
         ('directory', 'Directory'),
     ]
 
-    entity_name = models.CharField(max_length=255)
-    relative_path = models.CharField(max_length=500)
-    level = models.PositiveIntegerField()
-    type = models.CharField(max_length=10, choices=ENTITY_TYPE_CHOICES)
+    directory = models.CharField(max_length=500)
+    filename = models.CharField(max_length=255)
+    full_path = models.CharField(max_length=1000)
+    file_size = models.BigIntegerField()
+    metadata_change_time = models.DateTimeField()
+    modification_time = models.DateTimeField()
+    access_time = models.DateTimeField()
+    file_age_in_days = models.IntegerField()
+    meta_data_age_in_days = models.IntegerField()
+    recently_accessed = models.BooleanField(default=False)
+    file_size_category = models.CharField(max_length=500, blank=True, null=True)
+    file_extension = models.CharField(max_length=100, blank=True, null=True)
+    python_file = models.BooleanField(default=False)
+    file_depth = models.IntegerField()
+    django_element_type = models.CharField(max_length=100, blank=True, null=True)
+    expected_location = models.BooleanField(default=False)
+    hover_template = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f'{self.entity_name} (Level: {self.level}, Type: {self.type})'
+        return f'{self.filename} (Path: {self.full_path}, Size: {self.file_size})'
 
     def save(self, *args, **kwargs):
         if self.pk:

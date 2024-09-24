@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_celery_results',
     'accounts',
+    'project_structure'
 ]
 
 MIDDLEWARE = [

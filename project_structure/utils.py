@@ -15,6 +15,9 @@ from threading import Thread
 from django.conf import settings
 from logging.handlers import RotatingFileHandler
 from light_site.log import log_imported_libraries
+from datetime import datetime
+
+from .models import ProjectEntity
 
 #=====================================================================================================================================================#
 #== Global DataFrame to store log entries ==#
@@ -86,95 +89,216 @@ libraries_with_aliases = {
 }
 logger.info("Initializing logging configuration")
 
-base_dir = os.path.join(os.path.expanduser('~'), 'git', 'light_site')
-
-file_path = os.path.join(base_dir, 'data', 'project_structure.pkl')
-drop_na = False
-encoding = False
-
 #=====================================================================================================================================================#
-#== Data Loading Function ==#
+#== Performing Directory Walk ==#
 
-def load_data(file_path, drop_na=False, encoding='utf-8'):
-    """
-    Load a dataset from a pickle file, with optional date parsing and NaN removal.
+def scan_directories(root_dir):
+    logging.info(f'Starting directory scan of {root_dir}')
+    data = []
+    total_files = 0
 
-    Parameters:
-    - file_path: str, path to the dataset
-    - drop_na: bool, drop rows with NaN values (default: True)
-    - encoding: str, file encoding type (default: 'utf-8')
+    # Walk through the directory
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        for filename in filenames:
+            file_path = os.path.join(dirpath, filename)
+            try:
+                file_stats = os.stat(file_path)
+                
+                # Collect file metadata
+                file_size = file_stats.st_size
+                metadata_change_time = datetime.fromtimestamp(file_stats.st_ctime)
+                modification_time = datetime.fromtimestamp(file_stats.st_mtime)
+                access_time = datetime.fromtimestamp(file_stats.st_atime)
 
-    Returns:
-    - pd.DataFrame: The loaded dataset or None if an error occurred
-    """
-    try:
-        df = pd.read_pickle(file_path)
-        logging.info(f"Dataset loaded successfully from: {file_path}")
+                # Append metadata to the list
+                data.append({
+                    'directory': dirpath,
+                    'filename': filename,
+                    'full_path': file_path,
+                    'file_size': file_size,
+                    'metadata_change_time': metadata_change_time,
+                    'modification_time': modification_time,
+                    'access_time': access_time
+                })
+                total_files += 1
 
-        if drop_na:
-            initial_rows = df.shape[0]
-            df.dropna(inplace=True)
-            removed_rows = initial_rows - df.shape[0]
-            logging.info(f"Removed {removed_rows} rows with NaN values.")
+            except FileNotFoundError:
+                logging.error(f'File not found: {file_path}')
+            except PermissionError:
+                logging.error(f'Permission denied for file: {file_path}')
+            except Exception as e:
+                logging.error(f'Error processing file {filename} in directory {dirpath}: {e}')
 
-        df.reset_index(drop=True, inplace=True)
-        logging.info("Index reset.")
-
-        return df
-
-    except FileNotFoundError:
-        logging.error(f"File not found: {file_path}")
-    except pd.errors.EmptyDataError:
-        logging.error(f"No data found in file: {file_path}")
-    except Exception as e:
-        logging.error(f"An error occurred: {e}")
-
-#== Load Data ==#
-
-df = load_data(file_path=file_path, drop_na=drop_na, encoding=encoding)
-
-#== Data Load Verification ==#
-
-if df is not None:
-    logging.info(f"Dataset loaded with {df.shape[0]} rows and {df.shape[1]} columns.")
-
-#=====================================================================================================================================================#
-#== Display DataFrame in HTML Function ==#
-
-def display_dataframe_html(df, rows=5, exclude_column='hover_template'):
-    """
-    Render a preview of the DataFrame as an HTML table, excluding a specified column.
-
-    Parameters:
-    - df: pd.DataFrame, the DataFrame to display
-    - rows: int, number of rows to display (default: 5)
-    - exclude_column: str, name of the column to exclude (default: 'hover_template')
-
-    Returns:
-    - str: HTML table representing the DataFrame sample
-    """
-    logging.info(f"Rendering an HTML preview of the DataFrame, showing the first {rows} rows.")
+    # Convert to a pandas DataFrame with appropriate columns
+    df = pd.DataFrame(data)
+    logging.info(f'Scanning completed. Total files processed: {total_files}')
     
-    # Exclude the specified column if it exists
-    if exclude_column in df.columns:
-        df = df.drop(columns=[exclude_column])
-        logging.info(f"Excluded column: {exclude_column}")
+    return df
 
-    # Select the first few rows for preview
-    df_sample = df.head(rows)
+# Example usage
+root_dir = os.path.join(os.path.expanduser('~'), 'git', 'light_site')
+meta_df = scan_directories(root_dir)
 
-    # Return the DataFrame as an HTML table
-    return df_sample.to_html(classes="table table-striped", index=False)
 
-# Display the DataFrame as an HTML table
-html_table = display_dataframe_html(df, rows=5)
+#=====================================================================================================================================================#
+#== Feature Engineering ==#
+
+def feature_engineer(meta_df):
+    logging.info('Starting feature engineering on the dataset')
+
+    # Feature 1: File age in days
+    try:
+        logging.info('Applying Feature 1: File age in days based on modification time')
+        meta_df['file_age_in_days'] = (datetime.now() - meta_df['modification_time']).dt.days
+    except Exception as e:
+        logging.error(f'Error while calculating file age in days: {e}')
+    
+    # Feature 2: Metadata change age in days
+    try:
+        logging.info('Applying Feature 2: Metadata change age in days')
+        meta_df['meta_data_age_in_days'] = (datetime.now() - meta_df['metadata_change_time']).dt.days
+    except Exception as e:
+        logging.error(f'Error while calculating metadata change age in days: {e}')
+
+    # Feature 3: Recently accessed (less than 3 days)
+    try:
+        logging.info('Applying Feature 3: Recently accessed files (less than 3 days)')
+        meta_df['recently_accessed'] = (datetime.now() - meta_df['access_time']).dt.days < 3
+    except Exception as e:
+        logging.error(f'Error while determining recently accessed files: {e}')
+
+    # Function to categorize file size
+    def categorize_file_size(size):
+        try:
+            if size < 10**4:  # less than 10KB
+                return 'Small'
+            elif size < 10**6:  # less than 1MB
+                return 'Medium'
+            else:
+                return 'Large'
+        except Exception as e:
+            logging.error(f'Error while categorizing file size: {e}')
+            return 'Unknown'
+
+    # Feature 4: File size category
+    try:
+        logging.info('Applying Feature 4: Categorizing file sizes')
+        meta_df['file_size_category'] = meta_df['file_size'].apply(categorize_file_size)
+    except Exception as e:
+        logging.error(f'Error while applying file size categorization: {e}')
+    
+    # Feature 5: File extension
+    try:
+        logging.info('Applying Feature 5: Extracting file extensions')
+        def extract_file_extension(filename):
+            # Extract file extension (without dot) or return 'no_extension' if none is found
+            file_extension = os.path.splitext(filename)[1][1:]  # Get the extension without the dot
+            if file_extension == '':  # If no extension is found
+                return 'no_extension'
+            return file_extension
+        meta_df['file_extension'] = meta_df['filename'].apply(extract_file_extension)
+    except Exception as e:
+        logging.error(f'Error while extracting file extensions: {e}')
+
+    # Feature 6: Is Python file
+    try:
+        logging.info('Applying Feature 6: Identifying Python files')
+        meta_df['python_file'] = meta_df['file_extension'] == 'py'
+    except Exception as e:
+        logging.error(f'Error while identifying Python files: {e}')
+
+    # Feature 7: File depth level by counting slashes in 'full_path'
+    try:
+        logging.info("Applying Feature 7: Calculating file depth level based on 'full_path'")
+        
+        # Function to calculate the depth level by counting slashes
+        def calculate_depth(full_path):
+            return full_path.count('/')  # Count the number of slashes
+        
+        # Apply the function to the 'full_path' column to create a new 'file_depth' column
+        meta_df['file_depth'] = meta_df['full_path'].apply(calculate_depth).astype(int)
+    
+    except Exception as e:
+        logging.error(f"Error while calculating file depth level: {e}")
+
+    logging.info('Feature engineering completed successfully')
+    
+    return meta_df
+
+
+# Apply the feature engineering function to meta_df
+meta_df = feature_engineer(meta_df)
+
+#=====================================================================================================================================================#
+#== Django Element Type ==#
+
+def classify_django_element(file_path, filename):
+    # Combine the directory and filename for classification
+    full_path = os.path.join(file_path, filename)
+    
+    # Project-level configuration files
+    if 'manage.py' in full_path:
+        return 'Django Management Script'
+    elif 'settings.py' in full_path or 'urls.py' in full_path or 'wsgi.py' in full_path or 'asgi.py' in full_path:
+        return 'Django Project Configuration'
+
+    # App-level files
+    elif 'models.py' in full_path:
+        return 'Django App Models'
+    elif 'views.py' in full_path:
+        return 'Django App Views'
+    elif 'admin.py' in full_path:
+        return 'Django App Admin'
+    elif 'apps.py' in full_path:
+        return 'Django App Configuration'
+    elif 'tests.py' in full_path:
+        return 'Django App Tests'
+    
+    # Migrations
+    elif 'migrations/' in full_path and full_path.endswith('.py'):
+        return 'Django Migrations'
+
+    # Static files
+    elif 'static/' in full_path:
+        if filename.endswith('.css'):
+            return 'Static CSS File'
+        elif filename.endswith('.js'):
+            return 'Static JS File'
+        elif filename.endswith(('.jpg', '.png', '.gif', '.svg')):
+            return 'Static Image File'
+        else:
+            return 'Other Static File'
+
+    # Templates
+    elif 'templates/' in full_path and filename.endswith('.html'):
+        return 'Django Template'
+
+    # Log files
+    elif filename.endswith('.log'):
+        return 'Log File'
+
+    # Environment or dependency files
+    elif filename in ['.env', 'Pipfile', 'Pipfile.lock', 'requirements.txt']:
+        return 'Environment/Dependency File'
+    
+    # Other Python files
+    elif filename.endswith('.py'):
+        return 'Python Script'
+
+    # Default fallback
+    return 'Other'
+
+# Apply the classification function to each row
+meta_df['django_element_type'] = meta_df.apply(
+    lambda row: classify_django_element(row['directory'], row['filename']), axis=1
+)
 
 #=====================================================================================================================================================#
 #== Categorize Data by Extension ==#
 
-def categorize_by_extension(df):
+def categorize_by_extension(meta_df):
     """
-    Extract and categorize file extensions from the 'entity_name' column.
+    Extract and categorize file extensions from the 'filename' column.
 
     Parameters:
     - df (pd.DataFrame): The DataFrame containing the data.
@@ -186,20 +310,20 @@ def categorize_by_extension(df):
         logging.info("Categorizing data by file extension.")
 
         # Apply the categorization by extracting the file extension
-        df['file_extension'] = df['entity_name'].apply(lambda x: x.split('.')[-1] if '.' in x else 'No Extension')
+        meta_df['file_extension'] = meta_df['filename'].apply(lambda x: x.split('.')[-1] if '.' in x else 'No Extension')
 
         # Log the unique file extensions found
-        unique_extensions = df['file_extension'].unique()
+        unique_extensions = meta_df['file_extension'].unique()
         logging.info(f"Found {len(unique_extensions)} unique extensions.")
 
-        return df
+        return meta_df
 
     except Exception as e:
         logging.error(f"An error occurred while categorizing file extensions: {e}")
         raise
 
 # Apply the function to categorize file extensions
-df = categorize_by_extension(df)
+meta_df = categorize_by_extension(meta_df)
 
 #=====================================================================================================================================================#
 #== Categorize the Extracted Extensions ==#
@@ -238,13 +362,13 @@ def check_file_location(row):
     Check if a file's extension corresponds to its expected location in a Django project.
 
     Parameters:
-    row (pd.Series): A row from the DataFrame containing 'relative_path' and 'file_extension'.
+    row (pd.Series): A row from the DataFrame containing 'directory' and 'file_extension'.
 
     Returns:
     bool: True if the file is in the expected location, otherwise False.
     """
     file_extension = row['file_extension'].lower()  # Convert to lowercase for consistency
-    relative_path = row['relative_path'].lower()  # Convert to lowercase for consistency
+    directory = row['directory'].lower()  # Convert to lowercase for consistency
 
     # Define file extensions and their expected locations
     static_extensions = ['css', 'js', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'pdf', 'csv']
@@ -255,23 +379,23 @@ def check_file_location(row):
     allowed_extensions = static_extensions + html_extensions + markdown_extensions + config_extensions + notebook_extensions
 
     # Check if file extension is one of the allowed types
-    if file_extension in html_extensions and 'templates/' in relative_path:
+    if file_extension in html_extensions and 'templates/' in directory:
         return True
-    elif file_extension in static_extensions and 'static/' in relative_path:
+    elif file_extension in static_extensions and 'static/' in directory:
         return True
     elif file_extension == 'py' and (
-        'migrations/' in relative_path or 
-        'management/commands/' in relative_path or 
-        'apps/' in relative_path or
-        'admin/' in relative_path):
+        'migrations/' in directory or 
+        'management/commands/' in directory or 
+        'apps/' in directory or
+        'admin/' in directory):
         return True
-    elif file_extension in config_extensions and (relative_path.startswith('.') or 'config/' in relative_path):
+    elif file_extension in config_extensions and (directory.startswith('.') or 'config/' in directory):
         return True
-    elif file_extension in markdown_extensions and relative_path in ['README.md', 'LICENSE']:
+    elif file_extension in markdown_extensions and directory in ['README.md', 'LICENSE']:
         return True
-    elif file_extension in notebook_extensions and ('notebooks/' in relative_path or relative_path.endswith('.ipynb')):
+    elif file_extension in notebook_extensions and ('notebooks/' in directory or directory.endswith('.ipynb')):
         return True
-    elif file_extension not in allowed_extensions and 'static/' in relative_path:
+    elif file_extension not in allowed_extensions and 'static/' in directory:
         return True
 
     return False
@@ -328,7 +452,7 @@ def validate_app_structure(app_name, root_dir):
 logging.info(f"Validating app structure: {validate_app_structure}")
 
 # Apply the function to check if files are in the expected location
-df['expected_location'] = df.apply(check_file_location, axis=1)
+meta_df['expected_location'] = meta_df.apply(check_file_location, axis=1)
 
 # Validate the structure of the 'light_site' app (or any other app name)
 app_name = 'light_site'
@@ -340,7 +464,7 @@ logging.info(f"App '{app_name}' has a valid structure: {is_valid_structure}")
 logging.info(f"Validating file location for all rows.")
 
 # To check counts of valid/invalid locations
-counts = df['expected_location'].value_counts()
+counts = meta_df['expected_location'].value_counts()
 logging.info(f"Checking expected locations for static content")
 
 #=====================================================================================================================================================#
@@ -357,39 +481,14 @@ def generate_custom_hover(row):
     - str: The formatted hover text.
     """    
     return (
-        f"Directory Name: {row.get('directory_name', 'N/A')}<br>"
-        f"Entity Name: {row.get('entity_name', 'N/A')}<br>"
-        f"Relative Path: {row.get('relative_path', 'N/A')}<br>"
-        f"Directory Level: {row.get('directory_level_count', 'N/A')}<br>"
-        f"Type: {row.get('type', 'N/A')}<br>"
+        f"Entity Name: {row.get('filename', 'N/A')}<br>"
+        f"Relative Path: {row.get('directory', 'N/A')}<br>"
+        f"Directory Level: {row.get('file_depth', 'N/A')}<br>"
     )
 
 # Apply the function to generate hover text
-df['hover_template'] = df.apply(generate_custom_hover, axis=1)
+meta_df['hover_template'] = meta_df.apply(generate_custom_hover, axis=1)
 logging.info(f"Hover template created and applied to DataFrame.")
-
-
-#=====================================================================================================================================================#
-#== Function to Create Color Map ==#
-
-def create_color_map(df, category_column):
-    """
-    Create a color map for unique values in a specified column.
-
-    Parameters:
-    df (pd.DataFrame): The DataFrame containing the data.
-    category_column (str): The column name with categorical data.
-
-    Returns:
-    color_discrete_map (dict): A dictionary mapping unique categories to colors.
-    """
-    unique_values_list = df[category_column].unique().tolist()
-
-    # Ensure that there are enough colors by repeating the Jet palette if needed
-    color_map = px.colors.sequential.Jet * (len(unique_values_list) // len(px.colors.sequential.Jet) + 1)
-    color_discrete_map = dict(zip(unique_values_list, color_map[:len(unique_values_list)]))
-    
-    return color_discrete_map
 
 #=====================================================================================================================================================#
 
@@ -398,41 +497,106 @@ def create_color_map(df, category_column):
 #=====================================================================================================================================================#
 #== Function to Export DataFrame ==#
 
-def export_dataframe(df, pickle_file_path, csv_file_path):
+def export_dataframe(meta_df, pickle_file_path):
     """
     Export a DataFrame to both a pickle file and a CSV file.
 
     Parameters:
-    df (pd.DataFrame): The DataFrame to export.
+    meta_df (pd.DataFrame): The DataFrame to export.
     pickle_file_path (str): The file path where the pickle file will be saved.
     csv_file_path (str): The file path where the CSV file will be saved.
     """
     # Export to pickle file
-    df.to_pickle(pickle_file_path)
+    meta_df.to_pickle(pickle_file_path)
     logging.info(f"DataFrame exported successfully: {pickle_file_path}")
 
-    # Export to CSV file
-    df.to_csv(csv_file_path, index=False)
-    logging.info(f"DataFrame exported successfully: {csv_file_path}")
 
+# Assume meta_df is your DataFrame
+file_name = 'structure_processed.pkl' 
+pickle_file_path = os.path.join(os.path.expanduser('~'), 'git', 'light_site', 'media', 'project_structure', file_name)
 
-# Assume df is your DataFrame
-pickle_path = 'structure_processed.pkl'
-csv_path = 'structure_processed.csv'
+export_dataframe(meta_df, pickle_file_path)
 
-export_dataframe(df, pickle_path, csv_path)
+#=====================================================================================================================================================#
+#== Function to Create Color Map ==#
+
+def create_color_map(meta_df, category_column):
+    """
+    Create a color map for unique values in a specified column.
+
+    Parameters:
+    meta_df (pd.DataFrame): The DataFrame containing the data.
+    category_column (str): The column name with categorical data.
+
+    Returns:
+    color_discrete_map (dict): A dictionary mapping unique categories to colors.
+    """
+    unique_values_list = meta_df[category_column].unique().tolist()
+
+    # Ensure that there are enough colors by repeating the Jet palette if needed
+    color_map = px.colors.sequential.Jet * (len(unique_values_list) // len(px.colors.sequential.Jet) + 1)
+    color_discrete_map = dict(zip(unique_values_list, color_map[:len(unique_values_list)]))
+    
+    return color_discrete_map
+    
+#=====================================================================================================================================================#
+#== Display DataFrame in HTML Function ==#
+
+def display_dataframe_html(rows=5, exclude_column='hover_template'):
+    """
+    Render a preview of the DataFrame from the database as an HTML table, excluding a specified column.
+
+    Parameters:
+    - rows: int, number of rows to display (default: 5)
+    - exclude_column: str, name of the column to exclude (default: 'hover_template')
+
+    Returns:
+    - str: HTML table representing the DataFrame sample
+    """
+    logging.info(f"Rendering an HTML preview of the DataFrame, showing the first {rows} rows.")
+    
+    # Fetch data from the database
+    meta_df = pd.DataFrame(list(ProjectEntity.objects.values()))  # Create DataFrame from QuerySet
+
+    # Exclude the specified column if it exists
+    if exclude_column in meta_df.columns:
+        meta_df = meta_df.drop(columns=exclude_column)
+        logging.info(f"Excluded column: {exclude_column}")
+
+    # Select the first few rows for preview
+    meta_df_sample = meta_df.head(rows)
+
+    # Return the DataFrame as an HTML table
+    return meta_df_sample.to_html(classes="table table-striped", index=False)
 
 #=====================================================================================================================================================#
 #== Function to Display DataFrame ==#
 
-def display_dataframe(df, rows=5, exclude_column='hover_template'):
-    logging.info(f"Previewing the dataset: {display_dataframe}")
-    if exclude_column in df.columns:
-        df = df.drop(columns=exclude_column)
-    return df.head(rows)
+def display_dataframe(rows=5, exclude_column='hover_template'):
+    """
+    Return a preview of the DataFrame from the database.
 
-preview_data = display_dataframe(df, rows=10)
-preview_data
+    Parameters:
+    - rows: int, number of rows to display (default: 5)
+    - exclude_column: str, name of the column to exclude (default: 'hover_template')
+
+    Returns:
+    - pd.DataFrame: Sample of the DataFrame
+    """
+    logging.info("Previewing the dataset.")
+
+    # Fetch data from the database
+    meta_df = pd.DataFrame(list(ProjectEntity.objects.values()))  # Create DataFrame from QuerySet
+
+    # Exclude the specified column if it exists
+    if exclude_column in meta_df.columns:
+        meta_df = meta_df.drop(columns=exclude_column)
+
+    # Return the first few rows
+    return meta_df.head(rows)
+
+# Example usage
+preview_data = display_dataframe(rows=10)
 
 #=====================================================================================================================================================#
 #== Function to Display Website Log ==#
@@ -441,7 +605,7 @@ logging.info(f"Log size: {log_df.shape}")
 
 def display_log_df(log_df, rows=5, exclude_column=None):
     logging.info(f"Viewing the log: {display_log_df}")
-    if exclude_column in df.columns:
+    if exclude_column in meta_df.columns:
         log_df = log_df.drop(columns=exclude_column)
     return log_df.head(rows)
 

@@ -85,7 +85,6 @@ body {
 /*=======================================================================================================================*/
 /*======== Main Element */
 main {
-    background-image: url(../images/);
     display: block; /* Fixed from absolute */
 }
 
@@ -101,7 +100,7 @@ h5, p {
 /*======== Container */
 .container {
     display: grid;
-    max-width: 99.9%;
+    max-width: 100%;
     margin: var(--margin-small);
 }
 
@@ -122,16 +121,16 @@ h5, p {
 /*======== Table styling */
 /* Table styling */
 #app > b-container.my-4 > section > b-row > b-col > b-list-group > b-list-group-item > table {
-    width: 100%; /* Ensure table takes full width of its container */
+    width: 98.5%; /* Ensure table takes full width of its container */
     margin-top: auto;
     margin-bottom: auto;
-    table-layout: auto; /* Allow the table to adjust column widths automatically */
+    table-layout: inherit; /* Allow the table to adjust column widths automatically */
 }
 
 /* Apply overflow handling and text wrapping */
 .data.table.table-bordered.table-hover {
     border-collapse: collapse;
-    width: 100%; /* Ensure table fits within the container */
+    width: 97%; /* Ensure table fits within the container */
 }
 
 .data.table.table-bordered.table-hover th,
@@ -139,7 +138,7 @@ h5, p {
     border: 1px solid var(--border-color); /* Border color */
     background-color: var(--background-color); /* Cell background color */
     color: var(--primary-color); /* Text color */
-    padding: 8px; /* Increased padding for readability */
+    padding: 6px; /* Increased padding for readability */
     text-align: left;
     word-wrap: break-word; /* Ensure long words are wrapped */
     overflow-wrap: break-word; /* Ensure long words are wrapped */
@@ -149,26 +148,26 @@ h5, p {
     background-color: var(--header-background-color); /* Header background color */
     border: 1px solid var(--border-color); /* Border color */
     color: var(--primary-color); /* Text color */
-    padding: 8px; /* Increased padding for readability */
+    padding: 6px; /* Increased padding for readability */
     text-align: left;
 }
 
-/* Ensure container is centered */
+/* Container Alignment*/
 .b-list-group-item {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
-/* Ensure pagination fits and is centered */
+/* Ensure pagination fits */
 .pagination {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: var(--margin-small);
     margin-bottom: var(--margin-small);
 }
 
 .page-item {
-    margin: 0 2px;
+    margin: 0 3px;
 }
 
 .page-link {
@@ -193,4 +192,12 @@ h5, p {
 .my-4 {
     margin-top: var(--margin-large) !important;
     margin-bottom: var(--margin-large) !important;
+}
+
+/*=======================================================================================================================*/
+/*======== Search Button */
+.input-group {
+    background-color: blue;
+    width: 98.5%;
+    color: white;
 }

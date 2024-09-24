@@ -7,9 +7,11 @@ from django.conf import settings
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.paginator import Paginator
+from .models import ProjectEntity
 from .utils import (setup_logging,
                     log_imported_libraries,
-                    load_data,
+                    scan_directories,
+                    feature_engineer,
                     display_dataframe_html,
                     categorize_by_extension,
                     categorize_file_extensions,
@@ -18,7 +20,7 @@ from .utils import (setup_logging,
                     generate_custom_hover,
                     create_color_map,
                     export_dataframe,
-                    display_dataframe,
+                    display_dataframe, meta_df,
                     display_log_df)
 from django.core.paginator import Paginator
 from django.shortcuts import render
@@ -33,49 +35,48 @@ def index(request):
     """
     logger.info('Rendering home page of this app')
     
-    # Specify the path to your dataset
-    base_dir = os.path.join(os.path.expanduser('~'), 'git', 'light_site')
-    file_path = os.path.join(base_dir, 'data', 'project_structure.pkl')
-    
-    # Load the data
-    data = load_data(file_path, drop_na=True, encoding='utf-8')
+    # Load the data from the database
+    data = ProjectEntity.objects.all()  # Fetch all entries from the database
     
     # Validate the structure of the 'light_site' app
     app_name = 'project_structure'
-    root_dir = base_dir  # Assuming root_dir is base_dir
-    is_valid_structure = validate_app_structure(app_name, root_dir)
+    base_dir = os.path.join(os.path.expanduser('~'), 'git', 'light_site')
+    is_valid_structure = validate_app_structure(app_name, base_dir)
     
     if is_valid_structure:
         logger.info(f"App '{app_name}' has a valid structure.")
     else:
         logger.error(f"App '{app_name}' does not have a valid structure.")
     
-    # Preview the data
-    preview_data = None
-    if data is not None:
-        # Categorize the files by extension
-        data = categorize_by_extension(data)
+    # Check if data exists
+    if data.exists():
+        # Convert QuerySet to DataFrame
+        data_df = pd.DataFrame(list(data.values()))  # Create DataFrame from QuerySet
         
-        # Apply check_file_location to each row in the DataFrame
-        data['is_location_correct'] = data.apply(check_file_location, axis=1)
+        # Drop the specified columns, including 'index' and the 'entity_name'
+        exclude_columns = ['hover_template', 'metadata_change_time', 'access_time',
+                           'file_age_in_days', 'meta_data_age_in_days', 'python_file',
+                           'file_size_category', 'recently_accessed', 'expected_location',
+                           'full_path', 'file_depth', 'id', 'entity_name']  # Ensure to exclude 'id' and 'entity_name'
         
-        # Display a preview of the DataFrame (first 10 rows)
-        preview_data = display_dataframe(data, rows=10)
-
-        # Filter data based on the search query
+        data_df = data_df.drop(columns=exclude_columns, errors='ignore')
+        
         search_query = request.GET.get('search', '')
+        pattern = re.compile(re.escape(search_query), re.IGNORECASE)
+
         if search_query:
-            pattern = re.compile(search_query, re.IGNORECASE)
-            # Apply regex filter on '' or 'entity_name'
-            data = data[data.apply(lambda row: pattern.search(row['directory_name']), axis=1)]
+            data_df = data_df[data_df['filename'].str.contains(search_query, na=False, case=False, regex=True)]
+
+        # Get the count of rows after filtering
+        result_count = len(data_df)
         
         # Set up pagination
-        paginator = Paginator(data, 10)  # Show 10 rows per page
+        paginator = Paginator(data_df, 6)  # Show 6 rows per page
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
         
         # Convert DataFrame to HTML table
-        table_html = page_obj.object_list.to_html(classes='data table table-bordered table-hover')
+        table_html = page_obj.object_list.to_html(classes='data table table-bordered table-hover', index=False)
         
         # Pagination controls
         pagination_html = {
@@ -85,7 +86,7 @@ def index(request):
             'next_page_number': page_obj.next_page_number() if page_obj.has_next() else None,
             'current_page': page_obj.number,
             'total_pages': paginator.num_pages,
-            'page_numbers': range(1, paginator.num_pages + 1),
+            'page_numbers': range(1, 6),
         }
     else:
         table_html = "<p>No data available</p>"
@@ -95,9 +96,8 @@ def index(request):
     context = {
         'table_html': table_html,
         'pagination_html': pagination_html,
-        'search_query': search_query,  # Pass the search query to the template
-        'is_valid_structure': is_valid_structure,  # Pass app structure validity to template
-        'preview_data': preview_data.to_html(classes='preview table table-bordered table-hover') if preview_data is not None else None  # Pass preview data
+        'search_query': search_query,
+        'result_count': result_count,
     }
     
     return render(request, 'project_structure/index.html', context)
