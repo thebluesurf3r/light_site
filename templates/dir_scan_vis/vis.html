@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% load plotly_dash %}
+
+{% load static %}
+
+{% block title %}dir_scan_vis{% endblock %}
+
+{% block content %}
+<div id="app" class="container">
+    <!-- Header Section -->
+    <b-container fluid class="bg-dark text-white text-center py-5 hero">
+        <section class="hero mb-5">
+            <b-row>
+                <b-col>
+                    <h1 class="headername display-4">Directory Scan Visualization</h1>
+                    <p style="width: 80%; margin: 0 auto;">
+                        Exploration for the scanned directories.
+                    </p>
+                </b-col>
+            </b-row>
+        </section>
+    </b-container>
+
+    <!-- Search Form -->
+    <b-container class="my-4">
+        <section class="search-section mb-4">
+            <b-row>
+                <b-col>
+                    <!-- Search form: Sends search query as a GET parameter -->
+                    <form method="get" action="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name="search" value="{{ search_query }}" placeholder="Search by directory or entity name...">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </b-col>
+            </b-row>
+        </section>
+    </b-container>
+
+
+    <!-- Search Result Count -->
+    <b-container class="my-4">
+        <section class="result-count-section mb-4">
+            <b-row>
+                <b-col>
+                    {% for file in files %}
+                    <tr>
+                        <td>{{ file.filename }}</td>
+                        <td>{{ file.metadata.file_size }}</td>
+                        <td>{{ file.metadata.modification_time }}</td>
+                    </tr>
+                    {% endfor %}
+
+                    {% if search_query %}
+                        {% if result_count == 0 %}
+                            <p>No results found for '{{ search_query }}'</p>
+                        {% else %}
+                            <p><strong>{{ result_count }}</strong> results found for '{{ search_query }}'</p>
+                        {% endif %}
+                    {% else %}
+                        <p>Please enter a search query.</p>
+                    {% endif %}
+                </b-col>
+            </b-row>
+        </section>
+    </b-container>
+</div>
+
+<div id="dash-app">
+     <!-- Dash/Plotly Graph Section as iframe -->
+     <b-container class="my-4">
+        <section class="graph-section mb-4">
+            <b-row>
+                <b-col>
+                    <h2 class="section-title">Visualization Graph</h2>
+                    <!-- Embed the Dash app as an iframe -->
+                    {% plotly_app name="ProjectAnalysisApp" %}
+                </b-col>
+            </b-row>
+        </section>
+    </b-container>
+</div>
+{% endblock %}

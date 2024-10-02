@@ -35,6 +35,10 @@ LOGGING = {
 }
 logging.config.dictConfig(LOGGING)
 
+# Add static files settings for dash apps
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+ASGI_APPLICATION = 'light_site.routing.application'
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -55,8 +59,12 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'corsheaders',
     'django_celery_results',
-    'accounts',
-    'project_structure'
+    'channels',
+    'django_plotly_dash',
+#   'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+    'dpd_static_support',
+    'dir_scan_vis',
+    'dir_scan',
 ]
 
 MIDDLEWARE = [
@@ -71,7 +79,21 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'django_plotly_dash.middleware.BaseMiddleware',
 ]
+
+PLOTLY_COMPONENTS = [
+    'dash_core_components',
+    'dash_html_components',
+    'dash_renderer',
+    'dpd_static_support',
+]
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
+}
 
 ROOT_URLCONF = 'light_site.urls'
 
@@ -137,7 +159,9 @@ SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+#STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Add this line if needed
+
 
 # Media files (user-uploaded content)
 MEDIA_URL = '/media/'

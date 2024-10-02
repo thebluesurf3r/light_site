@@ -1,0 +1,230 @@
+/*=======================================================================================================================*/
+/*======== Font-Face Definitions */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Behavior';
+    src: url('../fonts/Behavior.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*=======================================================================================================================*/
+/*======== CSS Variables */
+:root {
+    --phi: 1.618034;
+    --pi: 3.14159265;
+    --e: 2.718282;
+    --sqrt-two: 1.414214;
+    --tau: 6.283185;
+
+    --font-main: 'Open Sans', sans-serif;
+    --font-heading: 'Behavior', sans-serif;
+    --font-heading-size: 12px;
+    --margin-size: 9px;
+    --font-content-size: 9px;
+
+    --font-heading-large: calc(var(--font-heading-size) * var(--phi));
+    --font-heading-huge: calc(var(--font-heading-size) * 2.618034);
+    --font-heading-xl: calc(var(--font-heading-size) * 3.236068);
+    --font-heading-md: calc(var(--font-heading-size) * var(--phi) * var(--phi));
+    --font-heading-small: calc(var(--font-heading-size) * 0.618034);
+
+    --margin-large: calc(var(--margin-size) * var(--phi));
+    --margin-medium: var(--margin-size);
+    --margin-small: calc(var(--margin-size) / var(--tau));
+
+    --font-size-large: calc(var(--font-content-size) * var(--phi));
+    --font-size-medium: var(--font-content-size);
+    --font-size-small: calc(var(--font-content-size) * 0.618034);
+
+    --primary-color: #ffffff;
+    --background-color: #000000;
+    --secondary-background-color: #2b2b2b;
+    --fade-color: rgba(0, 0, 0, 0.521);
+    --background-container-color: #272727; 
+    --border-color: #ffffff;
+    --header-background-color: #222222;
+    --pagination-background-color: #000000;
+    --pagination-border-color: #000000;
+    --pagination-active-background-color: #333333;
+    --pagination-hover-background-color: #555555;
+}
+
+/*=======================================================================================================================*/
+/*======== Global Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*=======================================================================================================================*/
+/*======== Body Styling */
+body {
+    font-family: var(--font-main);
+    color: var(--primary-color);
+    background-color: var(--secondary-background-color);
+    padding-top: calc(var(--font-heading-size) * var(--phi) * 6);
+    padding-bottom: calc(var(--font-heading-small) / var(--phi) / var(--pi));
+}
+
+/*=======================================================================================================================*/
+/*======== Main Element */
+main {
+    display: block; /* Fixed from absolute */
+}
+
+/*=======================================================================================================================*/
+/*======== Heading and Paragraphs */
+h5, p {
+    font-family: var(--font-main);
+    font-size: calc(var(--font-size-small) * 3);
+    color: var(--primary-color);
+}
+
+/*=======================================================================================================================*/
+/*======== Container */
+.container {
+    display: grid;
+    max-width: 100%;
+    margin: var(--margin-small);
+}
+
+/*=======================================================================================================================*/
+/*======== Hero Section */
+.hero {
+    color: var(--primary-color);
+}
+
+/*=======================================================================================================================*/
+/*======== Data Table Section */
+.project-structure {
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
+}
+
+/*=======================================================================================================================*/
+/*======== Table styling */
+/* Table styling */
+#app > b-container.my-4 > section > b-row > b-col > b-list-group > b-list-group-item > table {
+    width: 98.5%; /* Ensure table takes full width of its container */
+    margin-top: auto;
+    margin-bottom: auto;
+    table-layout: inherit; /* Allow the table to adjust column widths automatically */
+}
+
+/* Apply overflow handling and text wrapping */
+.data.table.table-bordered.table-hover {
+    border-collapse: collapse;
+    width: 97%; /* Ensure table fits within the container */
+}
+
+.data.table.table-bordered.table-hover th,
+.data.table.table-bordered.table-hover td {
+    border: 1px solid var(--border-color); /* Border color */
+    background-color: var(--background-color); /* Cell background color */
+    color: var(--primary-color); /* Text color */
+    padding: 6px; /* Increased padding for readability */
+    text-align: left;
+    word-wrap: break-word; /* Ensure long words are wrapped */
+    overflow-wrap: break-word; /* Ensure long words are wrapped */
+}
+
+.data.table.table-bordered.table-hover th {
+    background-color: var(--header-background-color); /* Header background color */
+    border: 1px solid var(--border-color); /* Border color */
+    color: var(--primary-color); /* Text color */
+    padding: 6px; /* Increased padding for readability */
+    text-align: left;
+}
+
+/* Container Alignment*/
+.b-list-group-item {
+    display: flex;
+    justify-content: left;
+}
+
+/* Ensure pagination fits */
+.pagination {
+    display: flex;
+    justify-content: left;
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
+}
+
+.page-item {
+    margin: 0 3px;
+}
+
+.page-link {
+    color: var(--primary-color);
+    background-color: var(--pagination-background-color);
+    border: 1px solid var(--pagination-border-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.page-item.active .page-link {
+    background-color: var(--pagination-active-background-color);
+    border-color: var(--pagination-active-background-color);
+}
+
+.page-link:hover {
+    background-color: var(--pagination-hover-background-color);
+    border-color: var(--pagination-hover-background-color);
+}
+
+/* Utility classes for spacing */
+.my-4 {
+    margin-top: var(--margin-large) !important;
+    margin-bottom: var(--margin-large) !important;
+}
+
+/*=======================================================================================================================*/
+/*======== Search Button */
+.input-group {
+    background-color: blue;
+    width: 98.5%;
+    color: white;
+}
+
+/*=======================================================================================================================*/
+/*======== Dash App Iframe Styling */
+#dash-app {
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    border: none; /* Remove default border */
+}
+
+/* Container for Dash app to ensure full scaling */
+.animation-container {
+    width: 100%; /* Full width of the container */
+    height: 100vh; /* Full height of the container */
+    position: relative; /* Allow positioning of iframe within */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.animation-container iframe {
+    width: 100%;  /* 100% width of the container */
+    height: 100%; /* 100% height of the container */
+    border: none; /* Remove default iframe border */
+    display: block; /* Ensures that iframe behaves as a block element */
+    margin: 0; /* Remove margin */
+    position: absolute; /* Position absolutely to fill the container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}

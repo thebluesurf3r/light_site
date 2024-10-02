@@ -40,6 +40,8 @@ setuptools-scm = "*"
 dash = "*"
 sentry-sdk = "*"
 networkx = "*"
+django-plotly-dash = "*"
+dpd-static-support = "*"
 
 [dev-packages]
 ipykernel = "*"
