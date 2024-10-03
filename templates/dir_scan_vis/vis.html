@@ -7,51 +7,19 @@
 {% block title %}dir_scan_vis{% endblock %}
 
 {% block content %}
-<div id="app" class="container">
-    <!-- Header Section -->
-    <b-container fluid class="bg-dark text-white text-center py-5 hero">
-        <section class="hero mb-5">
-            <b-row>
-                <b-col>
-                    <h1 class="headername display-4">Directory Scan Visualization</h1>
-                    <p style="width: 80%; margin: 0 auto;">
-                        Exploration for the scanned directories.
-                    </p>
-                </b-col>
-            </b-row>
-        </section>
-    </b-container>
-
-    <!-- Search Form -->
-    <b-container class="my-4">
-        <section class="search-section mb-4">
-            <b-row>
-                <b-col>
-                    <!-- Search form: Sends search query as a GET parameter -->
-                    <form method="get" action="">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" name="search" value="{{ search_query }}" placeholder="Search by directory or entity name...">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="submit">Search</button>
-                            </div>
-                        </div>
-                    </form>
-                </b-col>
-            </b-row>
-        </section>
-    </b-container>
 
     <div id="dash-app" class="container-fluid" style="height: 100vh; padding: 0;">
         <!-- Dash/Plotly Graph Section as iframe -->
      <b-container class="my-4">
         <section class="graph-section mb-4">
+            <b-list-group class="animation-container">
             <b-row>
                 <b-col>
-                    <h2 class="section-title">Visualization Graph</h2>
                     <!-- Embed the Dash app as an iframe -->
-                    {% plotly_app name="ProjectAnalysisApp" %}
+                        {%plotly_app_bootstrap name="ProjectAnalysisApp" aspect="16by9"%}
                 </b-col>
             </b-row>
+            </b-list-group>
         </section>
     </b-container>
 </div>

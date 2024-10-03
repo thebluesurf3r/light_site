@@ -8,19 +8,27 @@ from dir_scan_vis.dash_app.plotly_helpers import create_django_project_analysis_
 @app.callback(
     Output('graph', 'figure'),
     [
-        Input('dropdown-example', 'value'),  # For filtering based on file_extension
-        Input('slider-example', 'value')     # Placeholder slider for future functionality
+        Input('search-bar', 'value'),  # For filtering based on search input
+        Input('dimension-dropdown', 'value')  # For dimension selection
     ]
 )
-def update_graph(selected_value, slider_value):
+def update_graph(search_value, selected_dimension):
     # Load the data from the ProjectEntity model
     meta_df = pd.DataFrame(list(ProjectEntity.objects.all().values()))
 
-    # Apply filter based on dropdown selection (file_extension filter)
-    if selected_value:
-        meta_df = meta_df[meta_df['file_extension'] == selected_value]
+    # Apply filter based on search input
+    if search_value:
+        meta_df = meta_df[meta_df.apply(lambda row: row.astype(str).str.contains(search_value, case=False).any(), axis=1)]
 
-    # Generate the figure with only the first graph (Scatter Chart)
+    # Apply additional filtering based on the selected dimension
+    if selected_dimension == 'dim_1':
+        # Filter based on 'filename' column (assuming 'filename' is the column name)
+        meta_df = meta_df[meta_df['filename'].notnull()]  # Only include rows with non-null filenames
+    elif selected_dimension == 'dim_2':
+        # Filter based on 'file_extension' column (assuming 'file_extension' is the column name)
+        meta_df = meta_df[meta_df['file_extension'].notnull()]  # Only include rows with non-null file extensions
+
+    # Generate the figure using the filtered DataFrame
     figure = create_django_project_analysis_plot(meta_df)
 
     return figure

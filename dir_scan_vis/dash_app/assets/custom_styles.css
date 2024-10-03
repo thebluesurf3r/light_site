@@ -90,41 +90,20 @@ body {
     border: none; /* Remove default border */
 }
 
-/* Container for Dash app to ensure full scaling */
-.animation-container {
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Full height of the container */
-    position: relative; /* Allow positioning of iframe within */
-    overflow: visible; /* Prevent overflow */
+/* Style the dropdown options */
+.Select-menu-outer {
+    color: var(--primary-color) !important;
+    background-color: var(--background-color) !important;
 }
 
-.animation-container iframe {
-    width: 100%;  /* 100% width of the container */
-    height: 100%; /* 100% height of the container */
-    border: none; /* Remove default iframe border */
-    display: block; /* Ensures that iframe behaves as a block element */
-    position: relative; /* Position absolutely to fill the container */
+/* Style the text inside dropdown options */
+.Select-option {
+    color: var(--primary-color)  !important;
+    background-color: var(--background-color) !important;
 }
 
-#graph > div.js-plotly-plot {
-    height: 95%;
-    width: 100%;
-}
-
-.graph-section {
-    position: relative;
-    width: 100%; /* Ensure full width */
-    height: 95%; /* Allow it to stretch vertically */
-}
-
-.graph-section iframe {
-    width: 100%; /* Full width of the parent */
-    height: 100vh; /* Adjust height, can change based on your needs */
-    border: none; /* Optional: removes the border for a cleaner look */
-    display: block; /* Ensures there's no extra space below the iframe */
-}
-
-#dash-app > b-container > section > b-row > b-col > div {
-    width: 100%; /* Ensure full width */
-    height: 800px; /* Allow it to stretch vertically */
+/* Style the selected option */
+.Select--single .Select-value {
+    color: var(--primary-color)  !important;
+    background-color: var(--background-color) !important;
 }
