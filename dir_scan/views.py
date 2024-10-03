@@ -9,17 +9,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.paginator import Paginator
 from .models import ProjectEntity
-from .utils import (scan_directories,
-                    feature_engineer,
-                    display_dataframe_html,
-                    categorize_by_extension,
-                    categorize_file_extensions,
-                    check_file_location,
-                    validate_app_structure,
-                    generate_custom_hover,
-                    create_color_map,
-                    export_dataframe,
-                    display_dataframe, meta_df)
 from django.core.paginator import Paginator
 from django.shortcuts import render
 
@@ -35,16 +24,6 @@ def index(request):
     
     # Load the data from the database
     data = ProjectEntity.objects.all()  # Fetch all entries from the database
-    
-    # Validate the structure of the 'light_site' app
-    app_name = 'dir_scan'
-    base_dir = os.path.join(os.path.expanduser('~'), 'git', 'light_site')
-    is_valid_structure = validate_app_structure(app_name, base_dir)
-    
-    if is_valid_structure:
-        logger.info(f"App '{app_name}' has a valid structure.")
-    else:
-        logger.error(f"App '{app_name}' does not have a valid structure.")
     
     # Check if data exists
     if data.exists():

@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # Define URL patterns
 urlpatterns = [
-    path('scan/', views.index, name='scan'),
+    path('', views.index, name='scan'),
 ]
 
 # Log URL pattern registration

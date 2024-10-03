@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Title -->
-    <title>{% block title %}Visualizer{% endblock %}</title>
+    <title>{% block title %}Directory Scan Visualization{% endblock %}</title>
 
     <!-- Favicon and Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'visualizer/icons/apple-touch-icon.png' %}">
@@ -39,7 +39,6 @@
 
     <!-- App Level CSS -->
     {% block extra_css %}
-    <link href="{% static 'dir_scan/css/style.css' %}" rel="stylesheet">
     <link href="{% static 'dir_scan_vis/css/style.css' %}" rel="stylesheet">
     {% endblock %}
 </head>
@@ -73,11 +72,6 @@
     <script src="{% static 'js/app.js' %}"></script>
     <script src="{% static 'js/animations.js' %}"></script>
     <script src="{% static 'js/script.js' %}"></script>
-
-    <!-- App Level JS -->
-    <script src="{% static 'dir_scan_vis/js/app.js' %}"></script>
-    <script src="{% static 'dir_scan_vis/js/animations.js' %}"></script>
-    <script src="{% static 'dir_scan_vis/js/script.js' %}"></script>
 </body>
 
 </html>

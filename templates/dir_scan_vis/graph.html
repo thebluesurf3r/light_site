@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div>
+        <div id="graph" style="width: 100%; height: 100vh;"></div>  <!-- Container for the graph -->
+    </div>
+
+    <script>
+        // Parse the figure JSON passed from the view
+        const figure = {{ figure_json|safe }};  // Use Django's safe filter to prevent escaping
+
+        // Additional configuration options
+        const config = {
+            responsive: true,  // Make the graph responsive
+            displayModeBar: true, // Show mode bar for tools
+        };
+
+        // Render the plot with config options
+        Plotly.newPlot('graph', figure.data, figure.layout, config);
+    </script>
+</body>
+</html>

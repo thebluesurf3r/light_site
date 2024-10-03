@@ -8,8 +8,9 @@ from django.conf.urls.static import static
 from django.conf import settings
 from .views import HomeView, AboutView, ProjectView, ContactView
 from django_plotly_dash import DjangoDash
-from dir_scan_vis.views import vis
 from django_plotly_dash import urls as plotly_dash_urls
+from dir_scan_vis.views import DashAppView
+
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -21,7 +22,6 @@ urlpatterns = [
     path('about/', AboutView.as_view(), name='about'),
     path('projects/', ProjectView.as_view(), name='projects'),
     path('contact/', ContactView.as_view(), name='contact'),
-    #path('django_plotly_dash/', include('django_plotly_dash.urls')),  # Ensure this is present for Dash app routing
     path('accounts/', include('django.contrib.auth.urls')),
     path('user_management/', include('user_management.urls')),
     path('dir_scan/', include('dir_scan.urls')),

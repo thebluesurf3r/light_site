@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "dir_scan_vis/base.html" %}
 
 {% load plotly_dash %}
 
@@ -41,37 +41,8 @@
         </section>
     </b-container>
 
-
-    <!-- Search Result Count -->
-    <b-container class="my-4">
-        <section class="result-count-section mb-4">
-            <b-row>
-                <b-col>
-                    {% for file in files %}
-                    <tr>
-                        <td>{{ file.filename }}</td>
-                        <td>{{ file.metadata.file_size }}</td>
-                        <td>{{ file.metadata.modification_time }}</td>
-                    </tr>
-                    {% endfor %}
-
-                    {% if search_query %}
-                        {% if result_count == 0 %}
-                            <p>No results found for '{{ search_query }}'</p>
-                        {% else %}
-                            <p><strong>{{ result_count }}</strong> results found for '{{ search_query }}'</p>
-                        {% endif %}
-                    {% else %}
-                        <p>Please enter a search query.</p>
-                    {% endif %}
-                </b-col>
-            </b-row>
-        </section>
-    </b-container>
-</div>
-
-<div id="dash-app">
-     <!-- Dash/Plotly Graph Section as iframe -->
+    <div id="dash-app" class="container-fluid" style="height: 100vh; padding: 0;">
+        <!-- Dash/Plotly Graph Section as iframe -->
      <b-container class="my-4">
         <section class="graph-section mb-4">
             <b-row>
